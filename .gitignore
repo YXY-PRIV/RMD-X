@@ -1,0 +1,36 @@
+__pycache__/
+*.py[cod]
+*.so
+*.log
+*.aux
+*.out
+*.blg
+*.fdb_latexmk
+*.fls
+*.synctex.gz
+
+# Large data / model / experiment artifacts
+data/
+datasets/
+models/
+checkpoints/
+weights/
+outputs_rmdx/*
+!outputs_rmdx/.gitkeep
+*.pt
+*.pth
+*.pkl
+*.pickle
+*.parquet
+*.h5
+*.hdf5
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.7z
+*.rar
+
+# Local path configs
+configs/paths.env
+
