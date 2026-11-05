@@ -1,0 +1,38 @@
+[
+  {
+    "function": "project",
+    "source_member": "latest/source/pair_conflict_material_projection_20261101/src/pair_projection.py",
+    "source_sha256": "42e82052a1a93dca1e4d9048967ba28c5458d5f65033f761ba54fe698828516e",
+    "function_sha256": "d397638429cd32253f4f3564736029324863fb9bb0d35ba06be9c04ed67a6c9c"
+  },
+  {
+    "function": "check_quality",
+    "source_member": "latest/source/pair_conflict_material_projection_20261101/src/pair_endpoint.py",
+    "source_sha256": "ad09b28aa4361706dbe6812fd6bfa198488735aa3f77119ff6faecdcfd8e3cd7",
+    "function_sha256": "a806e790c2b8825814e9d4fdf4b1ef9e8893c4f6051f3a13ab306596978f245e"
+  },
+  {
+    "function": "mix_visual",
+    "source_member": "latest/source/pair_conflict_material_projection_20261101/src/pair_endpoint.py",
+    "source_sha256": "ad09b28aa4361706dbe6812fd6bfa198488735aa3f77119ff6faecdcfd8e3cd7",
+    "function_sha256": "fa124a8e661eba7daaf9a6075b06f55e261a216ca3ef3d985f82bbf86b3a12af"
+  },
+  {
+    "function": "branch_quality",
+    "source_member": "latest/source/pair_conflict_material_projection_20261101/src/pair_endpoint.py",
+    "source_sha256": "ad09b28aa4361706dbe6812fd6bfa198488735aa3f77119ff6faecdcfd8e3cd7",
+    "function_sha256": "ab77b77d5b1840f4a939aea71283f6204c184f26ba990ed2a353cff07e482aa2"
+  },
+  {
+    "function": "choose",
+    "source_member": "latest/source/pair_conflict_material_projection_20261101/src/pair_endpoint.py",
+    "source_sha256": "ad09b28aa4361706dbe6812fd6bfa198488735aa3f77119ff6faecdcfd8e3cd7",
+    "function_sha256": "ffb288cb9364e174aad3a265d5faef9f834fbcc2297f0ec3b44ec4ed238f6b62"
+  },
+  {
+    "function": "gaussian",
+    "source_member": "recorded/experiments/appearance_candidate_refinement_20261031/src/candidate_endpoint.py",
+    "source_sha256": "9d818252fcf47334ea2019c4cb0466b6c6244924418d041b0ee9c9644c863fac",
+    "function_sha256": "5b4c251ca13170298614becb276b80fb45cd5f33cadcae580662f30c6b7c8843"
+  }
+]

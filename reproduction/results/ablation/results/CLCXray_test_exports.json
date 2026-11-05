@@ -1,0 +1,38 @@
+{
+  "status": "COMPLETE_FOUR_EXPORTS",
+  "case": "CLCXray_test",
+  "protocol": {
+    "path": "/mnt/data/yxy/program/RAXO/experiments/new_module_evidence_20261102/ablation/protocol.json",
+    "bytes": 4020,
+    "sha256": "87d127113f97677bb0917a9be72ef6d7a7138c30888a1b3eeffc62a869884c6c"
+  },
+  "exports": [
+    {
+      "path": "/mnt/data/yxy-codex/home/outputs/RAXO/new_module_evidence_20261102/ablation/endpoints/CLCXray_test/00_full/export.json",
+      "bytes": 28718,
+      "sha256": "256f9267a4f2064c7a443e140a07c6ba89704faf9c3fd289961a21e380c247bb"
+    },
+    {
+      "path": "/mnt/data/yxy-codex/home/outputs/RAXO/new_module_evidence_20261102/ablation/endpoints/CLCXray_test/10_gate/export.json",
+      "bytes": 26652,
+      "sha256": "3ccbf38cb90cd56d1f549443f922ecec882d248379dba7f58b19320ff51434f6"
+    },
+    {
+      "path": "/mnt/data/yxy-codex/home/outputs/RAXO/new_module_evidence_20261102/ablation/endpoints/CLCXray_test/01_projection_identity_extension/export.json",
+      "bytes": 26679,
+      "sha256": "098110ab735608bf25aa677bc005208af8b317434bc781f488db622558c8b7bc"
+    },
+    {
+      "path": "/mnt/data/yxy-codex/home/outputs/RAXO/new_module_evidence_20261102/ablation/endpoints/CLCXray_test/11_both/export.json",
+      "bytes": 28705,
+      "sha256": "460f2d84fcad4b558e152f126637da4d4804a3c6d2597aaea5032d0ae72b6748"
+    }
+  ],
+  "mask_partition": {
+    "same_class_both": 5737,
+    "single_branch": 4925,
+    "different_both_invalid_query_or_Tle1": 0,
+    "different_both_Tgt1_unsupported_pair": 0,
+    "active_supported_conflict": 549
+  }
+}

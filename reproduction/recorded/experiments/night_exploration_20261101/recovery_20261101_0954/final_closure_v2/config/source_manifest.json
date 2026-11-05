@@ -1,0 +1,298 @@
+{
+  "status": "ROOT_FIXED_SOURCES_FROZEN_BEFORE_CLOSURE",
+  "created_utc": "2026-11-01T02:05:11.188414+00:00",
+  "files": [
+    {
+      "path": "/mnt/data/yxy/program/RAXO/experiments/night_exploration_20261101/config/candidate_promotion_rule.json",
+      "bytes": 2377,
+      "sha256": "6e1b1b705bc8cc57427ba26db0315e2c6225bf9beadb51e998aa71d63a4071f3"
+    },
+    {
+      "path": "/mnt/data/yxy/program/RAXO/experiments/night_exploration_20261101/config/night_plan.json",
+      "bytes": 5571,
+      "sha256": "8587b8e6c10888fd75650c57e17bb1f2839d6a887e609c0530fa532dfee93e8b"
+    },
+    {
+      "path": "/mnt/data/yxy/program/RAXO/experiments/night_exploration_20261101/recovery_20261101_0954/config/recovery_plan.json",
+      "bytes": 9768,
+      "sha256": "7c733782342e3163e99ce77e30e25221191b8dd46f5c35231702df536cf0ecd1"
+    },
+    {
+      "path": "/mnt/data/yxy/program/RAXO/experiments/night_exploration_20261101/recovery_20261101_0954/final_closure_v2/README.md",
+      "bytes": 4791,
+      "sha256": "03a1d473f959adcc623e8d85e33717adb02ebfa18e6555f0a61c96c402f8a198"
+    },
+    {
+      "path": "/mnt/data/yxy/program/RAXO/experiments/night_exploration_20261101/recovery_20261101_0954/final_closure_v2/config/closure_plan.json",
+      "bytes": 10154,
+      "sha256": "63616c68ad36fbcbf453ab2e11dcfd88f14b8777b9303aced3eca0b11dbff1be"
+    },
+    {
+      "path": "/mnt/data/yxy/program/RAXO/experiments/night_exploration_20261101/recovery_20261101_0954/final_closure_v2/config/original_worker_identities.json",
+      "bytes": 2740,
+      "sha256": "7f36a5686e8a26b10a16573af1a7208ab450216c448fc13b476c673e48163847"
+    },
+    {
+      "path": "/mnt/data/yxy/program/RAXO/experiments/night_exploration_20261101/recovery_20261101_0954/final_closure_v2/config/recovery_contract.json",
+      "bytes": 3223,
+      "sha256": "9befd8540d12a4c3699e483b9218521e230cb68e37c144bc69667b66dcead001"
+    },
+    {
+      "path": "/mnt/data/yxy/program/RAXO/experiments/night_exploration_20261101/recovery_20261101_0954/final_closure_v2/config/root_ready.example.json",
+      "bytes": 1951,
+      "sha256": "16f000e95ed859f85877718568f84ef3a810d2dff59ddf8dfc4b9372c98f2fdd"
+    },
+    {
+      "path": "/mnt/data/yxy/program/RAXO/experiments/night_exploration_20261101/recovery_20261101_0954/final_closure_v2/provenance/original_D_baseline_status.json",
+      "bytes": 749,
+      "sha256": "4becd1e58334249019de87d4c43bbdad1c66fd9ae39734b42928b71dfa38609f"
+    },
+    {
+      "path": "/mnt/data/yxy/program/RAXO/experiments/night_exploration_20261101/recovery_20261101_0954/final_closure_v2/provenance/original_closure_source_refs.json",
+      "bytes": 2273,
+      "sha256": "ed224b100984ee1779fc9aa1b2ce456806163dfcceb63727045e2d77f2e2e242"
+    },
+    {
+      "path": "/mnt/data/yxy/program/RAXO/experiments/night_exploration_20261101/recovery_20261101_0954/final_closure_v2/provenance/original_failed_closure_journal.json",
+      "bytes": 1966,
+      "sha256": "cc62a642a61d9facf649608b996ce6020b5668d07adc8b1a50ff34c579be2f92"
+    },
+    {
+      "path": "/mnt/data/yxy/program/RAXO/experiments/night_exploration_20261101/recovery_20261101_0954/final_closure_v2/provenance/original_failed_closure_status.json",
+      "bytes": 329,
+      "sha256": "05fd2f5c07cfa3f7392e222c6000b15dbc0eb8978180415068d0967eb1b6379f"
+    },
+    {
+      "path": "/mnt/data/yxy/program/RAXO/experiments/night_exploration_20261101/recovery_20261101_0954/final_closure_v2/provenance/original_original_worker_identities.json",
+      "bytes": 2026,
+      "sha256": "b18e75511c450ea3f9b7a5fa437b68e911406991e99d380e3e7e8601c1a2a91f"
+    },
+    {
+      "path": "/mnt/data/yxy/program/RAXO/experiments/night_exploration_20261101/recovery_20261101_0954/final_closure_v2/provenance/original_source_manifest.json",
+      "bytes": 11105,
+      "sha256": "62af862cc05a254772c9129ecef8039d7d46b54117e8a2380618e434be284bdf"
+    },
+    {
+      "path": "/mnt/data/yxy/program/RAXO/experiments/night_exploration_20261101/recovery_20261101_0954/final_closure_v2/scripts/check_pointer_transaction.py",
+      "bytes": 4860,
+      "sha256": "50c37dd3de4d2d84addcb7f3e67d8227bb5817ebe4ab5db98e70ea266ce30a06"
+    },
+    {
+      "path": "/mnt/data/yxy/program/RAXO/experiments/night_exploration_20261101/recovery_20261101_0954/final_closure_v2/scripts/make_source_manifest.py",
+      "bytes": 2582,
+      "sha256": "583fa344ee8065f3093b39f637af2c2f2feb14a1222e8b37e16d9902d68861f0"
+    },
+    {
+      "path": "/mnt/data/yxy/program/RAXO/experiments/night_exploration_20261101/recovery_20261101_0954/final_closure_v2/scripts/run_final_closure.py",
+      "bytes": 34008,
+      "sha256": "feb2f7e3294f49912e721ee9fc1634ac24c3d2285bb3427c0a621107ace34a8f"
+    },
+    {
+      "path": "/mnt/data/yxy/program/RAXO/experiments/night_exploration_20261101/recovery_20261101_0954/final_closure_v2/scripts/write_final_report.py",
+      "bytes": 24490,
+      "sha256": "a401782e8c987a91e14e33c31b0022fe6a88cc7008f4d0871c58f34f74ad61c1"
+    },
+    {
+      "path": "/mnt/data/yxy/program/RAXO/experiments/night_exploration_20261101/recovery_20261101_0954/scripts/cleanup_linger.py",
+      "bytes": 11388,
+      "sha256": "6a7dcb2088818a827294d11cf4afd782b6d716305fe92cb40e56a8d707b996c3"
+    },
+    {
+      "path": "/mnt/data/yxy/program/RAXO/experiments/night_exploration_20261101/recovery_20261101_0954/scripts/run_recovery.py",
+      "bytes": 12079,
+      "sha256": "78897836877d2bd2863131476b06e3fe07f07ca9d1638974800a2538ee973958"
+    },
+    {
+      "path": "/mnt/data/yxy/program/RAXO/experiments/night_exploration_20261101/scripts/freeze_replication_contract.py",
+      "bytes": 5722,
+      "sha256": "1b5c1bf3433e45ccd0d8e3ece68ec30d72f537a0124546c7f4c511d52465d386"
+    },
+    {
+      "path": "/mnt/data/yxy/program/RAXO/experiments/night_exploration_20261101/scripts/protect_sources.py",
+      "bytes": 3160,
+      "sha256": "c864cdb460ce13a70a9947d4965f280998a33c88dfb62e1334bb023c3ed025a7"
+    },
+    {
+      "path": "/mnt/data/yxy/program/RAXO/experiments/night_exploration_20261101/scripts/review_completed_bootstrap.py",
+      "bytes": 14739,
+      "sha256": "429568079c699e781079db58bcd80a9fbbc50f0f8fea84eb4aff0127b6a73f24"
+    },
+    {
+      "path": "/mnt/data/yxy/program/RAXO/experiments/night_exploration_20261101/scripts/review_completed_supported_rank_bootstrap.py",
+      "bytes": 17541,
+      "sha256": "406be724ceac52be0ea0a3c393f4617950ebf544ede2bfc115d29b8e5814be76"
+    },
+    {
+      "path": "/mnt/data/yxy/program/RAXO/experiments/night_exploration_20261101/scripts/review_d_protocols.py",
+      "bytes": 5440,
+      "sha256": "741b556985758b280c988a7fda812bd7c63edd6b263a59806f48b1ed4d7ff238"
+    },
+    {
+      "path": "/mnt/data/yxy/program/RAXO/experiments/night_exploration_20261101/scripts/review_hj_diagnostics.py",
+      "bytes": 4683,
+      "sha256": "ab8a82232dcadfbfbfc016cb085f7b84cde124d02c31b5ca887c828d23be6076"
+    },
+    {
+      "path": "/mnt/data/yxy/program/RAXO/experiments/night_exploration_20261101/scripts/review_m_endpoints.py",
+      "bytes": 14747,
+      "sha256": "c8466d3f1d26219762b5cbe697c9ae3c3b729dc07125d32683c19b41e1083456"
+    },
+    {
+      "path": "/mnt/data/yxy/program/RAXO/experiments/night_exploration_20261101/scripts/review_m_smoke.py",
+      "bytes": 3884,
+      "sha256": "570440a6c639cd462841330ffae34dfa8de114f2033b547f0e902bd15c20e0a3"
+    },
+    {
+      "path": "/mnt/data/yxy/program/RAXO/experiments/night_exploration_20261101/scripts/review_n_data.py",
+      "bytes": 6380,
+      "sha256": "dfa01544c3c828e451f45b13f627daac84414f2312419ab5e2c087e0e4e3d1bf"
+    },
+    {
+      "path": "/mnt/data/yxy/program/RAXO/experiments/night_exploration_20261101/scripts/review_o_endpoints.py",
+      "bytes": 15220,
+      "sha256": "4f0779e754ccf9a79b83da6c577ba381c961092f24cdfed55c22ce2987bfc023"
+    },
+    {
+      "path": "/mnt/data/yxy/program/RAXO/experiments/night_exploration_20261101/scripts/review_o_smoke.py",
+      "bytes": 4377,
+      "sha256": "8b17c74453d8b32b14b063179511a8caa6a77983f47b640778e85b2b205f8f46"
+    },
+    {
+      "path": "/mnt/data/yxy/program/RAXO/experiments/night_exploration_20261101/scripts/review_q_endpoints.py",
+      "bytes": 13474,
+      "sha256": "0a01b9bf3809d5a11b27afe68b9b53badb7ba1db776fbd1750b2f2529bba38eb"
+    },
+    {
+      "path": "/mnt/data/yxy/program/RAXO/experiments/night_exploration_20261101/scripts/review_q_summary.py",
+      "bytes": 5480,
+      "sha256": "50dc69f101466fb5bc4538fa5a30eb945fc6c4fdbc8144d446a00995de80a1f1"
+    },
+    {
+      "path": "/mnt/data/yxy/program/RAXO/experiments/night_exploration_20261101/scripts/seal_batch_k.py",
+      "bytes": 3167,
+      "sha256": "27638c01222df52735d6633e5b8d0ae9fd21530065eb2eededda7d322d0f40f1"
+    },
+    {
+      "path": "/mnt/data/yxy/program/RAXO/experiments/night_exploration_20261101/scripts/seal_batch_m.py",
+      "bytes": 3092,
+      "sha256": "f4e350b232ab37af628f7c53d6b2470c889e776579efae596383d20492f028c8"
+    },
+    {
+      "path": "/mnt/data/yxy/program/RAXO/experiments/night_exploration_20261101/scripts/seal_batch_n.py",
+      "bytes": 3244,
+      "sha256": "5391fd658a373ff4786b5b5e4e710cdfdd42539ea9c3538a146b20c2ac6d7775"
+    },
+    {
+      "path": "/mnt/data/yxy/program/RAXO/experiments/night_exploration_20261101/scripts/seal_batch_o.py",
+      "bytes": 3168,
+      "sha256": "37d75fa322c65f3e3a35bf499eae672a2acfb00f53b4c2be8d6c84cf1e94b392"
+    },
+    {
+      "path": "/mnt/data/yxy/program/RAXO/experiments/night_exploration_20261101/scripts/seal_batch_q.py",
+      "bytes": 3335,
+      "sha256": "b9b40e6d513d7b4728ce707abf9ba9991ecd0111c3898c6712eb35702f6e99f8"
+    },
+    {
+      "path": "/mnt/data/yxy/program/RAXO/experiments/night_exploration_20261101/scripts/seal_batch_r.py",
+      "bytes": 6187,
+      "sha256": "6d9f55f28ac689cb3091b0b4b4047b9d86fc09d34ff13e754aebfaaf1eaca235"
+    },
+    {
+      "path": "/mnt/data/yxy/program/RAXO/experiments/night_exploration_20261101/scripts/seal_batch_s.py",
+      "bytes": 6223,
+      "sha256": "8f31dc18ece5de265b8bed0ea225d64a54ba954eef95760198c60c3f2f67f0f4"
+    },
+    {
+      "path": "/mnt/data/yxy/program/RAXO/experiments/night_exploration_20261101/scripts/seal_batches_efg.py",
+      "bytes": 3985,
+      "sha256": "1c21462b0afa1870bccd193e153e8fbe2d999ca04277abb1a6b94b64a1b9260f"
+    },
+    {
+      "path": "/mnt/data/yxy/program/RAXO/experiments/night_exploration_20261101/scripts/seal_batches_il.py",
+      "bytes": 3589,
+      "sha256": "71c337218a646e4e5f1d6484668f7038b4928f3bbad1136084dd585cb1eed377"
+    },
+    {
+      "path": "/mnt/data/yxy/program/RAXO/experiments/night_exploration_20261101/scripts/seal_diagnostics_hj.py",
+      "bytes": 2556,
+      "sha256": "b83a6ff5e97f64791305f058d5114319044d8d1d47ddc2b2cf9c779300f07191"
+    },
+    {
+      "path": "/mnt/data/yxy/program/RAXO/experiments/night_exploration_20261101/scripts/select_night_candidate.py",
+      "bytes": 2494,
+      "sha256": "7706331c9e89577809e8765d785fcfbde1546a9de4c839f02f400831db4295d5"
+    },
+    {
+      "path": "/mnt/data/yxy/program/RAXO/experiments/night_exploration_20261101/scripts/summarize_batch_e.py",
+      "bytes": 6125,
+      "sha256": "d9d33d3280bade5bef55b2aa33ed26b3e05589ed3092648a5522223a7f60249a"
+    },
+    {
+      "path": "/mnt/data/yxy/program/RAXO/experiments/night_exploration_20261101/scripts/summarize_batch_f.py",
+      "bytes": 5580,
+      "sha256": "a9b8b29240197d983a27796dc2c8e2b9e51ca1b38d1adea79183c80829267fcf"
+    },
+    {
+      "path": "/mnt/data/yxy/program/RAXO/experiments/night_exploration_20261101/scripts/summarize_batch_g.py",
+      "bytes": 5604,
+      "sha256": "31876dc1b4851382067fc469248753dcfe7133de012e5e2ed0b21cec2150bca6"
+    },
+    {
+      "path": "/mnt/data/yxy/program/RAXO/experiments/night_exploration_20261101/scripts/summarize_batch_i.py",
+      "bytes": 6419,
+      "sha256": "66d13680f5cbfd513d8e8c69879afbfa4e9bb38ddccf1a667f2e38ee3f12e6c7"
+    },
+    {
+      "path": "/mnt/data/yxy/program/RAXO/experiments/night_exploration_20261101/scripts/summarize_batch_k.py",
+      "bytes": 7494,
+      "sha256": "84eec1eb6738b439f4c2d78c6382cc351646cda8be2b2724282cdeda65654962"
+    },
+    {
+      "path": "/mnt/data/yxy/program/RAXO/experiments/night_exploration_20261101/scripts/summarize_batch_n.py",
+      "bytes": 6144,
+      "sha256": "893ad69429fbc4275eb8b52f1eeb4e53b32237d933380d093993767778274a78"
+    },
+    {
+      "path": "/mnt/data/yxy/program/RAXO/experiments/night_exploration_20261101/scripts/summarize_batch_r.py",
+      "bytes": 8073,
+      "sha256": "2753ed9c802c2ba20a1798476d3c790a4bc45e3489d1e6c87f261aac9fe58a6f"
+    },
+    {
+      "path": "/mnt/data/yxy/program/RAXO/experiments/night_exploration_20261101/scripts/summarize_batches_bc.py",
+      "bytes": 9051,
+      "sha256": "e93debe624c27c796361556ad443bcd2da2131eea826019e6787efb2ac4d1002"
+    },
+    {
+      "path": "/mnt/data/yxy/program/RAXO/experiments/night_exploration_20261101/scripts/update_progress.py",
+      "bytes": 3658,
+      "sha256": "146df76bfbed55e9daa53158f8be8352bd0e6ac07693cbd7e9d1d505579692bc"
+    },
+    {
+      "path": "/mnt/data/yxy/program/RAXO/experiments/night_exploration_20261101/scripts/update_progress_all.py",
+      "bytes": 8295,
+      "sha256": "fdafc200d69281389b39262ccffbb6f9bdaafcc262673fc28f3ee73e6202bbe6"
+    },
+    {
+      "path": "/mnt/data/yxy/program/RAXO/experiments/night_exploration_20261101/scripts/verify_sealed_payloads.py",
+      "bytes": 3963,
+      "sha256": "5531566af8f5d1b831ff83bcc1cac0c1d1b449323d863e660791f1e14b9671f1"
+    }
+  ],
+  "self_exclusion": "config/source_manifest.json",
+  "includes": [
+    "recovery/final_closure_v2/scripts/**",
+    "recovery/final_closure_v2/config/** except source_manifest.json",
+    "recovery/final_closure_v2/provenance/**",
+    "recovery/scripts/**",
+    "recovery/config/**",
+    "recovery/final_closure_v2/README.md",
+    "night/scripts/**",
+    "night/config/**"
+  ],
+  "exclusions": [
+    "20 scientific batch source roots: each has its own full manifest",
+    "night results/progress/navigation/log/status and mutable pointer files",
+    "original failed final_closure and all recovery OUT runtime/log/status/journal/ready artifacts",
+    "source_manifest itself to avoid self reference"
+  ]
+}

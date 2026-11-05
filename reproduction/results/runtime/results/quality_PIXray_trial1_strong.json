@@ -1,0 +1,25 @@
+{
+  "case": "PIXray",
+  "trial": 1,
+  "method": "strong",
+  "proposals": 88775,
+  "retained": 88775,
+  "images": 4644,
+  "catalogue_classes": 15,
+  "stages_ns": {
+    "three_T_availability_models_GPU_and_CPU_sigmoid": 255267575,
+    "three_E_visual_clean_models_GPU": 102928425,
+    "ensemble_geometric_mix_fixed_router_sqrt_score_Gaussian_serialization": 5592437827,
+    "total": 5952922110
+  },
+  "memory": {
+    "peak_process_RSS_bytes": 1576067072,
+    "cuda_allocated_bytes": 33651200,
+    "cuda_reserved_bytes": 58720256,
+    "peak_cuda_allocated_bytes": 37182976,
+    "peak_cuda_reserved_bytes": 58720256
+  },
+  "prediction_content_sha256": "ae0e63cb7af924c5a9660657a5824cdcb5082703324066932cb004ad716b1355",
+  "input_load_seconds_excluded": 0.09209070401266217,
+  "model_load_seconds_excluded": 1.568929499015212
+}

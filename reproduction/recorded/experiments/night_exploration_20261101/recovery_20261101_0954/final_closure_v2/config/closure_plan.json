@@ -1,0 +1,254 @@
+{
+  "status": "RECOVERY_V2_DESIGN_READY_NOT_STARTED",
+  "mode": "PREPARED_NOT_STARTED",
+  "created_utc": "2026-11-01T01:59:53.755289+00:00",
+  "python": "/mnt/data/yxy/envs/gdino_cu118_clean/bin/python",
+  "scientific_batches": [
+    "batch_a_quality_mixture",
+    "batch_b_robust_quality",
+    "batch_c_shared_union",
+    "batch_d_bootstrap",
+    "batch_d_candidate_bootstrap",
+    "batch_e_affine_robustness",
+    "batch_f_seed_stability",
+    "batch_g_constant_quality",
+    "batch_h_multisource_material",
+    "batch_i_relative_material",
+    "batch_j_fresh_material_quality",
+    "batch_k_multisource_quality",
+    "batch_l_missing_material_fallback",
+    "batch_m_material_residual",
+    "batch_n_supported_material_quality",
+    "batch_o_balanced_quality",
+    "batch_p_supported_rank_bootstrap",
+    "batch_q_supported_rank_seed_stability",
+    "batch_r_full_pipeline_repeats",
+    "batch_s_fixed_quality_cost"
+  ],
+  "seal_batches": [
+    "batch_d_bootstrap",
+    "batch_d_candidate_bootstrap",
+    "batch_p_supported_rank_bootstrap"
+  ],
+  "statistics_and_cost_or_failed_gate_batches": [
+    "batch_d_bootstrap",
+    "batch_d_candidate_bootstrap",
+    "batch_p_supported_rank_bootstrap",
+    "batch_s_fixed_quality_cost",
+    "batch_h_multisource_material",
+    "batch_j_fresh_material_quality"
+  ],
+  "poll_seconds": 30,
+  "stability_seconds": 15,
+  "wait_conditions": [
+    {
+      "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_d_bootstrap/automation/status.json",
+      "equals": "COMPLETE_BASELINE_SIX_B2000",
+      "owner_role": "D_baseline_actor",
+      "read_only_after_owner_exit": false
+    },
+    {
+      "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_d_candidate_bootstrap/automation/status.json",
+      "equals": "COMPLETE_PAIRED_SIX_B2000",
+      "owner_role": "D_candidate_actor",
+      "read_only_after_owner_exit": false
+    },
+    {
+      "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_p_supported_rank_bootstrap/automation/status.json",
+      "equals": "COMPLETE_PAIRED_SIX_B2000",
+      "owner_role": "P_actor",
+      "read_only_after_owner_exit": false
+    },
+    {
+      "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_d_candidate_bootstrap/paired_completion.json",
+      "equals": "COMPLETE_PAIRED_SIX_B2000",
+      "owner_role": "D_candidate_actor",
+      "read_only_after_owner_exit": true
+    },
+    {
+      "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_p_supported_rank_bootstrap/paired_completion.json",
+      "equals": "COMPLETE_PAIRED_SIX_B2000",
+      "owner_role": "P_actor",
+      "read_only_after_owner_exit": true
+    },
+    {
+      "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/verification/d_peer/final_review.json",
+      "equals": "PASS_INDEPENDENT_D_STATISTICAL_PEER_REVIEW",
+      "fields_equal": {
+        "STOP_all_D_peer_writes": true
+      },
+      "owner_role": "D_peer",
+      "read_only_after_owner_exit": true
+    },
+    {
+      "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_p_supported_rank_bootstrap/verification/peer_final_paired_source_chain_review.json",
+      "equals": "PASS_SECOND_INDEPENDENT_P_PAIRED_ARRAYS_MANUAL_QUANTILES_SOURCE_RESOURCE_REVIEW",
+      "fields_equal": {
+        "STOP": true
+      },
+      "owner_role": "P_peer",
+      "read_only_after_owner_exit": true
+    }
+  ],
+  "seal_required_reviews": [
+    {
+      "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/verification/d_peer/final_review.json",
+      "equals": "PASS_INDEPENDENT_D_STATISTICAL_PEER_REVIEW"
+    },
+    {
+      "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_p_supported_rank_bootstrap/verification/peer_final_paired_source_chain_review.json",
+      "equals": "PASS_SECOND_INDEPENDENT_P_PAIRED_ARRAYS_MANUAL_QUANTILES_SOURCE_RESOURCE_REVIEW"
+    },
+    {
+      "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/verification/completed_bootstrap_review.json",
+      "equals": "PASS_INDEPENDENT_COMPLETED_PAIRED_BOOTSTRAP_REVIEW"
+    },
+    {
+      "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/verification/completed_supported_rank_bootstrap_review.json",
+      "equals": "PASS_INDEPENDENT_COMPLETED_N_POSTHOC_PAIRED_BOOTSTRAP_REVIEW"
+    }
+  ],
+  "root_commands": {
+    "review_D": {
+      "source": {
+        "path": "/mnt/data/yxy/program/RAXO/experiments/night_exploration_20261101/scripts/review_completed_bootstrap.py",
+        "bytes": 14739,
+        "sha256": "429568079c699e781079db58bcd80a9fbbc50f0f8fea84eb4aff0127b6a73f24"
+      },
+      "arguments": [],
+      "outputs": [
+        {
+          "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/verification/completed_bootstrap_review.json",
+          "equals": "PASS_INDEPENDENT_COMPLETED_PAIRED_BOOTSTRAP_REVIEW"
+        }
+      ],
+      "must_not_exist_before": [
+        "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/verification/completed_bootstrap_review.json"
+      ]
+    },
+    "review_P": {
+      "source": {
+        "path": "/mnt/data/yxy/program/RAXO/experiments/night_exploration_20261101/scripts/review_completed_supported_rank_bootstrap.py",
+        "bytes": 17541,
+        "sha256": "406be724ceac52be0ea0a3c393f4617950ebf544ede2bfc115d29b8e5814be76"
+      },
+      "arguments": [],
+      "outputs": [
+        {
+          "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/verification/completed_supported_rank_bootstrap_review.json",
+          "equals": "PASS_INDEPENDENT_COMPLETED_N_POSTHOC_PAIRED_BOOTSTRAP_REVIEW"
+        }
+      ],
+      "must_not_exist_before": [
+        "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/verification/completed_supported_rank_bootstrap_review.json"
+      ]
+    },
+    "audit_new": {
+      "source": {
+        "path": "/mnt/data/yxy/program/RAXO/experiments/night_exploration_20261101/scripts/verify_sealed_payloads.py",
+        "bytes": 3963,
+        "sha256": "5531566af8f5d1b831ff83bcc1cac0c1d1b449323d863e660791f1e14b9671f1"
+      },
+      "arguments": [
+        "--new-only"
+      ],
+      "outputs": [
+        {
+          "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/verification/sealed_payload_hash_audit.json",
+          "equals": "PASS_SEALED_PAYLOAD_SHA_MEMBERSHIP_SNAPSHOT"
+        }
+      ],
+      "must_not_exist_before": []
+    },
+    "protect_after": {
+      "source": {
+        "path": "/mnt/data/yxy/program/RAXO/experiments/night_exploration_20261101/scripts/protect_sources.py",
+        "bytes": 3160,
+        "sha256": "c864cdb460ce13a70a9947d4965f280998a33c88dfb62e1334bb023c3ed025a7"
+      },
+      "arguments": [
+        "--after"
+      ],
+      "outputs": [
+        {
+          "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/verification/protected_sources_after.json",
+          "equals": "PASS_PROTECTED_SOURCES_AFTER"
+        }
+      ],
+      "must_not_exist_before": [
+        "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/verification/protected_sources_after.json"
+      ]
+    },
+    "final_metadata": {
+      "source": {
+        "path": "/mnt/data/yxy/program/RAXO/experiments/night_exploration_20261101/scripts/verify_sealed_payloads.py",
+        "bytes": 3963,
+        "sha256": "5531566af8f5d1b831ff83bcc1cac0c1d1b449323d863e660791f1e14b9671f1"
+      },
+      "arguments": [
+        "--final-metadata"
+      ],
+      "outputs": [
+        {
+          "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/verification/sealed_payload_final_immutability.json",
+          "equals": "PASS_ALL_SEALED_PAYLOADS_UNCHANGED_AFTER_FULL_SHA_AUDIT"
+        }
+      ],
+      "must_not_exist_before": [
+        "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/verification/sealed_payload_final_immutability.json"
+      ]
+    }
+  },
+  "expected_scientific_budget": {
+    "new_trainings": 74,
+    "new_GPU_inferences": 488,
+    "new_three_seed_means": 152,
+    "actual_new_native_AP": 553,
+    "strict_reused_AP": 51,
+    "logical_AP": 604
+  },
+  "additional_writer_script_markers": [
+    "review_d_statistics.py",
+    "review_paired_source_chain.py",
+    "seal_batch_s.py"
+  ],
+  "global_manifest_exclusions": {
+    "self_reference": [
+      "recovery_20261101_0954/final_closure_v2/global_manifest.json"
+    ],
+    "dynamic_finalizer": [
+      "recovery_20261101_0954/final_closure_v2/automation/**",
+      "recovery_20261101_0954/final_closure_v2/logs/**",
+      "recovery_20261101_0954/final_closure_v2/pointer_backups/**",
+      "recovery_20261101_0954/final_closure_v2/completion.json",
+      "recovery_20261101_0954/final_closure_v2/root_ready.json",
+      "recovery_20261101_0954/final_closure_v2/commit_prepared/**",
+      "recovery_20261101_0954/final_closure_v2/pointer_commit_intent.json",
+      "recovery_20261101_0954/final_closure_v2/pointer_rollback.json",
+      "recovery_20261101_0954/final_closure_v2/failed_attempts/**"
+    ],
+    "mutable_pointers": [
+      "experiments/LATEST_EXPERIMENT.json",
+      "experiments/NIGHT_RUNNING.json"
+    ],
+    "mutable_navigation": [
+      "night/progress.json",
+      "night/进度与结果.md",
+      "night/navigation/**"
+    ],
+    "scientific_root_files_excluded": [],
+    "recovery_runtime": [
+      "recovery_20261101_0954/automation/**",
+      "recovery_20261101_0954/logs/**"
+    ]
+  },
+  "supersedes_failed_closure_without_overwriting": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/final_closure",
+  "recovery_execution_receipt_REQUIRED_IN_READY": true,
+  "recovery_contract": {
+    "path": "/mnt/data/yxy/program/RAXO/experiments/night_exploration_20261101/recovery_20261101_0954/final_closure_v2/config/recovery_contract.json",
+    "bytes": 3223,
+    "sha256": "9befd8540d12a4c3699e483b9218521e230cb68e37c144bc69667b66dcead001"
+  },
+  "accepted_unique_formal_rows_final": 36000,
+  "actual_replay_attempt_count_exact_unknown_after_interruption": true
+}

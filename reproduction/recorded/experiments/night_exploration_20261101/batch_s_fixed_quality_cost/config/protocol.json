@@ -1,0 +1,936 @@
+{
+  "study_id": "S_fixed_cached_feature_quality_head_cost",
+  "status": "FROZEN_BEFORE_ANY_S_WARMUP_OR_MEASURED_TRIAL",
+  "created_utc": "2026-10-31T19:50:05.298658+00:00",
+  "purpose": "Measure existing fixed E3/N6/O9 head and combination costs without changing any method, parameter, training or prediction.",
+  "source_O_protocol": {
+    "path": "/mnt/data/yxy/program/RAXO/experiments/night_exploration_20261101/batch_o_balanced_quality/config/protocol.json",
+    "bytes": 48447,
+    "sha256": "eb316d97bdcb4035a988d7b5350073049db033a034d7988d92dbe2ab92bb2937"
+  },
+  "source_O_selection": {
+    "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_o_balanced_quality/parameters/selected_parameters.json",
+    "bytes": 13749,
+    "sha256": "9dfe63be5449e9e9ef942031294432b59bee7c15061c752b8c3f35b754d16ba8"
+  },
+  "source_O_composition": {
+    "path": "/mnt/data/yxy/program/RAXO/experiments/night_exploration_20261101/batch_o_balanced_quality/src/balanced_endpoint.py",
+    "bytes": 19565,
+    "sha256": "25417ac156c591b3a82019384424bf38220c67a8e6a9f34d534e1184dd555a7b"
+  },
+  "composition_copy": {
+    "path": "/mnt/data/yxy/program/RAXO/experiments/night_exploration_20261101/batch_s_fixed_quality_cost/src/composition.py",
+    "bytes": 2014,
+    "sha256": "a837b8aa2ce53c48fed23f1c77423d72b9c9f1170bcb6a3090979f8fda1f13ba"
+  },
+  "composition_functions": [
+    "direct",
+    "residual",
+    "compose"
+  ],
+  "components": {
+    "E": {
+      "batch": "batch_e_affine_robustness",
+      "variant": "visual_clean",
+      "source": {
+        "path": "/mnt/data/yxy/program/RAXO/experiments/night_exploration_20261101/batch_e_affine_robustness/src/affine_model.py",
+        "bytes": 13071,
+        "sha256": "ca07ef44c011492c185d5c397c18ee967842a8d6cdc019f5792d9be6a7019b45"
+      },
+      "protocol": {
+        "path": "/mnt/data/yxy/program/RAXO/experiments/night_exploration_20261101/batch_e_affine_robustness/config/protocol.json",
+        "bytes": 13906,
+        "sha256": "e5be43a129dea7e5993f89d4135364e0793a5c4f80a3ff9d3d07cd7c98e48cfb"
+      },
+      "sigmoid": "GPUFloat32 sigmoid then CPU",
+      "outer_proposal_batch": 8192,
+      "inner_forward_batch": 16384,
+      "checkpoints": [
+        {
+          "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_e_affine_robustness/models/visual_clean/seed17/model.pt",
+          "bytes": 14098,
+          "sha256": "f4cf3c8dd4fc2323f3c2144e84878fadf78652540b4a6357abb038fecd1e29df"
+        },
+        {
+          "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_e_affine_robustness/models/visual_clean/seed29/model.pt",
+          "bytes": 14098,
+          "sha256": "89c6d46bdd761c76d81dd41309fa91d27be00cf7cb137122ba4a7c911c487048"
+        },
+        {
+          "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_e_affine_robustness/models/visual_clean/seed43/model.pt",
+          "bytes": 14098,
+          "sha256": "1cc9369aea165e4877d65696f04d2b9e2f8254066b482eb663ca606906a0f355"
+        }
+      ]
+    },
+    "N": {
+      "batch": "batch_n_supported_material_quality",
+      "variant": "material",
+      "source": {
+        "path": "/mnt/data/yxy/program/RAXO/experiments/night_exploration_20261101/batch_n_supported_material_quality/src/quality_model.py",
+        "bytes": 13365,
+        "sha256": "14fb85e5b70398d215d033482c9a9c8603dc0c95aabbb87bd9fb531e66b21da0"
+      },
+      "protocol": {
+        "path": "/mnt/data/yxy/program/RAXO/experiments/night_exploration_20261101/batch_n_supported_material_quality/config/protocol.json",
+        "bytes": 1750004,
+        "sha256": "94470fb3917d5fc51e98f0a051f2dd3a392cbb8f8c51962befabe05f3c6408dd"
+      },
+      "sigmoid": "GPUFloat32 logits then CPUFloat32 sigmoid",
+      "outer_proposal_batch": 8192,
+      "inner_forward_batch": 8192,
+      "checkpoints": [
+        {
+          "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_n_supported_material_quality/models/material/seed17/model.pt",
+          "bytes": 338834,
+          "sha256": "2c9b35f044564ae61ba72835f97acbc218e8824231ae522993da968ecfb07eaf"
+        },
+        {
+          "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_n_supported_material_quality/models/material/seed29/model.pt",
+          "bytes": 338834,
+          "sha256": "1c0cd3d33d136284aeb46c134a12353b4b1d77baef81318e2e89476591a892d8"
+        },
+        {
+          "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_n_supported_material_quality/models/material/seed43/model.pt",
+          "bytes": 338834,
+          "sha256": "fe3e7548bbd6c993bca283d825cdac454435cc0ebddb3d01fecf876380c1ee4c"
+        }
+      ]
+    },
+    "K": {
+      "batch": "batch_k_multisource_quality",
+      "variant": "geometry",
+      "source": {
+        "path": "/mnt/data/yxy/program/RAXO/experiments/night_exploration_20261101/batch_k_multisource_quality/src/quality_model.py",
+        "bytes": 13332,
+        "sha256": "8ab49e02720b8dcb654b70dc287260c7c52d88d0fa0f7e7c373b37704f33f1bf"
+      },
+      "protocol": {
+        "path": "/mnt/data/yxy/program/RAXO/experiments/night_exploration_20261101/batch_k_multisource_quality/config/protocol.json",
+        "bytes": 1859401,
+        "sha256": "86f3a155818607ba8447443ba99cc0f7dfbc09aef1888f496cd2ed32f32a112f"
+      },
+      "sigmoid": "GPUFloat32 logits then CPUFloat32 sigmoid",
+      "outer_proposal_batch": 8192,
+      "inner_forward_batch": 8192,
+      "checkpoints": [
+        {
+          "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_k_multisource_quality/models/geometry/seed17/model.pt",
+          "bytes": 174674,
+          "sha256": "e4bb272cf7d4dfc79209663952ef47804f48912fe335bf7f1a1fc01eb8cb3259"
+        },
+        {
+          "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_k_multisource_quality/models/geometry/seed29/model.pt",
+          "bytes": 174674,
+          "sha256": "14b59837e1c6121134f3ce648dcc7ae4af8b097c96dd21402b44bd47805e3e9c"
+        },
+        {
+          "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_k_multisource_quality/models/geometry/seed43/model.pt",
+          "bytes": 174674,
+          "sha256": "ee8c04e09b6e3d7993a887ef3a103654dc16ff6e5c72ef20c7e350db765c67ef"
+        }
+      ]
+    }
+  },
+  "cases": {
+    "DET": {
+      "candidate_row_key_sha256": "7ff49f0652908dcff396a5f26485d5fb8843d242f459693d93aceb3cca4e4f18",
+      "valid": {
+        "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_c_shared_union/features/DET/candidate_valid.npy",
+        "bytes": 117766,
+        "sha256": "89875f7a1a69256ad5ca79f4ba662b5fab95db98b4d96675ce7021ce1510c3f4"
+      },
+      "features": {
+        "E": {
+          "manifest": {
+            "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_c_shared_union/features/DET/feature_manifest.json",
+            "bytes": 76176,
+            "sha256": "9c5b0a79742638567ec5c03a5e33caedd9070056e88e65ab0225619b1f35beda"
+          },
+          "array": {
+            "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_c_shared_union/features/DET/candidate_features.npy",
+            "bytes": 7058408,
+            "sha256": "66a9aa5c001b6b24d74dd5b07d5d7b242d2e333c3b89d92b81cce099359e3457"
+          }
+        },
+        "N": {
+          "manifest": {
+            "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_n_supported_material_quality/features/DET/feature_manifest.json",
+            "bytes": 39186,
+            "sha256": "b65a49f910d3859f9323c0db88544fafb0dcd86e7e035a12e0bebda75cd68a90"
+          },
+          "array": {
+            "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_n_supported_material_quality/features/DET/candidate_features.npy",
+            "bytes": 6117304,
+            "sha256": "b93399b4a7f7c32f59146b3c300509651f5b16b0d9bc2f2a2c9016cda439641a"
+          }
+        },
+        "K": {
+          "manifest": {
+            "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_k_multisource_quality/features/DET/feature_manifest.json",
+            "bytes": 37458,
+            "sha256": "186eb77756f71de6ea25df81f4cf69a75e3cfe15f4f0ff45b542f65aa76ca439"
+          },
+          "array": {
+            "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_k_multisource_quality/features/DET/candidate_features.npy",
+            "bytes": 6117304,
+            "sha256": "b93399b4a7f7c32f59146b3c300509651f5b16b0d9bc2f2a2c9016cda439641a"
+          }
+        }
+      },
+      "reference_ensembles": {
+        "E": {
+          "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_e_affine_robustness/ensembles/DET/visual_clean/all3/quality_scores.npz",
+          "bytes": 290748,
+          "sha256": "e45a1081ab94e39c2d7eeb22e7a461765a47f5f776189b80328eb5a71410ae30"
+        },
+        "N": {
+          "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_n_supported_material_quality/ensembles/DET/material/all3/quality_scores.npz",
+          "bytes": 295856,
+          "sha256": "f9c2dd9dbfc70a8de9d0eb4535869a069bbe93f0007fabc0b81d5bb997bf2f5c"
+        },
+        "K": {
+          "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_k_multisource_quality/ensembles/DET/geometry/all3/quality_scores.npz",
+          "bytes": 260061,
+          "sha256": "277556413c1e536fd3aa69e019f1707187149a3d4f074cd7c8f0a903ba3a3474"
+        }
+      },
+      "reference_seed_scores": {
+        "E": [
+          {
+            "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_e_affine_robustness/inference/DET/visual_clean/seed17/quality_scores.npz",
+            "bytes": 291048,
+            "sha256": "61127d2e84ec26d79feca29c5c022ac4642fbdd634bb4febdb7b1cdaa82a4438"
+          },
+          {
+            "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_e_affine_robustness/inference/DET/visual_clean/seed29/quality_scores.npz",
+            "bytes": 290953,
+            "sha256": "5722fcf94fabd3844b4e6129b642c86d284a9e3b2ba0e000b883b77ada5be2f8"
+          },
+          {
+            "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_e_affine_robustness/inference/DET/visual_clean/seed43/quality_scores.npz",
+            "bytes": 290483,
+            "sha256": "a383640c1db1a758d3f6e66b97ec71656a5b5b893a399da7f1b29b1a5198f8e4"
+          }
+        ],
+        "N": [
+          {
+            "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_n_supported_material_quality/inference/DET/material/seed17/quality_scores.npz",
+            "bytes": 294787,
+            "sha256": "c5b2c24951fa153237e73c5b1068864059cadb80ff414d9a6eecdbcc4083ec70"
+          },
+          {
+            "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_n_supported_material_quality/inference/DET/material/seed29/quality_scores.npz",
+            "bytes": 296164,
+            "sha256": "ed36b27349e85b7e8df72876d4a401a78f79dd964705d38ed115e41bf3351fb9"
+          },
+          {
+            "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_n_supported_material_quality/inference/DET/material/seed43/quality_scores.npz",
+            "bytes": 298056,
+            "sha256": "249251af9672ff3f4750d5e22f82462e6fdbda26945f55bf59d39fabfa89016d"
+          }
+        ],
+        "K": [
+          {
+            "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_k_multisource_quality/inference/DET/geometry/seed17/quality_scores.npz",
+            "bytes": 259755,
+            "sha256": "733ee85b435d1e5809201ab4cf3cadc1856dd64689e2c42a1f81c7c433e4ac93"
+          },
+          {
+            "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_k_multisource_quality/inference/DET/geometry/seed29/quality_scores.npz",
+            "bytes": 260390,
+            "sha256": "4a7a6bb0462741ec9887043a4f8095dc892a8462a540793bd4014d9b5013c8b6"
+          },
+          {
+            "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_k_multisource_quality/inference/DET/geometry/seed43/quality_scores.npz",
+            "bytes": 260389,
+            "sha256": "ac4952f69336551009532fac17a5895c051385a7fe6a6e261a4992375033da3e"
+          }
+        ]
+      },
+      "reference_combined_hash": {
+        "N6": "996f1989fbfadf29663b175574a28db038bc99680c67f2266f1bc86fe9134ebd",
+        "O9": "a6e9e870b18dd1ed48b06f312d6e4bd73e2676f5542b69c8fa8255178da38497"
+      }
+    },
+    "CLCXray_test": {
+      "candidate_row_key_sha256": "deaceb8ec82e92a96d44e0684ddb4309f1b805c2b4740a5022ac9b9f1cdd951a",
+      "valid": {
+        "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_c_shared_union/features/CLCXray_test/candidate_valid.npy",
+        "bytes": 22550,
+        "sha256": "25ac211256c53fc1a014434d3f11c470a3fdcd5acb7691ca59b40e87468555fa"
+      },
+      "features": {
+        "E": {
+          "manifest": {
+            "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_c_shared_union/features/CLCXray_test/feature_manifest.json",
+            "bytes": 49344,
+            "sha256": "046fa6e5618760abef75f3004c11d8fcd46f4d4d059f93aeabaa1d4101780343"
+          },
+          "array": {
+            "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_c_shared_union/features/CLCXray_test/candidate_features.npy",
+            "bytes": 1345448,
+            "sha256": "5b3f90cbfd22a4084adef2df382a6f8d4f522f78b8d02c293bac69434d909184"
+          }
+        },
+        "N": {
+          "manifest": {
+            "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_n_supported_material_quality/features/CLCXray_test/feature_manifest.json",
+            "bytes": 7948,
+            "sha256": "73a7a5158794f1f0ef2b46b9355b7d2793eea4c18680dd025009b7f9aa3b1e91"
+          },
+          "array": {
+            "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_n_supported_material_quality/features/CLCXray_test/candidate_features.npy",
+            "bytes": 1166072,
+            "sha256": "cb1a41ad711a6d7f9d47e7be2b205e583fd2d35fa3a50bd9cc4eb6d71a71c248"
+          }
+        },
+        "K": {
+          "manifest": {
+            "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_k_multisource_quality/features/CLCXray_test/feature_manifest.json",
+            "bytes": 6177,
+            "sha256": "d24e6ba6c17161d077bf43d60714e58e1b42039e7fff82e5071ede4089074d2c"
+          },
+          "array": {
+            "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_k_multisource_quality/features/CLCXray_test/candidate_features.npy",
+            "bytes": 1166072,
+            "sha256": "cb1a41ad711a6d7f9d47e7be2b205e583fd2d35fa3a50bd9cc4eb6d71a71c248"
+          }
+        }
+      },
+      "reference_ensembles": {
+        "E": {
+          "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_e_affine_robustness/ensembles/CLCXray_test/visual_clean/all3/quality_scores.npz",
+          "bytes": 49076,
+          "sha256": "2a4089e20e17eba8080ac07ce6c4baadde52e592839383674c600d0f8a72297c"
+        },
+        "N": {
+          "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_n_supported_material_quality/ensembles/CLCXray_test/material/all3/quality_scores.npz",
+          "bytes": 49489,
+          "sha256": "d38bf5e624e9d51654172271de6047ca4b7544d8cafa634e2692b35ca72be98d"
+        },
+        "K": {
+          "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_k_multisource_quality/ensembles/CLCXray_test/geometry/all3/quality_scores.npz",
+          "bytes": 47880,
+          "sha256": "e727db52122dcebe681faed892a3b25765c26073f9866e5ea7d4eec22162576d"
+        }
+      },
+      "reference_seed_scores": {
+        "E": [
+          {
+            "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_e_affine_robustness/inference/CLCXray_test/visual_clean/seed17/quality_scores.npz",
+            "bytes": 49010,
+            "sha256": "2a18b7db22b2e5cea8c39eee6987c0878caf6f02870279bac9e08b93ff7a20d6"
+          },
+          {
+            "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_e_affine_robustness/inference/CLCXray_test/visual_clean/seed29/quality_scores.npz",
+            "bytes": 49045,
+            "sha256": "de71086488e60f0b25d95b615db0bd2767702cf2476980fec51a59166d9903ad"
+          },
+          {
+            "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_e_affine_robustness/inference/CLCXray_test/visual_clean/seed43/quality_scores.npz",
+            "bytes": 49125,
+            "sha256": "060660bb216ba78ebd1402af7840074048b88ec8ac9b49ec26d3f13e669eb798"
+          }
+        ],
+        "N": [
+          {
+            "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_n_supported_material_quality/inference/CLCXray_test/material/seed17/quality_scores.npz",
+            "bytes": 49426,
+            "sha256": "6a1a9733e7d5ec2fd9c39f214466d936eacc3d80b3ea0f9672923b153d628435"
+          },
+          {
+            "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_n_supported_material_quality/inference/CLCXray_test/material/seed29/quality_scores.npz",
+            "bytes": 49391,
+            "sha256": "ffdf7d311d61bbf345c8e922865657cb3604c753982dc43333fe5db185e5edd9"
+          },
+          {
+            "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_n_supported_material_quality/inference/CLCXray_test/material/seed43/quality_scores.npz",
+            "bytes": 49745,
+            "sha256": "0bb0e6e3fb78681988cb486ee59b81d877f47e3b26aea4ec87e04cca06535579"
+          }
+        ],
+        "K": [
+          {
+            "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_k_multisource_quality/inference/CLCXray_test/geometry/seed17/quality_scores.npz",
+            "bytes": 47855,
+            "sha256": "e191aadc5cf09d1184376505a3615d5122495c242953c2319279c09997723eb8"
+          },
+          {
+            "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_k_multisource_quality/inference/CLCXray_test/geometry/seed29/quality_scores.npz",
+            "bytes": 47928,
+            "sha256": "271367abca6e591102928444aebcc284f1f349477a432ee589040850d937300a"
+          },
+          {
+            "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_k_multisource_quality/inference/CLCXray_test/geometry/seed43/quality_scores.npz",
+            "bytes": 47851,
+            "sha256": "5f0fb189616e866053a7bdef412568790528fa626a1376ba7065020e5cebd77f"
+          }
+        ]
+      },
+      "reference_combined_hash": {
+        "N6": "64885e3fbeed20fa89a092df4ae433bfd1c5f83d41f2ff6076f11030ecf9b305",
+        "O9": "00c8a4e30c779c900fd24f9315d721e561befed60220ae9686c6776e27af2d03"
+      }
+    },
+    "PIXray": {
+      "candidate_row_key_sha256": "21ee533e7cf6bdbdadc7e7e4563a089a088bd1b7cf5b167ad36cd2925dc87304",
+      "valid": {
+        "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_c_shared_union/features/PIXray/candidate_valid.npy",
+        "bytes": 177678,
+        "sha256": "eb73563d83d75cf041601f7b6abc70d1f9e649e8167b7438c5d4577470c33ba4"
+      },
+      "features": {
+        "E": {
+          "manifest": {
+            "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_c_shared_union/features/PIXray/feature_manifest.json",
+            "bytes": 167784,
+            "sha256": "99fbba15e49d4edab4cb86a0d5f636024733215b2ad1089c378e74236b70c32e"
+          },
+          "array": {
+            "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_c_shared_union/features/PIXray/candidate_features.npy",
+            "bytes": 10653128,
+            "sha256": "bf3b9bd171894a02c2a1745e8e754f8a980db82a8a46548200ed8b4c6d40a23a"
+          }
+        },
+        "N": {
+          "manifest": {
+            "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_n_supported_material_quality/features/PIXray/feature_manifest.json",
+            "bytes": 8162,
+            "sha256": "67e29427f5633a5ea8f6db96d746cb7fd0ab4d223f9778720b8b2644526261fa"
+          },
+          "array": {
+            "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_n_supported_material_quality/features/PIXray/candidate_features.npy",
+            "bytes": 9232728,
+            "sha256": "25395f00ba41fbcaee7e5fea1cc1c0b6992c66974d9fb63695770e8f987c0831"
+          }
+        },
+        "K": {
+          "manifest": {
+            "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_k_multisource_quality/features/PIXray/feature_manifest.json",
+            "bytes": 6419,
+            "sha256": "1a796c4d9781676fb5d9dc9a584134c0c81cb374e7398486451d0d57f12cf6e8"
+          },
+          "array": {
+            "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_k_multisource_quality/features/PIXray/candidate_features.npy",
+            "bytes": 9232728,
+            "sha256": "87b33aca48cd6bdd6baa17737f12054aabb705d05f9bca7296234635c54d2c38"
+          }
+        }
+      },
+      "reference_ensembles": {
+        "E": {
+          "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_e_affine_robustness/ensembles/PIXray/visual_clean/all3/quality_scores.npz",
+          "bytes": 375638,
+          "sha256": "effab2cf220ddc91f69df910f585d961098eb05b369d1e003d04a4b068a82929"
+        },
+        "N": {
+          "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_n_supported_material_quality/ensembles/PIXray/material/all3/quality_scores.npz",
+          "bytes": 379664,
+          "sha256": "bceb5250ff15a47efbe57471217680763d8c1f6e8389185bdf35f8cb2caddb3d"
+        },
+        "K": {
+          "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_k_multisource_quality/ensembles/PIXray/geometry/all3/quality_scores.npz",
+          "bytes": 373573,
+          "sha256": "8cffba18679a4dce6db46d873bedbb2bcbdde8f243412a19530f4fb75d2444ab"
+        }
+      },
+      "reference_seed_scores": {
+        "E": [
+          {
+            "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_e_affine_robustness/inference/PIXray/visual_clean/seed17/quality_scores.npz",
+            "bytes": 375666,
+            "sha256": "8d80df33c70c0b47ceeffcc54172fd40ea9562ff470327a65cfc72923cb402ba"
+          },
+          {
+            "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_e_affine_robustness/inference/PIXray/visual_clean/seed29/quality_scores.npz",
+            "bytes": 375441,
+            "sha256": "e8f65da59be9ace894ba701a16c05b1f3df17c8e187f2d162213d1caea1855c1"
+          },
+          {
+            "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_e_affine_robustness/inference/PIXray/visual_clean/seed43/quality_scores.npz",
+            "bytes": 375630,
+            "sha256": "b51aa5b34ac36bdb9d8a920a7f199b0895551cc12247ffbf7212b2d883d81a51"
+          }
+        ],
+        "N": [
+          {
+            "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_n_supported_material_quality/inference/PIXray/material/seed17/quality_scores.npz",
+            "bytes": 377914,
+            "sha256": "a105c236403225de6706d60ef8467bc5865d29db64142ba2e1d4adfcd6a0cb25"
+          },
+          {
+            "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_n_supported_material_quality/inference/PIXray/material/seed29/quality_scores.npz",
+            "bytes": 381402,
+            "sha256": "a223940e55a4b29af3318f1b0fe72e5fb935c5610594e2dd67a0ff1aad9a85f6"
+          },
+          {
+            "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_n_supported_material_quality/inference/PIXray/material/seed43/quality_scores.npz",
+            "bytes": 381792,
+            "sha256": "94478ecf294f9eef1ab4e2e474e11ec0829ce4f7b90080118a37034af543c65a"
+          }
+        ],
+        "K": [
+          {
+            "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_k_multisource_quality/inference/PIXray/geometry/seed17/quality_scores.npz",
+            "bytes": 373102,
+            "sha256": "4d360e3d529dce17a458f902ecbd58378e0abe1269b33b3ee0c9a9cfa7706c88"
+          },
+          {
+            "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_k_multisource_quality/inference/PIXray/geometry/seed29/quality_scores.npz",
+            "bytes": 374337,
+            "sha256": "e293c9d6596170da3b45d86fe69b99415d2b415e93a82ae9a836827472f45cc9"
+          },
+          {
+            "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_k_multisource_quality/inference/PIXray/geometry/seed43/quality_scores.npz",
+            "bytes": 373764,
+            "sha256": "7f8bc93a0acfd67b02525cbf6bb06f1f0311307aa43b93b7673658bd12e70c66"
+          }
+        ]
+      },
+      "reference_combined_hash": {
+        "N6": "ae7c260a585dd4da920ef245244ac128aac942e7afe964f76f4a6c7441e07274",
+        "O9": "234ae4f31de8c461c73c0370d792352180c9732e411bce9cb3e2f1f51f202827"
+      }
+    },
+    "PIDray": {
+      "candidate_row_key_sha256": "9a17e2001773191cdaa678c4f3fc20421c21ab35dad5309d4d846c06ac9cb827",
+      "valid": {
+        "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_c_shared_union/features/PIDray/candidate_valid.npy",
+        "bytes": 913250,
+        "sha256": "e825852ab89734c3396dbc50f7ef4723924dcfbce73877a92c18595b3acb072d"
+      },
+      "features": {
+        "E": {
+          "manifest": {
+            "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_c_shared_union/features/PIDray/feature_manifest.json",
+            "bytes": 617938,
+            "sha256": "ed96e6812ba3611448a9422e3367d0f5160b1cb27419611b38e66efbc237d4bb"
+          },
+          "array": {
+            "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_c_shared_union/features/PIDray/candidate_features.npy",
+            "bytes": 54787448,
+            "sha256": "b06402e7c7e69f705fe4b002dbaf6d1c148be8bfafb2ffa1724ad43d99498962"
+          }
+        },
+        "N": {
+          "manifest": {
+            "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_n_supported_material_quality/features/PIDray/feature_manifest.json",
+            "bytes": 7848,
+            "sha256": "9dc5ec9dfe102c3cdaf68934235486ed03090369c2e6e0bc56e87e8d1beac8ab"
+          },
+          "array": {
+            "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_n_supported_material_quality/features/PIDray/candidate_features.npy",
+            "bytes": 47482472,
+            "sha256": "ab4a4236d2e75985decb866656b6a12424154856e08c675a24740a8d74d96705"
+          }
+        },
+        "K": {
+          "manifest": {
+            "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_k_multisource_quality/features/PIDray/feature_manifest.json",
+            "bytes": 6103,
+            "sha256": "1f325288d0782c470dfeae3666373038667fdcd1a628301fa438d498799ddfb9"
+          },
+          "array": {
+            "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_k_multisource_quality/features/PIDray/candidate_features.npy",
+            "bytes": 47482472,
+            "sha256": "13691dd0100ae1d2e220367cb4f394980a2c404190ce22c01eca8a929bb4329a"
+          }
+        }
+      },
+      "reference_ensembles": {
+        "E": {
+          "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_e_affine_robustness/ensembles/PIDray/visual_clean/all3/quality_scores.npz",
+          "bytes": 1952821,
+          "sha256": "15ffcdfeb37e0fc0b0f51137fc7dc9ef0c981c9a38e430663f869c114fbeb383"
+        },
+        "N": {
+          "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_n_supported_material_quality/ensembles/PIDray/material/all3/quality_scores.npz",
+          "bytes": 1954940,
+          "sha256": "b266d85150bae8c9cfb5c78105c9abed8cad19158da37678dd478bcd53c1e956"
+        },
+        "K": {
+          "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_k_multisource_quality/ensembles/PIDray/geometry/all3/quality_scores.npz",
+          "bytes": 1925191,
+          "sha256": "988d390b2d2f4e656e49cd50310cf410ae519be38db52146cbbb56f85a94303c"
+        }
+      },
+      "reference_seed_scores": {
+        "E": [
+          {
+            "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_e_affine_robustness/inference/PIDray/visual_clean/seed17/quality_scores.npz",
+            "bytes": 1951489,
+            "sha256": "42512641eb4245eb59263b1805b2a6abe673374dfa1ab4d4384a70df970449fa"
+          },
+          {
+            "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_e_affine_robustness/inference/PIDray/visual_clean/seed29/quality_scores.npz",
+            "bytes": 1952392,
+            "sha256": "a59f3fe3e10dfa7655726199f85386cb8f5de73e1dda4b3e8cee96b47f00d7c5"
+          },
+          {
+            "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_e_affine_robustness/inference/PIDray/visual_clean/seed43/quality_scores.npz",
+            "bytes": 1954319,
+            "sha256": "4d6efc91e69d48b7627c5c5531444c311384d3c455c1911e8bf69a9f7bb2671b"
+          }
+        ],
+        "N": [
+          {
+            "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_n_supported_material_quality/inference/PIDray/material/seed17/quality_scores.npz",
+            "bytes": 1952969,
+            "sha256": "103ac2b358e648ae4bd2d97bb9648d355270fcdd5f5e8c0ef12cc6c5b2bfc723"
+          },
+          {
+            "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_n_supported_material_quality/inference/PIDray/material/seed29/quality_scores.npz",
+            "bytes": 1961002,
+            "sha256": "9487e38b037b2aa45bdf0ed612fbe90d195c501d53d32330b77af10b80ef7430"
+          },
+          {
+            "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_n_supported_material_quality/inference/PIDray/material/seed43/quality_scores.npz",
+            "bytes": 1961932,
+            "sha256": "db20d79bf2610be42fe98fcfc015fa8e6db57c1292b0234633e6e6b72798cd5c"
+          }
+        ],
+        "K": [
+          {
+            "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_k_multisource_quality/inference/PIDray/geometry/seed17/quality_scores.npz",
+            "bytes": 1923327,
+            "sha256": "74b416cb6fb7cb2ed74e6930097ff2ef69b97645c2b85156fa0d758b090440a9"
+          },
+          {
+            "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_k_multisource_quality/inference/PIDray/geometry/seed29/quality_scores.npz",
+            "bytes": 1927910,
+            "sha256": "4f33b5d6417338b60a6c48573ce2992d5425f14311556ced2ad165a03e762e62"
+          },
+          {
+            "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_k_multisource_quality/inference/PIDray/geometry/seed43/quality_scores.npz",
+            "bytes": 1926282,
+            "sha256": "693deb404dff4249d14f529247babd86005522e88af261091dc769f060a59583"
+          }
+        ]
+      },
+      "reference_combined_hash": {
+        "N6": "f8ca35308a84e41b9c8e3ea2e2fe3b471ea7413f34c03fb35776812cb2d339d7",
+        "O9": "4874359b7edc6df19015854f5d3bc7765ae1cb97f149a04ad3b5f7ae7c76eaa8"
+      }
+    },
+    "DvXray": {
+      "candidate_row_key_sha256": "b2db95f75ce88045ca865fac2fac6c4d8995bc46cede406ef121d38d2c9dc7cf",
+      "valid": {
+        "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_c_shared_union/features/DvXray/candidate_valid.npy",
+        "bytes": 387458,
+        "sha256": "1ff5d4654842a002592bf4d31c5cdf7a22e2760284a5adfa303d4818e0578c15"
+      },
+      "features": {
+        "E": {
+          "manifest": {
+            "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_c_shared_union/features/DvXray/feature_manifest.json",
+            "bytes": 312779,
+            "sha256": "0689ac8d203cd0d0db217fb83abd07812993365bee5413fb1f05306ffbaa7f1d"
+          },
+          "array": {
+            "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_c_shared_union/features/DvXray/candidate_features.npy",
+            "bytes": 23239928,
+            "sha256": "7eb35afd9947f203d8948daea396368ba752c947717338971991e0d1e1f9a7b5"
+          }
+        },
+        "N": {
+          "manifest": {
+            "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_n_supported_material_quality/features/DvXray/feature_manifest.json",
+            "bytes": 8169,
+            "sha256": "3b0449d79204a4f886e1b80ddaeac1a2c9e0e1efe781cb67d697e64ece28b236"
+          },
+          "array": {
+            "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_n_supported_material_quality/features/DvXray/candidate_features.npy",
+            "bytes": 20141288,
+            "sha256": "a506f69c6ea699fd9ddf9fc4037b4e71e41c39d8f97dbe344d18c9e36dfe34b5"
+          }
+        },
+        "K": {
+          "manifest": {
+            "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_k_multisource_quality/features/DvXray/feature_manifest.json",
+            "bytes": 6424,
+            "sha256": "f9c80499085af14dc967d635a3d24e4ff2b756a6ffc9b27045f4998c7d6e305d"
+          },
+          "array": {
+            "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_k_multisource_quality/features/DvXray/candidate_features.npy",
+            "bytes": 20141288,
+            "sha256": "f8ebc9c2811deecb491ab11eeeab225d68ed3b9ffdfae0e3cf9c42dd5c296a62"
+          }
+        }
+      },
+      "reference_ensembles": {
+        "E": {
+          "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_e_affine_robustness/ensembles/DvXray/visual_clean/all3/quality_scores.npz",
+          "bytes": 822508,
+          "sha256": "c9db3befd51c8790970c477b10debd7d15e49c2cd7c2d39253edc4704a7ac163"
+        },
+        "N": {
+          "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_n_supported_material_quality/ensembles/DvXray/material/all3/quality_scores.npz",
+          "bytes": 828029,
+          "sha256": "87583aa1cb1275945d64c773e228dc912934ec8afc342b84db6641058bfb4e72"
+        },
+        "K": {
+          "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_k_multisource_quality/ensembles/DvXray/geometry/all3/quality_scores.npz",
+          "bytes": 814294,
+          "sha256": "51ddbf0719592006fd28ede4df9b8d65a1d82d20fae2a35edc99a107eb26c811"
+        }
+      },
+      "reference_seed_scores": {
+        "E": [
+          {
+            "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_e_affine_robustness/inference/DvXray/visual_clean/seed17/quality_scores.npz",
+            "bytes": 822298,
+            "sha256": "90010a47df9ec4795c2f0a423397ffa7fda1957b9b653a56429bffaf9a763172"
+          },
+          {
+            "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_e_affine_robustness/inference/DvXray/visual_clean/seed29/quality_scores.npz",
+            "bytes": 822189,
+            "sha256": "08163aec67a4d5f342312423a6dde43ca98a284d64ad2c1e40c604a104b9f876"
+          },
+          {
+            "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_e_affine_robustness/inference/DvXray/visual_clean/seed43/quality_scores.npz",
+            "bytes": 823335,
+            "sha256": "e0852d56285e8a460f63333a2f3f9e523bfd0468967d98b51baf8ac1b7c37c47"
+          }
+        ],
+        "N": [
+          {
+            "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_n_supported_material_quality/inference/DvXray/material/seed17/quality_scores.npz",
+            "bytes": 826312,
+            "sha256": "3f2e9e2de8b984352369e40c30e1f859fcfa845fb283a0718844934466fbb743"
+          },
+          {
+            "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_n_supported_material_quality/inference/DvXray/material/seed29/quality_scores.npz",
+            "bytes": 832027,
+            "sha256": "a2ac2d62f76c1923c09a6a8b260dff45bc67b66eaf66e9a3e3ec582bb7db9ac6"
+          },
+          {
+            "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_n_supported_material_quality/inference/DvXray/material/seed43/quality_scores.npz",
+            "bytes": 830673,
+            "sha256": "c1b7a09162abcfc26dab695eab109fa182f96daa18be798736e34f03aa8dd7e0"
+          }
+        ],
+        "K": [
+          {
+            "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_k_multisource_quality/inference/DvXray/geometry/seed17/quality_scores.npz",
+            "bytes": 813532,
+            "sha256": "ff30a16de3dd6e88c7a2577157e666624bb03dd79687a9a57d89af69ea8f8080"
+          },
+          {
+            "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_k_multisource_quality/inference/DvXray/geometry/seed29/quality_scores.npz",
+            "bytes": 815111,
+            "sha256": "58995d4ffb61345f29292703b948257391c9e4205b3755c94fb9a2fe18fd0994"
+          },
+          {
+            "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_k_multisource_quality/inference/DvXray/geometry/seed43/quality_scores.npz",
+            "bytes": 815312,
+            "sha256": "6c119765ef37ab79628c9214a0061721ee28398f0e9c3a1d119a8580cc49e78a"
+          }
+        ]
+      },
+      "reference_combined_hash": {
+        "N6": "11392b68d926affb6fd0f3a24a0b8b95a352ff4d0992b0fef2cb99f19a678539",
+        "O9": "ed3a340e38fdbad54a41cb59c85da30c4dce32c5987b853f0e7f02dab985da86"
+      }
+    },
+    "Hi": {
+      "candidate_row_key_sha256": "6087de99f562ad3d3a6bff31e7581b038cba1409098a3f9ddbb9ab614336b23e",
+      "valid": {
+        "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_c_shared_union/features/Hi/candidate_valid.npy",
+        "bytes": 757794,
+        "sha256": "2fd91c9d33908cbcd376c99270a9c8db4a9236d51633fdb0d2fadfea42b05b9f"
+      },
+      "features": {
+        "E": {
+          "manifest": {
+            "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_c_shared_union/features/Hi/feature_manifest.json",
+            "bytes": 308555,
+            "sha256": "cd93c26b17590b8fc875c626dcc1dbf8251adf8fa1857d7f3d34a8bccd6f83bc"
+          },
+          "array": {
+            "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_c_shared_union/features/Hi/candidate_features.npy",
+            "bytes": 45460088,
+            "sha256": "2e1658efb28fec5eda212ccbfe00010e2d48e73dc0c4f9346ff1fd2b5a99f7ab"
+          }
+        },
+        "N": {
+          "manifest": {
+            "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_n_supported_material_quality/features/Hi/feature_manifest.json",
+            "bytes": 7303,
+            "sha256": "fca29b10a1fc3320abd41d0f9e737233d20520ddeaf37cbe95337f760356aedf"
+          },
+          "array": {
+            "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_n_supported_material_quality/features/Hi/candidate_features.npy",
+            "bytes": 39398760,
+            "sha256": "91f507fa46ee7e24b87099b43004e30774e1118182b935be194da2279bd444c9"
+          }
+        },
+        "K": {
+          "manifest": {
+            "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_k_multisource_quality/features/Hi/feature_manifest.json",
+            "bytes": 5578,
+            "sha256": "6b63cea921d44ae116a5910e01ae42d48d38f81b787a0bdfe58c967b33611535"
+          },
+          "array": {
+            "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_k_multisource_quality/features/Hi/candidate_features.npy",
+            "bytes": 39398760,
+            "sha256": "91f507fa46ee7e24b87099b43004e30774e1118182b935be194da2279bd444c9"
+          }
+        }
+      },
+      "reference_ensembles": {
+        "E": {
+          "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_e_affine_robustness/ensembles/Hi/visual_clean/all3/quality_scores.npz",
+          "bytes": 1772985,
+          "sha256": "8e3e3a0cf4549c04f625de1dc348c4f0449bd9888d31a454bcb7e189d6d8c091"
+        },
+        "N": {
+          "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_n_supported_material_quality/ensembles/Hi/material/all3/quality_scores.npz",
+          "bytes": 1786370,
+          "sha256": "7813cffa98d09a8ce2aec2b7e6b0f0ef6e0af482019d369d402cc8bd71100649"
+        },
+        "K": {
+          "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_k_multisource_quality/ensembles/Hi/geometry/all3/quality_scores.npz",
+          "bytes": 1643070,
+          "sha256": "d5fc1c47acb479377d1a9426f1b1537f1ad8b18a76dc2af8910a8ac7325093cc"
+        }
+      },
+      "reference_seed_scores": {
+        "E": [
+          {
+            "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_e_affine_robustness/inference/Hi/visual_clean/seed17/quality_scores.npz",
+            "bytes": 1771542,
+            "sha256": "bdb59b6116c251eeff6ea78f2146c60e817c7de9e70f23a5fa50abc4ed938c9c"
+          },
+          {
+            "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_e_affine_robustness/inference/Hi/visual_clean/seed29/quality_scores.npz",
+            "bytes": 1773589,
+            "sha256": "957f9a04ab99cf1eb75ad6fba20b887228600e30fa0dd7cf06d3a941e87ff98b"
+          },
+          {
+            "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_e_affine_robustness/inference/Hi/visual_clean/seed43/quality_scores.npz",
+            "bytes": 1774680,
+            "sha256": "31983fd25ae124756201e84f3405d27b41599bad0a1a2642de765b252a9a68b2"
+          }
+        ],
+        "N": [
+          {
+            "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_n_supported_material_quality/inference/Hi/material/seed17/quality_scores.npz",
+            "bytes": 1782818,
+            "sha256": "38f0f3823417dd555d6ce637b967b36ae367a5f0eef433c48dd17ba163f8f9f8"
+          },
+          {
+            "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_n_supported_material_quality/inference/Hi/material/seed29/quality_scores.npz",
+            "bytes": 1784063,
+            "sha256": "8eb4f64d0e4947d94c2c3a79e25072b32cd3f1b02c3bf36380d24c558d597599"
+          },
+          {
+            "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_n_supported_material_quality/inference/Hi/material/seed43/quality_scores.npz",
+            "bytes": 1793912,
+            "sha256": "ab0136478bfc9fb3650fddfd2bf08e259b7a55d4fc4d3a1a4f22f83a3353ae84"
+          }
+        ],
+        "K": [
+          {
+            "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_k_multisource_quality/inference/Hi/geometry/seed17/quality_scores.npz",
+            "bytes": 1641699,
+            "sha256": "5de19a5123f66f8b760b9962ca1d59206fb9f006dfb5619481aa3fa5d7f14d3c"
+          },
+          {
+            "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_k_multisource_quality/inference/Hi/geometry/seed29/quality_scores.npz",
+            "bytes": 1645106,
+            "sha256": "1cac886c9f8f28502321f08bf823ed68c08f1c1294ed5dfd71f238810de8feb6"
+          },
+          {
+            "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_k_multisource_quality/inference/Hi/geometry/seed43/quality_scores.npz",
+            "bytes": 1644136,
+            "sha256": "1ff8afc744a4e96c46305e1bb62c8527ee176969c9a007cc81ada3a71098842c"
+          }
+        ]
+      },
+      "reference_combined_hash": {
+        "N6": "2b6854f5823b99beed2f4b311ba16a4490990f72d46cd310bcda2ef7fa96fa21",
+        "O9": "3d9fe64bd878d5257cff59617a0383838f0baed8d9ea35c24e6799f99f34bc5e"
+      }
+    }
+  },
+  "case_order": [
+    "DET",
+    "CLCXray_test",
+    "PIXray",
+    "PIDray",
+    "DvXray",
+    "Hi"
+  ],
+  "variants": {
+    "E3": [
+      "E"
+    ],
+    "N6": [
+      "E",
+      "N"
+    ],
+    "O9": [
+      "E",
+      "N",
+      "K"
+    ]
+  },
+  "seeds": [
+    17,
+    29,
+    43
+  ],
+  "warmups_per_variant_cohort": 1,
+  "measured_trials_per_variant_cohort": 3,
+  "planned_warmup_trials": 18,
+  "planned_fresh_measured_trials": 54,
+  "trial_order": "For each case in frozen order, variants E3,N6,O9; one separate fresh-process warmup, then measured fresh-process trials0,1,2. No outcome-based replacement or best-time selection.",
+  "resources": {
+    "GPU_index": 0,
+    "GPU_UUID": "GPU-7d53f26e-0c06-c368-43bf-de34b45f6a52",
+    "GPU3_do_not_touch": true,
+    "pre_freeze_compute_apps": "GPU-9f970109-a913-ba05-66af-7e09295d4cc1, 1633418\n",
+    "one_trial_child_at_a_time": true,
+    "GPU_must_be_empty_before_each_child": true,
+    "CPU_threads": 8,
+    "minimum_RAM_GiB": 64,
+    "native_or_bootstrap_slots_used": 0,
+    "original_D_P_priority_unchanged": true
+  },
+  "timing": {
+    "clock": "time.perf_counter wall seconds; explicit CUDA synchronize at all measured stage boundaries",
+    "stages": [
+      "feature_read",
+      "weights_load_to_GPU",
+      "fresh_all_models_forward",
+      "three_seed_means_and_fixed_combination",
+      "validation_against_frozen_q",
+      "output_persistence"
+    ],
+    "primary": "feature_read+weights_load_to_GPU+fresh_all_models_forward+three_seed_means_and_fixed_combination; no cached probabilities in measured computation",
+    "inference": "Exact original E outer8192/inner16384 and GPU sigmoid; N/K outer8192/inner8192 GPU logits to CPUFloat32 sigmoid. F64 own3-seed means then one F32 cast.",
+    "combination": "N6 exact direct(E,N); O9 exact frozen compose(E,K,N,available=(Nfeature12>0)&valid,t=.5); E3 direct three-model mean.",
+    "weight_loading": "Existing full checkpoint file torch.load(map_location=GPU), original network instantiation and load_state_dict. Includes checkpoint metadata I/O, separated from forward.",
+    "features": "Read each required existing array file fully into new CPU memory once per process/component and one valid mask; OS page cache left intact. No cache flushing or cold-disk claim. Input dtype/bytes and original chunk arithmetic unchanged; all I/O counted before forward.",
+    "warmup": "18 independent fresh child processes, never pooled with54 measured processes. Measured jobs have new CUDA context and first forward; not a persistent-process steady-state benchmark.",
+    "statistics": "Report all3 trials, arithmetic mean, sample standard deviation ddof1, median and range; never select minimum as representative."
+  },
+  "memory": {
+    "CPU": "Kernel process lifetime ru_maxrss plus baseline VmRSS and20ms sampled stage VmRSS; includes interpreter/framework/context and staged feature arrays, not an exact isolated algorithm allocator peak.",
+    "GPU": "Exact PyTorch max_memory_allocated/max_memory_reserved across load+forward+combination after context setup; context/driver memory excluded from these allocator counters. Parent additionally samples per-process nvidia-smi used_gpu_memory; sampled peak is a lower bound, not a certified hardware maximum."
+  },
+  "correctness": {
+    "seed_quality_atol": 2e-06,
+    "ensemble_quality_atol": 2e-06,
+    "combined_quality_atol": 2e-05,
+    "rtol": 0.0,
+    "saved_quality_read_only_after_fresh_forward_and_combination_timers": true,
+    "reference_cached_composition_hash_must_match_original_export": true,
+    "all_arrays_finite_and_invalid_pad_exact0": true
+  },
+  "failure": "Every failed trial retains log, schedule identity and failure receipt; no hidden retry/seed replacement, continue remaining frozen schedule then report incomplete/failed gate honestly.",
+  "scope": "Only cached-feature head+combination costs. Excludes radiograph decoding, detector/backbone, new material RGB22/descriptor extraction, proposal generation, route choice, Gaussian suppression, prediction export/COCO/AP, training, portal or paper changes. End-to-end radiograph latency cannot be inferred.",
+  "code_root": "/mnt/data/yxy/program/RAXO/experiments/night_exploration_20261101/batch_s_fixed_quality_cost",
+  "output_root": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_s_fixed_quality_cost"
+}

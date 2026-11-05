@@ -1,0 +1,27 @@
+{
+  "case": "CLCXray_test",
+  "trial": 0,
+  "method": "pair",
+  "proposals": 11211,
+  "retained": 11211,
+  "images": 952,
+  "catalogue_classes": 12,
+  "stages_ns": {
+    "full_catalogue_feature_columns_and_context": 579706295,
+    "three_T_availability_models_GPU_and_CPU_sigmoid": 41957553,
+    "three_E_visual_clean_models_GPU": 16450424,
+    "three_conditional_full_catalogue_models_GPU_projection_CPU": 113247219,
+    "ensemble_geometric_mix_fixed_router_sqrt_score_Gaussian_serialization": 654789071,
+    "total": 1406956784
+  },
+  "memory": {
+    "peak_process_RSS_bytes": 1576067072,
+    "cuda_allocated_bytes": 33651200,
+    "cuda_reserved_bytes": 58720256,
+    "peak_cuda_allocated_bytes": 37203456,
+    "peak_cuda_reserved_bytes": 58720256
+  },
+  "prediction_content_sha256": "3bf216da4109b7ada8edde29adbb87999c5826107dc86d366233931cff526079",
+  "input_load_seconds_excluded": 0.019099313067272305,
+  "model_load_seconds_excluded": 1.568929499015212
+}

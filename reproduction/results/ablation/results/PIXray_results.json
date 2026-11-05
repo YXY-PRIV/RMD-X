@@ -1,0 +1,143 @@
+{
+  "status": "COMPLETE_FOUR_ABLATION_CELLS",
+  "protocol": {
+    "path": "/mnt/data/yxy/program/RAXO/experiments/new_module_evidence_20261102/ablation/protocol.json",
+    "bytes": 4020,
+    "sha256": "87d127113f97677bb0917a9be72ef6d7a7138c30888a1b3eeffc62a869884c6c"
+  },
+  "case": "PIXray",
+  "results": [
+    {
+      "dataset": "PIXray",
+      "cell": "00_full",
+      "AP": 0.4463722507761134,
+      "AP50": 0.5488959030094442,
+      "AP75": 0.46748944286903305,
+      "stats": [
+        0.4463722507761134,
+        0.5488959030094442,
+        0.46748944286903305,
+        0.1641491830431951,
+        0.4921914539877479,
+        0.37371256515344414,
+        0.5111422706072152,
+        0.612978561471889,
+        0.6144931975557635,
+        0.25614358226791795,
+        0.600301765452829,
+        0.6942204423149378
+      ],
+      "AP_computed_here": false,
+      "AP_reused": true,
+      "export": {
+        "path": "/mnt/data/yxy-codex/home/outputs/RAXO/new_module_evidence_20261102/ablation/endpoints/PIXray/00_full/export.json",
+        "bytes": 72919,
+        "sha256": "214e613c4da44a29d44a6824aa2c3ed3722d7a59f053185dba9127ac0abfe5dc"
+      },
+      "metrics": {
+        "path": "/mnt/data/yxy-codex/home/outputs/RAXO/new_module_evidence_20261102/ablation/endpoints/PIXray/00_full/metrics.json",
+        "bytes": 127630,
+        "sha256": "3b9ed26245401305355d4a70057519c2f3a9f948c4542c888c81de38d0fe4d6a"
+      }
+    },
+    {
+      "dataset": "PIXray",
+      "cell": "10_gate",
+      "AP": 0.4482137681186465,
+      "AP50": 0.5513859574553107,
+      "AP75": 0.4693743084867473,
+      "stats": [
+        0.4482137681186465,
+        0.5513859574553107,
+        0.4693743084867473,
+        0.16960924326083757,
+        0.49397021764782456,
+        0.3727582120046494,
+        0.5117757642947391,
+        0.612978561471889,
+        0.6144931975557635,
+        0.25614358226791795,
+        0.600301765452829,
+        0.6942204423149378
+      ],
+      "AP_computed_here": true,
+      "AP_reused": false,
+      "export": {
+        "path": "/mnt/data/yxy-codex/home/outputs/RAXO/new_module_evidence_20261102/ablation/endpoints/PIXray/10_gate/export.json",
+        "bytes": 70869,
+        "sha256": "8cfec1da69eb9dcebeaebb996dd4d235680cd1be268984f4c80c4f244947839f"
+      },
+      "metrics": {
+        "path": "/mnt/data/yxy-codex/home/outputs/RAXO/new_module_evidence_20261102/ablation/endpoints/PIXray/10_gate/metrics.json",
+        "bytes": 59450,
+        "sha256": "ee4d0762e2ca63e423add3351c43e600e20868b872c7ec826c4ce0e938d1f950"
+      }
+    },
+    {
+      "dataset": "PIXray",
+      "cell": "01_projection_identity_extension",
+      "AP": 0.44651594052914506,
+      "AP50": 0.5490343153547848,
+      "AP75": 0.46765170659530936,
+      "stats": [
+        0.44651594052914506,
+        0.5490343153547848,
+        0.46765170659530936,
+        0.16414601718065708,
+        0.49224059523735264,
+        0.37363290188451787,
+        0.5111305231769654,
+        0.6130012629474849,
+        0.6144931975557635,
+        0.25614358226791795,
+        0.600301765452829,
+        0.6942204423149378
+      ],
+      "AP_computed_here": true,
+      "AP_reused": false,
+      "export": {
+        "path": "/mnt/data/yxy-codex/home/outputs/RAXO/new_module_evidence_20261102/ablation/endpoints/PIXray/01_projection_identity_extension/export.json",
+        "bytes": 70905,
+        "sha256": "9ff0b0eb4278c43a579cf57736be9db4a9d560cddfc319728b576edda201a9b7"
+      },
+      "metrics": {
+        "path": "/mnt/data/yxy-codex/home/outputs/RAXO/new_module_evidence_20261102/ablation/endpoints/PIXray/01_projection_identity_extension/metrics.json",
+        "bytes": 59531,
+        "sha256": "69d705beca269c5ce92899835b948b46879866e700d929a14ed68cd67c05ca84"
+      }
+    },
+    {
+      "dataset": "PIXray",
+      "cell": "11_both",
+      "AP": 0.448321960002225,
+      "AP50": 0.5514925896754206,
+      "AP75": 0.46946263613811323,
+      "stats": [
+        0.448321960002225,
+        0.5514925896754206,
+        0.46946263613811323,
+        0.169612228140634,
+        0.4940596548271336,
+        0.37276333679519263,
+        0.5118312814384806,
+        0.6130012629474849,
+        0.6144931975557635,
+        0.25614358226791795,
+        0.600301765452829,
+        0.6942204423149378
+      ],
+      "AP_computed_here": false,
+      "AP_reused": true,
+      "export": {
+        "path": "/mnt/data/yxy-codex/home/outputs/RAXO/new_module_evidence_20261102/ablation/endpoints/PIXray/11_both/export.json",
+        "bytes": 72898,
+        "sha256": "7ac65e83bcfb3f774859e34f4d62ca8e38cb5a1fd4df62b7427b723aa7c1fd4f"
+      },
+      "metrics": {
+        "path": "/mnt/data/yxy-codex/home/outputs/RAXO/new_module_evidence_20261102/ablation/endpoints/PIXray/11_both/metrics.json",
+        "bytes": 127628,
+        "sha256": "032a2ff91b7444d0487c4cabaacda39e56f79638ce0f83326df99ae9320c2639"
+      }
+    }
+  ]
+}

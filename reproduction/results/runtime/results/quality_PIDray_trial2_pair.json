@@ -1,0 +1,27 @@
+{
+  "case": "PIDray",
+  "trial": 2,
+  "method": "pair",
+  "proposals": 456561,
+  "retained": 456561,
+  "images": 18219,
+  "catalogue_classes": 12,
+  "stages_ns": {
+    "full_catalogue_feature_columns_and_context": 23264904386,
+    "three_T_availability_models_GPU_and_CPU_sigmoid": 1370059456,
+    "three_E_visual_clean_models_GPU": 537846777,
+    "three_conditional_full_catalogue_models_GPU_projection_CPU": 4173311391,
+    "ensemble_geometric_mix_fixed_router_sqrt_score_Gaussian_serialization": 29597225868,
+    "total": 58959582339
+  },
+  "memory": {
+    "peak_process_RSS_bytes": 2146013184,
+    "cuda_allocated_bytes": 33651200,
+    "cuda_reserved_bytes": 60817408,
+    "peak_cuda_allocated_bytes": 37205504,
+    "peak_cuda_reserved_bytes": 60817408
+  },
+  "prediction_content_sha256": "b0f5b9e5ee23724bb97ed9b4b4130c157130cd9de1058e1f40e7526d0f4a6fdf",
+  "input_load_seconds_excluded": 0.5446032949257642,
+  "model_load_seconds_excluded": 1.568929499015212
+}

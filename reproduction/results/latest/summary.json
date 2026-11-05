@@ -1,0 +1,2451 @@
+{
+  "status": "COMPLETE_REVIEWED_PAIR_CONFLICT_MATERIAL_PROJECTION_SUMMARY",
+  "created_utc": "2026-11-01T15:43:01.565338+00:00",
+  "finding": "冲突对主材料修正相对强Tavail锚点为6升0降0平；相同q0下native F-only相对V-only为2升4降0平。两组比较回答不同问题。",
+  "primary_variant": "material",
+  "control_variant": "permuted_material",
+  "selected_alpha": 1.0,
+  "selected_route": "anchor_locked",
+  "metric_sign_counts": {
+    "AP": {
+      "material_vs_strong_anchor": {
+        "improved": 6,
+        "declined": 0,
+        "unchanged": 0
+      },
+      "material_vs_permuted": {
+        "improved": 6,
+        "declined": 0,
+        "unchanged": 0
+      },
+      "fixed_quality_fused_vs_visual_candidates": {
+        "improved": 2,
+        "declined": 4,
+        "unchanged": 0
+      }
+    },
+    "AP50": {
+      "material_vs_strong_anchor": {
+        "improved": 5,
+        "declined": 1,
+        "unchanged": 0
+      },
+      "material_vs_permuted": {
+        "improved": 5,
+        "declined": 1,
+        "unchanged": 0
+      },
+      "fixed_quality_fused_vs_visual_candidates": {
+        "improved": 2,
+        "declined": 4,
+        "unchanged": 0
+      }
+    },
+    "AP75": {
+      "material_vs_strong_anchor": {
+        "improved": 6,
+        "declined": 0,
+        "unchanged": 0
+      },
+      "material_vs_permuted": {
+        "improved": 6,
+        "declined": 0,
+        "unchanged": 0
+      },
+      "fixed_quality_fused_vs_visual_candidates": {
+        "improved": 3,
+        "declined": 3,
+        "unchanged": 0
+      }
+    },
+    "AR100": {
+      "material_vs_strong_anchor": {
+        "improved": 0,
+        "declined": 0,
+        "unchanged": 6
+      },
+      "material_vs_permuted": {
+        "improved": 0,
+        "declined": 0,
+        "unchanged": 6
+      },
+      "fixed_quality_fused_vs_visual_candidates": {
+        "improved": 3,
+        "declined": 3,
+        "unchanged": 0
+      }
+    }
+  },
+  "primary_comparisons": [
+    {
+      "dataset": "DET",
+      "metric": "AP",
+      "selected_alpha": 1.0,
+      "selected_route": "anchor_locked",
+      "material": 0.5092182455155324,
+      "permuted_material": 0.5089474898132333,
+      "strong_Tavailability": 0.5089474898132333,
+      "material_minus_strong_anchor_pp": 0.027075570229906365,
+      "material_minus_permuted_pp": 0.027075570229906365,
+      "previous_full_class_material": 0.5148556659902264,
+      "previous_full_class_setting": "{'alpha': 1.0, 'route': 'anchor_locked'}",
+      "material_minus_prior_selected_fullclass_pp": -0.5637420474693955
+    },
+    {
+      "dataset": "DET",
+      "metric": "AP50",
+      "selected_alpha": 1.0,
+      "selected_route": "anchor_locked",
+      "material": 0.5816462377626441,
+      "permuted_material": 0.5806690341675517,
+      "strong_Tavailability": 0.5806690341675517,
+      "material_minus_strong_anchor_pp": 0.09772035950924574,
+      "material_minus_permuted_pp": 0.09772035950924574,
+      "previous_full_class_material": 0.5855202003903217,
+      "previous_full_class_setting": "{'alpha': 1.0, 'route': 'anchor_locked'}",
+      "material_minus_prior_selected_fullclass_pp": -0.3873962627677585
+    },
+    {
+      "dataset": "DET",
+      "metric": "AP75",
+      "selected_alpha": 1.0,
+      "selected_route": "anchor_locked",
+      "material": 0.5166505875978409,
+      "permuted_material": 0.5166480624587246,
+      "strong_Tavailability": 0.5166480624587246,
+      "material_minus_strong_anchor_pp": 0.00025251391162495196,
+      "material_minus_permuted_pp": 0.00025251391162495196,
+      "previous_full_class_material": 0.5217415236199013,
+      "previous_full_class_setting": "{'alpha': 1.0, 'route': 'anchor_locked'}",
+      "material_minus_prior_selected_fullclass_pp": -0.5090936022060455
+    },
+    {
+      "dataset": "DET",
+      "metric": "AR100",
+      "selected_alpha": 1.0,
+      "selected_route": "anchor_locked",
+      "material": 0.6074918566775245,
+      "permuted_material": 0.6074918566775245,
+      "strong_Tavailability": 0.6074918566775245,
+      "material_minus_strong_anchor_pp": 0.0,
+      "material_minus_permuted_pp": 0.0,
+      "previous_full_class_material": 0.6074918566775245,
+      "previous_full_class_setting": "{'alpha': 1.0, 'route': 'anchor_locked'}",
+      "material_minus_prior_selected_fullclass_pp": 0.0
+    },
+    {
+      "dataset": "CLCXray_test",
+      "metric": "AP",
+      "selected_alpha": 1.0,
+      "selected_route": "anchor_locked",
+      "material": 0.2672587438708459,
+      "permuted_material": 0.26697534685506763,
+      "strong_Tavailability": 0.26697432075078276,
+      "material_minus_strong_anchor_pp": 0.028442312006315973,
+      "material_minus_permuted_pp": 0.028339701577828613,
+      "previous_full_class_material": 0.26584126152195015,
+      "previous_full_class_setting": "{'alpha': 1.0, 'route': 'anchor_locked'}",
+      "material_minus_prior_selected_fullclass_pp": 0.1417482348895771
+    },
+    {
+      "dataset": "CLCXray_test",
+      "metric": "AP50",
+      "selected_alpha": 1.0,
+      "selected_route": "anchor_locked",
+      "material": 0.3566403272855956,
+      "permuted_material": 0.3563039889114095,
+      "strong_Tavailability": 0.35630140733583393,
+      "material_minus_strong_anchor_pp": 0.03389199497616513,
+      "material_minus_permuted_pp": 0.03363383741860626,
+      "previous_full_class_material": 0.35528859433537874,
+      "previous_full_class_setting": "{'alpha': 1.0, 'route': 'anchor_locked'}",
+      "material_minus_prior_selected_fullclass_pp": 0.1351732950216844
+    },
+    {
+      "dataset": "CLCXray_test",
+      "metric": "AP75",
+      "selected_alpha": 1.0,
+      "selected_route": "anchor_locked",
+      "material": 0.29561862068924505,
+      "permuted_material": 0.2951771010593997,
+      "strong_Tavailability": 0.2951771010593997,
+      "material_minus_strong_anchor_pp": 0.04415196298453439,
+      "material_minus_permuted_pp": 0.04415196298453439,
+      "previous_full_class_material": 0.29300622386133846,
+      "previous_full_class_setting": "{'alpha': 1.0, 'route': 'anchor_locked'}",
+      "material_minus_prior_selected_fullclass_pp": 0.26123968279065934
+    },
+    {
+      "dataset": "CLCXray_test",
+      "metric": "AR100",
+      "selected_alpha": 1.0,
+      "selected_route": "anchor_locked",
+      "material": 0.3895736935633875,
+      "permuted_material": 0.3895736935633875,
+      "strong_Tavailability": 0.3895736935633875,
+      "material_minus_strong_anchor_pp": 0.0,
+      "material_minus_permuted_pp": 0.0,
+      "previous_full_class_material": 0.3895736935633875,
+      "previous_full_class_setting": "{'alpha': 1.0, 'route': 'anchor_locked'}",
+      "material_minus_prior_selected_fullclass_pp": 0.0
+    },
+    {
+      "dataset": "PIXray",
+      "metric": "AP",
+      "selected_alpha": 1.0,
+      "selected_route": "anchor_locked",
+      "material": 0.448321960002225,
+      "permuted_material": 0.44817886462774903,
+      "strong_Tavailability": 0.4481781310282129,
+      "material_minus_strong_anchor_pp": 0.01438289740121057,
+      "material_minus_permuted_pp": 0.014309537447598775,
+      "previous_full_class_material": 0.4463722507761134,
+      "previous_full_class_setting": "{'alpha': 1.0, 'route': 'anchor_locked'}",
+      "material_minus_prior_selected_fullclass_pp": 0.19497092261115956
+    },
+    {
+      "dataset": "PIXray",
+      "metric": "AP50",
+      "selected_alpha": 1.0,
+      "selected_route": "anchor_locked",
+      "material": 0.5514925896754206,
+      "permuted_material": 0.5512599672211281,
+      "strong_Tavailability": 0.5512608870242574,
+      "material_minus_strong_anchor_pp": 0.023170265116323474,
+      "material_minus_permuted_pp": 0.023262245429245265,
+      "previous_full_class_material": 0.5488959030094442,
+      "previous_full_class_setting": "{'alpha': 1.0, 'route': 'anchor_locked'}",
+      "material_minus_prior_selected_fullclass_pp": 0.25966866659763443
+    },
+    {
+      "dataset": "PIXray",
+      "metric": "AP75",
+      "selected_alpha": 1.0,
+      "selected_route": "anchor_locked",
+      "material": 0.46946263613811323,
+      "permuted_material": 0.4694215436198625,
+      "strong_Tavailability": 0.46942220628600256,
+      "material_minus_strong_anchor_pp": 0.00404298521106683,
+      "material_minus_permuted_pp": 0.004109251825074045,
+      "previous_full_class_material": 0.46748944286903305,
+      "previous_full_class_setting": "{'alpha': 1.0, 'route': 'anchor_locked'}",
+      "material_minus_prior_selected_fullclass_pp": 0.19731932690801868
+    },
+    {
+      "dataset": "PIXray",
+      "metric": "AR100",
+      "selected_alpha": 1.0,
+      "selected_route": "anchor_locked",
+      "material": 0.6144931975557635,
+      "permuted_material": 0.6144931975557635,
+      "strong_Tavailability": 0.6144931975557635,
+      "material_minus_strong_anchor_pp": 0.0,
+      "material_minus_permuted_pp": 0.0,
+      "previous_full_class_material": 0.6144931975557635,
+      "previous_full_class_setting": "{'alpha': 1.0, 'route': 'anchor_locked'}",
+      "material_minus_prior_selected_fullclass_pp": 0.0
+    },
+    {
+      "dataset": "PIDray",
+      "metric": "AP",
+      "selected_alpha": 1.0,
+      "selected_route": "anchor_locked",
+      "material": 0.2353207309599169,
+      "permuted_material": 0.2353049349526493,
+      "strong_Tavailability": 0.2353047454137788,
+      "material_minus_strong_anchor_pp": 0.0015985546138103102,
+      "material_minus_permuted_pp": 0.0015796007267615542,
+      "previous_full_class_material": 0.23338622686501456,
+      "previous_full_class_setting": "{'alpha': 1.0, 'route': 'anchor_locked'}",
+      "material_minus_prior_selected_fullclass_pp": 0.19345040949023395
+    },
+    {
+      "dataset": "PIDray",
+      "metric": "AP50",
+      "selected_alpha": 1.0,
+      "selected_route": "anchor_locked",
+      "material": 0.3092540418360828,
+      "permuted_material": 0.3092434000052432,
+      "strong_Tavailability": 0.30924265032625486,
+      "material_minus_strong_anchor_pp": 0.0011391509827929358,
+      "material_minus_permuted_pp": 0.0010641830839597244,
+      "previous_full_class_material": 0.3066233089238706,
+      "previous_full_class_setting": "{'alpha': 1.0, 'route': 'anchor_locked'}",
+      "material_minus_prior_selected_fullclass_pp": 0.2630732912212219
+    },
+    {
+      "dataset": "PIDray",
+      "metric": "AP75",
+      "selected_alpha": 1.0,
+      "selected_route": "anchor_locked",
+      "material": 0.25150007358332815,
+      "permuted_material": 0.2514781803219654,
+      "strong_Tavailability": 0.2514779987019491,
+      "material_minus_strong_anchor_pp": 0.002207488137906388,
+      "material_minus_permuted_pp": 0.002189326136275982,
+      "previous_full_class_material": 0.24927626274452291,
+      "previous_full_class_setting": "{'alpha': 1.0, 'route': 'anchor_locked'}",
+      "material_minus_prior_selected_fullclass_pp": 0.22238108388052402
+    },
+    {
+      "dataset": "PIDray",
+      "metric": "AR100",
+      "selected_alpha": 1.0,
+      "selected_route": "anchor_locked",
+      "material": 0.4228941589918108,
+      "permuted_material": 0.4228941589918108,
+      "strong_Tavailability": 0.4228941589918108,
+      "material_minus_strong_anchor_pp": 0.0,
+      "material_minus_permuted_pp": 0.0,
+      "previous_full_class_material": 0.4228941589918108,
+      "previous_full_class_setting": "{'alpha': 1.0, 'route': 'anchor_locked'}",
+      "material_minus_prior_selected_fullclass_pp": 0.0
+    },
+    {
+      "dataset": "DvXray",
+      "metric": "AP",
+      "selected_alpha": 1.0,
+      "selected_route": "anchor_locked",
+      "material": 0.28344052147466403,
+      "permuted_material": 0.2834138506730468,
+      "strong_Tavailability": 0.28341469904441524,
+      "material_minus_strong_anchor_pp": 0.002582243024878972,
+      "material_minus_permuted_pp": 0.002667080161722346,
+      "previous_full_class_material": 0.2817765816210152,
+      "previous_full_class_setting": "{'alpha': 1.0, 'route': 'anchor_locked'}",
+      "material_minus_prior_selected_fullclass_pp": 0.16639398536488215
+    },
+    {
+      "dataset": "DvXray",
+      "metric": "AP50",
+      "selected_alpha": 1.0,
+      "selected_route": "anchor_locked",
+      "material": 0.33747219293851055,
+      "permuted_material": 0.337554914097919,
+      "strong_Tavailability": 0.33755576397965203,
+      "material_minus_strong_anchor_pp": -0.008357104114148362,
+      "material_minus_permuted_pp": -0.008272115940843872,
+      "previous_full_class_material": 0.3355056173217681,
+      "previous_full_class_setting": "{'alpha': 1.0, 'route': 'anchor_locked'}",
+      "material_minus_prior_selected_fullclass_pp": 0.19665756167424608
+    },
+    {
+      "dataset": "DvXray",
+      "metric": "AP75",
+      "selected_alpha": 1.0,
+      "selected_route": "anchor_locked",
+      "material": 0.29938664950782445,
+      "permuted_material": 0.2993187203295869,
+      "strong_Tavailability": 0.29931674180217027,
+      "material_minus_strong_anchor_pp": 0.006990770565418192,
+      "material_minus_permuted_pp": 0.006792917823755795,
+      "previous_full_class_material": 0.2976310753868168,
+      "previous_full_class_setting": "{'alpha': 1.0, 'route': 'anchor_locked'}",
+      "material_minus_prior_selected_fullclass_pp": 0.17555741210076303
+    },
+    {
+      "dataset": "DvXray",
+      "metric": "AR100",
+      "selected_alpha": 1.0,
+      "selected_route": "anchor_locked",
+      "material": 0.4712510630201484,
+      "permuted_material": 0.4712510630201484,
+      "strong_Tavailability": 0.4712510630201484,
+      "material_minus_strong_anchor_pp": 0.0,
+      "material_minus_permuted_pp": 0.0,
+      "previous_full_class_material": 0.4712510630201484,
+      "previous_full_class_setting": "{'alpha': 1.0, 'route': 'anchor_locked'}",
+      "material_minus_prior_selected_fullclass_pp": 0.0
+    },
+    {
+      "dataset": "Hi",
+      "metric": "AP",
+      "selected_alpha": 1.0,
+      "selected_route": "anchor_locked",
+      "material": 0.2072820886234658,
+      "permuted_material": 0.20529817170125889,
+      "strong_Tavailability": 0.20529776110460138,
+      "material_minus_strong_anchor_pp": 0.19843275188644316,
+      "material_minus_permuted_pp": 0.19839169222069242,
+      "previous_full_class_material": 0.20807100852120713,
+      "previous_full_class_setting": "{'alpha': 1.0, 'route': 'anchor_locked'}",
+      "material_minus_prior_selected_fullclass_pp": -0.07889198977413248
+    },
+    {
+      "dataset": "Hi",
+      "metric": "AP50",
+      "selected_alpha": 1.0,
+      "selected_route": "anchor_locked",
+      "material": 0.3374655759152928,
+      "permuted_material": 0.3346440511706933,
+      "strong_Tavailability": 0.3346391646439972,
+      "material_minus_strong_anchor_pp": 0.2826411271295626,
+      "material_minus_permuted_pp": 0.2821524744599513,
+      "previous_full_class_material": 0.33764362307705004,
+      "previous_full_class_setting": "{'alpha': 1.0, 'route': 'anchor_locked'}",
+      "material_minus_prior_selected_fullclass_pp": -0.017804716175723323
+    },
+    {
+      "dataset": "Hi",
+      "metric": "AP75",
+      "selected_alpha": 1.0,
+      "selected_route": "anchor_locked",
+      "material": 0.23314411942723257,
+      "permuted_material": 0.2307308296917556,
+      "strong_Tavailability": 0.2307321376419262,
+      "material_minus_strong_anchor_pp": 0.24119817853063552,
+      "material_minus_permuted_pp": 0.241328973547697,
+      "previous_full_class_material": 0.23449461179529593,
+      "previous_full_class_setting": "{'alpha': 1.0, 'route': 'anchor_locked'}",
+      "material_minus_prior_selected_fullclass_pp": -0.13504923680633663
+    },
+    {
+      "dataset": "Hi",
+      "metric": "AR100",
+      "selected_alpha": 1.0,
+      "selected_route": "anchor_locked",
+      "material": 0.41396694116535815,
+      "permuted_material": 0.41396694116535815,
+      "strong_Tavailability": 0.41396694116535815,
+      "material_minus_strong_anchor_pp": 0.0,
+      "material_minus_permuted_pp": 0.0,
+      "previous_full_class_material": 0.41396694116535815,
+      "previous_full_class_setting": "{'alpha': 1.0, 'route': 'anchor_locked'}",
+      "material_minus_prior_selected_fullclass_pp": 0.0
+    }
+  ],
+  "branch_diagnostic_comparisons": [
+    {
+      "dataset": "DET",
+      "metric": "AP",
+      "visual_branch_only_fixed_quality": 0.5057086134366485,
+      "material_fused_branch_only_fixed_quality": 0.5259956444896079,
+      "strong_Tavailability_union": 0.5089474898132333,
+      "fused_branch_minus_visual_branch_pp": 2.028703105295937,
+      "visual_only_minus_union_pp": -0.32388763765848205,
+      "fused_only_minus_union_pp": 1.704815467637455
+    },
+    {
+      "dataset": "DET",
+      "metric": "AP50",
+      "visual_branch_only_fixed_quality": 0.5786704150604101,
+      "material_fused_branch_only_fixed_quality": 0.5919717628945621,
+      "strong_Tavailability_union": 0.5806690341675517,
+      "fused_branch_minus_visual_branch_pp": 1.3301347834152044,
+      "visual_only_minus_union_pp": -0.19986191071416082,
+      "fused_only_minus_union_pp": 1.1302728727010436
+    },
+    {
+      "dataset": "DET",
+      "metric": "AP75",
+      "visual_branch_only_fixed_quality": 0.514860833920482,
+      "material_fused_branch_only_fixed_quality": 0.5377791883620602,
+      "strong_Tavailability_union": 0.5166480624587246,
+      "fused_branch_minus_visual_branch_pp": 2.2918354441578193,
+      "visual_only_minus_union_pp": -0.17872285382426467,
+      "fused_only_minus_union_pp": 2.1131125903335546
+    },
+    {
+      "dataset": "DET",
+      "metric": "AR100",
+      "visual_branch_only_fixed_quality": 0.601085776330076,
+      "material_fused_branch_only_fixed_quality": 0.6221498371335505,
+      "strong_Tavailability_union": 0.6074918566775245,
+      "fused_branch_minus_visual_branch_pp": 2.106406080347456,
+      "visual_only_minus_union_pp": -0.6406080347448495,
+      "fused_only_minus_union_pp": 1.4657980456026065
+    },
+    {
+      "dataset": "CLCXray_test",
+      "metric": "AP",
+      "visual_branch_only_fixed_quality": 0.2554549002923798,
+      "material_fused_branch_only_fixed_quality": 0.25463124970942375,
+      "strong_Tavailability_union": 0.26697432075078276,
+      "fused_branch_minus_visual_branch_pp": -0.08236505829560814,
+      "visual_only_minus_union_pp": -1.151942045840293,
+      "fused_only_minus_union_pp": -1.234307104135901
+    },
+    {
+      "dataset": "CLCXray_test",
+      "metric": "AP50",
+      "visual_branch_only_fixed_quality": 0.3451260230498883,
+      "material_fused_branch_only_fixed_quality": 0.34067620285055783,
+      "strong_Tavailability_union": 0.35630140733583393,
+      "fused_branch_minus_visual_branch_pp": -0.444982019933049,
+      "visual_only_minus_union_pp": -1.117538428594561,
+      "fused_only_minus_union_pp": -1.56252044852761
+    },
+    {
+      "dataset": "CLCXray_test",
+      "metric": "AP75",
+      "visual_branch_only_fixed_quality": 0.28032748155066084,
+      "material_fused_branch_only_fixed_quality": 0.28154311314825564,
+      "strong_Tavailability_union": 0.2951771010593997,
+      "fused_branch_minus_visual_branch_pp": 0.12156315975948018,
+      "visual_only_minus_union_pp": -1.4849619508738865,
+      "fused_only_minus_union_pp": -1.3633987911144063
+    },
+    {
+      "dataset": "CLCXray_test",
+      "metric": "AR100",
+      "visual_branch_only_fixed_quality": 0.35610255922087874,
+      "material_fused_branch_only_fixed_quality": 0.3660843644153019,
+      "strong_Tavailability_union": 0.3895736935633875,
+      "fused_branch_minus_visual_branch_pp": 0.9981805194423155,
+      "visual_only_minus_union_pp": -3.3471134342508755,
+      "fused_only_minus_union_pp": -2.34893291480856
+    },
+    {
+      "dataset": "PIXray",
+      "metric": "AP",
+      "visual_branch_only_fixed_quality": 0.43838626576497136,
+      "material_fused_branch_only_fixed_quality": 0.4165458930172516,
+      "strong_Tavailability_union": 0.4481781310282129,
+      "fused_branch_minus_visual_branch_pp": -2.184037274771977,
+      "visual_only_minus_union_pp": -0.979186526324155,
+      "fused_only_minus_union_pp": -3.163223801096132
+    },
+    {
+      "dataset": "PIXray",
+      "metric": "AP50",
+      "visual_branch_only_fixed_quality": 0.5386796460522557,
+      "material_fused_branch_only_fixed_quality": 0.512535616294453,
+      "strong_Tavailability_union": 0.5512608870242574,
+      "fused_branch_minus_visual_branch_pp": -2.6144029757802723,
+      "visual_only_minus_union_pp": -1.258124097200164,
+      "fused_only_minus_union_pp": -3.872527072980436
+    },
+    {
+      "dataset": "PIXray",
+      "metric": "AP75",
+      "visual_branch_only_fixed_quality": 0.45924462769019764,
+      "material_fused_branch_only_fixed_quality": 0.43418950300116416,
+      "strong_Tavailability_union": 0.46942220628600256,
+      "fused_branch_minus_visual_branch_pp": -2.505512468903348,
+      "visual_only_minus_union_pp": -1.0177578595804926,
+      "fused_only_minus_union_pp": -3.5232703284838407
+    },
+    {
+      "dataset": "PIXray",
+      "metric": "AR100",
+      "visual_branch_only_fixed_quality": 0.5849491802849648,
+      "material_fused_branch_only_fixed_quality": 0.5605719582093843,
+      "strong_Tavailability_union": 0.6144931975557635,
+      "fused_branch_minus_visual_branch_pp": -2.4377222075580463,
+      "visual_only_minus_union_pp": -2.9544017270798695,
+      "fused_only_minus_union_pp": -5.392123934637915
+    },
+    {
+      "dataset": "PIDray",
+      "metric": "AP",
+      "visual_branch_only_fixed_quality": 0.23014082498812707,
+      "material_fused_branch_only_fixed_quality": 0.23449260494423155,
+      "strong_Tavailability_union": 0.2353047454137788,
+      "fused_branch_minus_visual_branch_pp": 0.43517799561044734,
+      "visual_only_minus_union_pp": -0.5163920425651725,
+      "fused_only_minus_union_pp": -0.08121404695472512
+    },
+    {
+      "dataset": "PIDray",
+      "metric": "AP50",
+      "visual_branch_only_fixed_quality": 0.30217741160349965,
+      "material_fused_branch_only_fixed_quality": 0.30777157477394446,
+      "strong_Tavailability_union": 0.30924265032625486,
+      "fused_branch_minus_visual_branch_pp": 0.559416317044481,
+      "visual_only_minus_union_pp": -0.7065238722755218,
+      "fused_only_minus_union_pp": -0.1471075552310408
+    },
+    {
+      "dataset": "PIDray",
+      "metric": "AP75",
+      "visual_branch_only_fixed_quality": 0.24589195189630741,
+      "material_fused_branch_only_fixed_quality": 0.25053567544451877,
+      "strong_Tavailability_union": 0.2514779987019491,
+      "fused_branch_minus_visual_branch_pp": 0.46437235482113537,
+      "visual_only_minus_union_pp": -0.5586046805641676,
+      "fused_only_minus_union_pp": -0.0942323257430322
+    },
+    {
+      "dataset": "PIDray",
+      "metric": "AR100",
+      "visual_branch_only_fixed_quality": 0.400057124778939,
+      "material_fused_branch_only_fixed_quality": 0.4029146783609056,
+      "strong_Tavailability_union": 0.4228941589918108,
+      "fused_branch_minus_visual_branch_pp": 0.28575535819665987,
+      "visual_only_minus_union_pp": -2.283703421287181,
+      "fused_only_minus_union_pp": -1.997948063090521
+    },
+    {
+      "dataset": "DvXray",
+      "metric": "AP",
+      "visual_branch_only_fixed_quality": 0.28027312236490143,
+      "material_fused_branch_only_fixed_quality": 0.2653264899779901,
+      "strong_Tavailability_union": 0.28341469904441524,
+      "fused_branch_minus_visual_branch_pp": -1.4946632386911352,
+      "visual_only_minus_union_pp": -0.31415766795138134,
+      "fused_only_minus_union_pp": -1.8088209066425165
+    },
+    {
+      "dataset": "DvXray",
+      "metric": "AP50",
+      "visual_branch_only_fixed_quality": 0.3340972739944293,
+      "material_fused_branch_only_fixed_quality": 0.31721940998081244,
+      "strong_Tavailability_union": 0.33755576397965203,
+      "fused_branch_minus_visual_branch_pp": -1.687786401361685,
+      "visual_only_minus_union_pp": -0.3458489985222746,
+      "fused_only_minus_union_pp": -2.0336353998839596
+    },
+    {
+      "dataset": "DvXray",
+      "metric": "AP75",
+      "visual_branch_only_fixed_quality": 0.29652694112108774,
+      "material_fused_branch_only_fixed_quality": 0.27963388198833644,
+      "strong_Tavailability_union": 0.29931674180217027,
+      "fused_branch_minus_visual_branch_pp": -1.6893059132751298,
+      "visual_only_minus_union_pp": -0.27898006810825327,
+      "fused_only_minus_union_pp": -1.968285981383383
+    },
+    {
+      "dataset": "DvXray",
+      "metric": "AR100",
+      "visual_branch_only_fixed_quality": 0.44204765802782314,
+      "material_fused_branch_only_fixed_quality": 0.42422264029357676,
+      "strong_Tavailability_union": 0.4712510630201484,
+      "fused_branch_minus_visual_branch_pp": -1.7825017734246384,
+      "visual_only_minus_union_pp": -2.920340499232527,
+      "fused_only_minus_union_pp": -4.702842272657165
+    },
+    {
+      "dataset": "Hi",
+      "metric": "AP",
+      "visual_branch_only_fixed_quality": 0.20123342607757844,
+      "material_fused_branch_only_fixed_quality": 0.196473267890772,
+      "strong_Tavailability_union": 0.20529776110460138,
+      "fused_branch_minus_visual_branch_pp": -0.4760158186806446,
+      "visual_only_minus_union_pp": -0.40643350270229417,
+      "fused_only_minus_union_pp": -0.8824493213829387
+    },
+    {
+      "dataset": "Hi",
+      "metric": "AP50",
+      "visual_branch_only_fixed_quality": 0.3242104035583547,
+      "material_fused_branch_only_fixed_quality": 0.3215492387592815,
+      "strong_Tavailability_union": 0.3346391646439972,
+      "fused_branch_minus_visual_branch_pp": -0.266116479907319,
+      "visual_only_minus_union_pp": -1.0428761085642502,
+      "fused_only_minus_union_pp": -1.3089925884715692
+    },
+    {
+      "dataset": "Hi",
+      "metric": "AP75",
+      "visual_branch_only_fixed_quality": 0.22747325557163936,
+      "material_fused_branch_only_fixed_quality": 0.2195951162596009,
+      "strong_Tavailability_union": 0.2307321376419262,
+      "fused_branch_minus_visual_branch_pp": -0.7878139312038457,
+      "visual_only_minus_union_pp": -0.32588820702868504,
+      "fused_only_minus_union_pp": -1.1137021382325307
+    },
+    {
+      "dataset": "Hi",
+      "metric": "AR100",
+      "visual_branch_only_fixed_quality": 0.3965566685808267,
+      "material_fused_branch_only_fixed_quality": 0.38182556497144154,
+      "strong_Tavailability_union": 0.41396694116535815,
+      "fused_branch_minus_visual_branch_pp": -1.4731103609385177,
+      "visual_only_minus_union_pp": -1.7410272584531428,
+      "fused_only_minus_union_pp": -3.2141376193916606
+    }
+  ],
+  "per_dataset": {
+    "DET": {
+      "main": {
+        "material": {
+          "AP": 0.5092182455155324,
+          "AP50": 0.5816462377626441,
+          "AP75": 0.5166505875978409,
+          "AR100": 0.6074918566775245
+        },
+        "permuted_material": {
+          "AP": 0.5089474898132333,
+          "AP50": 0.5806690341675517,
+          "AP75": 0.5166480624587246,
+          "AR100": 0.6074918566775245
+        }
+      },
+      "diagnostic": {
+        "visual_branch_only_fixed_quality": {
+          "AP": 0.5057086134366485,
+          "AP50": 0.5786704150604101,
+          "AP75": 0.514860833920482,
+          "AR100": 0.601085776330076
+        },
+        "material_fused_branch_only_fixed_quality": {
+          "AP": 0.5259956444896079,
+          "AP50": 0.5919717628945621,
+          "AP75": 0.5377791883620602,
+          "AR100": 0.6221498371335505
+        }
+      },
+      "strong_Tavailability": {
+        "AP": 0.5089474898132333,
+        "AP50": 0.5806690341675517,
+        "AP75": 0.5166480624587246,
+        "AR100": 0.6074918566775245
+      },
+      "previous_full_class_material": {
+        "AP": 0.5148556659902264,
+        "AP50": 0.5855202003903217,
+        "AP75": 0.5217415236199013,
+        "AR100": 0.6074918566775245
+      },
+      "previous_full_class_setting": {
+        "alpha": 1.0,
+        "route": "anchor_locked"
+      },
+      "selected_alpha": 1.0,
+      "selected_route": "anchor_locked"
+    },
+    "CLCXray_test": {
+      "main": {
+        "material": {
+          "AP": 0.2672587438708459,
+          "AP50": 0.3566403272855956,
+          "AP75": 0.29561862068924505,
+          "AR100": 0.3895736935633875
+        },
+        "permuted_material": {
+          "AP": 0.26697534685506763,
+          "AP50": 0.3563039889114095,
+          "AP75": 0.2951771010593997,
+          "AR100": 0.3895736935633875
+        }
+      },
+      "diagnostic": {
+        "visual_branch_only_fixed_quality": {
+          "AP": 0.2554549002923798,
+          "AP50": 0.3451260230498883,
+          "AP75": 0.28032748155066084,
+          "AR100": 0.35610255922087874
+        },
+        "material_fused_branch_only_fixed_quality": {
+          "AP": 0.25463124970942375,
+          "AP50": 0.34067620285055783,
+          "AP75": 0.28154311314825564,
+          "AR100": 0.3660843644153019
+        }
+      },
+      "strong_Tavailability": {
+        "AP": 0.26697432075078276,
+        "AP50": 0.35630140733583393,
+        "AP75": 0.2951771010593997,
+        "AR100": 0.3895736935633875
+      },
+      "previous_full_class_material": {
+        "AP": 0.26584126152195015,
+        "AP50": 0.35528859433537874,
+        "AP75": 0.29300622386133846,
+        "AR100": 0.3895736935633875
+      },
+      "previous_full_class_setting": {
+        "alpha": 1.0,
+        "route": "anchor_locked"
+      },
+      "selected_alpha": 1.0,
+      "selected_route": "anchor_locked"
+    },
+    "PIXray": {
+      "main": {
+        "material": {
+          "AP": 0.448321960002225,
+          "AP50": 0.5514925896754206,
+          "AP75": 0.46946263613811323,
+          "AR100": 0.6144931975557635
+        },
+        "permuted_material": {
+          "AP": 0.44817886462774903,
+          "AP50": 0.5512599672211281,
+          "AP75": 0.4694215436198625,
+          "AR100": 0.6144931975557635
+        }
+      },
+      "diagnostic": {
+        "visual_branch_only_fixed_quality": {
+          "AP": 0.43838626576497136,
+          "AP50": 0.5386796460522557,
+          "AP75": 0.45924462769019764,
+          "AR100": 0.5849491802849648
+        },
+        "material_fused_branch_only_fixed_quality": {
+          "AP": 0.4165458930172516,
+          "AP50": 0.512535616294453,
+          "AP75": 0.43418950300116416,
+          "AR100": 0.5605719582093843
+        }
+      },
+      "strong_Tavailability": {
+        "AP": 0.4481781310282129,
+        "AP50": 0.5512608870242574,
+        "AP75": 0.46942220628600256,
+        "AR100": 0.6144931975557635
+      },
+      "previous_full_class_material": {
+        "AP": 0.4463722507761134,
+        "AP50": 0.5488959030094442,
+        "AP75": 0.46748944286903305,
+        "AR100": 0.6144931975557635
+      },
+      "previous_full_class_setting": {
+        "alpha": 1.0,
+        "route": "anchor_locked"
+      },
+      "selected_alpha": 1.0,
+      "selected_route": "anchor_locked"
+    },
+    "PIDray": {
+      "main": {
+        "material": {
+          "AP": 0.2353207309599169,
+          "AP50": 0.3092540418360828,
+          "AP75": 0.25150007358332815,
+          "AR100": 0.4228941589918108
+        },
+        "permuted_material": {
+          "AP": 0.2353049349526493,
+          "AP50": 0.3092434000052432,
+          "AP75": 0.2514781803219654,
+          "AR100": 0.4228941589918108
+        }
+      },
+      "diagnostic": {
+        "visual_branch_only_fixed_quality": {
+          "AP": 0.23014082498812707,
+          "AP50": 0.30217741160349965,
+          "AP75": 0.24589195189630741,
+          "AR100": 0.400057124778939
+        },
+        "material_fused_branch_only_fixed_quality": {
+          "AP": 0.23449260494423155,
+          "AP50": 0.30777157477394446,
+          "AP75": 0.25053567544451877,
+          "AR100": 0.4029146783609056
+        }
+      },
+      "strong_Tavailability": {
+        "AP": 0.2353047454137788,
+        "AP50": 0.30924265032625486,
+        "AP75": 0.2514779987019491,
+        "AR100": 0.4228941589918108
+      },
+      "previous_full_class_material": {
+        "AP": 0.23338622686501456,
+        "AP50": 0.3066233089238706,
+        "AP75": 0.24927626274452291,
+        "AR100": 0.4228941589918108
+      },
+      "previous_full_class_setting": {
+        "alpha": 1.0,
+        "route": "anchor_locked"
+      },
+      "selected_alpha": 1.0,
+      "selected_route": "anchor_locked"
+    },
+    "DvXray": {
+      "main": {
+        "material": {
+          "AP": 0.28344052147466403,
+          "AP50": 0.33747219293851055,
+          "AP75": 0.29938664950782445,
+          "AR100": 0.4712510630201484
+        },
+        "permuted_material": {
+          "AP": 0.2834138506730468,
+          "AP50": 0.337554914097919,
+          "AP75": 0.2993187203295869,
+          "AR100": 0.4712510630201484
+        }
+      },
+      "diagnostic": {
+        "visual_branch_only_fixed_quality": {
+          "AP": 0.28027312236490143,
+          "AP50": 0.3340972739944293,
+          "AP75": 0.29652694112108774,
+          "AR100": 0.44204765802782314
+        },
+        "material_fused_branch_only_fixed_quality": {
+          "AP": 0.2653264899779901,
+          "AP50": 0.31721940998081244,
+          "AP75": 0.27963388198833644,
+          "AR100": 0.42422264029357676
+        }
+      },
+      "strong_Tavailability": {
+        "AP": 0.28341469904441524,
+        "AP50": 0.33755576397965203,
+        "AP75": 0.29931674180217027,
+        "AR100": 0.4712510630201484
+      },
+      "previous_full_class_material": {
+        "AP": 0.2817765816210152,
+        "AP50": 0.3355056173217681,
+        "AP75": 0.2976310753868168,
+        "AR100": 0.4712510630201484
+      },
+      "previous_full_class_setting": {
+        "alpha": 1.0,
+        "route": "anchor_locked"
+      },
+      "selected_alpha": 1.0,
+      "selected_route": "anchor_locked"
+    },
+    "Hi": {
+      "main": {
+        "material": {
+          "AP": 0.2072820886234658,
+          "AP50": 0.3374655759152928,
+          "AP75": 0.23314411942723257,
+          "AR100": 0.41396694116535815
+        },
+        "permuted_material": {
+          "AP": 0.20529817170125889,
+          "AP50": 0.3346440511706933,
+          "AP75": 0.2307308296917556,
+          "AR100": 0.41396694116535815
+        }
+      },
+      "diagnostic": {
+        "visual_branch_only_fixed_quality": {
+          "AP": 0.20123342607757844,
+          "AP50": 0.3242104035583547,
+          "AP75": 0.22747325557163936,
+          "AR100": 0.3965566685808267
+        },
+        "material_fused_branch_only_fixed_quality": {
+          "AP": 0.196473267890772,
+          "AP50": 0.3215492387592815,
+          "AP75": 0.2195951162596009,
+          "AR100": 0.38182556497144154
+        }
+      },
+      "strong_Tavailability": {
+        "AP": 0.20529776110460138,
+        "AP50": 0.3346391646439972,
+        "AP75": 0.2307321376419262,
+        "AR100": 0.41396694116535815
+      },
+      "previous_full_class_material": {
+        "AP": 0.20807100852120713,
+        "AP50": 0.33764362307705004,
+        "AP75": 0.23449461179529593,
+        "AR100": 0.41396694116535815
+      },
+      "previous_full_class_setting": {
+        "alpha": 1.0,
+        "route": "anchor_locked"
+      },
+      "selected_alpha": 1.0,
+      "selected_route": "anchor_locked"
+    }
+  },
+  "all_results": [
+    {
+      "dataset": "CLC_tune",
+      "phase": "calibration",
+      "variant": "material",
+      "route": "adaptive_router",
+      "residual_alpha": 0.0,
+      "diagnostic": false,
+      "included_in_parameter_selection": true,
+      "selected_primary": false,
+      "AP": 0.4162309127186918,
+      "AP50": 0.5484284151727101,
+      "AP75": 0.45406923697887613,
+      "AR100": 0.5778107307500756,
+      "AP_computed_here": false,
+      "AP_reused": true,
+      "prediction_count": 2285,
+      "metrics_path": "/mnt/data/yxy-codex/home/outputs/RAXO/pair_conflict_material_projection_20261101/endpoints/CLC_tune/material_adaptive_router_a0_calibration_a15ae0a93056e313/metrics.json",
+      "metrics_sha256": "2bcf9fe138bc56c7560694eaaa5e5859ac39222e2870dbd0e7c5f4d53c2fe464",
+      "export_path": "/mnt/data/yxy-codex/home/outputs/RAXO/pair_conflict_material_projection_20261101/endpoints/CLC_tune/material_adaptive_router_a0_calibration_a15ae0a93056e313/export.json",
+      "export_sha256": "4063d678adc58055e8e572aaddcf9cf951afa705baca61c7df18343c0d5b49bc"
+    },
+    {
+      "dataset": "CLC_tune",
+      "phase": "calibration",
+      "variant": "material",
+      "route": "anchor_locked",
+      "residual_alpha": 0.0,
+      "diagnostic": false,
+      "included_in_parameter_selection": true,
+      "selected_primary": false,
+      "AP": 0.4162309127186918,
+      "AP50": 0.5484284151727101,
+      "AP75": 0.45406923697887613,
+      "AR100": 0.5778107307500756,
+      "AP_computed_here": false,
+      "AP_reused": true,
+      "prediction_count": 2285,
+      "metrics_path": "/mnt/data/yxy-codex/home/outputs/RAXO/pair_conflict_material_projection_20261101/endpoints/CLC_tune/material_anchor_locked_a0_calibration_2ace53c5db644282/metrics.json",
+      "metrics_sha256": "432688303e0015906d93813cc8eae23f99933801aa59a8ac721e4b72be111919",
+      "export_path": "/mnt/data/yxy-codex/home/outputs/RAXO/pair_conflict_material_projection_20261101/endpoints/CLC_tune/material_anchor_locked_a0_calibration_2ace53c5db644282/export.json",
+      "export_sha256": "39d5b0954946439f9356494502e2478b9d02221dad4dbd7bf501a0647e8cc29f"
+    },
+    {
+      "dataset": "CLC_tune",
+      "phase": "calibration",
+      "variant": "permuted_material",
+      "route": "anchor_locked",
+      "residual_alpha": 0.0,
+      "diagnostic": false,
+      "included_in_parameter_selection": true,
+      "selected_primary": false,
+      "AP": 0.4162309127186918,
+      "AP50": 0.5484284151727101,
+      "AP75": 0.45406923697887613,
+      "AR100": 0.5778107307500756,
+      "AP_computed_here": false,
+      "AP_reused": true,
+      "prediction_count": 2285,
+      "metrics_path": "/mnt/data/yxy-codex/home/outputs/RAXO/pair_conflict_material_projection_20261101/endpoints/CLC_tune/permuted_material_anchor_locked_a0_calibration_85ec89f7f045c81d/metrics.json",
+      "metrics_sha256": "b62779cebc7ff67088bb5e6adb48a8e05a3c5770d2fe7c6896978b255e7512dc",
+      "export_path": "/mnt/data/yxy-codex/home/outputs/RAXO/pair_conflict_material_projection_20261101/endpoints/CLC_tune/permuted_material_anchor_locked_a0_calibration_85ec89f7f045c81d/export.json",
+      "export_sha256": "e8d3de30e9b4b09a44b8a1337d4b57fe69c2c2cfe999161644b40df940719518"
+    },
+    {
+      "dataset": "CLC_tune",
+      "phase": "calibration",
+      "variant": "permuted_material",
+      "route": "adaptive_router",
+      "residual_alpha": 0.0,
+      "diagnostic": false,
+      "included_in_parameter_selection": true,
+      "selected_primary": false,
+      "AP": 0.4162309127186918,
+      "AP50": 0.5484284151727101,
+      "AP75": 0.45406923697887613,
+      "AR100": 0.5778107307500756,
+      "AP_computed_here": false,
+      "AP_reused": true,
+      "prediction_count": 2285,
+      "metrics_path": "/mnt/data/yxy-codex/home/outputs/RAXO/pair_conflict_material_projection_20261101/endpoints/CLC_tune/permuted_material_adaptive_router_a0_calibration_7c064051b3e1eebf/metrics.json",
+      "metrics_sha256": "86586b64444f9b3f03151137589c711927e39af0576aa0f70f9d393c4dc1d003",
+      "export_path": "/mnt/data/yxy-codex/home/outputs/RAXO/pair_conflict_material_projection_20261101/endpoints/CLC_tune/permuted_material_adaptive_router_a0_calibration_7c064051b3e1eebf/export.json",
+      "export_sha256": "47f91c98bd78bfaf463824e15f101006fc33601f4d4e150fddf5a769404142c1"
+    },
+    {
+      "dataset": "CLC_tune",
+      "phase": "calibration",
+      "variant": "permuted_material",
+      "route": "anchor_locked",
+      "residual_alpha": 0.25,
+      "diagnostic": false,
+      "included_in_parameter_selection": true,
+      "selected_primary": false,
+      "AP": 0.4162309127186918,
+      "AP50": 0.5484284151727101,
+      "AP75": 0.45406923697887613,
+      "AR100": 0.5778107307500756,
+      "AP_computed_here": true,
+      "AP_reused": false,
+      "prediction_count": 2285,
+      "metrics_path": "/mnt/data/yxy-codex/home/outputs/RAXO/pair_conflict_material_projection_20261101/endpoints/CLC_tune/permuted_material_anchor_locked_a0p25_calibration_5afd19a80b7a5d33/metrics.json",
+      "metrics_sha256": "7c397b3577731ddc5c3db51eb45a653fb75d363d089e7a594a3a0f4b1f785244",
+      "export_path": "/mnt/data/yxy-codex/home/outputs/RAXO/pair_conflict_material_projection_20261101/endpoints/CLC_tune/permuted_material_anchor_locked_a0p25_calibration_5afd19a80b7a5d33/export.json",
+      "export_sha256": "ba7af5673c8c54af5ed8c4220e22616c4e9dcc702bc63e879b6ea97fb0f7bbbb"
+    },
+    {
+      "dataset": "CLC_tune",
+      "phase": "calibration",
+      "variant": "permuted_material",
+      "route": "adaptive_router",
+      "residual_alpha": 0.25,
+      "diagnostic": false,
+      "included_in_parameter_selection": true,
+      "selected_primary": false,
+      "AP": 0.4162309127186918,
+      "AP50": 0.5484284151727101,
+      "AP75": 0.45406923697887613,
+      "AR100": 0.5778107307500756,
+      "AP_computed_here": false,
+      "AP_reused": true,
+      "prediction_count": 2285,
+      "metrics_path": "/mnt/data/yxy-codex/home/outputs/RAXO/pair_conflict_material_projection_20261101/endpoints/CLC_tune/permuted_material_adaptive_router_a0p25_calibration_b40644f44b8af7da/metrics.json",
+      "metrics_sha256": "e65b1bb1f0ce17dbbaaa19953460ca40218b4010a013b9e6b304c3f5a48e4f50",
+      "export_path": "/mnt/data/yxy-codex/home/outputs/RAXO/pair_conflict_material_projection_20261101/endpoints/CLC_tune/permuted_material_adaptive_router_a0p25_calibration_b40644f44b8af7da/export.json",
+      "export_sha256": "94e87ba6a72bd65d4850673a70acdad5b3f00b4780370869860940cba2e429ef"
+    },
+    {
+      "dataset": "CLC_tune",
+      "phase": "calibration",
+      "variant": "material",
+      "route": "adaptive_router",
+      "residual_alpha": 0.25,
+      "diagnostic": false,
+      "included_in_parameter_selection": true,
+      "selected_primary": false,
+      "AP": 0.41623297850697066,
+      "AP50": 0.5484156749760831,
+      "AP75": 0.4540779148487133,
+      "AR100": 0.5778107307500756,
+      "AP_computed_here": false,
+      "AP_reused": true,
+      "prediction_count": 2285,
+      "metrics_path": "/mnt/data/yxy-codex/home/outputs/RAXO/pair_conflict_material_projection_20261101/endpoints/CLC_tune/material_adaptive_router_a0p25_calibration_64b0d5c3b2c1b6ee/metrics.json",
+      "metrics_sha256": "ab0aaeda9505408af442fff4ccd0a805626b2acaebbd4bd5a6ceac52398f0edf",
+      "export_path": "/mnt/data/yxy-codex/home/outputs/RAXO/pair_conflict_material_projection_20261101/endpoints/CLC_tune/material_adaptive_router_a0p25_calibration_64b0d5c3b2c1b6ee/export.json",
+      "export_sha256": "4ad6093ef72accbe879389be6c665bf4a51ba27982a5217911c3b65bb6e71816"
+    },
+    {
+      "dataset": "CLC_tune",
+      "phase": "calibration",
+      "variant": "material",
+      "route": "anchor_locked",
+      "residual_alpha": 0.25,
+      "diagnostic": false,
+      "included_in_parameter_selection": true,
+      "selected_primary": false,
+      "AP": 0.41623297850697066,
+      "AP50": 0.5484156749760831,
+      "AP75": 0.4540779148487133,
+      "AR100": 0.5778107307500756,
+      "AP_computed_here": true,
+      "AP_reused": false,
+      "prediction_count": 2285,
+      "metrics_path": "/mnt/data/yxy-codex/home/outputs/RAXO/pair_conflict_material_projection_20261101/endpoints/CLC_tune/material_anchor_locked_a0p25_calibration_0df4c5225d13c899/metrics.json",
+      "metrics_sha256": "308dec5487bd632ae7314c7aac7e5ddff7cb3e8c2460aad78e60c3427259bc09",
+      "export_path": "/mnt/data/yxy-codex/home/outputs/RAXO/pair_conflict_material_projection_20261101/endpoints/CLC_tune/material_anchor_locked_a0p25_calibration_0df4c5225d13c899/export.json",
+      "export_sha256": "b422287f8e1a60ee7a05e544d759c239d42f789ac284726ce3cd4286d0694489"
+    },
+    {
+      "dataset": "CLC_tune",
+      "phase": "calibration",
+      "variant": "material",
+      "route": "anchor_locked",
+      "residual_alpha": 0.5,
+      "diagnostic": false,
+      "included_in_parameter_selection": true,
+      "selected_primary": false,
+      "AP": 0.416237986902547,
+      "AP50": 0.5484223335366761,
+      "AP75": 0.4540900739593612,
+      "AR100": 0.5778107307500756,
+      "AP_computed_here": true,
+      "AP_reused": false,
+      "prediction_count": 2285,
+      "metrics_path": "/mnt/data/yxy-codex/home/outputs/RAXO/pair_conflict_material_projection_20261101/endpoints/CLC_tune/material_anchor_locked_a0p5_calibration_5db86a11dbc7ced2/metrics.json",
+      "metrics_sha256": "71a3b91e611fe6c6ed20664be8a84340cec6fccb80faf8f8d7abaf732c1e207c",
+      "export_path": "/mnt/data/yxy-codex/home/outputs/RAXO/pair_conflict_material_projection_20261101/endpoints/CLC_tune/material_anchor_locked_a0p5_calibration_5db86a11dbc7ced2/export.json",
+      "export_sha256": "41a115577ab84f257515e7d170f49b227d01828ee0b3ba5fff2787e8975a37c8"
+    },
+    {
+      "dataset": "CLC_tune",
+      "phase": "calibration",
+      "variant": "material",
+      "route": "adaptive_router",
+      "residual_alpha": 0.5,
+      "diagnostic": false,
+      "included_in_parameter_selection": true,
+      "selected_primary": false,
+      "AP": 0.416237986902547,
+      "AP50": 0.5484223335366761,
+      "AP75": 0.4540900739593612,
+      "AR100": 0.5778107307500756,
+      "AP_computed_here": false,
+      "AP_reused": true,
+      "prediction_count": 2285,
+      "metrics_path": "/mnt/data/yxy-codex/home/outputs/RAXO/pair_conflict_material_projection_20261101/endpoints/CLC_tune/material_adaptive_router_a0p5_calibration_1dd1a7974deb12eb/metrics.json",
+      "metrics_sha256": "40ede3e0d0b8c2c0d3504e2cf27a2f7c0092812bad25c597ff2506108b830977",
+      "export_path": "/mnt/data/yxy-codex/home/outputs/RAXO/pair_conflict_material_projection_20261101/endpoints/CLC_tune/material_adaptive_router_a0p5_calibration_1dd1a7974deb12eb/export.json",
+      "export_sha256": "dbea19c624a5254f493e56f868de6dbc7120867589f880d5bebf90cb59d1c680"
+    },
+    {
+      "dataset": "CLC_tune",
+      "phase": "calibration",
+      "variant": "permuted_material",
+      "route": "anchor_locked",
+      "residual_alpha": 0.5,
+      "diagnostic": false,
+      "included_in_parameter_selection": true,
+      "selected_primary": false,
+      "AP": 0.4162309127186918,
+      "AP50": 0.5484284151727101,
+      "AP75": 0.45406923697887613,
+      "AR100": 0.5778107307500756,
+      "AP_computed_here": true,
+      "AP_reused": false,
+      "prediction_count": 2285,
+      "metrics_path": "/mnt/data/yxy-codex/home/outputs/RAXO/pair_conflict_material_projection_20261101/endpoints/CLC_tune/permuted_material_anchor_locked_a0p5_calibration_8b541b900297bfb9/metrics.json",
+      "metrics_sha256": "f4fbe1ad8c3c049cecb5147db4b7f22076055495d8a31c3f64153c78e6a08166",
+      "export_path": "/mnt/data/yxy-codex/home/outputs/RAXO/pair_conflict_material_projection_20261101/endpoints/CLC_tune/permuted_material_anchor_locked_a0p5_calibration_8b541b900297bfb9/export.json",
+      "export_sha256": "5cf44033f955f648d9e1741be2c611235f884e6bbbb017ccc76fa35ea2e8ad30"
+    },
+    {
+      "dataset": "CLC_tune",
+      "phase": "calibration",
+      "variant": "permuted_material",
+      "route": "adaptive_router",
+      "residual_alpha": 0.5,
+      "diagnostic": false,
+      "included_in_parameter_selection": true,
+      "selected_primary": false,
+      "AP": 0.4162309127186918,
+      "AP50": 0.5484284151727101,
+      "AP75": 0.45406923697887613,
+      "AR100": 0.5778107307500756,
+      "AP_computed_here": false,
+      "AP_reused": true,
+      "prediction_count": 2285,
+      "metrics_path": "/mnt/data/yxy-codex/home/outputs/RAXO/pair_conflict_material_projection_20261101/endpoints/CLC_tune/permuted_material_adaptive_router_a0p5_calibration_7b5a0ff39897fc46/metrics.json",
+      "metrics_sha256": "800468d8101bbeadfca775bf423a94d49c272913be04a79ceb56da051244069d",
+      "export_path": "/mnt/data/yxy-codex/home/outputs/RAXO/pair_conflict_material_projection_20261101/endpoints/CLC_tune/permuted_material_adaptive_router_a0p5_calibration_7b5a0ff39897fc46/export.json",
+      "export_sha256": "73c22eb19fd109840bd93780564354734884e913742370a7c05019d26cdb2643"
+    },
+    {
+      "dataset": "CLC_tune",
+      "phase": "calibration",
+      "variant": "permuted_material",
+      "route": "anchor_locked",
+      "residual_alpha": 1.0,
+      "diagnostic": false,
+      "included_in_parameter_selection": true,
+      "selected_primary": false,
+      "AP": 0.4162309127186918,
+      "AP50": 0.5484284151727101,
+      "AP75": 0.45406923697887613,
+      "AR100": 0.5778107307500756,
+      "AP_computed_here": true,
+      "AP_reused": false,
+      "prediction_count": 2285,
+      "metrics_path": "/mnt/data/yxy-codex/home/outputs/RAXO/pair_conflict_material_projection_20261101/endpoints/CLC_tune/permuted_material_anchor_locked_a1_calibration_50f57cf83034af04/metrics.json",
+      "metrics_sha256": "94c98c2c6c1029e31b75a973cc831607b15a46b0aab20bed1ffdacab7d07fc71",
+      "export_path": "/mnt/data/yxy-codex/home/outputs/RAXO/pair_conflict_material_projection_20261101/endpoints/CLC_tune/permuted_material_anchor_locked_a1_calibration_50f57cf83034af04/export.json",
+      "export_sha256": "6c2cae1669d7a2c11227d13f5f74a1317dbbc625f5638ffe80ca5f817c66de22"
+    },
+    {
+      "dataset": "CLC_tune",
+      "phase": "calibration",
+      "variant": "material",
+      "route": "anchor_locked",
+      "residual_alpha": 1.0,
+      "diagnostic": false,
+      "included_in_parameter_selection": true,
+      "selected_primary": false,
+      "AP": 0.4163308198793775,
+      "AP50": 0.548523892726276,
+      "AP75": 0.4541932323605761,
+      "AR100": 0.5778107307500756,
+      "AP_computed_here": true,
+      "AP_reused": false,
+      "prediction_count": 2285,
+      "metrics_path": "/mnt/data/yxy-codex/home/outputs/RAXO/pair_conflict_material_projection_20261101/endpoints/CLC_tune/material_anchor_locked_a1_calibration_591936e890b26046/metrics.json",
+      "metrics_sha256": "8ae32157b9b878847f864d4bd3b84b968ebfa4128264988a2279c655e988386d",
+      "export_path": "/mnt/data/yxy-codex/home/outputs/RAXO/pair_conflict_material_projection_20261101/endpoints/CLC_tune/material_anchor_locked_a1_calibration_591936e890b26046/export.json",
+      "export_sha256": "73f90a8075f1b438e9f40c44867af48e16e200bdac7a671fd9f96f060fe22371"
+    },
+    {
+      "dataset": "CLC_tune",
+      "phase": "calibration",
+      "variant": "material",
+      "route": "adaptive_router",
+      "residual_alpha": 1.0,
+      "diagnostic": false,
+      "included_in_parameter_selection": true,
+      "selected_primary": false,
+      "AP": 0.4163306833787155,
+      "AP50": 0.548523892726276,
+      "AP75": 0.4541924694548819,
+      "AR100": 0.5778107307500756,
+      "AP_computed_here": true,
+      "AP_reused": false,
+      "prediction_count": 2285,
+      "metrics_path": "/mnt/data/yxy-codex/home/outputs/RAXO/pair_conflict_material_projection_20261101/endpoints/CLC_tune/material_adaptive_router_a1_calibration_f4bba40941a03627/metrics.json",
+      "metrics_sha256": "ad22f1b0eddbd7663d7eb375cab61be7e7a41931699a6bcc751981a27c2803c0",
+      "export_path": "/mnt/data/yxy-codex/home/outputs/RAXO/pair_conflict_material_projection_20261101/endpoints/CLC_tune/material_adaptive_router_a1_calibration_f4bba40941a03627/export.json",
+      "export_sha256": "6cdfbc8fa6e69376fb885788bc30a52c473996707c61003805737d92c0b1d338"
+    },
+    {
+      "dataset": "CLC_tune",
+      "phase": "calibration",
+      "variant": "permuted_material",
+      "route": "adaptive_router",
+      "residual_alpha": 1.0,
+      "diagnostic": false,
+      "included_in_parameter_selection": true,
+      "selected_primary": false,
+      "AP": 0.4162309127186918,
+      "AP50": 0.5484284151727101,
+      "AP75": 0.45406923697887613,
+      "AR100": 0.5778107307500756,
+      "AP_computed_here": false,
+      "AP_reused": true,
+      "prediction_count": 2285,
+      "metrics_path": "/mnt/data/yxy-codex/home/outputs/RAXO/pair_conflict_material_projection_20261101/endpoints/CLC_tune/permuted_material_adaptive_router_a1_calibration_462dc164bfbb0a64/metrics.json",
+      "metrics_sha256": "a9c1dab87a5d21dd7061b479cef9c678b9d417f9b75e430ad2de213bf4517b84",
+      "export_path": "/mnt/data/yxy-codex/home/outputs/RAXO/pair_conflict_material_projection_20261101/endpoints/CLC_tune/permuted_material_adaptive_router_a1_calibration_462dc164bfbb0a64/export.json",
+      "export_sha256": "938319c9d24ceda2c2e6197acabe15326fbbaf925c91e9d119d5ad6882493d7c"
+    },
+    {
+      "dataset": "DET",
+      "phase": "final",
+      "variant": "permuted_material",
+      "route": "adaptive_router",
+      "residual_alpha": 1.0,
+      "diagnostic": false,
+      "included_in_parameter_selection": false,
+      "selected_primary": false,
+      "AP": 0.5089474899109792,
+      "AP50": 0.5806690351450096,
+      "AP75": 0.5166480624587246,
+      "AR100": 0.6074918566775245,
+      "AP_computed_here": true,
+      "AP_reused": false,
+      "prediction_count": 58819,
+      "metrics_path": "/mnt/data/yxy-codex/home/outputs/RAXO/pair_conflict_material_projection_20261101/endpoints/DET/permuted_material_adaptive_router_a1_final_9f8e5476210429ba/metrics.json",
+      "metrics_sha256": "0c286552a279774eabd80d41f4f762a04c2225e6a446e2e76f2dbada36c20450",
+      "export_path": "/mnt/data/yxy-codex/home/outputs/RAXO/pair_conflict_material_projection_20261101/endpoints/DET/permuted_material_adaptive_router_a1_final_9f8e5476210429ba/export.json",
+      "export_sha256": "00ad3dab1d8c0edb1f220e96c52b5dd5f2d9167a209ffef60563d6e606e78de0"
+    },
+    {
+      "dataset": "DET",
+      "phase": "final",
+      "variant": "material",
+      "route": "adaptive_router",
+      "residual_alpha": 1.0,
+      "diagnostic": false,
+      "included_in_parameter_selection": false,
+      "selected_primary": false,
+      "AP": 0.5074010846835337,
+      "AP50": 0.5803098307549901,
+      "AP75": 0.5154602944250842,
+      "AR100": 0.6068403908794788,
+      "AP_computed_here": true,
+      "AP_reused": false,
+      "prediction_count": 58819,
+      "metrics_path": "/mnt/data/yxy-codex/home/outputs/RAXO/pair_conflict_material_projection_20261101/endpoints/DET/material_adaptive_router_a1_final_32a309d60eaaa294/metrics.json",
+      "metrics_sha256": "b3a70f5a733f82b42327495ba8e5e88bcf9cc92dfa2d3df071774d82cf74553f",
+      "export_path": "/mnt/data/yxy-codex/home/outputs/RAXO/pair_conflict_material_projection_20261101/endpoints/DET/material_adaptive_router_a1_final_32a309d60eaaa294/export.json",
+      "export_sha256": "94da200d69377327c2e9981dd1456ea72e93dbc2dc43c9ba418a9fc6f81309ad"
+    },
+    {
+      "dataset": "DET",
+      "phase": "final",
+      "variant": "permuted_material",
+      "route": "anchor_locked",
+      "residual_alpha": 1.0,
+      "diagnostic": false,
+      "included_in_parameter_selection": false,
+      "selected_primary": false,
+      "AP": 0.5089474898132333,
+      "AP50": 0.5806690341675517,
+      "AP75": 0.5166480624587246,
+      "AR100": 0.6074918566775245,
+      "AP_computed_here": true,
+      "AP_reused": false,
+      "prediction_count": 58819,
+      "metrics_path": "/mnt/data/yxy-codex/home/outputs/RAXO/pair_conflict_material_projection_20261101/endpoints/DET/permuted_material_anchor_locked_a1_final_3ed009ff14aae7fd/metrics.json",
+      "metrics_sha256": "00d6024013f9b7e1198c3ea439ae40b261887e8dbcc3796b235cbf91402afc28",
+      "export_path": "/mnt/data/yxy-codex/home/outputs/RAXO/pair_conflict_material_projection_20261101/endpoints/DET/permuted_material_anchor_locked_a1_final_3ed009ff14aae7fd/export.json",
+      "export_sha256": "a9dbf35f4ad792ab361edea284448f92100a1161a6bda3c5704564c61d272665"
+    },
+    {
+      "dataset": "DET",
+      "phase": "final",
+      "variant": "material",
+      "route": "anchor_locked",
+      "residual_alpha": 1.0,
+      "diagnostic": false,
+      "included_in_parameter_selection": false,
+      "selected_primary": true,
+      "AP": 0.5092182455155324,
+      "AP50": 0.5816462377626441,
+      "AP75": 0.5166505875978409,
+      "AR100": 0.6074918566775245,
+      "AP_computed_here": true,
+      "AP_reused": false,
+      "prediction_count": 58819,
+      "metrics_path": "/mnt/data/yxy-codex/home/outputs/RAXO/pair_conflict_material_projection_20261101/endpoints/DET/material_anchor_locked_a1_final_bc4f21c48711f245/metrics.json",
+      "metrics_sha256": "da7554e09482c4ae92b7d3cefc4fb65e71e713b2290a72f6317583a8abd8beef",
+      "export_path": "/mnt/data/yxy-codex/home/outputs/RAXO/pair_conflict_material_projection_20261101/endpoints/DET/material_anchor_locked_a1_final_bc4f21c48711f245/export.json",
+      "export_sha256": "e78da2d6665e1545a1817acb62314b6ca1e942467852a90395f97e76a3c8dc48"
+    },
+    {
+      "dataset": "CLCXray_test",
+      "phase": "final",
+      "variant": "permuted_material",
+      "route": "adaptive_router",
+      "residual_alpha": 1.0,
+      "diagnostic": false,
+      "included_in_parameter_selection": false,
+      "selected_primary": false,
+      "AP": 0.26697534685506763,
+      "AP50": 0.3563039889114095,
+      "AP75": 0.2951771010593997,
+      "AR100": 0.3895736935633875,
+      "AP_computed_here": false,
+      "AP_reused": true,
+      "prediction_count": 11211,
+      "metrics_path": "/mnt/data/yxy-codex/home/outputs/RAXO/pair_conflict_material_projection_20261101/endpoints/CLCXray_test/permuted_material_adaptive_router_a1_final_96bb2b4d12bd6803/metrics.json",
+      "metrics_sha256": "99005dbbc9f496494bef05f0e1b00b6204a027309598e17745d8d75010c53537",
+      "export_path": "/mnt/data/yxy-codex/home/outputs/RAXO/pair_conflict_material_projection_20261101/endpoints/CLCXray_test/permuted_material_adaptive_router_a1_final_96bb2b4d12bd6803/export.json",
+      "export_sha256": "e9faeda79b25e1b5cfde7738ecb971c055d42c26b1cffb3a0126bb41ce0c8c64"
+    },
+    {
+      "dataset": "CLCXray_test",
+      "phase": "final",
+      "variant": "permuted_material",
+      "route": "anchor_locked",
+      "residual_alpha": 1.0,
+      "diagnostic": false,
+      "included_in_parameter_selection": false,
+      "selected_primary": false,
+      "AP": 0.26697534685506763,
+      "AP50": 0.3563039889114095,
+      "AP75": 0.2951771010593997,
+      "AR100": 0.3895736935633875,
+      "AP_computed_here": true,
+      "AP_reused": false,
+      "prediction_count": 11211,
+      "metrics_path": "/mnt/data/yxy-codex/home/outputs/RAXO/pair_conflict_material_projection_20261101/endpoints/CLCXray_test/permuted_material_anchor_locked_a1_final_62ff4395001a546d/metrics.json",
+      "metrics_sha256": "610d9105638f5484974281ebe341135f466335122667bb53888404697279bb15",
+      "export_path": "/mnt/data/yxy-codex/home/outputs/RAXO/pair_conflict_material_projection_20261101/endpoints/CLCXray_test/permuted_material_anchor_locked_a1_final_62ff4395001a546d/export.json",
+      "export_sha256": "4508e778fba35431b2dc6e79d72363e1e40fca182603f2fc315823d589497d58"
+    },
+    {
+      "dataset": "CLCXray_test",
+      "phase": "final",
+      "variant": "material",
+      "route": "anchor_locked",
+      "residual_alpha": 1.0,
+      "diagnostic": false,
+      "included_in_parameter_selection": false,
+      "selected_primary": true,
+      "AP": 0.2672587438708459,
+      "AP50": 0.3566403272855956,
+      "AP75": 0.29561862068924505,
+      "AR100": 0.3895736935633875,
+      "AP_computed_here": true,
+      "AP_reused": false,
+      "prediction_count": 11211,
+      "metrics_path": "/mnt/data/yxy-codex/home/outputs/RAXO/pair_conflict_material_projection_20261101/endpoints/CLCXray_test/material_anchor_locked_a1_final_11613466c4e497cc/metrics.json",
+      "metrics_sha256": "54f9e00471b7a8b0b8e078dca4e6491db1bdc3a8d2ebdee0e96317ad41a57e84",
+      "export_path": "/mnt/data/yxy-codex/home/outputs/RAXO/pair_conflict_material_projection_20261101/endpoints/CLCXray_test/material_anchor_locked_a1_final_11613466c4e497cc/export.json",
+      "export_sha256": "62b32dfb3624fdc0243c1fc47670003fad27a7d0c6b92fba902e9eb6faf506c1"
+    },
+    {
+      "dataset": "CLCXray_test",
+      "phase": "final",
+      "variant": "material",
+      "route": "adaptive_router",
+      "residual_alpha": 1.0,
+      "diagnostic": false,
+      "included_in_parameter_selection": false,
+      "selected_primary": false,
+      "AP": 0.26728698523963906,
+      "AP50": 0.35667763618170456,
+      "AP75": 0.2956664457430555,
+      "AR100": 0.38986609122420623,
+      "AP_computed_here": true,
+      "AP_reused": false,
+      "prediction_count": 11211,
+      "metrics_path": "/mnt/data/yxy-codex/home/outputs/RAXO/pair_conflict_material_projection_20261101/endpoints/CLCXray_test/material_adaptive_router_a1_final_b4728455e7798900/metrics.json",
+      "metrics_sha256": "1b1fe95fe6aaa234f258f00bda831bb494ddfd55fe3ed3b2d23bdb1a27b7fa21",
+      "export_path": "/mnt/data/yxy-codex/home/outputs/RAXO/pair_conflict_material_projection_20261101/endpoints/CLCXray_test/material_adaptive_router_a1_final_b4728455e7798900/export.json",
+      "export_sha256": "1d7cdda38226b046f374874ce0322ff1cb2bc9d64269d60a211acf72425628b5"
+    },
+    {
+      "dataset": "PIXray",
+      "phase": "final",
+      "variant": "material",
+      "route": "anchor_locked",
+      "residual_alpha": 1.0,
+      "diagnostic": false,
+      "included_in_parameter_selection": false,
+      "selected_primary": true,
+      "AP": 0.448321960002225,
+      "AP50": 0.5514925896754206,
+      "AP75": 0.46946263613811323,
+      "AR100": 0.6144931975557635,
+      "AP_computed_here": true,
+      "AP_reused": false,
+      "prediction_count": 88775,
+      "metrics_path": "/mnt/data/yxy-codex/home/outputs/RAXO/pair_conflict_material_projection_20261101/endpoints/PIXray/material_anchor_locked_a1_final_df0b145b19c3f22a/metrics.json",
+      "metrics_sha256": "3914c80b663d386c7fd8659bd8979813ded3c9c7d38ba5f6a8bed3eac47c825c",
+      "export_path": "/mnt/data/yxy-codex/home/outputs/RAXO/pair_conflict_material_projection_20261101/endpoints/PIXray/material_anchor_locked_a1_final_df0b145b19c3f22a/export.json",
+      "export_sha256": "2e7cb0dc5bf194cf901b960c7dc76b9e88a2e947dc1d42b490b98a22e22c7500"
+    },
+    {
+      "dataset": "PIXray",
+      "phase": "final",
+      "variant": "material",
+      "route": "adaptive_router",
+      "residual_alpha": 1.0,
+      "diagnostic": false,
+      "included_in_parameter_selection": false,
+      "selected_primary": false,
+      "AP": 0.44844950634222225,
+      "AP50": 0.5516191938466041,
+      "AP75": 0.4695919392804993,
+      "AR100": 0.6145168748243732,
+      "AP_computed_here": true,
+      "AP_reused": false,
+      "prediction_count": 88775,
+      "metrics_path": "/mnt/data/yxy-codex/home/outputs/RAXO/pair_conflict_material_projection_20261101/endpoints/PIXray/material_adaptive_router_a1_final_5030daf0997a093c/metrics.json",
+      "metrics_sha256": "6a19fd08c17b482a77d1bd13e8a2fc07caea5395733328a9a911c297126b496e",
+      "export_path": "/mnt/data/yxy-codex/home/outputs/RAXO/pair_conflict_material_projection_20261101/endpoints/PIXray/material_adaptive_router_a1_final_5030daf0997a093c/export.json",
+      "export_sha256": "1d3d912cb2c31675ee28793abc6f28f3b7bccf59d638c39d969c0424dd23c00f"
+    },
+    {
+      "dataset": "PIXray",
+      "phase": "final",
+      "variant": "permuted_material",
+      "route": "anchor_locked",
+      "residual_alpha": 1.0,
+      "diagnostic": false,
+      "included_in_parameter_selection": false,
+      "selected_primary": false,
+      "AP": 0.44817886462774903,
+      "AP50": 0.5512599672211281,
+      "AP75": 0.4694215436198625,
+      "AR100": 0.6144931975557635,
+      "AP_computed_here": false,
+      "AP_reused": true,
+      "prediction_count": 88775,
+      "metrics_path": "/mnt/data/yxy-codex/home/outputs/RAXO/pair_conflict_material_projection_20261101/endpoints/PIXray/permuted_material_anchor_locked_a1_final_4b75e0dc6c270389/metrics.json",
+      "metrics_sha256": "07d44e3058e2b07fd58f61e69092c134303aacddfe45e6bce9dedc2522502a39",
+      "export_path": "/mnt/data/yxy-codex/home/outputs/RAXO/pair_conflict_material_projection_20261101/endpoints/PIXray/permuted_material_anchor_locked_a1_final_4b75e0dc6c270389/export.json",
+      "export_sha256": "66f502041cd0201e335e02e530a153d6207154cae6d1716a5a32abebb6edcfb4"
+    },
+    {
+      "dataset": "PIXray",
+      "phase": "final",
+      "variant": "permuted_material",
+      "route": "adaptive_router",
+      "residual_alpha": 1.0,
+      "diagnostic": false,
+      "included_in_parameter_selection": false,
+      "selected_primary": false,
+      "AP": 0.44817886462774903,
+      "AP50": 0.5512599672211281,
+      "AP75": 0.4694215436198625,
+      "AR100": 0.6144931975557635,
+      "AP_computed_here": true,
+      "AP_reused": false,
+      "prediction_count": 88775,
+      "metrics_path": "/mnt/data/yxy-codex/home/outputs/RAXO/pair_conflict_material_projection_20261101/endpoints/PIXray/permuted_material_adaptive_router_a1_final_4d55f6e935097d25/metrics.json",
+      "metrics_sha256": "6c13ab86bc4a952fc441c7e132765dcc02f2d11bd12746896c1b69588d752a67",
+      "export_path": "/mnt/data/yxy-codex/home/outputs/RAXO/pair_conflict_material_projection_20261101/endpoints/PIXray/permuted_material_adaptive_router_a1_final_4d55f6e935097d25/export.json",
+      "export_sha256": "fe2fedda0260e8352705246f6e2f5aecc18262a9285c9d93d735ab751111d5e5"
+    },
+    {
+      "dataset": "PIDray",
+      "phase": "final",
+      "variant": "permuted_material",
+      "route": "adaptive_router",
+      "residual_alpha": 1.0,
+      "diagnostic": false,
+      "included_in_parameter_selection": false,
+      "selected_primary": false,
+      "AP": 0.2353049349526493,
+      "AP50": 0.3092434000052432,
+      "AP75": 0.2514781803219654,
+      "AR100": 0.4228941589918108,
+      "AP_computed_here": false,
+      "AP_reused": true,
+      "prediction_count": 456561,
+      "metrics_path": "/mnt/data/yxy-codex/home/outputs/RAXO/pair_conflict_material_projection_20261101/endpoints/PIDray/permuted_material_adaptive_router_a1_final_7341f291d9debeaf/metrics.json",
+      "metrics_sha256": "d61d3daa5435f1ea08265a81be57b1e8c16d1fa69910773958c422f0381d2014",
+      "export_path": "/mnt/data/yxy-codex/home/outputs/RAXO/pair_conflict_material_projection_20261101/endpoints/PIDray/permuted_material_adaptive_router_a1_final_7341f291d9debeaf/export.json",
+      "export_sha256": "25d077c6b07278a8ad9b340b204b0ff139612d5c286c8f7310b5d7a35750b756"
+    },
+    {
+      "dataset": "PIDray",
+      "phase": "final",
+      "variant": "permuted_material",
+      "route": "anchor_locked",
+      "residual_alpha": 1.0,
+      "diagnostic": false,
+      "included_in_parameter_selection": false,
+      "selected_primary": false,
+      "AP": 0.2353049349526493,
+      "AP50": 0.3092434000052432,
+      "AP75": 0.2514781803219654,
+      "AR100": 0.4228941589918108,
+      "AP_computed_here": true,
+      "AP_reused": false,
+      "prediction_count": 456561,
+      "metrics_path": "/mnt/data/yxy-codex/home/outputs/RAXO/pair_conflict_material_projection_20261101/endpoints/PIDray/permuted_material_anchor_locked_a1_final_8fe4d26831820bb9/metrics.json",
+      "metrics_sha256": "b43b06ea7a426d3a8778aeecae0a5717bea45924f45de0f52c37abea30980172",
+      "export_path": "/mnt/data/yxy-codex/home/outputs/RAXO/pair_conflict_material_projection_20261101/endpoints/PIDray/permuted_material_anchor_locked_a1_final_8fe4d26831820bb9/export.json",
+      "export_sha256": "01a5281736245217bb0abbe7f0fa8e408f92c06758b5b4fd45f638d5dce365eb"
+    },
+    {
+      "dataset": "PIDray",
+      "phase": "final",
+      "variant": "material",
+      "route": "anchor_locked",
+      "residual_alpha": 1.0,
+      "diagnostic": false,
+      "included_in_parameter_selection": false,
+      "selected_primary": true,
+      "AP": 0.2353207309599169,
+      "AP50": 0.3092540418360828,
+      "AP75": 0.25150007358332815,
+      "AR100": 0.4228941589918108,
+      "AP_computed_here": true,
+      "AP_reused": false,
+      "prediction_count": 456561,
+      "metrics_path": "/mnt/data/yxy-codex/home/outputs/RAXO/pair_conflict_material_projection_20261101/endpoints/PIDray/material_anchor_locked_a1_final_a40c4f4805b56245/metrics.json",
+      "metrics_sha256": "ca3d34e5c176165e576e9270c111517f773d0fce9c02cd196f4848ec2fa37a38",
+      "export_path": "/mnt/data/yxy-codex/home/outputs/RAXO/pair_conflict_material_projection_20261101/endpoints/PIDray/material_anchor_locked_a1_final_a40c4f4805b56245/export.json",
+      "export_sha256": "e836e0282e1c8c21ea0ff58239de77902b354dab700c92752b37efe88bf23b14"
+    },
+    {
+      "dataset": "PIDray",
+      "phase": "final",
+      "variant": "material",
+      "route": "adaptive_router",
+      "residual_alpha": 1.0,
+      "diagnostic": false,
+      "included_in_parameter_selection": false,
+      "selected_primary": false,
+      "AP": 0.23532125588739292,
+      "AP50": 0.3092532709026076,
+      "AP75": 0.25150013375755104,
+      "AR100": 0.4228661784315962,
+      "AP_computed_here": true,
+      "AP_reused": false,
+      "prediction_count": 456561,
+      "metrics_path": "/mnt/data/yxy-codex/home/outputs/RAXO/pair_conflict_material_projection_20261101/endpoints/PIDray/material_adaptive_router_a1_final_249284bae9a5be31/metrics.json",
+      "metrics_sha256": "92de83d5b2f2bf2bb598269d2f25ffe4c8499986d1790c76c354c6897607b14e",
+      "export_path": "/mnt/data/yxy-codex/home/outputs/RAXO/pair_conflict_material_projection_20261101/endpoints/PIDray/material_adaptive_router_a1_final_249284bae9a5be31/export.json",
+      "export_sha256": "3285d36ba16b50e60721255e11717a3ee08929a0e964c3a6b99b121c76520eda"
+    },
+    {
+      "dataset": "DvXray",
+      "phase": "final",
+      "variant": "permuted_material",
+      "route": "adaptive_router",
+      "residual_alpha": 1.0,
+      "diagnostic": false,
+      "included_in_parameter_selection": false,
+      "selected_primary": false,
+      "AP": 0.2834138506730468,
+      "AP50": 0.337554914097919,
+      "AP75": 0.2993187203295869,
+      "AR100": 0.4712510630201484,
+      "AP_computed_here": false,
+      "AP_reused": true,
+      "prediction_count": 193665,
+      "metrics_path": "/mnt/data/yxy-codex/home/outputs/RAXO/pair_conflict_material_projection_20261101/endpoints/DvXray/permuted_material_adaptive_router_a1_final_61d44fa45895c6e9/metrics.json",
+      "metrics_sha256": "e112ee1eca120af8079cacfbdddf7bc5217c3961b9d227883e7b0fcd4023a8a4",
+      "export_path": "/mnt/data/yxy-codex/home/outputs/RAXO/pair_conflict_material_projection_20261101/endpoints/DvXray/permuted_material_adaptive_router_a1_final_61d44fa45895c6e9/export.json",
+      "export_sha256": "bf56ff304d023c55ff396acfb3d2cc33e55d27590fab703d13c6a5bc096b9fe8"
+    },
+    {
+      "dataset": "DvXray",
+      "phase": "final",
+      "variant": "permuted_material",
+      "route": "anchor_locked",
+      "residual_alpha": 1.0,
+      "diagnostic": false,
+      "included_in_parameter_selection": false,
+      "selected_primary": false,
+      "AP": 0.2834138506730468,
+      "AP50": 0.337554914097919,
+      "AP75": 0.2993187203295869,
+      "AR100": 0.4712510630201484,
+      "AP_computed_here": true,
+      "AP_reused": false,
+      "prediction_count": 193665,
+      "metrics_path": "/mnt/data/yxy-codex/home/outputs/RAXO/pair_conflict_material_projection_20261101/endpoints/DvXray/permuted_material_anchor_locked_a1_final_f652678f2eb89501/metrics.json",
+      "metrics_sha256": "da0cdacba70dd8b8453f00a2810e6f746e5a29c6d59a1c7ca26db1e4e0564657",
+      "export_path": "/mnt/data/yxy-codex/home/outputs/RAXO/pair_conflict_material_projection_20261101/endpoints/DvXray/permuted_material_anchor_locked_a1_final_f652678f2eb89501/export.json",
+      "export_sha256": "1ffbdcad2b4e4f9a365dd4cae09c6cec6087c29005fe393cdf0e4fe39aeb916a"
+    },
+    {
+      "dataset": "DvXray",
+      "phase": "final",
+      "variant": "material",
+      "route": "anchor_locked",
+      "residual_alpha": 1.0,
+      "diagnostic": false,
+      "included_in_parameter_selection": false,
+      "selected_primary": true,
+      "AP": 0.28344052147466403,
+      "AP50": 0.33747219293851055,
+      "AP75": 0.29938664950782445,
+      "AR100": 0.4712510630201484,
+      "AP_computed_here": true,
+      "AP_reused": false,
+      "prediction_count": 193665,
+      "metrics_path": "/mnt/data/yxy-codex/home/outputs/RAXO/pair_conflict_material_projection_20261101/endpoints/DvXray/material_anchor_locked_a1_final_37ef3f62a923e896/metrics.json",
+      "metrics_sha256": "d0451a7913d5e49e2e91779981029a3a30b76b4b1acb78449172b1efeb03c2e7",
+      "export_path": "/mnt/data/yxy-codex/home/outputs/RAXO/pair_conflict_material_projection_20261101/endpoints/DvXray/material_anchor_locked_a1_final_37ef3f62a923e896/export.json",
+      "export_sha256": "23598fdca66bcd4e728af812c6c029fb403ac6ea2c47c99308af0e938fc7cc08"
+    },
+    {
+      "dataset": "DvXray",
+      "phase": "final",
+      "variant": "material",
+      "route": "adaptive_router",
+      "residual_alpha": 1.0,
+      "diagnostic": false,
+      "included_in_parameter_selection": false,
+      "selected_primary": false,
+      "AP": 0.2831125661365859,
+      "AP50": 0.3371914709441265,
+      "AP75": 0.2989874799034448,
+      "AR100": 0.47090731001417585,
+      "AP_computed_here": true,
+      "AP_reused": false,
+      "prediction_count": 193665,
+      "metrics_path": "/mnt/data/yxy-codex/home/outputs/RAXO/pair_conflict_material_projection_20261101/endpoints/DvXray/material_adaptive_router_a1_final_9de4d1038aa8fcad/metrics.json",
+      "metrics_sha256": "ed84df7295253c3b6ef7bc694a78f869c14c6390833428c64c1dd9c1302a131e",
+      "export_path": "/mnt/data/yxy-codex/home/outputs/RAXO/pair_conflict_material_projection_20261101/endpoints/DvXray/material_adaptive_router_a1_final_9de4d1038aa8fcad/export.json",
+      "export_sha256": "6bd24dad55ab7182e355ed29a92fe7c8a8931ae0418486a82ab55013566adb18"
+    },
+    {
+      "dataset": "Hi",
+      "phase": "final",
+      "variant": "material",
+      "route": "adaptive_router",
+      "residual_alpha": 1.0,
+      "diagnostic": false,
+      "included_in_parameter_selection": false,
+      "selected_primary": false,
+      "AP": 0.20650372817618645,
+      "AP50": 0.3359737744285595,
+      "AP75": 0.23215433433064772,
+      "AR100": 0.4131978376172815,
+      "AP_computed_here": true,
+      "AP_reused": false,
+      "prediction_count": 378833,
+      "metrics_path": "/mnt/data/yxy-codex/home/outputs/RAXO/pair_conflict_material_projection_20261101/endpoints/Hi/material_adaptive_router_a1_final_d2de4917277e2353/metrics.json",
+      "metrics_sha256": "2fc19d73062eb0f009d8acfae92634c6fd551b3d1ae48f9023a4295fa385de70",
+      "export_path": "/mnt/data/yxy-codex/home/outputs/RAXO/pair_conflict_material_projection_20261101/endpoints/Hi/material_adaptive_router_a1_final_d2de4917277e2353/export.json",
+      "export_sha256": "3bdced66a3230dea9a3315366827ae4b62c0cda5559bb2885ca6c1d432cf1500"
+    },
+    {
+      "dataset": "Hi",
+      "phase": "final",
+      "variant": "permuted_material",
+      "route": "anchor_locked",
+      "residual_alpha": 1.0,
+      "diagnostic": false,
+      "included_in_parameter_selection": false,
+      "selected_primary": false,
+      "AP": 0.20529817170125889,
+      "AP50": 0.3346440511706933,
+      "AP75": 0.2307308296917556,
+      "AR100": 0.41396694116535815,
+      "AP_computed_here": true,
+      "AP_reused": false,
+      "prediction_count": 378833,
+      "metrics_path": "/mnt/data/yxy-codex/home/outputs/RAXO/pair_conflict_material_projection_20261101/endpoints/Hi/permuted_material_anchor_locked_a1_final_214fa53706c84637/metrics.json",
+      "metrics_sha256": "b27cd70ae228d332202f8033c6fab975373a5c1ca72bc12a85a0021de8ca9c27",
+      "export_path": "/mnt/data/yxy-codex/home/outputs/RAXO/pair_conflict_material_projection_20261101/endpoints/Hi/permuted_material_anchor_locked_a1_final_214fa53706c84637/export.json",
+      "export_sha256": "9d60701fec3790c298a14e7aa674820617b903e4d72a050e4f7e2062a80a215a"
+    },
+    {
+      "dataset": "Hi",
+      "phase": "final",
+      "variant": "permuted_material",
+      "route": "adaptive_router",
+      "residual_alpha": 1.0,
+      "diagnostic": false,
+      "included_in_parameter_selection": false,
+      "selected_primary": false,
+      "AP": 0.20529820540059773,
+      "AP50": 0.334644157827004,
+      "AP75": 0.23073084221627677,
+      "AR100": 0.41396694116535815,
+      "AP_computed_here": true,
+      "AP_reused": false,
+      "prediction_count": 378833,
+      "metrics_path": "/mnt/data/yxy-codex/home/outputs/RAXO/pair_conflict_material_projection_20261101/endpoints/Hi/permuted_material_adaptive_router_a1_final_8bdf425fb0ef08fb/metrics.json",
+      "metrics_sha256": "0a80456aa9d5d0c200d83157b1d51bed7dada8f4b9af5a5bbd617a4f877497df",
+      "export_path": "/mnt/data/yxy-codex/home/outputs/RAXO/pair_conflict_material_projection_20261101/endpoints/Hi/permuted_material_adaptive_router_a1_final_8bdf425fb0ef08fb/export.json",
+      "export_sha256": "5874104efd76c720e36e0ede1db9d442fdde0fe6c0dd7ec6f7bde94a8335e1d4"
+    },
+    {
+      "dataset": "Hi",
+      "phase": "final",
+      "variant": "material",
+      "route": "anchor_locked",
+      "residual_alpha": 1.0,
+      "diagnostic": false,
+      "included_in_parameter_selection": false,
+      "selected_primary": true,
+      "AP": 0.2072820886234658,
+      "AP50": 0.3374655759152928,
+      "AP75": 0.23314411942723257,
+      "AR100": 0.41396694116535815,
+      "AP_computed_here": true,
+      "AP_reused": false,
+      "prediction_count": 378833,
+      "metrics_path": "/mnt/data/yxy-codex/home/outputs/RAXO/pair_conflict_material_projection_20261101/endpoints/Hi/material_anchor_locked_a1_final_dfa668b8bd7e14c9/metrics.json",
+      "metrics_sha256": "ea51b5ed63682c8d9766cb2f1889dbd186fa249293f3356094e69504e29f05dd",
+      "export_path": "/mnt/data/yxy-codex/home/outputs/RAXO/pair_conflict_material_projection_20261101/endpoints/Hi/material_anchor_locked_a1_final_dfa668b8bd7e14c9/export.json",
+      "export_sha256": "91b259fc7b1e3b03b28f4cedfce37b7f6ac932bb409022f76f02e65ed384a59e"
+    },
+    {
+      "dataset": "CLCXray_test",
+      "phase": "final",
+      "variant": "visual_branch_only_fixed_quality",
+      "route": "fixed_native_branch",
+      "residual_alpha": 0.0,
+      "diagnostic": true,
+      "included_in_parameter_selection": false,
+      "selected_primary": false,
+      "AP": 0.2554549002923798,
+      "AP50": 0.3451260230498883,
+      "AP75": 0.28032748155066084,
+      "AR100": 0.35610255922087874,
+      "AP_computed_here": true,
+      "AP_reused": false,
+      "prediction_count": 8478,
+      "metrics_path": "/mnt/data/yxy-codex/home/outputs/RAXO/pair_conflict_material_projection_20261101/endpoints/CLCXray_test/visual_branch_only_fixed_quality_fixed_native_branch_a0_final_cba90d660f0019c0/metrics.json",
+      "metrics_sha256": "fdad5a33e02c81a0912ed5bb1d76ef5d8c6643b2f3ee1699a47d8b06d7c4d371",
+      "export_path": "/mnt/data/yxy-codex/home/outputs/RAXO/pair_conflict_material_projection_20261101/endpoints/CLCXray_test/visual_branch_only_fixed_quality_fixed_native_branch_a0_final_cba90d660f0019c0/export.json",
+      "export_sha256": "f3c0ee5ddd478287a0d071ac61ea942b60aefdaa165cb8a4fc9e7ffc8ebede65"
+    },
+    {
+      "dataset": "CLCXray_test",
+      "phase": "final",
+      "variant": "material_fused_branch_only_fixed_quality",
+      "route": "fixed_native_branch",
+      "residual_alpha": 0.0,
+      "diagnostic": true,
+      "included_in_parameter_selection": false,
+      "selected_primary": false,
+      "AP": 0.25463124970942375,
+      "AP50": 0.34067620285055783,
+      "AP75": 0.28154311314825564,
+      "AR100": 0.3660843644153019,
+      "AP_computed_here": true,
+      "AP_reused": false,
+      "prediction_count": 9019,
+      "metrics_path": "/mnt/data/yxy-codex/home/outputs/RAXO/pair_conflict_material_projection_20261101/endpoints/CLCXray_test/material_fused_branch_only_fixed_quality_fixed_native_branch_a0_final_e15ef2020407aada/metrics.json",
+      "metrics_sha256": "86173cfb63d1d2f752e6308cf16c898510ce9a76be0a6b12a5cc8805c9a6e22f",
+      "export_path": "/mnt/data/yxy-codex/home/outputs/RAXO/pair_conflict_material_projection_20261101/endpoints/CLCXray_test/material_fused_branch_only_fixed_quality_fixed_native_branch_a0_final_e15ef2020407aada/export.json",
+      "export_sha256": "a4fa7fcfce92d5fb832ac9e065dfbe4dd6ba4e70863e40cd2e5c79a40a9399f2"
+    },
+    {
+      "dataset": "DET",
+      "phase": "final",
+      "variant": "visual_branch_only_fixed_quality",
+      "route": "fixed_native_branch",
+      "residual_alpha": 0.0,
+      "diagnostic": true,
+      "included_in_parameter_selection": false,
+      "selected_primary": false,
+      "AP": 0.5057086134366485,
+      "AP50": 0.5786704150604101,
+      "AP75": 0.514860833920482,
+      "AR100": 0.601085776330076,
+      "AP_computed_here": true,
+      "AP_reused": false,
+      "prediction_count": 49726,
+      "metrics_path": "/mnt/data/yxy-codex/home/outputs/RAXO/pair_conflict_material_projection_20261101/endpoints/DET/visual_branch_only_fixed_quality_fixed_native_branch_a0_final_b466883e159ab2aa/metrics.json",
+      "metrics_sha256": "b281a4ad94a3bbcc116f766bb43fcabf4c91b07045b1327b2909622df1fe27da",
+      "export_path": "/mnt/data/yxy-codex/home/outputs/RAXO/pair_conflict_material_projection_20261101/endpoints/DET/visual_branch_only_fixed_quality_fixed_native_branch_a0_final_b466883e159ab2aa/export.json",
+      "export_sha256": "ee413bef8beab7d278272e4d83ab1b5bdcd266c75bd13ef06dcc1cc50a3e804f"
+    },
+    {
+      "dataset": "DET",
+      "phase": "final",
+      "variant": "material_fused_branch_only_fixed_quality",
+      "route": "fixed_native_branch",
+      "residual_alpha": 0.0,
+      "diagnostic": true,
+      "included_in_parameter_selection": false,
+      "selected_primary": false,
+      "AP": 0.5259956444896079,
+      "AP50": 0.5919717628945621,
+      "AP75": 0.5377791883620602,
+      "AR100": 0.6221498371335505,
+      "AP_computed_here": true,
+      "AP_reused": false,
+      "prediction_count": 57985,
+      "metrics_path": "/mnt/data/yxy-codex/home/outputs/RAXO/pair_conflict_material_projection_20261101/endpoints/DET/material_fused_branch_only_fixed_quality_fixed_native_branch_a0_final_062ac4085ee7f167/metrics.json",
+      "metrics_sha256": "3d9e2bbe66a9caa80646625d2b3391f68983f7cab16437d97f6ff322080faa06",
+      "export_path": "/mnt/data/yxy-codex/home/outputs/RAXO/pair_conflict_material_projection_20261101/endpoints/DET/material_fused_branch_only_fixed_quality_fixed_native_branch_a0_final_062ac4085ee7f167/export.json",
+      "export_sha256": "19564a3ed7e304896bdd67c8015c6cf720882c62a49378503e30005ff5abc1eb"
+    },
+    {
+      "dataset": "PIXray",
+      "phase": "final",
+      "variant": "visual_branch_only_fixed_quality",
+      "route": "fixed_native_branch",
+      "residual_alpha": 0.0,
+      "diagnostic": true,
+      "included_in_parameter_selection": false,
+      "selected_primary": false,
+      "AP": 0.43838626576497136,
+      "AP50": 0.5386796460522557,
+      "AP75": 0.45924462769019764,
+      "AR100": 0.5849491802849648,
+      "AP_computed_here": true,
+      "AP_reused": false,
+      "prediction_count": 65588,
+      "metrics_path": "/mnt/data/yxy-codex/home/outputs/RAXO/pair_conflict_material_projection_20261101/endpoints/PIXray/visual_branch_only_fixed_quality_fixed_native_branch_a0_final_1b95e7da87348287/metrics.json",
+      "metrics_sha256": "3712f0051797066604f83e251c3915964ca48869221ef9d0aca07effbb3644e5",
+      "export_path": "/mnt/data/yxy-codex/home/outputs/RAXO/pair_conflict_material_projection_20261101/endpoints/PIXray/visual_branch_only_fixed_quality_fixed_native_branch_a0_final_1b95e7da87348287/export.json",
+      "export_sha256": "fe55f01fa9e318503ac04bd04b62baacd0f3de998037c5c31afbc8feae2a280d"
+    },
+    {
+      "dataset": "PIXray",
+      "phase": "final",
+      "variant": "material_fused_branch_only_fixed_quality",
+      "route": "fixed_native_branch",
+      "residual_alpha": 0.0,
+      "diagnostic": true,
+      "included_in_parameter_selection": false,
+      "selected_primary": false,
+      "AP": 0.4165458930172516,
+      "AP50": 0.512535616294453,
+      "AP75": 0.43418950300116416,
+      "AR100": 0.5605719582093843,
+      "AP_computed_here": true,
+      "AP_reused": false,
+      "prediction_count": 81577,
+      "metrics_path": "/mnt/data/yxy-codex/home/outputs/RAXO/pair_conflict_material_projection_20261101/endpoints/PIXray/material_fused_branch_only_fixed_quality_fixed_native_branch_a0_final_b39cf5b5bec299a0/metrics.json",
+      "metrics_sha256": "da56dd8782fe52f03a1ebb2e4803816568ec062b484b490c730255a9a1fc90bb",
+      "export_path": "/mnt/data/yxy-codex/home/outputs/RAXO/pair_conflict_material_projection_20261101/endpoints/PIXray/material_fused_branch_only_fixed_quality_fixed_native_branch_a0_final_b39cf5b5bec299a0/export.json",
+      "export_sha256": "9a40e7554bfefde88567fcd1e00843096760045cad9ae0fefa4e3c5da1c97b0d"
+    },
+    {
+      "dataset": "DvXray",
+      "phase": "final",
+      "variant": "visual_branch_only_fixed_quality",
+      "route": "fixed_native_branch",
+      "residual_alpha": 0.0,
+      "diagnostic": true,
+      "included_in_parameter_selection": false,
+      "selected_primary": false,
+      "AP": 0.28027312236490143,
+      "AP50": 0.3340972739944293,
+      "AP75": 0.29652694112108774,
+      "AR100": 0.44204765802782314,
+      "AP_computed_here": true,
+      "AP_reused": false,
+      "prediction_count": 124302,
+      "metrics_path": "/mnt/data/yxy-codex/home/outputs/RAXO/pair_conflict_material_projection_20261101/endpoints/DvXray/visual_branch_only_fixed_quality_fixed_native_branch_a0_final_b1f0d5a047ff90f0/metrics.json",
+      "metrics_sha256": "937ba8ffce172b96573fa54b22ab823190cfed97c8dc29128d64a99842997aad",
+      "export_path": "/mnt/data/yxy-codex/home/outputs/RAXO/pair_conflict_material_projection_20261101/endpoints/DvXray/visual_branch_only_fixed_quality_fixed_native_branch_a0_final_b1f0d5a047ff90f0/export.json",
+      "export_sha256": "c5061bd33a14e5a511a2e89a6ffae2435bf4c34e817f61c566458b7cc5cae064"
+    },
+    {
+      "dataset": "DvXray",
+      "phase": "final",
+      "variant": "material_fused_branch_only_fixed_quality",
+      "route": "fixed_native_branch",
+      "residual_alpha": 0.0,
+      "diagnostic": true,
+      "included_in_parameter_selection": false,
+      "selected_primary": false,
+      "AP": 0.2653264899779901,
+      "AP50": 0.31721940998081244,
+      "AP75": 0.27963388198833644,
+      "AR100": 0.42422264029357676,
+      "AP_computed_here": true,
+      "AP_reused": false,
+      "prediction_count": 156968,
+      "metrics_path": "/mnt/data/yxy-codex/home/outputs/RAXO/pair_conflict_material_projection_20261101/endpoints/DvXray/material_fused_branch_only_fixed_quality_fixed_native_branch_a0_final_ee1a1a9090aae86f/metrics.json",
+      "metrics_sha256": "31eb90b37d63bf8a395e18225695dc7a893d461ec72345f45d0177409e0abd3b",
+      "export_path": "/mnt/data/yxy-codex/home/outputs/RAXO/pair_conflict_material_projection_20261101/endpoints/DvXray/material_fused_branch_only_fixed_quality_fixed_native_branch_a0_final_ee1a1a9090aae86f/export.json",
+      "export_sha256": "854c3ed35717b8da9f77d199150367ad3e609f5168e791180e6e52da345f34c7"
+    },
+    {
+      "dataset": "PIDray",
+      "phase": "final",
+      "variant": "visual_branch_only_fixed_quality",
+      "route": "fixed_native_branch",
+      "residual_alpha": 0.0,
+      "diagnostic": true,
+      "included_in_parameter_selection": false,
+      "selected_primary": false,
+      "AP": 0.23014082498812707,
+      "AP50": 0.30217741160349965,
+      "AP75": 0.24589195189630741,
+      "AR100": 0.400057124778939,
+      "AP_computed_here": true,
+      "AP_reused": false,
+      "prediction_count": 285819,
+      "metrics_path": "/mnt/data/yxy-codex/home/outputs/RAXO/pair_conflict_material_projection_20261101/endpoints/PIDray/visual_branch_only_fixed_quality_fixed_native_branch_a0_final_e33dca6f4590c0dc/metrics.json",
+      "metrics_sha256": "93af45f69b4f06ea4ddcaccae5212c7cb7708b1508f9f8b99365702cb2988505",
+      "export_path": "/mnt/data/yxy-codex/home/outputs/RAXO/pair_conflict_material_projection_20261101/endpoints/PIDray/visual_branch_only_fixed_quality_fixed_native_branch_a0_final_e33dca6f4590c0dc/export.json",
+      "export_sha256": "aca32abb7420e3f69bd85691a75622d563115105b0c0133a7393d6be54966802"
+    },
+    {
+      "dataset": "PIDray",
+      "phase": "final",
+      "variant": "material_fused_branch_only_fixed_quality",
+      "route": "fixed_native_branch",
+      "residual_alpha": 0.0,
+      "diagnostic": true,
+      "included_in_parameter_selection": false,
+      "selected_primary": false,
+      "AP": 0.23449260494423155,
+      "AP50": 0.30777157477394446,
+      "AP75": 0.25053567544451877,
+      "AR100": 0.4029146783609056,
+      "AP_computed_here": true,
+      "AP_reused": false,
+      "prediction_count": 412980,
+      "metrics_path": "/mnt/data/yxy-codex/home/outputs/RAXO/pair_conflict_material_projection_20261101/endpoints/PIDray/material_fused_branch_only_fixed_quality_fixed_native_branch_a0_final_2a51218c788fe54e/metrics.json",
+      "metrics_sha256": "44f89f1aef432870227b83153ae410aae3d1af7baf56c31517b497f26483703b",
+      "export_path": "/mnt/data/yxy-codex/home/outputs/RAXO/pair_conflict_material_projection_20261101/endpoints/PIDray/material_fused_branch_only_fixed_quality_fixed_native_branch_a0_final_2a51218c788fe54e/export.json",
+      "export_sha256": "baa08e2b987bc4374f7bb4533496f4972decaf24bfe48bd1bb155a57eb0f5fc5"
+    },
+    {
+      "dataset": "Hi",
+      "phase": "final",
+      "variant": "visual_branch_only_fixed_quality",
+      "route": "fixed_native_branch",
+      "residual_alpha": 0.0,
+      "diagnostic": true,
+      "included_in_parameter_selection": false,
+      "selected_primary": false,
+      "AP": 0.20123342607757844,
+      "AP50": 0.3242104035583547,
+      "AP75": 0.22747325557163936,
+      "AR100": 0.3965566685808267,
+      "AP_computed_here": true,
+      "AP_reused": false,
+      "prediction_count": 292896,
+      "metrics_path": "/mnt/data/yxy-codex/home/outputs/RAXO/pair_conflict_material_projection_20261101/endpoints/Hi/visual_branch_only_fixed_quality_fixed_native_branch_a0_final_b6bfcab24368ed82/metrics.json",
+      "metrics_sha256": "ae25df7543c856aa8c9fc55ab27a8a927efc67bbb51745acb7371655633f6cea",
+      "export_path": "/mnt/data/yxy-codex/home/outputs/RAXO/pair_conflict_material_projection_20261101/endpoints/Hi/visual_branch_only_fixed_quality_fixed_native_branch_a0_final_b6bfcab24368ed82/export.json",
+      "export_sha256": "b075be32f92791cab93adad3dff5205dbaa10a0b4efb85bc5f7b9b91f2782670"
+    },
+    {
+      "dataset": "Hi",
+      "phase": "final",
+      "variant": "material_fused_branch_only_fixed_quality",
+      "route": "fixed_native_branch",
+      "residual_alpha": 0.0,
+      "diagnostic": true,
+      "included_in_parameter_selection": false,
+      "selected_primary": false,
+      "AP": 0.196473267890772,
+      "AP50": 0.3215492387592815,
+      "AP75": 0.2195951162596009,
+      "AR100": 0.38182556497144154,
+      "AP_computed_here": true,
+      "AP_reused": false,
+      "prediction_count": 356667,
+      "metrics_path": "/mnt/data/yxy-codex/home/outputs/RAXO/pair_conflict_material_projection_20261101/endpoints/Hi/material_fused_branch_only_fixed_quality_fixed_native_branch_a0_final_4c9f1b4d249f4e52/metrics.json",
+      "metrics_sha256": "0e119ce0b4e029bbbdada152feb20d2bc28ca1b1cb303df1eeb88a4692553bc5",
+      "export_path": "/mnt/data/yxy-codex/home/outputs/RAXO/pair_conflict_material_projection_20261101/endpoints/Hi/material_fused_branch_only_fixed_quality_fixed_native_branch_a0_final_4c9f1b4d249f4e52/export.json",
+      "export_sha256": "51b254e8cd96860936fca1382bcac6126d7e9ef7341c00f8e942dc94d081f810"
+    }
+  ],
+  "all52_results_retained": true,
+  "diagnostics_excluded_from_selection": true,
+  "active_conflicts": {
+    "CLC_tune": {
+      "active": 81,
+      "inactive": 2204,
+      "mask_SHA256": "09aea4bc3beac75c991fab0e9ffd6acda2881dc07045107b303eef0e3ffef1a5"
+    },
+    "DET": {
+      "active": 12348,
+      "inactive": 46471,
+      "mask_SHA256": "feebda864c68d3b6468bea4e88d049961337f97706df6798ca035fa445f85958"
+    },
+    "CLCXray_test": {
+      "active": 549,
+      "inactive": 10662,
+      "mask_SHA256": "5f4a4b46874c0e14f43ea026a3e786346c46aa49d28e75f3193a8a94f458f054"
+    },
+    "PIXray": {
+      "active": 1594,
+      "inactive": 87181,
+      "mask_SHA256": "9259c8889277760b4d4f26d71257f6885b459642bdf0196b7a1456edf51b0546"
+    },
+    "PIDray": {
+      "active": 6044,
+      "inactive": 450517,
+      "mask_SHA256": "ba7afdfc9170b34a638f5342d5d794b68228ded36e76612acd172a121276df13"
+    },
+    "DvXray": {
+      "active": 2038,
+      "inactive": 191627,
+      "mask_SHA256": "b4abc7d36ed65adae15316efee0c894497ebd25d94837ddc070ede24a9ab8773"
+    },
+    "Hi": {
+      "active": 51891,
+      "inactive": 326942,
+      "mask_SHA256": "f706fde28ead1ceccfdb79902f728add38b0a3b69ee18167b969f2e63ff57e2e"
+    }
+  },
+  "budget": {
+    "new_trainings": 0,
+    "new_GPU_inferences": 0,
+    "new_model_forwards": 0,
+    "new_encoders": 0,
+    "cpu_projection_records": 42,
+    "source_model_PT_references": 6,
+    "native_component_references": 42,
+    "logical_AP": 52,
+    "source_logical_AP": 16,
+    "main_test_logical_AP": 24,
+    "diagnostic_test_logical_AP": 12,
+    "all_test_logical_AP": 36,
+    "actual_new_native_AP": 39,
+    "strict_reused_AP": 13,
+    "new_CI_bootstrap": 0
+  },
+  "projection_receipts": [
+    {
+      "path": "/mnt/data/yxy-codex/home/outputs/RAXO/pair_conflict_material_projection_20261101/projection/CLC_tune/material/seed17/receipt.json",
+      "bytes": 4945,
+      "sha256": "9ea144b61f3900cb0c12f7107b8ac66a56ea76504c660530766d7f332a42c7cf"
+    },
+    {
+      "path": "/mnt/data/yxy-codex/home/outputs/RAXO/pair_conflict_material_projection_20261101/projection/CLC_tune/material/seed29/receipt.json",
+      "bytes": 4945,
+      "sha256": "1678daa48a1ce5b5ac0bd361d49aae38da9cbfbd4b4026f7e3a8aa0acaaeb929"
+    },
+    {
+      "path": "/mnt/data/yxy-codex/home/outputs/RAXO/pair_conflict_material_projection_20261101/projection/CLC_tune/material/seed43/receipt.json",
+      "bytes": 4945,
+      "sha256": "36f9345637f27319ccc3202b0fdabd0f1dceb61c2db3252a388200a2d94954ed"
+    },
+    {
+      "path": "/mnt/data/yxy-codex/home/outputs/RAXO/pair_conflict_material_projection_20261101/projection/CLC_tune/permuted_material/seed17/receipt.json",
+      "bytes": 4990,
+      "sha256": "7b93337130eb4a8872197a10096be8d80b344d13758bb9ab9c7dbd6da6d34513"
+    },
+    {
+      "path": "/mnt/data/yxy-codex/home/outputs/RAXO/pair_conflict_material_projection_20261101/projection/CLC_tune/permuted_material/seed29/receipt.json",
+      "bytes": 4989,
+      "sha256": "da81c704174636e4e266f7c54ca6d3fe71262940814b20ef937805357585549f"
+    },
+    {
+      "path": "/mnt/data/yxy-codex/home/outputs/RAXO/pair_conflict_material_projection_20261101/projection/CLC_tune/permuted_material/seed43/receipt.json",
+      "bytes": 4989,
+      "sha256": "1ff26aa3bb1659f75ecdf5c2eb2f95f1a828cad97416be4c7bd215311e881cac"
+    },
+    {
+      "path": "/mnt/data/yxy-codex/home/outputs/RAXO/pair_conflict_material_projection_20261101/projection/DET/material/seed17/receipt.json",
+      "bytes": 4941,
+      "sha256": "c1406da634d877da370d39e2a4fcc11a80eab8bf8544ff9fd5bff52fc8f99495"
+    },
+    {
+      "path": "/mnt/data/yxy-codex/home/outputs/RAXO/pair_conflict_material_projection_20261101/projection/DET/material/seed29/receipt.json",
+      "bytes": 4940,
+      "sha256": "29562b2f8ac70edf5d53e19d6a35effbe3ce7467541d45911df2f43324f5766d"
+    },
+    {
+      "path": "/mnt/data/yxy-codex/home/outputs/RAXO/pair_conflict_material_projection_20261101/projection/DET/material/seed43/receipt.json",
+      "bytes": 4941,
+      "sha256": "f38d8f6d8efeaed84da449f53eb5a4f34efd521599811e6047326b4857f094b0"
+    },
+    {
+      "path": "/mnt/data/yxy-codex/home/outputs/RAXO/pair_conflict_material_projection_20261101/projection/DET/permuted_material/seed17/receipt.json",
+      "bytes": 4986,
+      "sha256": "668f85fe47d4f3a1beb378e53d449e57d94277056a5cafdcef52fdb7bf9e5cbe"
+    },
+    {
+      "path": "/mnt/data/yxy-codex/home/outputs/RAXO/pair_conflict_material_projection_20261101/projection/DET/permuted_material/seed29/receipt.json",
+      "bytes": 4985,
+      "sha256": "919ed7a5b70ae57daa4a96ff879636f8a30d073dfc0332dcd2b3c418fddf3736"
+    },
+    {
+      "path": "/mnt/data/yxy-codex/home/outputs/RAXO/pair_conflict_material_projection_20261101/projection/DET/permuted_material/seed43/receipt.json",
+      "bytes": 4985,
+      "sha256": "45233852d865d504df757ba8eb7d1f2f9001e2d263a2012f45391c54ba79bb52"
+    },
+    {
+      "path": "/mnt/data/yxy-codex/home/outputs/RAXO/pair_conflict_material_projection_20261101/projection/CLCXray_test/material/seed17/receipt.json",
+      "bytes": 5014,
+      "sha256": "42a2476278a939e791405f718ccdc7836005c18ad6cb1f8c06606c003a92be2f"
+    },
+    {
+      "path": "/mnt/data/yxy-codex/home/outputs/RAXO/pair_conflict_material_projection_20261101/projection/CLCXray_test/material/seed29/receipt.json",
+      "bytes": 5014,
+      "sha256": "031e5a4885bd5be81d995b870471cd07acae7a0116688e0f04ca2b0712e63ece"
+    },
+    {
+      "path": "/mnt/data/yxy-codex/home/outputs/RAXO/pair_conflict_material_projection_20261101/projection/CLCXray_test/material/seed43/receipt.json",
+      "bytes": 5014,
+      "sha256": "79e97e1aa72bc6758e6013f5543eb9b39cd9c67757ec652791762e9b2782456b"
+    },
+    {
+      "path": "/mnt/data/yxy-codex/home/outputs/RAXO/pair_conflict_material_projection_20261101/projection/CLCXray_test/permuted_material/seed17/receipt.json",
+      "bytes": 5059,
+      "sha256": "1300ba332d13540f82c4a585db10884c63d4d798a1a5dc486047e51c9c08ce8c"
+    },
+    {
+      "path": "/mnt/data/yxy-codex/home/outputs/RAXO/pair_conflict_material_projection_20261101/projection/CLCXray_test/permuted_material/seed29/receipt.json",
+      "bytes": 5058,
+      "sha256": "c29364517741dd82595645264d5e9f88f6b4bb05592a25f143d697c6f43e3155"
+    },
+    {
+      "path": "/mnt/data/yxy-codex/home/outputs/RAXO/pair_conflict_material_projection_20261101/projection/CLCXray_test/permuted_material/seed43/receipt.json",
+      "bytes": 5058,
+      "sha256": "f0ef362db4a93308f3d601fde0629226ae0b472ab9414e8bbcf60972fbbb43f9"
+    },
+    {
+      "path": "/mnt/data/yxy-codex/home/outputs/RAXO/pair_conflict_material_projection_20261101/projection/PIXray/material/seed17/receipt.json",
+      "bytes": 4966,
+      "sha256": "5261a6aae25ab0a18460c0ee3e1ff760a5a8e51a92bfa1c240adb32f9090fef2"
+    },
+    {
+      "path": "/mnt/data/yxy-codex/home/outputs/RAXO/pair_conflict_material_projection_20261101/projection/PIXray/material/seed29/receipt.json",
+      "bytes": 4965,
+      "sha256": "d97dab5cac32162e9d7fb7098eb5fe8a860d1f5518d3ac883f4fc4055dd13c1e"
+    },
+    {
+      "path": "/mnt/data/yxy-codex/home/outputs/RAXO/pair_conflict_material_projection_20261101/projection/PIXray/material/seed43/receipt.json",
+      "bytes": 4966,
+      "sha256": "e797df53fc7c57a91a437a3f7cfdd68dbbaa37fe6a4facd9c0490852f6ae19c1"
+    },
+    {
+      "path": "/mnt/data/yxy-codex/home/outputs/RAXO/pair_conflict_material_projection_20261101/projection/PIXray/permuted_material/seed17/receipt.json",
+      "bytes": 5011,
+      "sha256": "800418d82540741d8e37b65fa2b651e8f6ebbfaa639b74c44c6dd72adc539348"
+    },
+    {
+      "path": "/mnt/data/yxy-codex/home/outputs/RAXO/pair_conflict_material_projection_20261101/projection/PIXray/permuted_material/seed29/receipt.json",
+      "bytes": 5010,
+      "sha256": "758a20102164190d6978d50b309261f79dde3d1de7cb2acb4d80d478cbb22497"
+    },
+    {
+      "path": "/mnt/data/yxy-codex/home/outputs/RAXO/pair_conflict_material_projection_20261101/projection/PIXray/permuted_material/seed43/receipt.json",
+      "bytes": 5010,
+      "sha256": "41ca074f7f5fe8c195bb249bfdbbeb65776df7a9cb22aaedee1c8c5e36995327"
+    },
+    {
+      "path": "/mnt/data/yxy-codex/home/outputs/RAXO/pair_conflict_material_projection_20261101/projection/PIDray/material/seed17/receipt.json",
+      "bytes": 4970,
+      "sha256": "f3197b80b13a2f987550ac0056d90ba2433ae449a60668b1f2255c803e351cf1"
+    },
+    {
+      "path": "/mnt/data/yxy-codex/home/outputs/RAXO/pair_conflict_material_projection_20261101/projection/PIDray/material/seed29/receipt.json",
+      "bytes": 4970,
+      "sha256": "05e97421f05983bc3bb5b2c4570385e96f0c4e7073568297fbd6c07012240c70"
+    },
+    {
+      "path": "/mnt/data/yxy-codex/home/outputs/RAXO/pair_conflict_material_projection_20261101/projection/PIDray/material/seed43/receipt.json",
+      "bytes": 4970,
+      "sha256": "fc93eeb499548d3e3a5b474e9c2fe0b40f8e2f3b8e6df49c02ced1554961325b"
+    },
+    {
+      "path": "/mnt/data/yxy-codex/home/outputs/RAXO/pair_conflict_material_projection_20261101/projection/PIDray/permuted_material/seed17/receipt.json",
+      "bytes": 5015,
+      "sha256": "2de84cbd2e7d94351d7aa1c3e79defe2fb7cf6373f40df5d5c0ead8288d061a2"
+    },
+    {
+      "path": "/mnt/data/yxy-codex/home/outputs/RAXO/pair_conflict_material_projection_20261101/projection/PIDray/permuted_material/seed29/receipt.json",
+      "bytes": 5014,
+      "sha256": "f6237d4b3d159ff408fd0ea84605b05027a0a2255bbf9860167903b097e03fd5"
+    },
+    {
+      "path": "/mnt/data/yxy-codex/home/outputs/RAXO/pair_conflict_material_projection_20261101/projection/PIDray/permuted_material/seed43/receipt.json",
+      "bytes": 5014,
+      "sha256": "96d77a996da8243db55312d3b7e1219cfde3e6975fa2936242c56932cdea0205"
+    },
+    {
+      "path": "/mnt/data/yxy-codex/home/outputs/RAXO/pair_conflict_material_projection_20261101/projection/DvXray/material/seed17/receipt.json",
+      "bytes": 4967,
+      "sha256": "e4563f13293c9fe8c06636677d4fbb1d2cac31bb59ac360edb43690ca67c6be6"
+    },
+    {
+      "path": "/mnt/data/yxy-codex/home/outputs/RAXO/pair_conflict_material_projection_20261101/projection/DvXray/material/seed29/receipt.json",
+      "bytes": 4966,
+      "sha256": "781330672dd32a97b37c3b5f396c4c03f48637788702b3855e227c8d653167a4"
+    },
+    {
+      "path": "/mnt/data/yxy-codex/home/outputs/RAXO/pair_conflict_material_projection_20261101/projection/DvXray/material/seed43/receipt.json",
+      "bytes": 4967,
+      "sha256": "7bcc332ee26ef4ad644bb3c5ab005257fd76182ab7f37a8b8475ee2ef5327946"
+    },
+    {
+      "path": "/mnt/data/yxy-codex/home/outputs/RAXO/pair_conflict_material_projection_20261101/projection/DvXray/permuted_material/seed17/receipt.json",
+      "bytes": 5012,
+      "sha256": "c6e67878d9f31c70768f5ca72726362df7aa6bccf37c4ebecb1dfaba3d08d485"
+    },
+    {
+      "path": "/mnt/data/yxy-codex/home/outputs/RAXO/pair_conflict_material_projection_20261101/projection/DvXray/permuted_material/seed29/receipt.json",
+      "bytes": 5011,
+      "sha256": "fea0774e4ea34a513015990add822adcb8f5c3a413cedd9175084b823259b4d3"
+    },
+    {
+      "path": "/mnt/data/yxy-codex/home/outputs/RAXO/pair_conflict_material_projection_20261101/projection/DvXray/permuted_material/seed43/receipt.json",
+      "bytes": 5011,
+      "sha256": "8222a8e3596835a588d20dc148c5dea8090cbe7710f074f30e6cbd1952f63810"
+    },
+    {
+      "path": "/mnt/data/yxy-codex/home/outputs/RAXO/pair_conflict_material_projection_20261101/projection/Hi/material/seed17/receipt.json",
+      "bytes": 4935,
+      "sha256": "e48cc4eb2258346b767c98109fc13f7de9705bdf3fa9fde06495f5880da9724e"
+    },
+    {
+      "path": "/mnt/data/yxy-codex/home/outputs/RAXO/pair_conflict_material_projection_20261101/projection/Hi/material/seed29/receipt.json",
+      "bytes": 4935,
+      "sha256": "971ad80cedabdabb5080b777d77700c6dcb26b3b10d5d5b12099125731814e40"
+    },
+    {
+      "path": "/mnt/data/yxy-codex/home/outputs/RAXO/pair_conflict_material_projection_20261101/projection/Hi/material/seed43/receipt.json",
+      "bytes": 4935,
+      "sha256": "89bfa69481628390239aa346cbef8faedbbda73dbae5a32fb582d0a1d03fe773"
+    },
+    {
+      "path": "/mnt/data/yxy-codex/home/outputs/RAXO/pair_conflict_material_projection_20261101/projection/Hi/permuted_material/seed17/receipt.json",
+      "bytes": 4980,
+      "sha256": "dc157ac9013c5db7e44136429df879be34112c8ae1cd7dce35377d15e131a84b"
+    },
+    {
+      "path": "/mnt/data/yxy-codex/home/outputs/RAXO/pair_conflict_material_projection_20261101/projection/Hi/permuted_material/seed29/receipt.json",
+      "bytes": 4979,
+      "sha256": "70086f2f37a0c1ad34c73a1ae9bf934dfb852ff96928ca662c9b97ed695f9b30"
+    },
+    {
+      "path": "/mnt/data/yxy-codex/home/outputs/RAXO/pair_conflict_material_projection_20261101/projection/Hi/permuted_material/seed43/receipt.json",
+      "bytes": 4979,
+      "sha256": "92d6f1a369362554920def992c44f3d196867160fab7470cb279301021f03b58"
+    }
+  ],
+  "source_fitted_model_protocol": {
+    "path": "/mnt/data/yxy/program/RAXO/experiments/material_conditional_ranking_fix1_20261101/config/protocol.json",
+    "bytes": 112841,
+    "sha256": "3b3c304d90bd71ad6aa55a3702fdf287b79c335450e5efc53082a62d037f6962"
+  },
+  "native_model_protocol_not_relabelled": true,
+  "inactive_exact_pre_Gaussian_q_only": true,
+  "inactive_final_scores_may_change_through_Gaussian": true,
+  "no_probability_mean_invariance_claim": true,
+  "branch_diagnostics_not_material_free": true,
+  "shared_native_union_already_material_informed": true,
+  "no_new_physical_material_or_causal_identity_claim": true,
+  "pair_active_gating_and_pair_centering_not_separately_ablated": true,
+  "previous_fullclass_may_use_different_selected_setting": true,
+  "previous_test_results_seen": true,
+  "new_blind_test": false,
+  "new_confidence_intervals": false,
+  "old_CI_or_timing_reused": false,
+  "publication_edits": false,
+  "sources": {
+    "protocol": {
+      "path": "/mnt/data/yxy/program/RAXO/experiments/pair_conflict_material_projection_20261101/config/protocol.json",
+      "bytes": 100908,
+      "sha256": "117a12b17f60f3784c1f9559b4fc41bdc9f82f476461698392957934c643e02f"
+    },
+    "final_review": {
+      "path": "/mnt/data/yxy-codex/home/outputs/RAXO/pair_conflict_material_projection_20261101/verification/final_results_review.json",
+      "bytes": 415297,
+      "sha256": "940597960c04765628d24fa1e45b256066da7ecbe1bffb9e341a0fb9ee7d46f8"
+    },
+    "run_index": {
+      "path": "/mnt/data/yxy-codex/home/outputs/RAXO/pair_conflict_material_projection_20261101/run_index.json",
+      "bytes": 75575,
+      "sha256": "89aeb21c83b45d6c0a011ddd7ab98dc29dbcf49fd9da8e1dd9cf48be8ac8e94f"
+    },
+    "selected_parameters": {
+      "path": "/mnt/data/yxy-codex/home/outputs/RAXO/pair_conflict_material_projection_20261101/parameters/selected_parameters.json",
+      "bytes": 28429,
+      "sha256": "f92cdf3606a75989c9772c5e8d32a7d06d8178c08612b2d9276af0314b541f13"
+    },
+    "projection_index": {
+      "path": "/mnt/data/yxy-codex/home/outputs/RAXO/pair_conflict_material_projection_20261101/projection_index.json",
+      "bytes": 56852,
+      "sha256": "6d7a57280950e56755c89baefa9d164cf8478a1ef12363ff3e130d7835db7e55"
+    },
+    "projection_review": {
+      "path": "/mnt/data/yxy-codex/home/outputs/RAXO/pair_conflict_material_projection_20261101/verification/projection_review.json",
+      "bytes": 37021,
+      "sha256": "c8302287d1d06cb001f74082c7c13c5a6391a6c9f8f5aa3f80d8d9f20d039619"
+    },
+    "source_quality_completion": {
+      "path": "/mnt/data/yxy-codex/home/outputs/RAXO/material_conditional_ranking_fix1_20261101/completion.json",
+      "bytes": 9950,
+      "sha256": "d1c6eb0f2a8270d35942248f69ba9a30e9ed7d0f0323f484574f2e70feecfbb0"
+    },
+    "source_quality_manifest": {
+      "path": "/mnt/data/yxy-codex/home/outputs/RAXO/material_conditional_ranking_fix1_20261101/output_manifest.json",
+      "bytes": 364542,
+      "sha256": "8919cdde422ab06b12dca0730195d3bc03ebdb36fb1539a09cfcd8d48eedcaa9"
+    },
+    "source_quality_inference_index": {
+      "path": "/mnt/data/yxy-codex/home/outputs/RAXO/material_conditional_ranking_fix1_20261101/inference_index.json",
+      "bytes": 401962,
+      "sha256": "1e3c121775783d8886cba9ea815f249bcff9c425dad5fcad0f32499a8a438692"
+    },
+    "baseline_metrics": {
+      "DET": {
+        "strong_Tavailability": {
+          "path": "/mnt/data/yxy-codex/home/outputs/RAXO/material_reliability_20261101/endpoints/DET/availability_control_adaptive_router_a1_final_3b8eee724fdf2f36/metrics.json",
+          "bytes": 22943,
+          "sha256": "0c5d73d778e30cc3a57091fce273d38efa8257c9d0c8f8ad2e286b064594de3e"
+        },
+        "strong_anchor_export": {
+          "path": "/mnt/data/yxy-codex/home/outputs/RAXO/material_reliability_20261101/endpoints/DET/availability_control_adaptive_router_a1_final_3b8eee724fdf2f36/export.json",
+          "bytes": 50541,
+          "sha256": "84f0955791da9db1b832b0843223d3fd8ffc596ee256dc13080ab54771f6e7d0"
+        }
+      },
+      "CLCXray_test": {
+        "strong_Tavailability": {
+          "path": "/mnt/data/yxy-codex/home/outputs/RAXO/material_reliability_20261101/endpoints/CLCXray_test/availability_control_adaptive_router_a1_final_0d0d95059b486e23/metrics.json",
+          "bytes": 31248,
+          "sha256": "69753cf1667752111f2395a49984eb3d847b9bb499d56817891f25d8f7c6bf89"
+        },
+        "strong_anchor_export": {
+          "path": "/mnt/data/yxy-codex/home/outputs/RAXO/material_reliability_20261101/endpoints/CLCXray_test/availability_control_adaptive_router_a1_final_0d0d95059b486e23/export.json",
+          "bytes": 64277,
+          "sha256": "2361d5ee6be09148c90e6d378492043a6c6ba26c0e96662b8851265d7c1c7e5f"
+        }
+      },
+      "PIXray": {
+        "strong_Tavailability": {
+          "path": "/mnt/data/yxy-codex/home/outputs/RAXO/material_reliability_20261101/endpoints/PIXray/availability_control_adaptive_router_a1_final_23489df5d6c15a05/metrics.json",
+          "bytes": 127267,
+          "sha256": "cdc7b68e334bee853eb3332d05b5f53d65179ff3945de32d546f7a991a0f477c"
+        },
+        "strong_anchor_export": {
+          "path": "/mnt/data/yxy-codex/home/outputs/RAXO/material_reliability_20261101/endpoints/PIXray/availability_control_adaptive_router_a1_final_23489df5d6c15a05/export.json",
+          "bytes": 226636,
+          "sha256": "81bcd554de003cfc2cd4284ffe66b72956d22a9b844ddd39209103c632a3ee06"
+        }
+      },
+      "PIDray": {
+        "strong_Tavailability": {
+          "path": "/mnt/data/yxy-codex/home/outputs/RAXO/material_reliability_20261101/endpoints/PIDray/availability_control_adaptive_router_a1_final_7415eeac2a630018/metrics.json",
+          "bytes": 230096,
+          "sha256": "bc48b78fcf24ee1e86459d5d3c3838959b1ccb48bb96fa8a76a45ed3c332ea17"
+        },
+        "strong_anchor_export": {
+          "path": "/mnt/data/yxy-codex/home/outputs/RAXO/material_reliability_20261101/endpoints/PIDray/availability_control_adaptive_router_a1_final_7415eeac2a630018/export.json",
+          "bytes": 848193,
+          "sha256": "0cb0c99e42c8cb9b1e1a0f37bc11428d027d6cb019a69a94e022199d64f6c4dd"
+        }
+      },
+      "DvXray": {
+        "strong_Tavailability": {
+          "path": "/mnt/data/yxy-codex/home/outputs/RAXO/material_reliability_20261101/endpoints/DvXray/availability_control_adaptive_router_a1_final_7ee9ad67c6bc3ac2/metrics.json",
+          "bytes": 244512,
+          "sha256": "53f42cc71edd21de00a0ceadfcb3d70743bc98a933fe072dda848ae9be1be410"
+        },
+        "strong_anchor_export": {
+          "path": "/mnt/data/yxy-codex/home/outputs/RAXO/material_reliability_20261101/endpoints/DvXray/availability_control_adaptive_router_a1_final_7ee9ad67c6bc3ac2/export.json",
+          "bytes": 425723,
+          "sha256": "03396a6b8e74aa57b27d9c8fcc03d859a644a6da1cc902ee84c4d9d1a1283a9d"
+        }
+      },
+      "Hi": {
+        "strong_Tavailability": {
+          "path": "/mnt/data/yxy-codex/home/outputs/RAXO/material_reliability_20261101/endpoints/Hi/availability_control_adaptive_router_a1_final_61a5bd29a42679df/metrics.json",
+          "bytes": 241931,
+          "sha256": "19d4b0044f0eaacdf1433fe7c90fd966cda707fdee9874930bec51d5e3da964c"
+        },
+        "strong_anchor_export": {
+          "path": "/mnt/data/yxy-codex/home/outputs/RAXO/material_reliability_20261101/endpoints/Hi/availability_control_adaptive_router_a1_final_61a5bd29a42679df/export.json",
+          "bytes": 421329,
+          "sha256": "8af576a2a963e7fe0e19bbc8667275ffc1045dabaefdbad922dd35e0c1a7e530"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,494 @@
+{
+  "study_id": "night_R_four_additional_full_N_pipeline_replications",
+  "status": "FROZEN_BEFORE_ANY_R_TRAINING_OR_INFERENCE_OR_AP",
+  "created_utc": "2026-10-31T19:24:20.417608+00:00",
+  "rationale": "Q fixedEbase/singleNhead had one DETnegative seed. Repeat bothEbase andNmaterial trainings with four fixed independent triples at same6model budget. Validation, no feature/hyperparameter/method search.",
+  "original_group": {
+    "id": "original",
+    "seeds": [
+      17,
+      29,
+      43
+    ],
+    "source_N_protocol": {
+      "path": "/mnt/data/yxy/program/RAXO/experiments/night_exploration_20261101/batch_n_supported_material_quality/config/protocol.json",
+      "bytes": 1750004,
+      "sha256": "94470fb3917d5fc51e98f0a051f2dd3a392cbb8f8c51962befabe05f3c6408dd"
+    },
+    "source_N_completion": {
+      "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_n_supported_material_quality/completion.json",
+      "bytes": 2739,
+      "sha256": "07f923a8a49039716654d768a193e25d86f25eae7e82aa0ab673ee9f11809afd"
+    }
+  },
+  "new_groups": [
+    {
+      "id": "replica1",
+      "seeds": [
+        59,
+        71,
+        83
+      ]
+    },
+    {
+      "id": "replica2",
+      "seeds": [
+        97,
+        109,
+        127
+      ]
+    },
+    {
+      "id": "replica3",
+      "seeds": [
+        139,
+        151,
+        163
+      ]
+    },
+    {
+      "id": "replica4",
+      "seeds": [
+        179,
+        191,
+        211
+      ]
+    }
+  ],
+  "flat_new_seeds": [
+    59,
+    71,
+    83,
+    97,
+    109,
+    127,
+    139,
+    151,
+    163,
+    179,
+    191,
+    211
+  ],
+  "roles": {
+    "e_visual": {
+      "parent_batch": "batch_e_affine_robustness",
+      "variant": "visual_clean",
+      "original_protocol": {
+        "path": "/mnt/data/yxy/program/RAXO/experiments/night_exploration_20261101/batch_e_affine_robustness/config/protocol.json",
+        "bytes": 13906,
+        "sha256": "e5be43a129dea7e5993f89d4135364e0793a5c4f80a3ff9d3d07cd7c98e48cfb"
+      },
+      "original_model_source_freeze": {
+        "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_e_affine_robustness/automation/model_code_freeze.json",
+        "bytes": 1569,
+        "sha256": "33b149c876c3de3078ad38bb6388718b3d6450f77c8f5d1fd84cbeceb4f2b1a5"
+      },
+      "original_model_sources": [
+        {
+          "path": "/mnt/data/yxy/program/RAXO/experiments/night_exploration_20261101/batch_e_affine_robustness/src/affine_model.py",
+          "bytes": 13071,
+          "sha256": "ca07ef44c011492c185d5c397c18ee967842a8d6cdc019f5792d9be6a7019b45"
+        },
+        {
+          "path": "/mnt/data/yxy/program/RAXO/experiments/night_exploration_20261101/batch_e_affine_robustness/scripts/train_affine.py",
+          "bytes": 565,
+          "sha256": "895aa0a2a4afdfca930a9ca96b88d02b260f687ad200407756502900b97825ad"
+        },
+        {
+          "path": "/mnt/data/yxy/program/RAXO/experiments/night_exploration_20261101/batch_e_affine_robustness/scripts/infer_affine.py",
+          "bytes": 570,
+          "sha256": "23aa413444fd1770dbf5faaf32605d3ebb2ee8a4dfecb81724ad9a0f62b59b2c"
+        },
+        {
+          "path": "/mnt/data/yxy/program/RAXO/experiments/night_exploration_20261101/batch_e_affine_robustness/scripts/run_models.py",
+          "bytes": 9194,
+          "sha256": "310ca8f66505f30644e29b94613cf7a41d4f25e09d297e431b7b371b9afa7172"
+        }
+      ],
+      "GPU_index": 0,
+      "GPU_UUID": "GPU-7d53f26e-0c06-c368-43bf-de34b45f6a52",
+      "CPU_environment_threads": 8,
+      "new_trainings": 12,
+      "new_actual_inferences": 72,
+      "new_group_three_seed_means": 24,
+      "output_root": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_r_full_pipeline_repeats/roles/e_visual",
+      "code_root": "/mnt/data/yxy/program/RAXO/experiments/night_exploration_20261101/batch_r_full_pipeline_repeats/roles/e_visual"
+    },
+    "n_material": {
+      "parent_batch": "batch_n_supported_material_quality",
+      "variant": "material",
+      "original_protocol": {
+        "path": "/mnt/data/yxy/program/RAXO/experiments/night_exploration_20261101/batch_n_supported_material_quality/config/protocol.json",
+        "bytes": 1750004,
+        "sha256": "94470fb3917d5fc51e98f0a051f2dd3a392cbb8f8c51962befabe05f3c6408dd"
+      },
+      "original_model_source_freeze": {
+        "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_n_supported_material_quality/automation/model_code_freeze.json",
+        "bytes": 1628,
+        "sha256": "c922b24c8dff8d213b4df6141f3079c7afa7f39907d189b2f5a9e71acb4b2a0f"
+      },
+      "original_model_sources": [
+        {
+          "path": "/mnt/data/yxy/program/RAXO/experiments/night_exploration_20261101/batch_n_supported_material_quality/src/quality_model.py",
+          "bytes": 13365,
+          "sha256": "14fb85e5b70398d215d033482c9a9c8603dc0c95aabbb87bd9fb531e66b21da0"
+        },
+        {
+          "path": "/mnt/data/yxy/program/RAXO/experiments/night_exploration_20261101/batch_n_supported_material_quality/scripts/train_quality.py",
+          "bytes": 566,
+          "sha256": "6f71de9d2863f6ec80c972fefb226c0c9953601830c4907d1167c9ad92cf22cc"
+        },
+        {
+          "path": "/mnt/data/yxy/program/RAXO/experiments/night_exploration_20261101/batch_n_supported_material_quality/scripts/infer_quality.py",
+          "bytes": 571,
+          "sha256": "f710d9aeb4748fdc57edb720f1cc76dd26a4ec03949304ab91504e40b5b154c3"
+        },
+        {
+          "path": "/mnt/data/yxy/program/RAXO/experiments/night_exploration_20261101/batch_n_supported_material_quality/scripts/run_models.py",
+          "bytes": 9660,
+          "sha256": "4aa48505d1e65aaef7d54ba0ca6582a1e8bee78367b12a68b69b8b5a0d5ec98e"
+        }
+      ],
+      "GPU_index": 2,
+      "GPU_UUID": "GPU-cfd4e982-ea9c-6090-3f22-88ea28c7360d",
+      "CPU_environment_threads": 8,
+      "new_trainings": 12,
+      "new_actual_inferences": 72,
+      "new_group_three_seed_means": 24,
+      "output_root": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_r_full_pipeline_repeats/roles/n_material",
+      "code_root": "/mnt/data/yxy/program/RAXO/experiments/night_exploration_20261101/batch_r_full_pipeline_repeats/roles/n_material"
+    }
+  },
+  "cases": {
+    "DET": {
+      "C_visual_features": {
+        "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_c_shared_union/features/DET/feature_manifest.json",
+        "bytes": 76176,
+        "sha256": "9c5b0a79742638567ec5c03a5e33caedd9070056e88e65ab0225619b1f35beda"
+      },
+      "N_supported_material_features": {
+        "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_n_supported_material_quality/features/DET/feature_manifest.json",
+        "bytes": 39186,
+        "sha256": "b65a49f910d3859f9323c0db88544fafb0dcd86e7e035a12e0bebda75cd68a90"
+      },
+      "candidate_row_key_sha256": "7ff49f0652908dcff396a5f26485d5fb8843d242f459693d93aceb3cca4e4f18",
+      "original_N_measured_endpoint": {
+        "dataset": "DET",
+        "variant": "material",
+        "route": "router",
+        "mix_weight": 0.5,
+        "tau": 0.0,
+        "case": "final",
+        "export_receipt": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_n_supported_material_quality/endpoints/DET/material_router_t0_final_00770baabf833cf5/export.json",
+        "export_sha256": "ff3ee4d39e68078f19e2bde623f1062b60c9616005554783518b57ffddf57dcb",
+        "metrics": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_n_supported_material_quality/endpoints/DET/material_router_t0_final_00770baabf833cf5/metrics.json",
+        "metrics_sha256": "b0d7833369444a31d032f3b3c4b1a7d06bc5121d1f29f24110b59d97ab25d3d4",
+        "AP": 0.5359031237886396,
+        "AP50": 0.6040370142934801,
+        "AP75": 0.5489767371941577,
+        "AR100": 0.6172638436482085,
+        "AP_computed_here": true,
+        "AP_reused": false,
+        "prediction_count": 58819,
+        "counts": {
+          "union_proposals": 58819,
+          "retained": 58819,
+          "V_selected": 46082,
+          "F_selected": 12737,
+          "F_only_admitted": 9093,
+          "overlap_F_selected": 3644,
+          "overlap_category_changes": 3644
+        },
+        "active_models": 6
+      }
+    },
+    "CLCXray_test": {
+      "C_visual_features": {
+        "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_c_shared_union/features/CLCXray_test/feature_manifest.json",
+        "bytes": 49344,
+        "sha256": "046fa6e5618760abef75f3004c11d8fcd46f4d4d059f93aeabaa1d4101780343"
+      },
+      "N_supported_material_features": {
+        "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_n_supported_material_quality/features/CLCXray_test/feature_manifest.json",
+        "bytes": 7948,
+        "sha256": "73a7a5158794f1f0ef2b46b9355b7d2793eea4c18680dd025009b7f9aa3b1e91"
+      },
+      "candidate_row_key_sha256": "deaceb8ec82e92a96d44e0684ddb4309f1b805c2b4740a5022ac9b9f1cdd951a",
+      "original_N_measured_endpoint": {
+        "dataset": "CLCXray_test",
+        "variant": "material",
+        "route": "router",
+        "mix_weight": 0.5,
+        "tau": 0.0,
+        "case": "final",
+        "export_receipt": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_n_supported_material_quality/endpoints/CLCXray_test/material_router_t0_final_a2b0db1e9cea72fe/export.json",
+        "export_sha256": "c08e9276ad2a2637d5c2880159895f7e4837d3d58ea265fbc4f1d705ef7049ae",
+        "metrics": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_n_supported_material_quality/endpoints/CLCXray_test/material_router_t0_final_a2b0db1e9cea72fe/metrics.json",
+        "metrics_sha256": "c97392e7479aa7928ad43520c7082548bf1e9344b848a242ef79bd03efa7eced",
+        "AP": 0.2603276394344976,
+        "AP50": 0.34807093069076483,
+        "AP75": 0.2869002728993201,
+        "AR100": 0.3898103021976244,
+        "AP_computed_here": true,
+        "AP_reused": false,
+        "prediction_count": 11211,
+        "counts": {
+          "union_proposals": 11211,
+          "retained": 11211,
+          "V_selected": 8403,
+          "F_selected": 2808,
+          "F_only_admitted": 2733,
+          "overlap_F_selected": 75,
+          "overlap_category_changes": 75
+        },
+        "active_models": 6
+      }
+    },
+    "PIXray": {
+      "C_visual_features": {
+        "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_c_shared_union/features/PIXray/feature_manifest.json",
+        "bytes": 167784,
+        "sha256": "99fbba15e49d4edab4cb86a0d5f636024733215b2ad1089c378e74236b70c32e"
+      },
+      "N_supported_material_features": {
+        "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_n_supported_material_quality/features/PIXray/feature_manifest.json",
+        "bytes": 8162,
+        "sha256": "67e29427f5633a5ea8f6db96d746cb7fd0ab4d223f9778720b8b2644526261fa"
+      },
+      "candidate_row_key_sha256": "21ee533e7cf6bdbdadc7e7e4563a089a088bd1b7cf5b167ad36cd2925dc87304",
+      "original_N_measured_endpoint": {
+        "dataset": "PIXray",
+        "variant": "material",
+        "route": "router",
+        "mix_weight": 0.5,
+        "tau": 0.0,
+        "case": "final",
+        "export_receipt": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_n_supported_material_quality/endpoints/PIXray/material_router_t0_final_b480937454413c12/export.json",
+        "export_sha256": "b007849833d947183479c9d351e6590d4ac87c7f804736d5afe05660d7caa8cf",
+        "metrics": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_n_supported_material_quality/endpoints/PIXray/material_router_t0_final_b480937454413c12/metrics.json",
+        "metrics_sha256": "31ac125971db03d8e7880d354659940026995870aea6edd471b1372d1ad46bf4",
+        "AP": 0.44093391282858085,
+        "AP50": 0.5424373260021708,
+        "AP75": 0.4620500050335233,
+        "AR100": 0.6144978100148512,
+        "AP_computed_here": true,
+        "AP_reused": false,
+        "prediction_count": 88775,
+        "counts": {
+          "union_proposals": 88775,
+          "retained": 88775,
+          "V_selected": 65240,
+          "F_selected": 23535,
+          "F_only_admitted": 23187,
+          "overlap_F_selected": 348,
+          "overlap_category_changes": 348
+        },
+        "active_models": 6
+      }
+    },
+    "PIDray": {
+      "C_visual_features": {
+        "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_c_shared_union/features/PIDray/feature_manifest.json",
+        "bytes": 617938,
+        "sha256": "ed96e6812ba3611448a9422e3367d0f5160b1cb27419611b38e66efbc237d4bb"
+      },
+      "N_supported_material_features": {
+        "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_n_supported_material_quality/features/PIDray/feature_manifest.json",
+        "bytes": 7848,
+        "sha256": "9dc5ec9dfe102c3cdaf68934235486ed03090369c2e6e0bc56e87e8d1beac8ab"
+      },
+      "candidate_row_key_sha256": "9a17e2001773191cdaa678c4f3fc20421c21ab35dad5309d4d846c06ac9cb827",
+      "original_N_measured_endpoint": {
+        "dataset": "PIDray",
+        "variant": "material",
+        "route": "router",
+        "mix_weight": 0.5,
+        "tau": 0.0,
+        "case": "final",
+        "export_receipt": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_n_supported_material_quality/endpoints/PIDray/material_router_t0_final_c8fed2171242e71e/export.json",
+        "export_sha256": "399a866ac6597b316ff8c8e939c3f6d5572625ac62efd322bff2b95d1ad4b48d",
+        "metrics": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_n_supported_material_quality/endpoints/PIDray/material_router_t0_final_c8fed2171242e71e/metrics.json",
+        "metrics_sha256": "9c98f838186ef1866afca6116fcc645a7379ae8b23cec93c64d73da2ec0ed59a",
+        "AP": 0.23245274100780136,
+        "AP50": 0.30610789696294555,
+        "AP75": 0.24783230837106401,
+        "AR100": 0.422228423197283,
+        "AP_computed_here": true,
+        "AP_reused": false,
+        "prediction_count": 456561,
+        "counts": {
+          "union_proposals": 456561,
+          "retained": 456561,
+          "V_selected": 283243,
+          "F_selected": 173318,
+          "F_only_admitted": 170742,
+          "overlap_F_selected": 2576,
+          "overlap_category_changes": 2576
+        },
+        "active_models": 6
+      }
+    },
+    "DvXray": {
+      "C_visual_features": {
+        "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_c_shared_union/features/DvXray/feature_manifest.json",
+        "bytes": 312779,
+        "sha256": "0689ac8d203cd0d0db217fb83abd07812993365bee5413fb1f05306ffbaa7f1d"
+      },
+      "N_supported_material_features": {
+        "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_n_supported_material_quality/features/DvXray/feature_manifest.json",
+        "bytes": 8169,
+        "sha256": "3b0449d79204a4f886e1b80ddaeac1a2c9e0e1efe781cb67d697e64ece28b236"
+      },
+      "candidate_row_key_sha256": "b2db95f75ce88045ca865fac2fac6c4d8995bc46cede406ef121d38d2c9dc7cf",
+      "original_N_measured_endpoint": {
+        "dataset": "DvXray",
+        "variant": "material",
+        "route": "router",
+        "mix_weight": 0.5,
+        "tau": 0.0,
+        "case": "final",
+        "export_receipt": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_n_supported_material_quality/endpoints/DvXray/material_router_t0_final_82f517d8e3ea3d08/export.json",
+        "export_sha256": "1166bf81c6589de716447e15030d3355d8e1e2a744218918c7a7bc071b676cdf",
+        "metrics": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_n_supported_material_quality/endpoints/DvXray/material_router_t0_final_82f517d8e3ea3d08/metrics.json",
+        "metrics_sha256": "2b99a1aa57e982f453544fbed445ff05b1245f835fac418533c98bfda825083f",
+        "AP": 0.2741659135094892,
+        "AP50": 0.3284263328620313,
+        "AP75": 0.2889825446212298,
+        "AR100": 0.4692821124030617,
+        "AP_computed_here": true,
+        "AP_reused": false,
+        "prediction_count": 193665,
+        "counts": {
+          "union_proposals": 193665,
+          "retained": 193665,
+          "V_selected": 123434,
+          "F_selected": 70231,
+          "F_only_admitted": 69363,
+          "overlap_F_selected": 868,
+          "overlap_category_changes": 868
+        },
+        "active_models": 6
+      }
+    },
+    "Hi": {
+      "C_visual_features": {
+        "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_c_shared_union/features/Hi/feature_manifest.json",
+        "bytes": 308555,
+        "sha256": "cd93c26b17590b8fc875c626dcc1dbf8251adf8fa1857d7f3d34a8bccd6f83bc"
+      },
+      "N_supported_material_features": {
+        "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_n_supported_material_quality/features/Hi/feature_manifest.json",
+        "bytes": 7303,
+        "sha256": "fca29b10a1fc3320abd41d0f9e737233d20520ddeaf37cbe95337f760356aedf"
+      },
+      "candidate_row_key_sha256": "6087de99f562ad3d3a6bff31e7581b038cba1409098a3f9ddbb9ab614336b23e",
+      "original_N_measured_endpoint": {
+        "dataset": "Hi",
+        "variant": "material",
+        "route": "router",
+        "mix_weight": 0.5,
+        "tau": 0.0,
+        "case": "final",
+        "export_receipt": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_n_supported_material_quality/endpoints/Hi/material_router_t0_final_d7b1135e2a8c9805/export.json",
+        "export_sha256": "25b30886806cc3328cb5efcfa3d9e529bfb6c356452eb12428918b0459083589",
+        "metrics": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_n_supported_material_quality/endpoints/Hi/material_router_t0_final_d7b1135e2a8c9805/metrics.json",
+        "metrics_sha256": "a24fc5d4b35d09f1f51453d111fb27c49f46180645cebcec433d5ec2963f26d8",
+        "AP": 0.21684561950231218,
+        "AP50": 0.3498689630449503,
+        "AP75": 0.24447159237542432,
+        "AR100": 0.4123629740672695,
+        "AP_computed_here": true,
+        "AP_reused": false,
+        "prediction_count": 378833,
+        "counts": {
+          "union_proposals": 378833,
+          "retained": 378833,
+          "V_selected": 281226,
+          "F_selected": 97607,
+          "F_only_admitted": 85937,
+          "overlap_F_selected": 11670,
+          "overlap_category_changes": 11670
+        },
+        "active_models": 6
+      }
+    }
+  },
+  "inference_cases": [
+    "DET",
+    "CLCXray_test",
+    "PIXray",
+    "PIDray",
+    "DvXray",
+    "Hi"
+  ],
+  "test_cases": [
+    "DET",
+    "CLCXray_test",
+    "PIXray",
+    "PIDray",
+    "DvXray",
+    "Hi"
+  ],
+  "E_training_NPZ": {
+    "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_c_shared_union/training/union_train_val.npz",
+    "bytes": 97541,
+    "sha256": "9e5d752bf34c7b0e997f058ab9438200f4847220209e3aae7c51aca151dae259"
+  },
+  "N_training_NPZ": {
+    "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_n_supported_material_quality/training/multisource_train_val.npz",
+    "bytes": 3107341,
+    "sha256": "e56135f4c4913de11cb4892ac084cd1ee15a4634d129385a50bcec6b5775e2f9"
+  },
+  "fixed_training": "Exactly respectiveE visual_clean/N material architectures, teacher/split/masks/constants/loss/optimizer/epochs/earlystop/RNG sampling. Only prescribed freshseeds and GPU/namespace differ. E clean repeatsnaturalviews AND retains original affineRNG uniform consumption without applyingaffine.",
+  "inference": "Eachnewmodel actualCUDA on all6tests; originalGPUF32 logits->CPU_F32 sigmoid, F64mean of own3seedgroup thenF32; nevermean12seeds.",
+  "scoring": {
+    "formula": "clip newEgroup/newNgroup means[1e-6,1], FP64powers.5 product ->F32,pad0",
+    "mix_weight": 0.5,
+    "tau": 0.0,
+    "route": "router",
+    "Gaussian_sigma": 1.0,
+    "native_pool": "exactoriginalC nativeV/F union/categoryalias/globalrow/box/rawscore/UNC"
+  },
+  "selection": {
+    "new_parameter_or_seed_selection": false,
+    "all4groups_all6tests": true,
+    "no_bestgroup": true,
+    "original_N_or_P_candidate_changed": false,
+    "source_AP": 0
+  },
+  "statistics": {
+    "fixed_group_count": 5,
+    "group0": "Reference6 actual originalN metrics",
+    "fournew": "newfullpipeline training replications atsame6modelbudget",
+    "descriptive_only": "n5 min/max/meanactualAP/sample std ddof1; meanAP not15model predictionensemble; no n5CI or hierarchical training+image uncertainty claim; allnegatives retained",
+    "macro": "fixed6equalweights pergroup; no perdata grouping"
+  },
+  "budgets": {
+    "new_trainings": 24,
+    "new_GPU_inferences": 144,
+    "new_three_seed_means": 48,
+    "new_native_test_AP": 24,
+    "existing_original_N_AP_only_referenced": 6,
+    "new_images_GT_features": 0,
+    "models_per_pipeline": 6
+  },
+  "role_output_contract": "roles/{role}/ensemble_index.json: statusCOMPLETE,parent_protocol ref,role,groups{replicaN:{seeds:[3],cases{dataset:{scores:ref,receipt:ref,model_refs:[3]}}}}; seedreceipts bindcheckpoint/newroleP/parentR P/featuremanifest/rowkey; allsavedquality [N,2] F32pad0",
+  "resources": {
+    "two_role_workers": true,
+    "threads_per_role": 8,
+    "native_global_slots": 4,
+    "native_lock_root": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/resources/native_slots",
+    "GPU3_do_not_touch": true,
+    "min_available_RAM_GiB": 64
+  },
+  "boundaries": [
+    "All15 alreadysealed pointroots andpaper/oldresults read-only.",
+    "OriginalD/P controls remainfixed andoriginalD priority unchanged. P selection wasafter50 earlierfits, beforethese futureR validationfits.",
+    "Prior N/O tests exposed; disclosed replicationdiagnostic, notnewblindtest.",
+    "CLC/PID/Hi supervision remains; no newindependent images orphysicalidentity certification.",
+    "No outcome-based stopping/seedreplacement/parameterchange orbestgroup. ChildroleP/code freeze bindthisparent before numerical work."
+  ],
+  "publication_edits": false,
+  "code_root": "/mnt/data/yxy/program/RAXO/experiments/night_exploration_20261101/batch_r_full_pipeline_repeats",
+  "output_root": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_r_full_pipeline_repeats"
+}

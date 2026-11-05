@@ -1,0 +1,3 @@
+# Preserve the byte identities recorded in the reproduction manifest on every OS.
+/reproduction/** -text
+/results/current_six_dataset_AP.csv -text

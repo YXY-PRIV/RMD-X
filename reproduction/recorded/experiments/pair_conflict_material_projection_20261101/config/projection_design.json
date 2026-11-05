@@ -1,0 +1,20 @@
+{
+  "status": "DESIGN_PREPARED_NOT_EXECUTION_AUTHORIZATION",
+  "source": "Immutable accepted source components.centered_correction Float32[N,2], source model protocol3b3c; never the partial failed attempt",
+  "active": "Native V and F branches both kept; their mapped candidate slots valid, actual availability1, distinct categoryIDs/classindices, true supported T>1; label-free and common across all roles/seeds",
+  "mapping": "Always gather native V/F via branch_to_candidate and verify branch category equals mapped candidate category. CategoryID0 is valid; -1 denotes absent/negative only.",
+  "formula": "D64=(delta_at_F.astype(Float64)-delta_at_V.astype(Float64))/2;D=Float32(D64);projected[Vslot]=-D;projected[Fslot]=D;all other/inactive entries exact+0",
+  "range_bound": 2.0,
+  "contrast_rounding_abs_bound": 2.384185791015625e-07,
+  "pair_correction_sum_exact0": true,
+  "contrast": "Original candidate correction difference retained in real arithmetic; F32 D only within declared rounding bound. No exactbit contrast claim.",
+  "deployment": "Original formal T availability deployed per-seed q and original saved full_logits anchor. DenseCPUF32 sigmoid(old_logits+F32alpha*projected); projected0/inactive/alpha0 copy exact formal T q. OriginalE3 mixing/Gaussian/native COCO unchanged.",
+  "inactive": "Only pre-Gaussian q/branch/class and original native s/bbox are unchanged. Gaussian score suppression can indirectly change final inactive output scores/ranks; no claim of final invariance.",
+  "diagnostics": "Only native V or only native F branches with the exact formal T fixed q0, original kept/category/score/bbox, same Gaussian/COCO. Never read pairdelta and never add a missing branch. V/F candidates share availability-aware source-trained scorer, so this is not a completely material-free comparison.",
+  "new_training": 0,
+  "new_GPU": 0,
+  "new_model_forward": 0,
+  "new_image_encoder": 0,
+  "new_bank": 0,
+  "publication_edits": false
+}

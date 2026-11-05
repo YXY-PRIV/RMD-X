@@ -1,0 +1,2138 @@
+{
+  "status": "FROZEN_BEFORE_FIX1_GROUPED_DATA_RECONSTRUCTION_TRAINING_GPU_OR_AP",
+  "study_id": "material_conditional_ranking_fix1_20261101",
+  "created_utc": "2026-11-01T14:12:46.838815+00:00",
+  "hypothesis": "Train actual material class contrast on supported matched proposals rather than independent objectness BCE; isolate deployment common logit drift through differentiable full-supported-class centering and a frozen strong availability-aware proposal anchor.",
+  "primary_variant": "material",
+  "control_variant": "permuted_material",
+  "variants": [
+    "material",
+    "permuted_material"
+  ],
+  "seeds": [
+    17,
+    29,
+    43
+  ],
+  "sources": {
+    "C_protocol": {
+      "path": "/mnt/data/yxy/program/RAXO/experiments/night_exploration_20261101/batch_c_shared_union/config/protocol.json",
+      "bytes": 14465,
+      "sha256": "285b2fd5fcdbc974c762332cf33b3962a6876f75bd8e8a6c0e53e8235d394cd7"
+    },
+    "K_protocol": {
+      "path": "/mnt/data/yxy/program/RAXO/experiments/night_exploration_20261101/batch_k_multisource_quality/config/protocol.json",
+      "bytes": 1859401,
+      "sha256": "86f3a155818607ba8447443ba99cc0f7dfbc09aef1888f496cd2ed32f32a112f"
+    },
+    "N_protocol": {
+      "path": "/mnt/data/yxy/program/RAXO/experiments/night_exploration_20261101/batch_n_supported_material_quality/config/protocol.json",
+      "bytes": 1750004,
+      "sha256": "94470fb3917d5fc51e98f0a051f2dd3a392cbb8f8c51962befabe05f3c6408dd"
+    },
+    "K_geometry_checkpoints": {
+      "17": {
+        "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_k_multisource_quality/models/geometry/seed17/model.pt",
+        "bytes": 174674,
+        "sha256": "e4bb272cf7d4dfc79209663952ef47804f48912fe335bf7f1a1fc01eb8cb3259"
+      },
+      "29": {
+        "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_k_multisource_quality/models/geometry/seed29/model.pt",
+        "bytes": 174674,
+        "sha256": "14b59837e1c6121134f3ce648dcc7ae4af8b097c96dd21402b44bd47805e3e9c"
+      },
+      "43": {
+        "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_k_multisource_quality/models/geometry/seed43/model.pt",
+        "bytes": 174674,
+        "sha256": "ee8c04e09b6e3d7993a887ef3a103654dc16ff6e5c72ef20c7e350db765c67ef"
+      }
+    },
+    "N_training": {
+      "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_n_supported_material_quality/training/multisource_train_val.npz",
+      "bytes": 3107341,
+      "sha256": "e56135f4c4913de11cb4892ac084cd1ee15a4634d129385a50bcec6b5775e2f9"
+    },
+    "N_training_receipt": {
+      "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_n_supported_material_quality/training/data_receipt.json",
+      "bytes": 8236,
+      "sha256": "0554a82ce4c4abb4cdba04651923c5e55a3204dfb18b68582d9feb08db7ddf81"
+    },
+    "night_final_completion": {
+      "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/closure_recovery_20261101_2135/completion.json",
+      "bytes": 1939,
+      "sha256": "b2354e2c9d11bc23d758108a43bb98d122bb5c5eb0ea20dd4ef75398120d7582"
+    },
+    "night_sealed20_SHA_audit": {
+      "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/verification/sealed_payload_hash_audit.json",
+      "bytes": 13332881,
+      "sha256": "ec8a73e7a5f3caefd7d031aa1e644d956e40075b515bc36c33645e2a094abe24"
+    },
+    "night_sealed20_final_metadata": {
+      "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/verification/sealed_payload_final_immutability.json",
+      "bytes": 3662,
+      "sha256": "b65a64b728ced608d72a493ed17a7199cd636c3019a2faf9bfbfea6d47537514"
+    },
+    "prior6558_protection": {
+      "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/verification/protected_sources_after.json",
+      "bytes": 3968,
+      "sha256": "4ac0b213b3ceee5343c92989552a6e639752e30b5ff29b47eaa958956999fb48"
+    },
+    "T_protocol": {
+      "path": "/mnt/data/yxy/program/RAXO/experiments/material_reliability_20261101/config/protocol.json",
+      "bytes": 31307,
+      "sha256": "2bbafa2e6245cba6902f7067631a438712bda902acb460cffd408738f28dec04"
+    },
+    "T_model_source": {
+      "path": "/mnt/data/yxy/program/RAXO/experiments/material_reliability_20261101/src/quality_model.py",
+      "bytes": 27799,
+      "sha256": "8cd94fdf82e28cf2aa008332a2b930655a80abae452f4499e34cdd1d15b3c56d"
+    },
+    "N_supported_source": {
+      "path": "/mnt/data/yxy/program/RAXO/experiments/night_exploration_20261101/batch_n_supported_material_quality/src/supported_data.py",
+      "bytes": 9461,
+      "sha256": "622279047a2f24b8251b6ced3307397fa95701a5e875fa7fc5e17b46b21054c8"
+    },
+    "T_model_code_freeze": {
+      "path": "/mnt/data/yxy-codex/home/outputs/RAXO/material_reliability_20261101/automation/model_code_freeze.json",
+      "bytes": 1729,
+      "sha256": "82cb0fbf4e422721ae524d274df5503610b442c9e517c67aeb51a8a6ebe83385"
+    },
+    "T_selected_parameters": {
+      "path": "/mnt/data/yxy-codex/home/outputs/RAXO/material_reliability_20261101/parameters/selected_parameters.json",
+      "bytes": 40222,
+      "sha256": "04e6e10e624ac97c380d17e97d996fd9a4ed657d25e7d0f134e10aede3b6247b"
+    },
+    "T_final_run_index": {
+      "path": "/mnt/data/yxy-codex/home/outputs/RAXO/material_reliability_20261101/run_index.json",
+      "bytes": 82922,
+      "sha256": "dcce0027e6e0a16ef905100d5efcd4c4b1262546e2f6a56162bc2e05951a7b69"
+    },
+    "T_checkpoints": {
+      "availability_control": {
+        "17": {
+          "path": "/mnt/data/yxy-codex/home/outputs/RAXO/material_reliability_20261101/models/availability_control/seed17/model.pt",
+          "bytes": 372140,
+          "sha256": "97f8a2638207d9078d7ba2dabf3a20843acf6109ff380813fe8f48ca5169e878"
+        },
+        "29": {
+          "path": "/mnt/data/yxy-codex/home/outputs/RAXO/material_reliability_20261101/models/availability_control/seed29/model.pt",
+          "bytes": 372140,
+          "sha256": "cca3fd9a0694582300edb2bdf39d1754a73b9900f2fa6f5e0f7b60eb140ee883"
+        },
+        "43": {
+          "path": "/mnt/data/yxy-codex/home/outputs/RAXO/material_reliability_20261101/models/availability_control/seed43/model.pt",
+          "bytes": 372140,
+          "sha256": "15f6151c63d5342ec58be34fff6422a781b56f558a68fe336a09460d16b693fd"
+        }
+      },
+      "material": {
+        "17": {
+          "path": "/mnt/data/yxy-codex/home/outputs/RAXO/material_reliability_20261101/models/material/seed17/model.pt",
+          "bytes": 372140,
+          "sha256": "a90d23538edb377759e4b30f7555381fb48605416f2845efbd05e1af8917b800"
+        },
+        "29": {
+          "path": "/mnt/data/yxy-codex/home/outputs/RAXO/material_reliability_20261101/models/material/seed29/model.pt",
+          "bytes": 372140,
+          "sha256": "aabfe24e4184d292068ddb031dba4de5dfb8b73fc8dbac2e9d6e9e62869a56f6"
+        },
+        "43": {
+          "path": "/mnt/data/yxy-codex/home/outputs/RAXO/material_reliability_20261101/models/material/seed43/model.pt",
+          "bytes": 372140,
+          "sha256": "4e3eccbb6ea4526dd714947b2b81b1809151d55fe54e08586d6e0df6f823917e"
+        }
+      },
+      "ordinal_material": {
+        "17": {
+          "path": "/mnt/data/yxy-codex/home/outputs/RAXO/material_reliability_20261101/models/ordinal_material/seed17/model.pt",
+          "bytes": 372140,
+          "sha256": "e35e4a7e4a8a403f9cc825636fdfeb4661b3a73355e8f78f12c25bbc780b3f05"
+        },
+        "29": {
+          "path": "/mnt/data/yxy-codex/home/outputs/RAXO/material_reliability_20261101/models/ordinal_material/seed29/model.pt",
+          "bytes": 372140,
+          "sha256": "c29352997d3a6f1c0b340ec7c351a09fb59f54c02dcec6e31afc3a4638d0893a"
+        },
+        "43": {
+          "path": "/mnt/data/yxy-codex/home/outputs/RAXO/material_reliability_20261101/models/ordinal_material/seed43/model.pt",
+          "bytes": 372140,
+          "sha256": "cd90b97c77f9c9e5010d0169bf2162515ea6f9b08e54837e8ba9f4e60c885758"
+        }
+      }
+    },
+    "T_completion": {
+      "path": "/mnt/data/yxy-codex/home/outputs/RAXO/material_reliability_20261101/completion.json",
+      "bytes": 2818,
+      "sha256": "4ae5bc94cfb112963bc966dd0a6cafc76e09d0ec741f1398239976c02c2b74ce"
+    },
+    "T_output_manifest": {
+      "path": "/mnt/data/yxy-codex/home/outputs/RAXO/material_reliability_20261101/output_manifest.json",
+      "bytes": 341899,
+      "sha256": "da1ee54752e784d5ce5e4e548d131b3d1a3fca38cc68f876ccd5d3d3db19eecb"
+    },
+    "centered_projection_completion": {
+      "path": "/mnt/data/yxy-codex/home/outputs/RAXO/material_centered_projection_20261101/completion.json",
+      "bytes": 3055,
+      "sha256": "4b95c68aa0b4cded975117010e6e8e25b8abf1d3fb333cb2d78c9196850306f5"
+    },
+    "centered_projection_output_manifest": {
+      "path": "/mnt/data/yxy-codex/home/outputs/RAXO/material_centered_projection_20261101/output_manifest.json",
+      "bytes": 401362,
+      "sha256": "2632b7b1409363f7e59be50be7c55fb27c3a8c3f5684f849b71d74fadbdc58ec"
+    },
+    "old_raw_X8_replay": {
+      "path": "/mnt/data/yxy/program/RAXO/experiments/material_bank_alignment_20261101/provenance/old_raw_X8_replay.json",
+      "bytes": 2477,
+      "sha256": "6a2d6b18dfcc7fc7e75f439d04ccdcfadd7ec042717d8aac5215731eee473f35"
+    },
+    "old_full_material_replay": {
+      "path": "/mnt/data/yxy/program/RAXO/experiments/material_bank_alignment_20261101/provenance/old_full_M_replay.json",
+      "bytes": 1722,
+      "sha256": "1f92ae9bd961b7352ff3e0a2a3927c87b512ff1207554cf870316486abd54b5b"
+    },
+    "runtime_lookup_reference": {
+      "path": "/mnt/data/yxy/program/RAXO/experiments/material_bank_alignment_20261101/config/reference_lookup_stats.json",
+      "bytes": 22633,
+      "sha256": "53bbc3a07996c47c0c1184131420f136d0ad430aa3458b54d0ea4b5662067a20"
+    },
+    "CLC_source_exact22": {
+      "path": "/mnt/data/yxy-codex/home/outputs/RAXO/P16_P25_revision_20261024/validation/features/proposal_exact22.npy",
+      "bytes": 6422016,
+      "sha256": "0e99ab22a90a64ca739f87ff075b86652055c45e7235322d0f18f2dac3d45062"
+    },
+    "CLC_proposal_meta": {
+      "path": "/mnt/data/yxy-codex/home/outputs/RAXO/P16_P25_revision_20261024/validation/features/proposal_rows.json",
+      "bytes": 12221890,
+      "sha256": "fbd70306373f8f72ea800d338c8f2aed427f660764feb201ceeec2d6f2ca7e94"
+    },
+    "CLC_image_roles": {
+      "path": "/mnt/data/yxy-codex/home/outputs/RAXO/P16_P25_revision_20261024/validation/data/roles.csv",
+      "bytes": 240945,
+      "sha256": "fd5a71a1a9d12ee112844d9e2c3b4a3cfc57592011bcfb54ede19a1123530ef1"
+    },
+    "CLC_old_local_bank": {
+      "path": "/mnt/data/yxy-codex/home/outputs/RAXO/P16_P25_revision_20261024/validation/banks/material_bank.json",
+      "bytes": 10392,
+      "sha256": "040dc1ff0a5cc687c41fae02c30f1ac63e58f2b19b81b4678b17cf541b7f939c"
+    },
+    "CLC_target_transfer_bank": {
+      "path": "/mnt/data/yxy/program/RAXO/outputs_rmdx/material_multidataset/banks/CLCXray_material_bank_transfer_from_det_compass_support.json",
+      "bytes": 31728,
+      "sha256": "38ed43e888130910e9101e147812a32064e7c31e42c63bfbd8fa27c44c3397dc"
+    },
+    "previous_bank_alignment_protocol": {
+      "path": "/mnt/data/yxy/program/RAXO/experiments/material_bank_alignment_20261101/config/protocol.json",
+      "bytes": 83480,
+      "sha256": "f79d5b4ed1b0c386cb397eec48c2165e3ad1f24b406e40d08d21db54768e8314"
+    },
+    "previous_bank_alignment_completion": {
+      "path": "/mnt/data/yxy-codex/home/outputs/RAXO/material_bank_alignment_20261101/completion.json",
+      "bytes": 6392,
+      "sha256": "2a5fef6c4110eb4e0a16cd33465d3482ffca69130d2bdfd51df292f849a9de01"
+    },
+    "previous_bank_alignment_output_manifest": {
+      "path": "/mnt/data/yxy-codex/home/outputs/RAXO/material_bank_alignment_20261101/output_manifest.json",
+      "bytes": 272170,
+      "sha256": "acf0ff8c92837d2a386666efd5ea6220fcb4fa7c0dac2ffdd6bae6308653e33f"
+    },
+    "aligned_training": {
+      "path": "/mnt/data/yxy-codex/home/outputs/RAXO/material_bank_alignment_20261101/training/multisource_train_val.npz",
+      "bytes": 3101428,
+      "sha256": "10cb63bed3a882b426757cb5d01b604383902b7e7c63b2df69e13960fab5754f"
+    },
+    "aligned_training_receipt": {
+      "path": "/mnt/data/yxy-codex/home/outputs/RAXO/material_bank_alignment_20261101/training/data_receipt.json",
+      "bytes": 2753,
+      "sha256": "659dd3925c71865260e04dcaf3b678b91d72b8f693ab50349ecfa60231386d9b"
+    },
+    "aligned_data_review": {
+      "path": "/mnt/data/yxy-codex/home/outputs/RAXO/material_bank_alignment_20261101/verification/data_review.json",
+      "bytes": 2461,
+      "sha256": "a958c69abaf63ca59c14ed95c6a0a60588401dda840deae81869fafa3dbac2d6"
+    },
+    "aligned_control_effective_input_bridge": {
+      "path": "/mnt/data/yxy-codex/home/outputs/RAXO/material_bank_alignment_20261101/verification/control_effective_input_bridge.json",
+      "bytes": 20232,
+      "sha256": "75f68cb9d3855c85ba1ea066ccb96baa09ac6a97abfab737f59feefd14b950a7"
+    },
+    "source_conditional_feasibility": {
+      "path": "/mnt/data/yxy/program/RAXO/experiments/material_conditional_ranking_20261101/provenance/raxo_conditional_material_teacher_feasibility_20261101.json",
+      "bytes": 35129,
+      "sha256": "ca4df5c68ab0d2e6272a34cc4b85018cdeffb247cd1958ba10e30042e974b28b"
+    },
+    "source_conditional_feasibility_driver": {
+      "path": "/mnt/data/yxy/program/RAXO/experiments/material_conditional_ranking_20261101/provenance/raxo_conditional_material_teacher_feasibility_20261101.py",
+      "bytes": 6934,
+      "sha256": "50987aceb72c710262893deac4ca4f6f77cf5bb9ed9bb085c7926cf17f31be15"
+    },
+    "source_feasibility_origin_record": {
+      "path": "/mnt/data/yxy/program/RAXO/experiments/material_conditional_ranking_20261101/provenance/source_origins.json",
+      "bytes": 1157,
+      "sha256": "454cba11a2bf7cd1604fbfc8fe2635a29c555ea8cd0ba6919788eb3a0acde571"
+    },
+    "T_deployment_replay": {
+      "path": "/mnt/data/yxy-codex/home/outputs/RAXO/material_conditional_ranking_20261101/verification/Tavailability_deployment_replay_persistent.json",
+      "bytes": 42733,
+      "sha256": "aa5533b694531f4b6f56eb8366180cee405c36261f2b89a43bae863275c1ad9a"
+    },
+    "T_anchor_reference_source": {
+      "path": "/mnt/data/yxy/program/RAXO/experiments/material_conditional_ranking_fix1_20261101/src/anchor_reference.py",
+      "bytes": 6746,
+      "sha256": "ae89aff7274fcca0dc9ae4d299e2f48a7fb27c31a44adda79827393f7b228068"
+    },
+    "failed_conditional_completion": {
+      "path": "/mnt/data/yxy-codex/home/outputs/RAXO/material_conditional_ranking_20261101/failure_completion.json",
+      "bytes": 4058,
+      "sha256": "a3ea935e14765d12ab58d822206eb3be314355682467d5ab64a5c12c93bb3369"
+    },
+    "failed_conditional_manifest": {
+      "path": "/mnt/data/yxy-codex/home/outputs/RAXO/material_conditional_ranking_20261101/failure_manifest.json",
+      "bytes": 61076,
+      "sha256": "62b009e71d80c9433d734bb09aa7448bf7d6d7227dcdac1c619d49fa7b4347d2"
+    },
+    "failed_preflight_issue": {
+      "path": "/mnt/data/yxy-codex/home/outputs/RAXO/material_conditional_ranking_20261101/verification/model_preflight_postlaunch_issue.json",
+      "bytes": 2323,
+      "sha256": "7d711c07309e3673b758bdb6bfd7ba6ded6969c40054d3761373d9a9cf293680"
+    }
+  },
+  "feature_schema": {
+    "names": [
+      "confidence_percentile",
+      "clip_log_aspect_over4",
+      "width_over_image_width",
+      "height_over_image_height",
+      "centerx_over_width",
+      "centery_over_height",
+      "max_other_proposal_IoU",
+      "sqrt_relative_box_area",
+      "fresh_B_class",
+      "supported_B_rank_over_T_minus1",
+      "supported_B_top_minus_second_over2",
+      "B_class_minus_supported_top_over2",
+      "has_actual_material_support"
+    ],
+    "gate_context_names": [
+      "confidence_percentile",
+      "clip_log_aspect_over4",
+      "width_over_image_width",
+      "height_over_image_height",
+      "centerx_over_width",
+      "centery_over_height",
+      "max_other_proposal_IoU",
+      "sqrt_relative_box_area",
+      "supported_B_top1",
+      "supported_B_top_minus_second_over2",
+      "supported_B_softmax_entropy_over_logT",
+      "log_supported_count_over_log307",
+      "query_has_supported_reference"
+    ],
+    "residual_dimension": 13,
+    "gate_context_dimension": 13,
+    "dtype": "float32",
+    "source": "Existing aligned CLC source+unchanged PID/Hi; third aligned CT plus original six-test N auxiliary caches; no new query decoder or encoder",
+    "residual_constant_guard": "Fit only original grouped train class_valid X; identical for real/permuted. Permute whole raw M8..11 supported rows before applying same constant guard.",
+    "gate_constant_guard": "Fit only original unpermuted grouped train proposal gate_context; shared between roles.",
+    "actual_supported_full_class_required": true,
+    "no_labels_in_features_or_permutation": true
+  },
+  "training": {
+    "source_input": {
+      "path": "/mnt/data/yxy-codex/home/outputs/RAXO/material_conditional_ranking_fix1_20261101/training/grouped_train_val.npz",
+      "actual_ref_from": "/mnt/data/yxy-codex/home/outputs/RAXO/material_conditional_ranking_fix1_20261101/training/data_receipt.json"
+    },
+    "variants": [
+      "material",
+      "permuted_material"
+    ],
+    "seeds": [
+      17,
+      29,
+      43
+    ],
+    "learning_rate": 0.001,
+    "weight_decay": 0.0001,
+    "max_epochs": 100,
+    "patience": 15,
+    "min_delta": 1e-06,
+    "positive_proposal_draws_per_epoch": 2937,
+    "regularizer_proposal_draws_per_epoch": 2937,
+    "draws_per_source_per_population": 979,
+    "batch_size": 256,
+    "updates_per_epoch": 12,
+    "paired_positive_and_regularizer_batches": true,
+    "validation": "Full source-val conditional pairwise loss only, weighted equal source->eligible image->eligible proposal; fixed label-free control permutation. Regularizer is train-only and is not checkpoint selection loss. Initial epoch -1 branch0 eligible. No CT/test in fitting or checkpoint selection.",
+    "objective": "conditional weighted pairwise positive-vs-zero + .01 regularizer weighted mean_{supported} centered_delta^2",
+    "residual_l2_penalty": 0.01,
+    "residual_bound": 2.0,
+    "gate_final_bias": -2.0,
+    "residual_zero_initialization": true,
+    "anchor_candidate_epoch": -1,
+    "source_weighting": "equal source -> image -> proposal, eligibility only for classification population",
+    "permutation": {
+      "target": "Whole M8..11 row vectors within the same proposal truly supported canonical class set; G/availability/padding/class labels unchanged",
+      "train": "seed+epoch+canonical source/image/proposal key",
+      "validation_test": "seed+fold_or_case+canonical proposal key; fixed no epoch",
+      "algorithm": "Uniform permutation without replacement, including possible fixed points; independent label-free RNG stream, never keyed by y/GT/loss/test AP",
+      "same_draws_initialization_steps_as_material": true,
+      "not_equal_effective_capacity_or_causal_counterfactual": true
+    },
+    "positive_teacher": "Existing per-class maximum same-class GT IoU, IoU>=.5 retained else0; no new GT and no onehot matching; multiple positives retained",
+    "multi_positive_classes_never_negative": true,
+    "validation_loss": "conditional_pairwise_only"
+  },
+  "architecture": {
+    "frozen_strong_anchor": "Original T availability_control entire composite",
+    "frozen_parameters": 1355,
+    "anchor_original_frozen_geometry_parameters": 993,
+    "anchor_original_trained_gating_residual_parameters": 362,
+    "residual": [
+      13,
+      16,
+      1
+    ],
+    "gate": [
+      13,
+      8,
+      1
+    ],
+    "trainable_parameters": 362,
+    "total_aux_head_parameters": 1717,
+    "raw_delta": "a_ic * sigmoid(g(gate_context_i)) * 2*tanh(r(class_X_ic))",
+    "centered_delta": "a_ic*(raw_delta_ic - mean_{c in actual_supported_i} raw_delta_ic)/2; differentiable during training",
+    "mean_precision": "CUDA Float32 raw delta, supported sum/mean Float64 in canonical class order; centered Float64 finally Float32",
+    "unsupported": "T<=1/queryinvalid/unsupported exact0 newdelta; formal old Tavailability deployment q exact fallback",
+    "center_role": "Isolates common deployment logit drift. Supported common anchor and center terms cancel algebraically in positive-vs-zero rank differences; centering itself is not an extra supervision signal.",
+    "gate_context": {
+      "names": [
+        "confidence_percentile",
+        "clip_log_aspect_over4",
+        "width_over_image_width",
+        "height_over_image_height",
+        "centerx_over_width",
+        "centery_over_height",
+        "max_other_proposal_IoU",
+        "sqrt_relative_box_area",
+        "supported_B_top1",
+        "supported_B_top_minus_second_over2",
+        "supported_B_softmax_entropy_over_logT",
+        "log_supported_count_over_log307",
+        "query_has_supported_reference"
+      ],
+      "precision": "CPU Float64 from original unpermuted canonical supported B values, finally cast Float32",
+      "temperature": 1.0,
+      "entropy": "-sum(p*log(p))/log(T), p=exp(B-maxB)/sum(exp(B-maxB)) over supported classes only",
+      "gap": "(top1-top2)/2",
+      "supported_count": "log(max(T,1))/log(307)",
+      "availability": "query_valid and T>0",
+      "empty": "top1=gap=entropy=logcount=availability=0",
+      "single": "gap=entropy=0",
+      "visual_entropy": false,
+      "shared_unpermuted_context_for_both_roles": true
+    }
+  },
+  "cases": {
+    "CLC_tune": {
+      "feature_manifest": {
+        "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_c_shared_union/features/CLC_tune/feature_manifest.json",
+        "bytes": 27396,
+        "sha256": "587a7a48b87536ea58b700c4b2c2aa5abfc2aa1003297e1d95981d3f1355b8ca"
+      },
+      "C_feature_manifest": {
+        "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_c_shared_union/features/CLC_tune/feature_manifest.json",
+        "bytes": 27396,
+        "sha256": "587a7a48b87536ea58b700c4b2c2aa5abfc2aa1003297e1d95981d3f1355b8ca"
+      },
+      "N_feature_manifest": {
+        "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_n_supported_material_quality/features/CLC_tune/feature_manifest.json",
+        "bytes": 7855,
+        "sha256": "40a630ef30f3932af71e4e86a0a57ff640347ee1c148bae908c8c03f4fea2066"
+      },
+      "Kgeometry_scores": {
+        "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_k_multisource_quality/ensembles/CLC_tune/geometry/all3/quality_scores.npz",
+        "bytes": 9966,
+        "sha256": "30ff3cc8433950cb89cb8988c5094f67f00c923072fbc412173e91e3ceb25cf5"
+      },
+      "Kgeometry_receipt": {
+        "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_k_multisource_quality/ensembles/CLC_tune/geometry/all3/ensemble.json",
+        "bytes": 4333,
+        "sha256": "b7c63d94336db00f53880f64d62cd81d47031fa48a5901b177e8e4e81db2a8e1"
+      },
+      "Ebase_scores": {
+        "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_e_affine_robustness/ensembles/CLC_tune/visual_clean/all3/quality_scores.npz",
+        "bytes": 10240,
+        "sha256": "e707d5181332733dec1da281e043ea5e9a207efda72061bd4e21c405f85dc658"
+      },
+      "Ebase_receipt": {
+        "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_e_affine_robustness/ensembles/CLC_tune/visual_clean/all3/ensemble.json",
+        "bytes": 4446,
+        "sha256": "2d936e8f8bf4873796fee7bd1938b9c20fc507544d0eaa9b28974d6b2e6b1cb7"
+      },
+      "candidate_row_key_sha256": "b7bd29158e187c97493581f19c79d19e4815269628e5ce6d41d43923d0d0a6d0",
+      "Kgeometry_final_router_metrics": null,
+      "Kgeometry_final_router_export": null,
+      "T_inference": {
+        "availability_control": {
+          "17": {
+            "receipt": {
+              "path": "/mnt/data/yxy-codex/home/outputs/RAXO/material_reliability_20261101/inference/CLC_tune/availability_control/seed17/inference.json",
+              "bytes": 2992,
+              "sha256": "ae1468dc2eeb8ffc50258357b451cc154bb6652d3010fc3b65442e185139e943"
+            },
+            "components": {
+              "path": "/mnt/data/yxy-codex/home/outputs/RAXO/material_reliability_20261101/inference/CLC_tune/availability_control/seed17/quality_scores.npz",
+              "bytes": 55805,
+              "sha256": "7d677669b47620c06d609fb90f93a8eaf91f2ba691cf555db892c12a3ff1131b"
+            }
+          },
+          "29": {
+            "receipt": {
+              "path": "/mnt/data/yxy-codex/home/outputs/RAXO/material_reliability_20261101/inference/CLC_tune/availability_control/seed29/inference.json",
+              "bytes": 2992,
+              "sha256": "2f2ef8c78790b97f15897180808679a873baad4748189721c8186e5aa04a3b4b"
+            },
+            "components": {
+              "path": "/mnt/data/yxy-codex/home/outputs/RAXO/material_reliability_20261101/inference/CLC_tune/availability_control/seed29/quality_scores.npz",
+              "bytes": 38652,
+              "sha256": "3fcbbeb2dfe732a548d242ac1adabff9bb869a9d5016b761adb6396ccb0eafa0"
+            }
+          },
+          "43": {
+            "receipt": {
+              "path": "/mnt/data/yxy-codex/home/outputs/RAXO/material_reliability_20261101/inference/CLC_tune/availability_control/seed43/inference.json",
+              "bytes": 2992,
+              "sha256": "616830d3a2651106f476f9afc5f26f58d5836803a509cd0d2006dbb002f96d6f"
+            },
+            "components": {
+              "path": "/mnt/data/yxy-codex/home/outputs/RAXO/material_reliability_20261101/inference/CLC_tune/availability_control/seed43/quality_scores.npz",
+              "bytes": 55773,
+              "sha256": "182b85c6bbf6ff70c449a0dd7d2ce700dff9ca234cc4c987f4fdd0744547349a"
+            }
+          }
+        },
+        "material": {
+          "17": {
+            "receipt": {
+              "path": "/mnt/data/yxy-codex/home/outputs/RAXO/material_reliability_20261101/inference/CLC_tune/material/seed17/inference.json",
+              "bytes": 2932,
+              "sha256": "24e1d1394fc924311a14aff9ec29af3972434812af999f7ae37c8c9254f1e410"
+            },
+            "components": {
+              "path": "/mnt/data/yxy-codex/home/outputs/RAXO/material_reliability_20261101/inference/CLC_tune/material/seed17/quality_scores.npz",
+              "bytes": 60498,
+              "sha256": "6a2f12c6b10124fa953f73f3e36c85c1014573ffd71d6d4b442ef806578d8b18"
+            }
+          },
+          "29": {
+            "receipt": {
+              "path": "/mnt/data/yxy-codex/home/outputs/RAXO/material_reliability_20261101/inference/CLC_tune/material/seed29/inference.json",
+              "bytes": 2932,
+              "sha256": "9acefa2d40fbd1f3031b9adc8823b0073b643d53bcf95e2edd2b89feabe4f241"
+            },
+            "components": {
+              "path": "/mnt/data/yxy-codex/home/outputs/RAXO/material_reliability_20261101/inference/CLC_tune/material/seed29/quality_scores.npz",
+              "bytes": 60658,
+              "sha256": "baa5457cfec7defbfeb6d4d2abfe3f831cab7363e07223054d3e274b72021077"
+            }
+          },
+          "43": {
+            "receipt": {
+              "path": "/mnt/data/yxy-codex/home/outputs/RAXO/material_reliability_20261101/inference/CLC_tune/material/seed43/inference.json",
+              "bytes": 2932,
+              "sha256": "c54ca2cf3b275546d767e847aebaa9d75e629bb8caa1dc4ba8286057f9b22619"
+            },
+            "components": {
+              "path": "/mnt/data/yxy-codex/home/outputs/RAXO/material_reliability_20261101/inference/CLC_tune/material/seed43/quality_scores.npz",
+              "bytes": 60638,
+              "sha256": "a354180b11ff069e3d175b0a8d2c9b0f404f2e94a514cc2914917ec7a9b699ff"
+            }
+          }
+        },
+        "ordinal_material": {
+          "17": {
+            "receipt": {
+              "path": "/mnt/data/yxy-codex/home/outputs/RAXO/material_reliability_20261101/inference/CLC_tune/ordinal_material/seed17/inference.json",
+              "bytes": 2972,
+              "sha256": "c8fb387469000b9cb3ac2fb585a9496bb6fb00f41610626710658cc9467556b0"
+            },
+            "components": {
+              "path": "/mnt/data/yxy-codex/home/outputs/RAXO/material_reliability_20261101/inference/CLC_tune/ordinal_material/seed17/quality_scores.npz",
+              "bytes": 60178,
+              "sha256": "0cd3facaed0aed259ce605fecd655af7b9bb5b274b30f02d0d3846456813d767"
+            }
+          },
+          "29": {
+            "receipt": {
+              "path": "/mnt/data/yxy-codex/home/outputs/RAXO/material_reliability_20261101/inference/CLC_tune/ordinal_material/seed29/inference.json",
+              "bytes": 2972,
+              "sha256": "3f29be163cc5a5e3f7f173af717191a26b8e6fd975223fbc14f3a2c83ed39afc"
+            },
+            "components": {
+              "path": "/mnt/data/yxy-codex/home/outputs/RAXO/material_reliability_20261101/inference/CLC_tune/ordinal_material/seed29/quality_scores.npz",
+              "bytes": 60407,
+              "sha256": "499eb9c6b3b682f03789dacdb2cf6bc7eff08322137128280a0f2c79e7cf9521"
+            }
+          },
+          "43": {
+            "receipt": {
+              "path": "/mnt/data/yxy-codex/home/outputs/RAXO/material_reliability_20261101/inference/CLC_tune/ordinal_material/seed43/inference.json",
+              "bytes": 2972,
+              "sha256": "4981cbf5ee2aec0cee86aa64c0ebfc5c28429aa375fd83c26c8478b8d7c03d04"
+            },
+            "components": {
+              "path": "/mnt/data/yxy-codex/home/outputs/RAXO/material_reliability_20261101/inference/CLC_tune/ordinal_material/seed43/quality_scores.npz",
+              "bytes": 60317,
+              "sha256": "583d15ac5ab7e352e595eebc847c086d524e7265f12bbe572693aef5a201b147"
+            }
+          }
+        }
+      },
+      "feature_manifest_path": "/mnt/data/yxy-codex/home/outputs/RAXO/material_bank_alignment_20261101/features/CLC_tune/feature_manifest.json",
+      "auxiliary_feature_manifest": {
+        "path": "/mnt/data/yxy-codex/home/outputs/RAXO/material_bank_alignment_20261101/features/CLC_tune/feature_manifest.json",
+        "bytes": 9422,
+        "sha256": "f22a5f46ed85ef4c970b162f80f67a01f1ea286163d1536043241f5e1afd67ab"
+      },
+      "auxiliary_protocol": {
+        "path": "/mnt/data/yxy/program/RAXO/experiments/material_bank_alignment_20261101/config/protocol.json",
+        "bytes": 83480,
+        "sha256": "f79d5b4ed1b0c386cb397eec48c2165e3ad1f24b406e40d08d21db54768e8314"
+      },
+      "full_C_material_B": {
+        "path": "/mnt/data/yxy-codex/home/outputs/RAXO/material_bank_alignment_20261101/features/CLC_tune/fresh_material_B.npy",
+        "bytes": 109808,
+        "sha256": "7c36ccd0cbb4e36ecd0c0d1ac9c24025e16acd9dc8488e042ab70eae9009fa74"
+      },
+      "Tavailability_inference": {
+        "17": {
+          "receipt": {
+            "path": "/mnt/data/yxy-codex/home/outputs/RAXO/material_reliability_20261101/inference/CLC_tune/availability_control/seed17/inference.json",
+            "bytes": 2992,
+            "sha256": "ae1468dc2eeb8ffc50258357b451cc154bb6652d3010fc3b65442e185139e943"
+          },
+          "components": {
+            "path": "/mnt/data/yxy-codex/home/outputs/RAXO/material_reliability_20261101/inference/CLC_tune/availability_control/seed17/quality_scores.npz",
+            "bytes": 55805,
+            "sha256": "7d677669b47620c06d609fb90f93a8eaf91f2ba691cf555db892c12a3ff1131b"
+          }
+        },
+        "29": {
+          "receipt": {
+            "path": "/mnt/data/yxy-codex/home/outputs/RAXO/material_reliability_20261101/inference/CLC_tune/availability_control/seed29/inference.json",
+            "bytes": 2992,
+            "sha256": "2f2ef8c78790b97f15897180808679a873baad4748189721c8186e5aa04a3b4b"
+          },
+          "components": {
+            "path": "/mnt/data/yxy-codex/home/outputs/RAXO/material_reliability_20261101/inference/CLC_tune/availability_control/seed29/quality_scores.npz",
+            "bytes": 38652,
+            "sha256": "3fcbbeb2dfe732a548d242ac1adabff9bb869a9d5016b761adb6396ccb0eafa0"
+          }
+        },
+        "43": {
+          "receipt": {
+            "path": "/mnt/data/yxy-codex/home/outputs/RAXO/material_reliability_20261101/inference/CLC_tune/availability_control/seed43/inference.json",
+            "bytes": 2992,
+            "sha256": "616830d3a2651106f476f9afc5f26f58d5836803a509cd0d2006dbb002f96d6f"
+          },
+          "components": {
+            "path": "/mnt/data/yxy-codex/home/outputs/RAXO/material_reliability_20261101/inference/CLC_tune/availability_control/seed43/quality_scores.npz",
+            "bytes": 55773,
+            "sha256": "182b85c6bbf6ff70c449a0dd7d2ce700dff9ca234cc4c987f4fdd0744547349a"
+          }
+        }
+      }
+    },
+    "DET": {
+      "feature_manifest": {
+        "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_c_shared_union/features/DET/feature_manifest.json",
+        "bytes": 76176,
+        "sha256": "9c5b0a79742638567ec5c03a5e33caedd9070056e88e65ab0225619b1f35beda"
+      },
+      "C_feature_manifest": {
+        "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_c_shared_union/features/DET/feature_manifest.json",
+        "bytes": 76176,
+        "sha256": "9c5b0a79742638567ec5c03a5e33caedd9070056e88e65ab0225619b1f35beda"
+      },
+      "N_feature_manifest": {
+        "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_n_supported_material_quality/features/DET/feature_manifest.json",
+        "bytes": 39186,
+        "sha256": "b65a49f910d3859f9323c0db88544fafb0dcd86e7e035a12e0bebda75cd68a90"
+      },
+      "Kgeometry_scores": {
+        "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_k_multisource_quality/ensembles/DET/geometry/all3/quality_scores.npz",
+        "bytes": 260061,
+        "sha256": "277556413c1e536fd3aa69e019f1707187149a3d4f074cd7c8f0a903ba3a3474"
+      },
+      "Kgeometry_receipt": {
+        "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_k_multisource_quality/ensembles/DET/geometry/all3/ensemble.json",
+        "bytes": 4298,
+        "sha256": "05ae8f80e23270619b0db64d0a8a3d34757306aae55b5c9b2966d4e2478da421"
+      },
+      "Ebase_scores": {
+        "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_e_affine_robustness/ensembles/DET/visual_clean/all3/quality_scores.npz",
+        "bytes": 290748,
+        "sha256": "e45a1081ab94e39c2d7eeb22e7a461765a47f5f776189b80328eb5a71410ae30"
+      },
+      "Ebase_receipt": {
+        "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_e_affine_robustness/ensembles/DET/visual_clean/all3/ensemble.json",
+        "bytes": 4406,
+        "sha256": "25545d0533a09fd2154c0ebec43c97f04ed3be512d2065e83787067e3981a727"
+      },
+      "candidate_row_key_sha256": "7ff49f0652908dcff396a5f26485d5fb8843d242f459693d93aceb3cca4e4f18",
+      "Kgeometry_final_router_metrics": {
+        "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_k_multisource_quality/endpoints/DET/geometry_router_t0_final_a1284ce74e12859d/metrics.json",
+        "bytes": 11036,
+        "sha256": "d7427321af63b15841b17b832738dcbe48d8340a1082b8881207f24115753267"
+      },
+      "Kgeometry_final_router_export": {
+        "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_k_multisource_quality/endpoints/DET/geometry_router_t0_final_a1284ce74e12859d/export.json",
+        "bytes": 46978,
+        "sha256": "5ac26864c0a0704a804ce1f79df22936e6077d2c55fbf7875d7b01b9029e6ae4"
+      },
+      "T_inference": {
+        "availability_control": {
+          "17": {
+            "receipt": {
+              "path": "/mnt/data/yxy-codex/home/outputs/RAXO/material_reliability_20261101/inference/DET/availability_control/seed17/inference.json",
+              "bytes": 2971,
+              "sha256": "0e88532f3fc666f088890e8749574d3df87e017ce529d231b355f0c573e44524"
+            },
+            "components": {
+              "path": "/mnt/data/yxy-codex/home/outputs/RAXO/material_reliability_20261101/inference/DET/availability_control/seed17/quality_scores.npz",
+              "bytes": 1468840,
+              "sha256": "315f183d9ecf26f64ff4df6e5858f5d8765adb189263b8e49e9eff3af2407b7c"
+            }
+          },
+          "29": {
+            "receipt": {
+              "path": "/mnt/data/yxy-codex/home/outputs/RAXO/material_reliability_20261101/inference/DET/availability_control/seed29/inference.json",
+              "bytes": 2970,
+              "sha256": "3dce171181b94c0afa808bfef3eeb104437caa9f723ded07a0029c94cfe61feb"
+            },
+            "components": {
+              "path": "/mnt/data/yxy-codex/home/outputs/RAXO/material_reliability_20261101/inference/DET/availability_control/seed29/quality_scores.npz",
+              "bytes": 1003277,
+              "sha256": "67e4c03449ecc73059995ae95633274309ae2531422ddae1081ce06fd8afa0c0"
+            }
+          },
+          "43": {
+            "receipt": {
+              "path": "/mnt/data/yxy-codex/home/outputs/RAXO/material_reliability_20261101/inference/DET/availability_control/seed43/inference.json",
+              "bytes": 2970,
+              "sha256": "72a0e422d97430ee26d42e345692717a34aa78405a449ae0350c629706fee4a5"
+            },
+            "components": {
+              "path": "/mnt/data/yxy-codex/home/outputs/RAXO/material_reliability_20261101/inference/DET/availability_control/seed43/quality_scores.npz",
+              "bytes": 1467201,
+              "sha256": "f03e34bd1fe4d7d08275aefb00a7aa41f528ca4fe6319a424f888f568fb0eb78"
+            }
+          }
+        },
+        "material": {
+          "17": {
+            "receipt": {
+              "path": "/mnt/data/yxy-codex/home/outputs/RAXO/material_reliability_20261101/inference/DET/material/seed17/inference.json",
+              "bytes": 2910,
+              "sha256": "71760b60e450435b8b1c6c1072fb033e1584fcea53932008bef972a3d929067e"
+            },
+            "components": {
+              "path": "/mnt/data/yxy-codex/home/outputs/RAXO/material_reliability_20261101/inference/DET/material/seed17/quality_scores.npz",
+              "bytes": 1719467,
+              "sha256": "d5e5ff3abe2e625a81a6dc7b5ae58c8f4fb40bbc641e6c4b37d29094c4583c01"
+            }
+          },
+          "29": {
+            "receipt": {
+              "path": "/mnt/data/yxy-codex/home/outputs/RAXO/material_reliability_20261101/inference/DET/material/seed29/inference.json",
+              "bytes": 2911,
+              "sha256": "a16704566b5c2020cf9a05a4c3c61b9d25534d1185b1d85cfb543a964caf0e59"
+            },
+            "components": {
+              "path": "/mnt/data/yxy-codex/home/outputs/RAXO/material_reliability_20261101/inference/DET/material/seed29/quality_scores.npz",
+              "bytes": 1722427,
+              "sha256": "b3405c853d6584dffa39b43456934e3b64bdaf98b0a5990b6359d49da6a53f27"
+            }
+          },
+          "43": {
+            "receipt": {
+              "path": "/mnt/data/yxy-codex/home/outputs/RAXO/material_reliability_20261101/inference/DET/material/seed43/inference.json",
+              "bytes": 2910,
+              "sha256": "e319152b6c1f5587bdd41f3c252de11931ba9fed329a06a3c9e15065b2d4c21b"
+            },
+            "components": {
+              "path": "/mnt/data/yxy-codex/home/outputs/RAXO/material_reliability_20261101/inference/DET/material/seed43/quality_scores.npz",
+              "bytes": 1723627,
+              "sha256": "4d86ba5e55a50c0fbba09bafef9ba482b67ac0fad9d64c873f3db13a9a1190e8"
+            }
+          }
+        },
+        "ordinal_material": {
+          "17": {
+            "receipt": {
+              "path": "/mnt/data/yxy-codex/home/outputs/RAXO/material_reliability_20261101/inference/DET/ordinal_material/seed17/inference.json",
+              "bytes": 2950,
+              "sha256": "7377afd90b1964c3050405446f553cc3373953a10fa99b27f77de962fe3d2de6"
+            },
+            "components": {
+              "path": "/mnt/data/yxy-codex/home/outputs/RAXO/material_reliability_20261101/inference/DET/ordinal_material/seed17/quality_scores.npz",
+              "bytes": 1704472,
+              "sha256": "fe8069f4333684e7b8469bdf3a4a2f216df69bede025318bb27900d8eb3c4450"
+            }
+          },
+          "29": {
+            "receipt": {
+              "path": "/mnt/data/yxy-codex/home/outputs/RAXO/material_reliability_20261101/inference/DET/ordinal_material/seed29/inference.json",
+              "bytes": 2950,
+              "sha256": "a25a56faeaf27fc2cde06b70bc5a46da043f6c308cff3a19134ed5a08db441a7"
+            },
+            "components": {
+              "path": "/mnt/data/yxy-codex/home/outputs/RAXO/material_reliability_20261101/inference/DET/ordinal_material/seed29/quality_scores.npz",
+              "bytes": 1720054,
+              "sha256": "42926d0cabab69f9f82c31a7e3bef7e029b676ea10fd101f502ad1d124c42f84"
+            }
+          },
+          "43": {
+            "receipt": {
+              "path": "/mnt/data/yxy-codex/home/outputs/RAXO/material_reliability_20261101/inference/DET/ordinal_material/seed43/inference.json",
+              "bytes": 2950,
+              "sha256": "3ba662e95e71e1dfa84b5cdcabe899a96f941b097da0ac65b5c15182bcb61e22"
+            },
+            "components": {
+              "path": "/mnt/data/yxy-codex/home/outputs/RAXO/material_reliability_20261101/inference/DET/ordinal_material/seed43/quality_scores.npz",
+              "bytes": 1718246,
+              "sha256": "d6ae560e76787b671ef1794946b6472cb4d5c7208a0ab3de62c1966ea018b55b"
+            }
+          }
+        }
+      },
+      "feature_manifest_path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_n_supported_material_quality/features/DET/feature_manifest.json",
+      "auxiliary_feature_manifest": {
+        "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_n_supported_material_quality/features/DET/feature_manifest.json",
+        "bytes": 39186,
+        "sha256": "b65a49f910d3859f9323c0db88544fafb0dcd86e7e035a12e0bebda75cd68a90"
+      },
+      "auxiliary_protocol": {
+        "path": "/mnt/data/yxy/program/RAXO/experiments/night_exploration_20261101/batch_n_supported_material_quality/config/protocol.json",
+        "bytes": 1750004,
+        "sha256": "94470fb3917d5fc51e98f0a051f2dd3a392cbb8f8c51962befabe05f3c6408dd"
+      },
+      "full_C_material_B": {
+        "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_k_multisource_quality/features/DET/fresh_material_B.npy",
+        "bytes": 72229860,
+        "sha256": "98f5843c32deefacbfc3eb14d1a3cc03e3bee4cf99cb51846c054ceb837f0c59"
+      },
+      "Tavailability_inference": {
+        "17": {
+          "receipt": {
+            "path": "/mnt/data/yxy-codex/home/outputs/RAXO/material_reliability_20261101/inference/DET/availability_control/seed17/inference.json",
+            "bytes": 2971,
+            "sha256": "0e88532f3fc666f088890e8749574d3df87e017ce529d231b355f0c573e44524"
+          },
+          "components": {
+            "path": "/mnt/data/yxy-codex/home/outputs/RAXO/material_reliability_20261101/inference/DET/availability_control/seed17/quality_scores.npz",
+            "bytes": 1468840,
+            "sha256": "315f183d9ecf26f64ff4df6e5858f5d8765adb189263b8e49e9eff3af2407b7c"
+          }
+        },
+        "29": {
+          "receipt": {
+            "path": "/mnt/data/yxy-codex/home/outputs/RAXO/material_reliability_20261101/inference/DET/availability_control/seed29/inference.json",
+            "bytes": 2970,
+            "sha256": "3dce171181b94c0afa808bfef3eeb104437caa9f723ded07a0029c94cfe61feb"
+          },
+          "components": {
+            "path": "/mnt/data/yxy-codex/home/outputs/RAXO/material_reliability_20261101/inference/DET/availability_control/seed29/quality_scores.npz",
+            "bytes": 1003277,
+            "sha256": "67e4c03449ecc73059995ae95633274309ae2531422ddae1081ce06fd8afa0c0"
+          }
+        },
+        "43": {
+          "receipt": {
+            "path": "/mnt/data/yxy-codex/home/outputs/RAXO/material_reliability_20261101/inference/DET/availability_control/seed43/inference.json",
+            "bytes": 2970,
+            "sha256": "72a0e422d97430ee26d42e345692717a34aa78405a449ae0350c629706fee4a5"
+          },
+          "components": {
+            "path": "/mnt/data/yxy-codex/home/outputs/RAXO/material_reliability_20261101/inference/DET/availability_control/seed43/quality_scores.npz",
+            "bytes": 1467201,
+            "sha256": "f03e34bd1fe4d7d08275aefb00a7aa41f528ca4fe6319a424f888f568fb0eb78"
+          }
+        }
+      }
+    },
+    "CLCXray_test": {
+      "feature_manifest": {
+        "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_c_shared_union/features/CLCXray_test/feature_manifest.json",
+        "bytes": 49344,
+        "sha256": "046fa6e5618760abef75f3004c11d8fcd46f4d4d059f93aeabaa1d4101780343"
+      },
+      "C_feature_manifest": {
+        "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_c_shared_union/features/CLCXray_test/feature_manifest.json",
+        "bytes": 49344,
+        "sha256": "046fa6e5618760abef75f3004c11d8fcd46f4d4d059f93aeabaa1d4101780343"
+      },
+      "N_feature_manifest": {
+        "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_n_supported_material_quality/features/CLCXray_test/feature_manifest.json",
+        "bytes": 7948,
+        "sha256": "73a7a5158794f1f0ef2b46b9355b7d2793eea4c18680dd025009b7f9aa3b1e91"
+      },
+      "Kgeometry_scores": {
+        "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_k_multisource_quality/ensembles/CLCXray_test/geometry/all3/quality_scores.npz",
+        "bytes": 47880,
+        "sha256": "e727db52122dcebe681faed892a3b25765c26073f9866e5ea7d4eec22162576d"
+      },
+      "Kgeometry_receipt": {
+        "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_k_multisource_quality/ensembles/CLCXray_test/geometry/all3/ensemble.json",
+        "bytes": 4374,
+        "sha256": "f3044f65c0a2d9aea12b930c7bd96ccb6348d6be30ed5263beea63676aa46f01"
+      },
+      "Ebase_scores": {
+        "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_e_affine_robustness/ensembles/CLCXray_test/visual_clean/all3/quality_scores.npz",
+        "bytes": 49076,
+        "sha256": "2a4089e20e17eba8080ac07ce6c4baadde52e592839383674c600d0f8a72297c"
+      },
+      "Ebase_receipt": {
+        "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_e_affine_robustness/ensembles/CLCXray_test/visual_clean/all3/ensemble.json",
+        "bytes": 4483,
+        "sha256": "0028575b8f6f7467aadbb05f654dff17c595969682971054624a2ac9369bd30c"
+      },
+      "candidate_row_key_sha256": "deaceb8ec82e92a96d44e0684ddb4309f1b805c2b4740a5022ac9b9f1cdd951a",
+      "Kgeometry_final_router_metrics": {
+        "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_k_multisource_quality/endpoints/CLCXray_test/geometry_router_t0_final_f9f60347be7e618f/metrics.json",
+        "bytes": 14824,
+        "sha256": "6162d156b30e315f38e49f24796df8eaf956c64affcf2e0ab47446a93651fca9"
+      },
+      "Kgeometry_final_router_export": {
+        "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_k_multisource_quality/endpoints/CLCXray_test/geometry_router_t0_final_f9f60347be7e618f/export.json",
+        "bytes": 60654,
+        "sha256": "bdb99ec93fa3dcb26b06bcaa28b2d7a3f5c99f55198fa27163be379d9ccba204"
+      },
+      "T_inference": {
+        "availability_control": {
+          "17": {
+            "receipt": {
+              "path": "/mnt/data/yxy-codex/home/outputs/RAXO/material_reliability_20261101/inference/CLCXray_test/availability_control/seed17/inference.json",
+              "bytes": 3014,
+              "sha256": "f644db46a0262d600deaae845ddb933c9ba2c4fa0ca6b6d7d4dccc38dff44039"
+            },
+            "components": {
+              "path": "/mnt/data/yxy-codex/home/outputs/RAXO/material_reliability_20261101/inference/CLCXray_test/availability_control/seed17/quality_scores.npz",
+              "bytes": 266422,
+              "sha256": "e7d31c150a3529fe4caf2b1150486c415cb1d5550d37917e6578357a1c9a9c49"
+            }
+          },
+          "29": {
+            "receipt": {
+              "path": "/mnt/data/yxy-codex/home/outputs/RAXO/material_reliability_20261101/inference/CLCXray_test/availability_control/seed29/inference.json",
+              "bytes": 3013,
+              "sha256": "0b2f6db0a85e754d2dd1d1a8e5419f43b423013b46a857cd4bcb3d7deb65c959"
+            },
+            "components": {
+              "path": "/mnt/data/yxy-codex/home/outputs/RAXO/material_reliability_20261101/inference/CLCXray_test/availability_control/seed29/quality_scores.npz",
+              "bytes": 183606,
+              "sha256": "8f9fe7c68b3371b9ea5a5c03803dccf3b3cc2a4e3a7cb4bcb1e7d12905090a50"
+            }
+          },
+          "43": {
+            "receipt": {
+              "path": "/mnt/data/yxy-codex/home/outputs/RAXO/material_reliability_20261101/inference/CLCXray_test/availability_control/seed43/inference.json",
+              "bytes": 3013,
+              "sha256": "2436c8425b1be70caa19e7c2a1189187528b07755fa3ec5a89448d83091aaed5"
+            },
+            "components": {
+              "path": "/mnt/data/yxy-codex/home/outputs/RAXO/material_reliability_20261101/inference/CLCXray_test/availability_control/seed43/quality_scores.npz",
+              "bytes": 266778,
+              "sha256": "2198341b5c92cde5000be9240c30ecc874544f8d5aad9ec2f98f0168062e5ff7"
+            }
+          }
+        },
+        "material": {
+          "17": {
+            "receipt": {
+              "path": "/mnt/data/yxy-codex/home/outputs/RAXO/material_reliability_20261101/inference/CLCXray_test/material/seed17/inference.json",
+              "bytes": 2953,
+              "sha256": "83c73528b4997d4163af2ce11a4ea5b78b0a651306a8ae0ea83217590f869091"
+            },
+            "components": {
+              "path": "/mnt/data/yxy-codex/home/outputs/RAXO/material_reliability_20261101/inference/CLCXray_test/material/seed17/quality_scores.npz",
+              "bytes": 293130,
+              "sha256": "46cbb5f9de5e3fcf1a08ac462c2c2017c27ed6539d7471c5fc658bbd89ef6100"
+            }
+          },
+          "29": {
+            "receipt": {
+              "path": "/mnt/data/yxy-codex/home/outputs/RAXO/material_reliability_20261101/inference/CLCXray_test/material/seed29/inference.json",
+              "bytes": 2954,
+              "sha256": "63b6527f089b68cad256b97c8a943e3f80a187cc2a8acb55e1e0e71d96964701"
+            },
+            "components": {
+              "path": "/mnt/data/yxy-codex/home/outputs/RAXO/material_reliability_20261101/inference/CLCXray_test/material/seed29/quality_scores.npz",
+              "bytes": 292758,
+              "sha256": "5bf0ef95366bbe97ed61909377929d8d269f76f8006e2a76e1378ea49609eefd"
+            }
+          },
+          "43": {
+            "receipt": {
+              "path": "/mnt/data/yxy-codex/home/outputs/RAXO/material_reliability_20261101/inference/CLCXray_test/material/seed43/inference.json",
+              "bytes": 2953,
+              "sha256": "0bbf956442c4bedeb24c55fbaad1f281b1247697acc359c008800ecf5e5c1ba2"
+            },
+            "components": {
+              "path": "/mnt/data/yxy-codex/home/outputs/RAXO/material_reliability_20261101/inference/CLCXray_test/material/seed43/quality_scores.npz",
+              "bytes": 293160,
+              "sha256": "d40ae4db16dc0dd8da25684a7783acf59c2cebd13ece8c3ec1975159f5995311"
+            }
+          }
+        },
+        "ordinal_material": {
+          "17": {
+            "receipt": {
+              "path": "/mnt/data/yxy-codex/home/outputs/RAXO/material_reliability_20261101/inference/CLCXray_test/ordinal_material/seed17/inference.json",
+              "bytes": 2993,
+              "sha256": "06bd50215f45bf9f2bd53dad503d0f951c798bbab06150695a96cc3fa45cff22"
+            },
+            "components": {
+              "path": "/mnt/data/yxy-codex/home/outputs/RAXO/material_reliability_20261101/inference/CLCXray_test/ordinal_material/seed17/quality_scores.npz",
+              "bytes": 291783,
+              "sha256": "aee26295ea818ca860c72d1a002aaa319e85a0fb8ed64870e456be26bf185f86"
+            }
+          },
+          "29": {
+            "receipt": {
+              "path": "/mnt/data/yxy-codex/home/outputs/RAXO/material_reliability_20261101/inference/CLCXray_test/ordinal_material/seed29/inference.json",
+              "bytes": 2993,
+              "sha256": "dd4355716ad89abf113b50bb58507197e471100628a5615eb1289ad3b5507fc3"
+            },
+            "components": {
+              "path": "/mnt/data/yxy-codex/home/outputs/RAXO/material_reliability_20261101/inference/CLCXray_test/ordinal_material/seed29/quality_scores.npz",
+              "bytes": 293213,
+              "sha256": "66256e78b802ebd29bd1cd4166be3587bf5796c12184cbc83c89a1025f3c2e23"
+            }
+          },
+          "43": {
+            "receipt": {
+              "path": "/mnt/data/yxy-codex/home/outputs/RAXO/material_reliability_20261101/inference/CLCXray_test/ordinal_material/seed43/inference.json",
+              "bytes": 2994,
+              "sha256": "f5c998898d93d58cb5e044a4a2288ea3c42ae435bd29a45aec279c16277d13c6"
+            },
+            "components": {
+              "path": "/mnt/data/yxy-codex/home/outputs/RAXO/material_reliability_20261101/inference/CLCXray_test/ordinal_material/seed43/quality_scores.npz",
+              "bytes": 292563,
+              "sha256": "71ed7e1d0ae8d02735cb858dcbcd063162097cd27b2a49f5c624b829880a6731"
+            }
+          }
+        }
+      },
+      "feature_manifest_path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_n_supported_material_quality/features/CLCXray_test/feature_manifest.json",
+      "auxiliary_feature_manifest": {
+        "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_n_supported_material_quality/features/CLCXray_test/feature_manifest.json",
+        "bytes": 7948,
+        "sha256": "73a7a5158794f1f0ef2b46b9355b7d2793eea4c18680dd025009b7f9aa3b1e91"
+      },
+      "auxiliary_protocol": {
+        "path": "/mnt/data/yxy/program/RAXO/experiments/night_exploration_20261101/batch_n_supported_material_quality/config/protocol.json",
+        "bytes": 1750004,
+        "sha256": "94470fb3917d5fc51e98f0a051f2dd3a392cbb8f8c51962befabe05f3c6408dd"
+      },
+      "full_C_material_B": {
+        "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_k_multisource_quality/features/CLCXray_test/fresh_material_B.npy",
+        "bytes": 538256,
+        "sha256": "4d55cfad81ebd41c825fc7efbc604517b6ccdc933683859790782d36eab5989d"
+      },
+      "Tavailability_inference": {
+        "17": {
+          "receipt": {
+            "path": "/mnt/data/yxy-codex/home/outputs/RAXO/material_reliability_20261101/inference/CLCXray_test/availability_control/seed17/inference.json",
+            "bytes": 3014,
+            "sha256": "f644db46a0262d600deaae845ddb933c9ba2c4fa0ca6b6d7d4dccc38dff44039"
+          },
+          "components": {
+            "path": "/mnt/data/yxy-codex/home/outputs/RAXO/material_reliability_20261101/inference/CLCXray_test/availability_control/seed17/quality_scores.npz",
+            "bytes": 266422,
+            "sha256": "e7d31c150a3529fe4caf2b1150486c415cb1d5550d37917e6578357a1c9a9c49"
+          }
+        },
+        "29": {
+          "receipt": {
+            "path": "/mnt/data/yxy-codex/home/outputs/RAXO/material_reliability_20261101/inference/CLCXray_test/availability_control/seed29/inference.json",
+            "bytes": 3013,
+            "sha256": "0b2f6db0a85e754d2dd1d1a8e5419f43b423013b46a857cd4bcb3d7deb65c959"
+          },
+          "components": {
+            "path": "/mnt/data/yxy-codex/home/outputs/RAXO/material_reliability_20261101/inference/CLCXray_test/availability_control/seed29/quality_scores.npz",
+            "bytes": 183606,
+            "sha256": "8f9fe7c68b3371b9ea5a5c03803dccf3b3cc2a4e3a7cb4bcb1e7d12905090a50"
+          }
+        },
+        "43": {
+          "receipt": {
+            "path": "/mnt/data/yxy-codex/home/outputs/RAXO/material_reliability_20261101/inference/CLCXray_test/availability_control/seed43/inference.json",
+            "bytes": 3013,
+            "sha256": "2436c8425b1be70caa19e7c2a1189187528b07755fa3ec5a89448d83091aaed5"
+          },
+          "components": {
+            "path": "/mnt/data/yxy-codex/home/outputs/RAXO/material_reliability_20261101/inference/CLCXray_test/availability_control/seed43/quality_scores.npz",
+            "bytes": 266778,
+            "sha256": "2198341b5c92cde5000be9240c30ecc874544f8d5aad9ec2f98f0168062e5ff7"
+          }
+        }
+      }
+    },
+    "PIXray": {
+      "feature_manifest": {
+        "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_c_shared_union/features/PIXray/feature_manifest.json",
+        "bytes": 167784,
+        "sha256": "99fbba15e49d4edab4cb86a0d5f636024733215b2ad1089c378e74236b70c32e"
+      },
+      "C_feature_manifest": {
+        "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_c_shared_union/features/PIXray/feature_manifest.json",
+        "bytes": 167784,
+        "sha256": "99fbba15e49d4edab4cb86a0d5f636024733215b2ad1089c378e74236b70c32e"
+      },
+      "N_feature_manifest": {
+        "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_n_supported_material_quality/features/PIXray/feature_manifest.json",
+        "bytes": 8162,
+        "sha256": "67e29427f5633a5ea8f6db96d746cb7fd0ab4d223f9778720b8b2644526261fa"
+      },
+      "Kgeometry_scores": {
+        "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_k_multisource_quality/ensembles/PIXray/geometry/all3/quality_scores.npz",
+        "bytes": 373573,
+        "sha256": "8cffba18679a4dce6db46d873bedbb2bcbdde8f243412a19530f4fb75d2444ab"
+      },
+      "Kgeometry_receipt": {
+        "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_k_multisource_quality/ensembles/PIXray/geometry/all3/ensemble.json",
+        "bytes": 4324,
+        "sha256": "a4036b15afeaf300504d0a175853e6615d3501e0a6cd14a93f23bd8095121b33"
+      },
+      "Ebase_scores": {
+        "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_e_affine_robustness/ensembles/PIXray/visual_clean/all3/quality_scores.npz",
+        "bytes": 375638,
+        "sha256": "effab2cf220ddc91f69df910f585d961098eb05b369d1e003d04a4b068a82929"
+      },
+      "Ebase_receipt": {
+        "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_e_affine_robustness/ensembles/PIXray/visual_clean/all3/ensemble.json",
+        "bytes": 4434,
+        "sha256": "a0aacffd18a090fdb3352b5f044bcad66211934411c313684e12ecf9ca32b04b"
+      },
+      "candidate_row_key_sha256": "21ee533e7cf6bdbdadc7e7e4563a089a088bd1b7cf5b167ad36cd2925dc87304",
+      "Kgeometry_final_router_metrics": {
+        "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_k_multisource_quality/endpoints/PIXray/geometry_router_t0_final_460ddfd017133e7c/metrics.json",
+        "bytes": 59151,
+        "sha256": "1fbe365f5f4c62b403cc6ae4f1361f392702437b445110ecab947bb5c0b4c605"
+      },
+      "Kgeometry_final_router_export": {
+        "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_k_multisource_quality/endpoints/PIXray/geometry_router_t0_final_460ddfd017133e7c/export.json",
+        "bytes": 223044,
+        "sha256": "2e0459e17dba6529956728114e86d569a83bd77efe9193339891905acc0ecdc0"
+      },
+      "T_inference": {
+        "availability_control": {
+          "17": {
+            "receipt": {
+              "path": "/mnt/data/yxy-codex/home/outputs/RAXO/material_reliability_20261101/inference/PIXray/availability_control/seed17/inference.json",
+              "bytes": 2984,
+              "sha256": "071616350420880c8197cf045bd35ca986135b9ec9e3fc3a2602bf1f48787578"
+            },
+            "components": {
+              "path": "/mnt/data/yxy-codex/home/outputs/RAXO/material_reliability_20261101/inference/PIXray/availability_control/seed17/quality_scores.npz",
+              "bytes": 2030647,
+              "sha256": "48861766b884fdf011c1ab45c8dc3bf7eb112e3cb2c80def9487b11482cec888"
+            }
+          },
+          "29": {
+            "receipt": {
+              "path": "/mnt/data/yxy-codex/home/outputs/RAXO/material_reliability_20261101/inference/PIXray/availability_control/seed29/inference.json",
+              "bytes": 2984,
+              "sha256": "90695361e64f21f06bcb59ff61d58051ec1c3540162b5b8e879f3374eb1398bb"
+            },
+            "components": {
+              "path": "/mnt/data/yxy-codex/home/outputs/RAXO/material_reliability_20261101/inference/PIXray/availability_control/seed29/quality_scores.npz",
+              "bytes": 1449192,
+              "sha256": "1e9c0ee09f0ab33f81bb61039db91a5060d98d22deae8999fe4bcef029791c7a"
+            }
+          },
+          "43": {
+            "receipt": {
+              "path": "/mnt/data/yxy-codex/home/outputs/RAXO/material_reliability_20261101/inference/PIXray/availability_control/seed43/inference.json",
+              "bytes": 2984,
+              "sha256": "01a0b19ec8e4d8cffc049961ba67f29bf9fb5e9078aa9620c673ac6b9dfe4a60"
+            },
+            "components": {
+              "path": "/mnt/data/yxy-codex/home/outputs/RAXO/material_reliability_20261101/inference/PIXray/availability_control/seed43/quality_scores.npz",
+              "bytes": 2016499,
+              "sha256": "92a9c5c6040ae28dfc89155ee2698641926f62e92d8d9adb381227142fe94bff"
+            }
+          }
+        },
+        "material": {
+          "17": {
+            "receipt": {
+              "path": "/mnt/data/yxy-codex/home/outputs/RAXO/material_reliability_20261101/inference/PIXray/material/seed17/inference.json",
+              "bytes": 2924,
+              "sha256": "1f18e86515451b54906e46ea663300e00ee3986feb771083a24e434f030e31c6"
+            },
+            "components": {
+              "path": "/mnt/data/yxy-codex/home/outputs/RAXO/material_reliability_20261101/inference/PIXray/material/seed17/quality_scores.npz",
+              "bytes": 2184072,
+              "sha256": "c40543d14e23baaca39dc7e994636d2f7f65af2cc217506ceb59b321f6eba23e"
+            }
+          },
+          "29": {
+            "receipt": {
+              "path": "/mnt/data/yxy-codex/home/outputs/RAXO/material_reliability_20261101/inference/PIXray/material/seed29/inference.json",
+              "bytes": 2924,
+              "sha256": "602ca2a6d735bee0ff3a37d0ba981f0b1a5380adc0755dcb3ef74c125559bb9a"
+            },
+            "components": {
+              "path": "/mnt/data/yxy-codex/home/outputs/RAXO/material_reliability_20261101/inference/PIXray/material/seed29/quality_scores.npz",
+              "bytes": 2191616,
+              "sha256": "6de205d4b6335b777eac6d878d9e78addd56c4ead4a4bb496c3ab668f2b6ff25"
+            }
+          },
+          "43": {
+            "receipt": {
+              "path": "/mnt/data/yxy-codex/home/outputs/RAXO/material_reliability_20261101/inference/PIXray/material/seed43/inference.json",
+              "bytes": 2924,
+              "sha256": "e316ec8f181286a7169dc9c5b65c50643b670f50a1c4a46c93fffdfddb4af528"
+            },
+            "components": {
+              "path": "/mnt/data/yxy-codex/home/outputs/RAXO/material_reliability_20261101/inference/PIXray/material/seed43/quality_scores.npz",
+              "bytes": 2190401,
+              "sha256": "fb5111d6660f77b82bf757f4edf51cab22c224b8b9b11b3dc872344db506bcbc"
+            }
+          }
+        },
+        "ordinal_material": {
+          "17": {
+            "receipt": {
+              "path": "/mnt/data/yxy-codex/home/outputs/RAXO/material_reliability_20261101/inference/PIXray/ordinal_material/seed17/inference.json",
+              "bytes": 2963,
+              "sha256": "8c7c12c6f426a15330e16a68d933ca4d3f89f418aa836b60be040facb72a2148"
+            },
+            "components": {
+              "path": "/mnt/data/yxy-codex/home/outputs/RAXO/material_reliability_20261101/inference/PIXray/ordinal_material/seed17/quality_scores.npz",
+              "bytes": 2170610,
+              "sha256": "4de7f5347a8c67ec39dd027f403f3a5f2ff3cb5f0729e39a14f51e451dd465b1"
+            }
+          },
+          "29": {
+            "receipt": {
+              "path": "/mnt/data/yxy-codex/home/outputs/RAXO/material_reliability_20261101/inference/PIXray/ordinal_material/seed29/inference.json",
+              "bytes": 2964,
+              "sha256": "c9efeeaf16db9b9258804ab634689e7debbb741a5c630da1bc3c1c8f6f99a74e"
+            },
+            "components": {
+              "path": "/mnt/data/yxy-codex/home/outputs/RAXO/material_reliability_20261101/inference/PIXray/ordinal_material/seed29/quality_scores.npz",
+              "bytes": 2183767,
+              "sha256": "39cf1fa094171659fe3c2a9492a5b8f017e6e69562d06ac959957d775756b2af"
+            }
+          },
+          "43": {
+            "receipt": {
+              "path": "/mnt/data/yxy-codex/home/outputs/RAXO/material_reliability_20261101/inference/PIXray/ordinal_material/seed43/inference.json",
+              "bytes": 2964,
+              "sha256": "c781513a162c062229cd1103abb126d760aa5543ecb2451c17152406dcc7d72f"
+            },
+            "components": {
+              "path": "/mnt/data/yxy-codex/home/outputs/RAXO/material_reliability_20261101/inference/PIXray/ordinal_material/seed43/quality_scores.npz",
+              "bytes": 2176091,
+              "sha256": "5db365adc06c75232ff9b87c823ef089454e25840b75e22f1dc5a6f76de4873c"
+            }
+          }
+        }
+      },
+      "feature_manifest_path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_n_supported_material_quality/features/PIXray/feature_manifest.json",
+      "auxiliary_feature_manifest": {
+        "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_n_supported_material_quality/features/PIXray/feature_manifest.json",
+        "bytes": 8162,
+        "sha256": "67e29427f5633a5ea8f6db96d746cb7fd0ab4d223f9778720b8b2644526261fa"
+      },
+      "auxiliary_protocol": {
+        "path": "/mnt/data/yxy/program/RAXO/experiments/night_exploration_20261101/batch_n_supported_material_quality/config/protocol.json",
+        "bytes": 1750004,
+        "sha256": "94470fb3917d5fc51e98f0a051f2dd3a392cbb8f8c51962befabe05f3c6408dd"
+      },
+      "full_C_material_B": {
+        "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_k_multisource_quality/features/PIXray/fresh_material_B.npy",
+        "bytes": 5326628,
+        "sha256": "6648be3ec679eb313598ade74cd72b724353b01c673b6308729aa650c51be2e7"
+      },
+      "Tavailability_inference": {
+        "17": {
+          "receipt": {
+            "path": "/mnt/data/yxy-codex/home/outputs/RAXO/material_reliability_20261101/inference/PIXray/availability_control/seed17/inference.json",
+            "bytes": 2984,
+            "sha256": "071616350420880c8197cf045bd35ca986135b9ec9e3fc3a2602bf1f48787578"
+          },
+          "components": {
+            "path": "/mnt/data/yxy-codex/home/outputs/RAXO/material_reliability_20261101/inference/PIXray/availability_control/seed17/quality_scores.npz",
+            "bytes": 2030647,
+            "sha256": "48861766b884fdf011c1ab45c8dc3bf7eb112e3cb2c80def9487b11482cec888"
+          }
+        },
+        "29": {
+          "receipt": {
+            "path": "/mnt/data/yxy-codex/home/outputs/RAXO/material_reliability_20261101/inference/PIXray/availability_control/seed29/inference.json",
+            "bytes": 2984,
+            "sha256": "90695361e64f21f06bcb59ff61d58051ec1c3540162b5b8e879f3374eb1398bb"
+          },
+          "components": {
+            "path": "/mnt/data/yxy-codex/home/outputs/RAXO/material_reliability_20261101/inference/PIXray/availability_control/seed29/quality_scores.npz",
+            "bytes": 1449192,
+            "sha256": "1e9c0ee09f0ab33f81bb61039db91a5060d98d22deae8999fe4bcef029791c7a"
+          }
+        },
+        "43": {
+          "receipt": {
+            "path": "/mnt/data/yxy-codex/home/outputs/RAXO/material_reliability_20261101/inference/PIXray/availability_control/seed43/inference.json",
+            "bytes": 2984,
+            "sha256": "01a0b19ec8e4d8cffc049961ba67f29bf9fb5e9078aa9620c673ac6b9dfe4a60"
+          },
+          "components": {
+            "path": "/mnt/data/yxy-codex/home/outputs/RAXO/material_reliability_20261101/inference/PIXray/availability_control/seed43/quality_scores.npz",
+            "bytes": 2016499,
+            "sha256": "92a9c5c6040ae28dfc89155ee2698641926f62e92d8d9adb381227142fe94bff"
+          }
+        }
+      }
+    },
+    "PIDray": {
+      "feature_manifest": {
+        "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_c_shared_union/features/PIDray/feature_manifest.json",
+        "bytes": 617938,
+        "sha256": "ed96e6812ba3611448a9422e3367d0f5160b1cb27419611b38e66efbc237d4bb"
+      },
+      "C_feature_manifest": {
+        "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_c_shared_union/features/PIDray/feature_manifest.json",
+        "bytes": 617938,
+        "sha256": "ed96e6812ba3611448a9422e3367d0f5160b1cb27419611b38e66efbc237d4bb"
+      },
+      "N_feature_manifest": {
+        "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_n_supported_material_quality/features/PIDray/feature_manifest.json",
+        "bytes": 7848,
+        "sha256": "9dc5ec9dfe102c3cdaf68934235486ed03090369c2e6e0bc56e87e8d1beac8ab"
+      },
+      "Kgeometry_scores": {
+        "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_k_multisource_quality/ensembles/PIDray/geometry/all3/quality_scores.npz",
+        "bytes": 1925191,
+        "sha256": "988d390b2d2f4e656e49cd50310cf410ae519be38db52146cbbb56f85a94303c"
+      },
+      "Kgeometry_receipt": {
+        "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_k_multisource_quality/ensembles/PIDray/geometry/all3/ensemble.json",
+        "bytes": 4329,
+        "sha256": "e7f63f24c98e54d10829a8d2d74a8849699af3682dcf8305b96d7b0d6efc9659"
+      },
+      "Ebase_scores": {
+        "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_e_affine_robustness/ensembles/PIDray/visual_clean/all3/quality_scores.npz",
+        "bytes": 1952821,
+        "sha256": "15ffcdfeb37e0fc0b0f51137fc7dc9ef0c981c9a38e430663f869c114fbeb383"
+      },
+      "Ebase_receipt": {
+        "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_e_affine_robustness/ensembles/PIDray/visual_clean/all3/ensemble.json",
+        "bytes": 4439,
+        "sha256": "ccdc245164fe2b6b12a47dc3da24e6c15799aa62c155ebd493adb0dd87482815"
+      },
+      "candidate_row_key_sha256": "9a17e2001773191cdaa678c4f3fc20421c21ab35dad5309d4d846c06ac9cb827",
+      "Kgeometry_final_router_metrics": {
+        "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_k_multisource_quality/endpoints/PIDray/geometry_router_t0_final_d380778692239a33/metrics.json",
+        "bytes": 230116,
+        "sha256": "89875260e478d019279e687dc1641c6055bbc7052252d96cb1f6be24f0ac1715"
+      },
+      "Kgeometry_final_router_export": {
+        "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_k_multisource_quality/endpoints/PIDray/geometry_router_t0_final_d380778692239a33/export.json",
+        "bytes": 844595,
+        "sha256": "1bbf20df1918f4d1db6badc78427f3614d1b32933d6322b344a4eb841b92342a"
+      },
+      "T_inference": {
+        "availability_control": {
+          "17": {
+            "receipt": {
+              "path": "/mnt/data/yxy-codex/home/outputs/RAXO/material_reliability_20261101/inference/PIDray/availability_control/seed17/inference.json",
+              "bytes": 2986,
+              "sha256": "2af58b6c06c793bedda1bfaa0b23181e3ae17db079799b6c1c2ce265a18e7d42"
+            },
+            "components": {
+              "path": "/mnt/data/yxy-codex/home/outputs/RAXO/material_reliability_20261101/inference/PIDray/availability_control/seed17/quality_scores.npz",
+              "bytes": 10536923,
+              "sha256": "8a709add98dd6643cfcf661131657fd505c9fc66903ad3d4079c364dda25a1dc"
+            }
+          },
+          "29": {
+            "receipt": {
+              "path": "/mnt/data/yxy-codex/home/outputs/RAXO/material_reliability_20261101/inference/PIDray/availability_control/seed29/inference.json",
+              "bytes": 2985,
+              "sha256": "1ccb5ba1accfc9910b1f83f17e4cc6325c33c54d72b3f47fbb148c4fdb27de37"
+            },
+            "components": {
+              "path": "/mnt/data/yxy-codex/home/outputs/RAXO/material_reliability_20261101/inference/PIDray/availability_control/seed29/quality_scores.npz",
+              "bytes": 7464115,
+              "sha256": "ad82c522ae9bf17fa9d09828a1a1c092050096e9add016d40ebbb297058e38dd"
+            }
+          },
+          "43": {
+            "receipt": {
+              "path": "/mnt/data/yxy-codex/home/outputs/RAXO/material_reliability_20261101/inference/PIDray/availability_control/seed43/inference.json",
+              "bytes": 2986,
+              "sha256": "a1eeccb96ac4b5c848228345814208bb6bc49c7d601cbe0b1c93f1de31356932"
+            },
+            "components": {
+              "path": "/mnt/data/yxy-codex/home/outputs/RAXO/material_reliability_20261101/inference/PIDray/availability_control/seed43/quality_scores.npz",
+              "bytes": 10474292,
+              "sha256": "d44fa78ccf6a643c2f6dd80c0b87e66516b02bfe8216fc43ac1bf7459e03799e"
+            }
+          }
+        },
+        "material": {
+          "17": {
+            "receipt": {
+              "path": "/mnt/data/yxy-codex/home/outputs/RAXO/material_reliability_20261101/inference/PIDray/material/seed17/inference.json",
+              "bytes": 2926,
+              "sha256": "73109edca485344a42e03b050375e9b615afce25c11b413b7e41fbe573a17658"
+            },
+            "components": {
+              "path": "/mnt/data/yxy-codex/home/outputs/RAXO/material_reliability_20261101/inference/PIDray/material/seed17/quality_scores.npz",
+              "bytes": 11249831,
+              "sha256": "00c45770c451320ed953b0112204e803800679de29dc5211bd8e5b36c339f256"
+            }
+          },
+          "29": {
+            "receipt": {
+              "path": "/mnt/data/yxy-codex/home/outputs/RAXO/material_reliability_20261101/inference/PIDray/material/seed29/inference.json",
+              "bytes": 2926,
+              "sha256": "a4300ac6f39e2c67bc7135d2e5b65499f5ede8bf78c4206fa69b9c52795e728c"
+            },
+            "components": {
+              "path": "/mnt/data/yxy-codex/home/outputs/RAXO/material_reliability_20261101/inference/PIDray/material/seed29/quality_scores.npz",
+              "bytes": 11325572,
+              "sha256": "57376cc979e10a4a937af4ea98bafedc23172a81e8d3ac0496ad74e94f1693ff"
+            }
+          },
+          "43": {
+            "receipt": {
+              "path": "/mnt/data/yxy-codex/home/outputs/RAXO/material_reliability_20261101/inference/PIDray/material/seed43/inference.json",
+              "bytes": 2926,
+              "sha256": "d3123114ed891ddaa161bbdfd017b67c0f6fa7ef25fd632ed7a54650fdc4b85b"
+            },
+            "components": {
+              "path": "/mnt/data/yxy-codex/home/outputs/RAXO/material_reliability_20261101/inference/PIDray/material/seed43/quality_scores.npz",
+              "bytes": 11308812,
+              "sha256": "233bf6d5abec9032a9cdea35a820bad9ff00e10e00324a8cba450849c8647260"
+            }
+          }
+        },
+        "ordinal_material": {
+          "17": {
+            "receipt": {
+              "path": "/mnt/data/yxy-codex/home/outputs/RAXO/material_reliability_20261101/inference/PIDray/ordinal_material/seed17/inference.json",
+              "bytes": 2965,
+              "sha256": "fcc2ec5b9814e476bdd5167e574ea0870709bedb320724d826c41da474204a70"
+            },
+            "components": {
+              "path": "/mnt/data/yxy-codex/home/outputs/RAXO/material_reliability_20261101/inference/PIDray/ordinal_material/seed17/quality_scores.npz",
+              "bytes": 11175742,
+              "sha256": "7911f6613c356a9fe9ef7a3aa7963e2bd0682558e0cc7fecdef407874a4bcff4"
+            }
+          },
+          "29": {
+            "receipt": {
+              "path": "/mnt/data/yxy-codex/home/outputs/RAXO/material_reliability_20261101/inference/PIDray/ordinal_material/seed29/inference.json",
+              "bytes": 2966,
+              "sha256": "710b795f2309945cb548bcf71d8ffe3a6efd69b3926d41ec5f13b08409904ca8"
+            },
+            "components": {
+              "path": "/mnt/data/yxy-codex/home/outputs/RAXO/material_reliability_20261101/inference/PIDray/ordinal_material/seed29/quality_scores.npz",
+              "bytes": 11232234,
+              "sha256": "5519c1b83e8f257851cfc2ce8181007c1fd3718c6a0a965a7f1fb4cb1b64e497"
+            }
+          },
+          "43": {
+            "receipt": {
+              "path": "/mnt/data/yxy-codex/home/outputs/RAXO/material_reliability_20261101/inference/PIDray/ordinal_material/seed43/inference.json",
+              "bytes": 2965,
+              "sha256": "43852ff0e6f90b179a0a6c9cb5c56a36dd2af75a2e3d08720c52800f759a1dbb"
+            },
+            "components": {
+              "path": "/mnt/data/yxy-codex/home/outputs/RAXO/material_reliability_20261101/inference/PIDray/ordinal_material/seed43/quality_scores.npz",
+              "bytes": 11198226,
+              "sha256": "a5673a7f1fa029d45d7e45f1be75e3bec46c8c33e9db4728f2ca7e7b246977cd"
+            }
+          }
+        }
+      },
+      "feature_manifest_path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_n_supported_material_quality/features/PIDray/feature_manifest.json",
+      "auxiliary_feature_manifest": {
+        "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_n_supported_material_quality/features/PIDray/feature_manifest.json",
+        "bytes": 7848,
+        "sha256": "9dc5ec9dfe102c3cdaf68934235486ed03090369c2e6e0bc56e87e8d1beac8ab"
+      },
+      "auxiliary_protocol": {
+        "path": "/mnt/data/yxy/program/RAXO/experiments/night_exploration_20261101/batch_n_supported_material_quality/config/protocol.json",
+        "bytes": 1750004,
+        "sha256": "94470fb3917d5fc51e98f0a051f2dd3a392cbb8f8c51962befabe05f3c6408dd"
+      },
+      "full_C_material_B": {
+        "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_k_multisource_quality/features/PIDray/fresh_material_B.npy",
+        "bytes": 21915056,
+        "sha256": "1e613295e69e1d367be83a2223eebd9975a03f12c8cda9e4be7d089f5599c290"
+      },
+      "Tavailability_inference": {
+        "17": {
+          "receipt": {
+            "path": "/mnt/data/yxy-codex/home/outputs/RAXO/material_reliability_20261101/inference/PIDray/availability_control/seed17/inference.json",
+            "bytes": 2986,
+            "sha256": "2af58b6c06c793bedda1bfaa0b23181e3ae17db079799b6c1c2ce265a18e7d42"
+          },
+          "components": {
+            "path": "/mnt/data/yxy-codex/home/outputs/RAXO/material_reliability_20261101/inference/PIDray/availability_control/seed17/quality_scores.npz",
+            "bytes": 10536923,
+            "sha256": "8a709add98dd6643cfcf661131657fd505c9fc66903ad3d4079c364dda25a1dc"
+          }
+        },
+        "29": {
+          "receipt": {
+            "path": "/mnt/data/yxy-codex/home/outputs/RAXO/material_reliability_20261101/inference/PIDray/availability_control/seed29/inference.json",
+            "bytes": 2985,
+            "sha256": "1ccb5ba1accfc9910b1f83f17e4cc6325c33c54d72b3f47fbb148c4fdb27de37"
+          },
+          "components": {
+            "path": "/mnt/data/yxy-codex/home/outputs/RAXO/material_reliability_20261101/inference/PIDray/availability_control/seed29/quality_scores.npz",
+            "bytes": 7464115,
+            "sha256": "ad82c522ae9bf17fa9d09828a1a1c092050096e9add016d40ebbb297058e38dd"
+          }
+        },
+        "43": {
+          "receipt": {
+            "path": "/mnt/data/yxy-codex/home/outputs/RAXO/material_reliability_20261101/inference/PIDray/availability_control/seed43/inference.json",
+            "bytes": 2986,
+            "sha256": "a1eeccb96ac4b5c848228345814208bb6bc49c7d601cbe0b1c93f1de31356932"
+          },
+          "components": {
+            "path": "/mnt/data/yxy-codex/home/outputs/RAXO/material_reliability_20261101/inference/PIDray/availability_control/seed43/quality_scores.npz",
+            "bytes": 10474292,
+            "sha256": "d44fa78ccf6a643c2f6dd80c0b87e66516b02bfe8216fc43ac1bf7459e03799e"
+          }
+        }
+      }
+    },
+    "DvXray": {
+      "feature_manifest": {
+        "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_c_shared_union/features/DvXray/feature_manifest.json",
+        "bytes": 312779,
+        "sha256": "0689ac8d203cd0d0db217fb83abd07812993365bee5413fb1f05306ffbaa7f1d"
+      },
+      "C_feature_manifest": {
+        "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_c_shared_union/features/DvXray/feature_manifest.json",
+        "bytes": 312779,
+        "sha256": "0689ac8d203cd0d0db217fb83abd07812993365bee5413fb1f05306ffbaa7f1d"
+      },
+      "N_feature_manifest": {
+        "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_n_supported_material_quality/features/DvXray/feature_manifest.json",
+        "bytes": 8169,
+        "sha256": "3b0449d79204a4f886e1b80ddaeac1a2c9e0e1efe781cb67d697e64ece28b236"
+      },
+      "Kgeometry_scores": {
+        "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_k_multisource_quality/ensembles/DvXray/geometry/all3/quality_scores.npz",
+        "bytes": 814294,
+        "sha256": "51ddbf0719592006fd28ede4df9b8d65a1d82d20fae2a35edc99a107eb26c811"
+      },
+      "Kgeometry_receipt": {
+        "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_k_multisource_quality/ensembles/DvXray/geometry/all3/ensemble.json",
+        "bytes": 4325,
+        "sha256": "751f7754b7afaa6e8da12d4cf6ce686a8e94e11eaa258f747cdbcf3953cd7e72"
+      },
+      "Ebase_scores": {
+        "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_e_affine_robustness/ensembles/DvXray/visual_clean/all3/quality_scores.npz",
+        "bytes": 822508,
+        "sha256": "c9db3befd51c8790970c477b10debd7d15e49c2cd7c2d39253edc4704a7ac163"
+      },
+      "Ebase_receipt": {
+        "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_e_affine_robustness/ensembles/DvXray/visual_clean/all3/ensemble.json",
+        "bytes": 4435,
+        "sha256": "6c0f9efeee1d89ab3845f835d358a9e3e984644abea349c61808060f8c334df1"
+      },
+      "candidate_row_key_sha256": "b2db95f75ce88045ca865fac2fac6c4d8995bc46cede406ef121d38d2c9dc7cf",
+      "Kgeometry_final_router_metrics": {
+        "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_k_multisource_quality/endpoints/DvXray/geometry_router_t0_final_86c5b7c5c5c5b140/metrics.json",
+        "bytes": 113265,
+        "sha256": "c1e5b9aaf2d6c101f61f972cea52a59a7f44427230bd5a8b782e9bb6e35409cc"
+      },
+      "Kgeometry_final_router_export": {
+        "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_k_multisource_quality/endpoints/DvXray/geometry_router_t0_final_86c5b7c5c5c5b140/export.json",
+        "bytes": 422129,
+        "sha256": "d4b14de36c8faadb251d2fa6f2974275a3c605bb327e96bcc6bd9c4f7e5623d1"
+      },
+      "T_inference": {
+        "availability_control": {
+          "17": {
+            "receipt": {
+              "path": "/mnt/data/yxy-codex/home/outputs/RAXO/material_reliability_20261101/inference/DvXray/availability_control/seed17/inference.json",
+              "bytes": 2985,
+              "sha256": "0d1a513e93648f383bcef87ba04e0cb34390d88588222f699c94cebcabc86779"
+            },
+            "components": {
+              "path": "/mnt/data/yxy-codex/home/outputs/RAXO/material_reliability_20261101/inference/DvXray/availability_control/seed17/quality_scores.npz",
+              "bytes": 4455483,
+              "sha256": "12404ed9f500241b1dcbb161fa3c66cd8194a504956d0e2ed6d98c477aa4d9b5"
+            }
+          },
+          "29": {
+            "receipt": {
+              "path": "/mnt/data/yxy-codex/home/outputs/RAXO/material_reliability_20261101/inference/DvXray/availability_control/seed29/inference.json",
+              "bytes": 2985,
+              "sha256": "ebf3226f9e511718eaccb5b67cdfab5933fc72b8887c0f4be082e6f892fca660"
+            },
+            "components": {
+              "path": "/mnt/data/yxy-codex/home/outputs/RAXO/material_reliability_20261101/inference/DvXray/availability_control/seed29/quality_scores.npz",
+              "bytes": 3165030,
+              "sha256": "3d4b01e609df7fcd6051c42cd246e06d7b30fd333c3b85ec054bac30567da4df"
+            }
+          },
+          "43": {
+            "receipt": {
+              "path": "/mnt/data/yxy-codex/home/outputs/RAXO/material_reliability_20261101/inference/DvXray/availability_control/seed43/inference.json",
+              "bytes": 2985,
+              "sha256": "fa253d1581f9edbf0d198913c0a46a52badc92d4a07543642ac5881337e4e170"
+            },
+            "components": {
+              "path": "/mnt/data/yxy-codex/home/outputs/RAXO/material_reliability_20261101/inference/DvXray/availability_control/seed43/quality_scores.npz",
+              "bytes": 4402595,
+              "sha256": "045237dbbbe2efaef7b57be100e989bd9f0e106486e7b4f1697ce0d156f4ea9f"
+            }
+          }
+        },
+        "material": {
+          "17": {
+            "receipt": {
+              "path": "/mnt/data/yxy-codex/home/outputs/RAXO/material_reliability_20261101/inference/DvXray/material/seed17/inference.json",
+              "bytes": 2925,
+              "sha256": "b57da5bc0543a94ff10940c2ebf93459d64532938510443b86c93ccaaad0611b"
+            },
+            "components": {
+              "path": "/mnt/data/yxy-codex/home/outputs/RAXO/material_reliability_20261101/inference/DvXray/material/seed17/quality_scores.npz",
+              "bytes": 4760542,
+              "sha256": "dc708d65572f94169cdbf74ee99aeb6890eb8cb8a24498911120209cb5d20617"
+            }
+          },
+          "29": {
+            "receipt": {
+              "path": "/mnt/data/yxy-codex/home/outputs/RAXO/material_reliability_20261101/inference/DvXray/material/seed29/inference.json",
+              "bytes": 2925,
+              "sha256": "21dcf1e52ed0ebd9bf2c560f4f6ca48e18c0a1cea76ab3dff0a36505ffade302"
+            },
+            "components": {
+              "path": "/mnt/data/yxy-codex/home/outputs/RAXO/material_reliability_20261101/inference/DvXray/material/seed29/quality_scores.npz",
+              "bytes": 4775403,
+              "sha256": "256ff6b2781c533fdad93b9909c95d582a3e2b53b698e5df51043a72af20ec3c"
+            }
+          },
+          "43": {
+            "receipt": {
+              "path": "/mnt/data/yxy-codex/home/outputs/RAXO/material_reliability_20261101/inference/DvXray/material/seed43/inference.json",
+              "bytes": 2925,
+              "sha256": "950f51ef456873803765debbc63ca6d06305d571c4e70eb379d3058eae729ca9"
+            },
+            "components": {
+              "path": "/mnt/data/yxy-codex/home/outputs/RAXO/material_reliability_20261101/inference/DvXray/material/seed43/quality_scores.npz",
+              "bytes": 4778527,
+              "sha256": "1d2869ca50958008e29c5801f8cae7134d2128a1071d415444e94ff2af1395fe"
+            }
+          }
+        },
+        "ordinal_material": {
+          "17": {
+            "receipt": {
+              "path": "/mnt/data/yxy-codex/home/outputs/RAXO/material_reliability_20261101/inference/DvXray/ordinal_material/seed17/inference.json",
+              "bytes": 2965,
+              "sha256": "f289c8c69c3e66006483c7fa6295d66831fffaaa7a1c73570445a6309d0050da"
+            },
+            "components": {
+              "path": "/mnt/data/yxy-codex/home/outputs/RAXO/material_reliability_20261101/inference/DvXray/ordinal_material/seed17/quality_scores.npz",
+              "bytes": 4728101,
+              "sha256": "cd883ff97bfc3bdd28af548dee0288b7c8bdf9bfdb0e4b057a18304fa55c2d95"
+            }
+          },
+          "29": {
+            "receipt": {
+              "path": "/mnt/data/yxy-codex/home/outputs/RAXO/material_reliability_20261101/inference/DvXray/ordinal_material/seed29/inference.json",
+              "bytes": 2964,
+              "sha256": "6eff514d687a7fded5f7461d164aef9226ee29acf8c8c00db8234d6dbfb7f72f"
+            },
+            "components": {
+              "path": "/mnt/data/yxy-codex/home/outputs/RAXO/material_reliability_20261101/inference/DvXray/ordinal_material/seed29/quality_scores.npz",
+              "bytes": 4754484,
+              "sha256": "145bd5f23711ffa6d2f6f56374b905ef7fd9a1113a784892aa344e4c1e56be99"
+            }
+          },
+          "43": {
+            "receipt": {
+              "path": "/mnt/data/yxy-codex/home/outputs/RAXO/material_reliability_20261101/inference/DvXray/ordinal_material/seed43/inference.json",
+              "bytes": 2965,
+              "sha256": "38856024ef250f9d8ed38368fc98e9630f4c91eaf9518487879bab58a3b3c688"
+            },
+            "components": {
+              "path": "/mnt/data/yxy-codex/home/outputs/RAXO/material_reliability_20261101/inference/DvXray/ordinal_material/seed43/quality_scores.npz",
+              "bytes": 4732723,
+              "sha256": "1aad54304b7ea4d25fdfbe678d680ad44089a5019d775a31219cfd1447c00548"
+            }
+          }
+        }
+      },
+      "feature_manifest_path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_n_supported_material_quality/features/DvXray/feature_manifest.json",
+      "auxiliary_feature_manifest": {
+        "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_n_supported_material_quality/features/DvXray/feature_manifest.json",
+        "bytes": 8169,
+        "sha256": "3b0449d79204a4f886e1b80ddaeac1a2c9e0e1efe781cb67d697e64ece28b236"
+      },
+      "auxiliary_protocol": {
+        "path": "/mnt/data/yxy/program/RAXO/experiments/night_exploration_20261101/batch_n_supported_material_quality/config/protocol.json",
+        "bytes": 1750004,
+        "sha256": "94470fb3917d5fc51e98f0a051f2dd3a392cbb8f8c51962befabe05f3c6408dd"
+      },
+      "full_C_material_B": {
+        "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_k_multisource_quality/features/DvXray/fresh_material_B.npy",
+        "bytes": 11620028,
+        "sha256": "f31e7eafb63110cee0d9f6cd1f361b13273c4465c8422c285de8ee049377247a"
+      },
+      "Tavailability_inference": {
+        "17": {
+          "receipt": {
+            "path": "/mnt/data/yxy-codex/home/outputs/RAXO/material_reliability_20261101/inference/DvXray/availability_control/seed17/inference.json",
+            "bytes": 2985,
+            "sha256": "0d1a513e93648f383bcef87ba04e0cb34390d88588222f699c94cebcabc86779"
+          },
+          "components": {
+            "path": "/mnt/data/yxy-codex/home/outputs/RAXO/material_reliability_20261101/inference/DvXray/availability_control/seed17/quality_scores.npz",
+            "bytes": 4455483,
+            "sha256": "12404ed9f500241b1dcbb161fa3c66cd8194a504956d0e2ed6d98c477aa4d9b5"
+          }
+        },
+        "29": {
+          "receipt": {
+            "path": "/mnt/data/yxy-codex/home/outputs/RAXO/material_reliability_20261101/inference/DvXray/availability_control/seed29/inference.json",
+            "bytes": 2985,
+            "sha256": "ebf3226f9e511718eaccb5b67cdfab5933fc72b8887c0f4be082e6f892fca660"
+          },
+          "components": {
+            "path": "/mnt/data/yxy-codex/home/outputs/RAXO/material_reliability_20261101/inference/DvXray/availability_control/seed29/quality_scores.npz",
+            "bytes": 3165030,
+            "sha256": "3d4b01e609df7fcd6051c42cd246e06d7b30fd333c3b85ec054bac30567da4df"
+          }
+        },
+        "43": {
+          "receipt": {
+            "path": "/mnt/data/yxy-codex/home/outputs/RAXO/material_reliability_20261101/inference/DvXray/availability_control/seed43/inference.json",
+            "bytes": 2985,
+            "sha256": "fa253d1581f9edbf0d198913c0a46a52badc92d4a07543642ac5881337e4e170"
+          },
+          "components": {
+            "path": "/mnt/data/yxy-codex/home/outputs/RAXO/material_reliability_20261101/inference/DvXray/availability_control/seed43/quality_scores.npz",
+            "bytes": 4402595,
+            "sha256": "045237dbbbe2efaef7b57be100e989bd9f0e106486e7b4f1697ce0d156f4ea9f"
+          }
+        }
+      }
+    },
+    "Hi": {
+      "feature_manifest": {
+        "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_c_shared_union/features/Hi/feature_manifest.json",
+        "bytes": 308555,
+        "sha256": "cd93c26b17590b8fc875c626dcc1dbf8251adf8fa1857d7f3d34a8bccd6f83bc"
+      },
+      "C_feature_manifest": {
+        "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_c_shared_union/features/Hi/feature_manifest.json",
+        "bytes": 308555,
+        "sha256": "cd93c26b17590b8fc875c626dcc1dbf8251adf8fa1857d7f3d34a8bccd6f83bc"
+      },
+      "N_feature_manifest": {
+        "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_n_supported_material_quality/features/Hi/feature_manifest.json",
+        "bytes": 7303,
+        "sha256": "fca29b10a1fc3320abd41d0f9e737233d20520ddeaf37cbe95337f760356aedf"
+      },
+      "Kgeometry_scores": {
+        "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_k_multisource_quality/ensembles/Hi/geometry/all3/quality_scores.npz",
+        "bytes": 1643070,
+        "sha256": "d5fc1c47acb479377d1a9426f1b1537f1ad8b18a76dc2af8910a8ac7325093cc"
+      },
+      "Kgeometry_receipt": {
+        "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_k_multisource_quality/ensembles/Hi/geometry/all3/ensemble.json",
+        "bytes": 4293,
+        "sha256": "35ea8d93e1f345020cfcfe7f04eb1948483efb323e790c117945e6f0f70f6b4d"
+      },
+      "Ebase_scores": {
+        "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_e_affine_robustness/ensembles/Hi/visual_clean/all3/quality_scores.npz",
+        "bytes": 1772985,
+        "sha256": "8e3e3a0cf4549c04f625de1dc348c4f0449bd9888d31a454bcb7e189d6d8c091"
+      },
+      "Ebase_receipt": {
+        "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_e_affine_robustness/ensembles/Hi/visual_clean/all3/ensemble.json",
+        "bytes": 4403,
+        "sha256": "662a68fb83dc2a51ae9b083dc041f89e09f3f5a7b0aa36c35c09dd14d1f20260"
+      },
+      "candidate_row_key_sha256": "6087de99f562ad3d3a6bff31e7581b038cba1409098a3f9ddbb9ab614336b23e",
+      "Kgeometry_final_router_metrics": {
+        "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_k_multisource_quality/endpoints/Hi/geometry_router_t0_final_643b5b484938cc52/metrics.json",
+        "bytes": 112056,
+        "sha256": "df59cf10aae7d89dcd3c6715346ce18aeca41ce5d39508579fe3799df9e52376"
+      },
+      "Kgeometry_final_router_export": {
+        "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_k_multisource_quality/endpoints/Hi/geometry_router_t0_final_643b5b484938cc52/export.json",
+        "bytes": 417771,
+        "sha256": "2fdb4fcb7dd0e9e4edcc9f7a6663d49c722b23c9e8390c8f4bcfdfc21a05abb4"
+      },
+      "T_inference": {
+        "availability_control": {
+          "17": {
+            "receipt": {
+              "path": "/mnt/data/yxy-codex/home/outputs/RAXO/material_reliability_20261101/inference/Hi/availability_control/seed17/inference.json",
+              "bytes": 2964,
+              "sha256": "aa0fa65106284f8783f8e50b7205638a1247397ede42258fc6c96fdc66e5942c"
+            },
+            "components": {
+              "path": "/mnt/data/yxy-codex/home/outputs/RAXO/material_reliability_20261101/inference/Hi/availability_control/seed17/quality_scores.npz",
+              "bytes": 9184123,
+              "sha256": "19744bab4136dbccc283ee4bdaf5e3716c7ed515b42c64522cdf49c7f589f4bf"
+            }
+          },
+          "29": {
+            "receipt": {
+              "path": "/mnt/data/yxy-codex/home/outputs/RAXO/material_reliability_20261101/inference/Hi/availability_control/seed29/inference.json",
+              "bytes": 2965,
+              "sha256": "010d066f2494d83feb985c22ad47986fc6cbd7827ce7733b1f232c38125d25d3"
+            },
+            "components": {
+              "path": "/mnt/data/yxy-codex/home/outputs/RAXO/material_reliability_20261101/inference/Hi/availability_control/seed29/quality_scores.npz",
+              "bytes": 6315361,
+              "sha256": "b4d258be5b767147c63cfeb9cd863ab2ef57b2939cfe9eb3fda579bf96ff0ac6"
+            }
+          },
+          "43": {
+            "receipt": {
+              "path": "/mnt/data/yxy-codex/home/outputs/RAXO/material_reliability_20261101/inference/Hi/availability_control/seed43/inference.json",
+              "bytes": 2965,
+              "sha256": "9476fb3a95ffcfb6b5825e0fb658c4d92ce9ad671504aa0e9dcd7e64594be224"
+            },
+            "components": {
+              "path": "/mnt/data/yxy-codex/home/outputs/RAXO/material_reliability_20261101/inference/Hi/availability_control/seed43/quality_scores.npz",
+              "bytes": 9179375,
+              "sha256": "1356644d72d1f45c7c88428fa79da8f72f7fd50d7d967a2f8a2388630c503eaa"
+            }
+          }
+        },
+        "material": {
+          "17": {
+            "receipt": {
+              "path": "/mnt/data/yxy-codex/home/outputs/RAXO/material_reliability_20261101/inference/Hi/material/seed17/inference.json",
+              "bytes": 2906,
+              "sha256": "3f67f17de9184110c017801a15a8d484e22ef8e5be7114a0de551d960b51beab"
+            },
+            "components": {
+              "path": "/mnt/data/yxy-codex/home/outputs/RAXO/material_reliability_20261101/inference/Hi/material/seed17/quality_scores.npz",
+              "bytes": 10554687,
+              "sha256": "10c9360e4326d963e68f96cb04b1b9f47b1766ea12311281abd837b188d33390"
+            }
+          },
+          "29": {
+            "receipt": {
+              "path": "/mnt/data/yxy-codex/home/outputs/RAXO/material_reliability_20261101/inference/Hi/material/seed29/inference.json",
+              "bytes": 2905,
+              "sha256": "fc80a0d8caa57083278eea8277c75db8ea6e84ab5a82ae58e1d98ce4bf1cb8e3"
+            },
+            "components": {
+              "path": "/mnt/data/yxy-codex/home/outputs/RAXO/material_reliability_20261101/inference/Hi/material/seed29/quality_scores.npz",
+              "bytes": 10579432,
+              "sha256": "fd3b2b27ff2e8f5e068c677cbe09e1bbdcd2f60b6647ee0055f99c19613f05c1"
+            }
+          },
+          "43": {
+            "receipt": {
+              "path": "/mnt/data/yxy-codex/home/outputs/RAXO/material_reliability_20261101/inference/Hi/material/seed43/inference.json",
+              "bytes": 2905,
+              "sha256": "a5d0c48948afb09e7d5a1d67db4cb187b3bfa10c94b1bcccba025514553f00cd"
+            },
+            "components": {
+              "path": "/mnt/data/yxy-codex/home/outputs/RAXO/material_reliability_20261101/inference/Hi/material/seed43/quality_scores.npz",
+              "bytes": 10576030,
+              "sha256": "5f89537d7b68c187b5868f356d19449869650ae8be1e04c1b46f38bad6902395"
+            }
+          }
+        },
+        "ordinal_material": {
+          "17": {
+            "receipt": {
+              "path": "/mnt/data/yxy-codex/home/outputs/RAXO/material_reliability_20261101/inference/Hi/ordinal_material/seed17/inference.json",
+              "bytes": 2946,
+              "sha256": "1ce698a5eabe39adf4b8fe4c4d21191d4513bc245b76092e497ed318e5681c9b"
+            },
+            "components": {
+              "path": "/mnt/data/yxy-codex/home/outputs/RAXO/material_reliability_20261101/inference/Hi/ordinal_material/seed17/quality_scores.npz",
+              "bytes": 10507696,
+              "sha256": "445c932b297073303aa8b1e35c5015eab51f2c73db7f57a09b643eb757abeb71"
+            }
+          },
+          "29": {
+            "receipt": {
+              "path": "/mnt/data/yxy-codex/home/outputs/RAXO/material_reliability_20261101/inference/Hi/ordinal_material/seed29/inference.json",
+              "bytes": 2945,
+              "sha256": "b1b84bec7c74edf9d386764b1b0fb7496a0360de436c2a71d092cd8507d1ab6b"
+            },
+            "components": {
+              "path": "/mnt/data/yxy-codex/home/outputs/RAXO/material_reliability_20261101/inference/Hi/ordinal_material/seed29/quality_scores.npz",
+              "bytes": 10546048,
+              "sha256": "d3489d6a39177f4837c598b2a729f814046c578ddbacd7761577442b462afedb"
+            }
+          },
+          "43": {
+            "receipt": {
+              "path": "/mnt/data/yxy-codex/home/outputs/RAXO/material_reliability_20261101/inference/Hi/ordinal_material/seed43/inference.json",
+              "bytes": 2945,
+              "sha256": "7f3b7da12b442a56c2eacbb32fd0654e7c9847003b6f52a37dd57d1fe3f421dd"
+            },
+            "components": {
+              "path": "/mnt/data/yxy-codex/home/outputs/RAXO/material_reliability_20261101/inference/Hi/ordinal_material/seed43/quality_scores.npz",
+              "bytes": 10546948,
+              "sha256": "aee0d6a6e885efc8c3c05a7d941502b24d445e47e18a492d94a84d8dad149630"
+            }
+          }
+        }
+      },
+      "feature_manifest_path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_n_supported_material_quality/features/Hi/feature_manifest.json",
+      "auxiliary_feature_manifest": {
+        "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_n_supported_material_quality/features/Hi/feature_manifest.json",
+        "bytes": 7303,
+        "sha256": "fca29b10a1fc3320abd41d0f9e737233d20520ddeaf37cbe95337f760356aedf"
+      },
+      "auxiliary_protocol": {
+        "path": "/mnt/data/yxy/program/RAXO/experiments/night_exploration_20261101/batch_n_supported_material_quality/config/protocol.json",
+        "bytes": 1750004,
+        "sha256": "94470fb3917d5fc51e98f0a051f2dd3a392cbb8f8c51962befabe05f3c6408dd"
+      },
+      "full_C_material_B": {
+        "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_k_multisource_quality/features/Hi/fresh_material_B.npy",
+        "bytes": 10607452,
+        "sha256": "3f1dcf899ed4cfe2a443fa0e0de08890674d1ea2712377f73e2cde12d8a19ae7"
+      },
+      "Tavailability_inference": {
+        "17": {
+          "receipt": {
+            "path": "/mnt/data/yxy-codex/home/outputs/RAXO/material_reliability_20261101/inference/Hi/availability_control/seed17/inference.json",
+            "bytes": 2964,
+            "sha256": "aa0fa65106284f8783f8e50b7205638a1247397ede42258fc6c96fdc66e5942c"
+          },
+          "components": {
+            "path": "/mnt/data/yxy-codex/home/outputs/RAXO/material_reliability_20261101/inference/Hi/availability_control/seed17/quality_scores.npz",
+            "bytes": 9184123,
+            "sha256": "19744bab4136dbccc283ee4bdaf5e3716c7ed515b42c64522cdf49c7f589f4bf"
+          }
+        },
+        "29": {
+          "receipt": {
+            "path": "/mnt/data/yxy-codex/home/outputs/RAXO/material_reliability_20261101/inference/Hi/availability_control/seed29/inference.json",
+            "bytes": 2965,
+            "sha256": "010d066f2494d83feb985c22ad47986fc6cbd7827ce7733b1f232c38125d25d3"
+          },
+          "components": {
+            "path": "/mnt/data/yxy-codex/home/outputs/RAXO/material_reliability_20261101/inference/Hi/availability_control/seed29/quality_scores.npz",
+            "bytes": 6315361,
+            "sha256": "b4d258be5b767147c63cfeb9cd863ab2ef57b2939cfe9eb3fda579bf96ff0ac6"
+          }
+        },
+        "43": {
+          "receipt": {
+            "path": "/mnt/data/yxy-codex/home/outputs/RAXO/material_reliability_20261101/inference/Hi/availability_control/seed43/inference.json",
+            "bytes": 2965,
+            "sha256": "9476fb3a95ffcfb6b5825e0fb658c4d92ce9ad671504aa0e9dcd7e64594be224"
+          },
+          "components": {
+            "path": "/mnt/data/yxy-codex/home/outputs/RAXO/material_reliability_20261101/inference/Hi/availability_control/seed43/quality_scores.npz",
+            "bytes": 9179375,
+            "sha256": "1356644d72d1f45c7c88428fa79da8f72f7fd50d7d967a2f8a2388630c503eaa"
+          }
+        }
+      }
+    }
+  },
+  "inference_cases": [
+    "CLC_tune",
+    "DET",
+    "CLCXray_test",
+    "PIXray",
+    "PIDray",
+    "DvXray",
+    "Hi"
+  ],
+  "test_cases": [
+    "DET",
+    "CLCXray_test",
+    "PIXray",
+    "PIDray",
+    "DvXray",
+    "Hi"
+  ],
+  "calibration_cases": [
+    "CLC_tune"
+  ],
+  "routing": {
+    "routes": [
+      "anchor_locked",
+      "adaptive_router"
+    ],
+    "tau": 0.0,
+    "anchor_locked": "Fixed archived T availability_control alpha1 adaptive_router branch/category with E3 fixed lambda.5; never Kgeometry_locked",
+    "adaptive_router": "Use each new mixed quality, strict qF-qV>0, equal prefersV; native candidates/negative/UNC untouched"
+  },
+  "mixing": {
+    "fixed_mix_weight": 0.5,
+    "base": "Exact archived Evisual_clean three-seed q",
+    "head": "CPUFloat32 sigmoid of GPUFloat32 anchor/correction; per-seed thenF64mean ->F32",
+    "composition": "F64 clippedpowers E^.5*head^.5 thenF32; alpha0 exact archived Kgeometry mixedquality"
+  },
+  "selection": {
+    "alphas": [
+      0.0,
+      0.25,
+      0.5,
+      1.0
+    ],
+    "routes": [
+      "anchor_locked",
+      "adaptive_router"
+    ],
+    "dataset": "CLC_tune",
+    "shared_across_variants": true,
+    "weights": {
+      "material": 0.5,
+      "permuted_material": 0.5
+    },
+    "criterion": "Max shared .5AP(material)+.5AP(permuted_material) source CLC_tune only; exact tie smaller alpha then anchor_locked",
+    "freeze_before_any_test_AP": true,
+    "no_test_reselection": true,
+    "all_other_route_test_results_at_selected_alpha_reported": true,
+    "alpha0_may_win_and_means_no_material_contribution_shown": true,
+    "strong_anchor_diagnostic_external_only": true
+  },
+  "score": {
+    "alpha": 0.5,
+    "sigma": 1.0,
+    "raw_box_score_and_negative_UNC_unchanged": true
+  },
+  "resources": {
+    "GPU_index": 0,
+    "GPU_UUID": "GPU-7d53f26e-0c06-c368-43bf-de34b45f6a52",
+    "GPU_single_worker": true,
+    "GPU3_do_not_touch": true,
+    "CPU_threads": 8,
+    "model_CPU_environment_threads": 8,
+    "native_threads": 8,
+    "native_global_slots": 4,
+    "native_lock_root": "/mnt/data/yxy-codex/home/outputs/RAXO/material_conditional_ranking_fix1_20261101/resources/native_slots",
+    "min_MemAvailable_GiB": 64,
+    "no_foreign_process_termination": true
+  },
+  "disclosure": {
+    "prior_six_test_results_known": true,
+    "new_blind_test": false,
+    "source_train_and_val_same_three_datasets_but_disjoint_images": true,
+    "posthoc_exploratory_mechanism": true,
+    "no_CI_or_full_training_repeat_budget_in_this_first_round": true,
+    "old_encoder_bank_physical_identity_provenance_not_repaired": true,
+    "support_mask_is_metadata_not_physical_material_certification": true,
+    "same_capacity_claim_only_against_new_availability_control_not_original_Kgeometry": true,
+    "no_paper_figure_or_Supplementary_edits": true,
+    "followup_after_two_test_visible_exploratory_scopes": true,
+    "auxiliary_bank_alignment_only": true,
+    "CT_native_F_pool_still_old_bank": true,
+    "old_negative_results_preserved": true,
+    "source_CLC_raw_and_tune_current_class_runtime_stats_replayed_exactly": true,
+    "teacher_labels_and_PID_Hi_training_and_six_test_features_unchanged": true,
+    "no_universal_improvement_assumption": true,
+    "followup_after_three_test_visible_exploratory_scopes": true,
+    "conditional_class_objective_not_objectness_BCE": true,
+    "material_entropy_not_visual_entropy": true,
+    "permutation_control_not_equal_effective_capacity_or_causal_counterfactual": true,
+    "new_shared_setting_selected_source_only": true
+  },
+  "model_design": {
+    "path": "/mnt/data/yxy/program/RAXO/experiments/material_conditional_ranking_fix1_20261101/config/model_design.json",
+    "bytes": 8635,
+    "sha256": "4f81e6bd58d9e66521781078761c30c8258b281741131513034541c4af1adf4e"
+  },
+  "budget": {
+    "new_trainings": 6,
+    "new_full_C_GPU_inferences": 42,
+    "logical_inference_records": 42,
+    "source_AP_logical": 16,
+    "test_AP_logical": 24,
+    "total_AP_logical": 40,
+    "strong_Tavailability_baseline": "Archived exact references; no new actual AP budget claimed"
+  },
+  "grouped_data": {
+    "schema_version": "conditional_grouped_allclass_v1",
+    "path": "/mnt/data/yxy-codex/home/outputs/RAXO/material_conditional_ranking_fix1_20261101/training/grouped_train_val.npz",
+    "receipt": "/mnt/data/yxy-codex/home/outputs/RAXO/material_conditional_ranking_fix1_20261101/training/data_receipt.json",
+    "data_design": {
+      "path": "/mnt/data/yxy/program/RAXO/experiments/material_conditional_ranking_fix1_20261101/config/data_design.json",
+      "bytes": 3182,
+      "sha256": "b515dd48413374b0254ed2832d124a1eee2967db5263c2c16e9653d2bf9090fb"
+    },
+    "no_new_teacher_or_test_labels": true
+  },
+  "strong_anchor": {
+    "native_model_protocol": {
+      "path": "/mnt/data/yxy/program/RAXO/experiments/material_reliability_20261101/config/protocol.json",
+      "bytes": 31307,
+      "sha256": "2bbafa2e6245cba6902f7067631a438712bda902acb460cffd408738f28dec04"
+    },
+    "native_variant": "availability_control",
+    "native_residual_alpha": 1.0,
+    "native_route": "adaptive_router",
+    "Ebase_mix_weight": 0.5,
+    "q": "Reconstruct original formal endpoint CPUFloat32 dense sigmoid(anchor_logits+old_delta), zero olddelta/unsupported copies old Kseed q; Float64 seedmean toF32 then original E3 mix",
+    "never_use_producer_quality_as_formal_deployment_q": true,
+    "alpha0_and_new_delta0_exact_formal_Tdeployment_q": true,
+    "candidate_anchor_logits": "Original T saved full_logits exact bytes; new fullC GPU anchor gather checked but not substituted to introduce ULP drift",
+    "formal_trace_mixed_bits_must_match_all7_cases": true,
+    "deployment_replay": {
+      "path": "/mnt/data/yxy-codex/home/outputs/RAXO/material_conditional_ranking_20261101/verification/Tavailability_deployment_replay_persistent.json",
+      "bytes": 42733,
+      "sha256": "aa5533b694531f4b6f56eb8366180cee405c36261f2b89a43bae863275c1ad9a"
+    },
+    "read_only_reference_helper": {
+      "path": "/mnt/data/yxy/program/RAXO/experiments/material_conditional_ranking_fix1_20261101/src/anchor_reference.py",
+      "bytes": 6746,
+      "sha256": "ae89aff7274fcca0dc9ae4d299e2f48a7fb27c31a44adda79827393f7b228068"
+    }
+  },
+  "data_design": {
+    "path": "/mnt/data/yxy/program/RAXO/experiments/material_conditional_ranking_fix1_20261101/config/data_design.json",
+    "bytes": 3182,
+    "sha256": "b515dd48413374b0254ed2832d124a1eee2967db5263c2c16e9653d2bf9090fb"
+  },
+  "data_actor_sources": [
+    {
+      "path": "/mnt/data/yxy/program/RAXO/experiments/material_conditional_ranking_fix1_20261101/src/group_data.py",
+      "bytes": 16745,
+      "sha256": "5221b79ac2ece313ad94c38e430b0c4ea8f46658c0aa3db7dade34d757650d67"
+    },
+    {
+      "path": "/mnt/data/yxy/program/RAXO/experiments/material_conditional_ranking_fix1_20261101/scripts/prepare_data.py",
+      "bytes": 888,
+      "sha256": "e81e35b1e2482982b940610272c6d2527be0807315ccc1e8c3aca80aab56fc17"
+    }
+  ],
+  "implementation_correction": {
+    "kind": "TRAINING_AUTOGRAD_PATH_ONLY",
+    "failed_original_protocol": {
+      "path": "/mnt/data/yxy/program/RAXO/experiments/material_conditional_ranking_20261101/config/protocol.json",
+      "bytes": 111067,
+      "sha256": "a034221a01d4d87d765ab19b4602c7e0b54c4f4bade317ee36abdcc2bb5cd27e"
+    },
+    "failure_is_not_scientific_null": true,
+    "training_logits": "Frozen anchor + centered_delta; forbid value-based centered_delta!=0 selection in training graph",
+    "intended_forward_equation_and_all_scientific_recipe_fields_unchanged": true,
+    "deployment_zero_delta_formal_Tquality_fallback_unchanged": true,
+    "complete_zero_init_model_components_pairwise_backward_required": true,
+    "first_actual_CUDA_last_residual_weight_gradient_and_update_required": true,
+    "archived_failed_models_predictions_AP_not_reused_as_scientific_results": true
+  },
+  "frozen_utc": "2026-11-01T14:13:42.033455+00:00"
+}

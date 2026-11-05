@@ -1,0 +1,77 @@
+{
+  "status": "OBSERVED_FOUR_ORIGINAL_EXITED_IDENTITIES_AND_ACTUAL_RESUMED_P_PEER",
+  "identities": [
+    {
+      "role": "D_baseline_actor",
+      "PID": 792846,
+      "starttime_ticks": 181090007,
+      "argv": [
+        "/mnt/data/yxy/envs/gdino_cu118_clean/bin/python",
+        "-B",
+        "/mnt/data/yxy/program/RAXO/experiments/night_exploration_20261101/batch_d_bootstrap/scripts/run_baseline_bootstrap.py",
+        "run"
+      ],
+      "cgroup": "0::/user.slice/user-1003.slice/user@1003.service/app.slice/raxo-night-stat-recovery-20261101-0954.service\n",
+      "observed_utc": "2026-11-01T02:05:11.115506+00:00"
+    },
+    {
+      "role": "D_candidate_actor",
+      "PID": 792849,
+      "starttime_ticks": 181090007,
+      "argv": [
+        "/mnt/data/yxy/envs/gdino_cu118_clean/bin/python",
+        "-B",
+        "/mnt/data/yxy/program/RAXO/experiments/night_exploration_20261101/batch_d_candidate_bootstrap/scripts/run_candidate_bootstrap.py",
+        "run"
+      ],
+      "cgroup": "0::/user.slice/user-1003.slice/user@1003.service/app.slice/raxo-night-stat-recovery-20261101-0954.service\n",
+      "observed_utc": "2026-11-01T02:05:11.116333+00:00"
+    },
+    {
+      "role": "P_actor",
+      "PID": 792853,
+      "starttime_ticks": 181090007,
+      "argv": [
+        "/mnt/data/yxy/envs/gdino_cu118_clean/bin/python",
+        "-B",
+        "/mnt/data/yxy/program/RAXO/experiments/night_exploration_20261101/batch_p_supported_rank_bootstrap/scripts/run_supported_bootstrap.py",
+        "run"
+      ],
+      "cgroup": "0::/user.slice/user-1003.slice/user@1003.service/app.slice/raxo-night-stat-recovery-20261101-0954.service\n",
+      "observed_utc": "2026-11-01T02:05:11.117055+00:00"
+    },
+    {
+      "role": "D_peer",
+      "PID": 792855,
+      "starttime_ticks": 181090007,
+      "argv": [
+        "/mnt/data/yxy/envs/gdino_cu118_clean/bin/python",
+        "-B",
+        "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/verification/d_peer/review_d_statistics.py",
+        "--watch"
+      ],
+      "cgroup": "0::/user.slice/user-1003.slice/user@1003.service/app.slice/raxo-night-stat-recovery-20261101-0954.service\n",
+      "observed_utc": "2026-11-01T02:05:11.117981+00:00"
+    },
+    {
+      "role": "P_peer",
+      "PID": 3615626,
+      "starttime_ticks": 184863871,
+      "argv": [
+        "/mnt/data/yxy/envs/gdino_cu118_clean/bin/python",
+        "-B",
+        "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_p_supported_rank_bootstrap/verification/review_paired_source_chain.py"
+      ]
+    }
+  ],
+  "P_peer_resume_started": {
+    "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/closure_recovery_20261101_2135/automation/P_peer_resume_started.json",
+    "bytes": 599,
+    "sha256": "58578aef26fc43f45283f28ca490fb1eac17f7328da39e9cb5db1eba3ed64f59"
+  },
+  "P_peer_resume_exited": {
+    "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/closure_recovery_20261101_2135/automation/P_peer_resume_exited.json",
+    "bytes": 72,
+    "sha256": "f2f100f51c85d893af62cc064a4cb13c4046fbd43e146bf2629155d62b88cdfd"
+  }
+}

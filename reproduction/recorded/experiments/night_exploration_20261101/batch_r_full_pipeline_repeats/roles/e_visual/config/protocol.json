@@ -1,0 +1,376 @@
+{
+  "study_id": "R_e_visual_exact_E_visual_clean_replications",
+  "status": "FROZEN_BEFORE_ANY_R_E_TRAINING_INFERENCE_OR_NUMERICAL_PREFLIGHT",
+  "created_utc": "2026-10-31T19:26:41.163542+00:00",
+  "role": "e_visual",
+  "variant": "visual_clean",
+  "parent_protocol": {
+    "path": "/mnt/data/yxy/program/RAXO/experiments/night_exploration_20261101/batch_r_full_pipeline_repeats/config/protocol.json",
+    "bytes": 22437,
+    "sha256": "925127ad7f9f49aca829c57048df11fe968d6c9a00c965fe70ec028b57700610"
+  },
+  "inference_clarification": {
+    "path": "/mnt/data/yxy/program/RAXO/experiments/night_exploration_20261101/batch_r_full_pipeline_repeats/config/inference_clarification_01.json",
+    "bytes": 2447,
+    "sha256": "0e88abdcc6741e5625a54a437165e9d4c601bb79b0eb0a1b4f478f737191ffd1"
+  },
+  "original_E_protocol": {
+    "path": "/mnt/data/yxy/program/RAXO/experiments/night_exploration_20261101/batch_e_affine_robustness/config/protocol.json",
+    "bytes": 13906,
+    "sha256": "e5be43a129dea7e5993f89d4135364e0793a5c4f80a3ff9d3d07cd7c98e48cfb"
+  },
+  "original_model_code_freeze": {
+    "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_e_affine_robustness/automation/model_code_freeze.json",
+    "bytes": 1569,
+    "sha256": "33b149c876c3de3078ad38bb6388718b3d6450f77c8f5d1fd84cbeceb4f2b1a5"
+  },
+  "original_model_sources": [
+    {
+      "path": "/mnt/data/yxy/program/RAXO/experiments/night_exploration_20261101/batch_e_affine_robustness/src/affine_model.py",
+      "bytes": 13071,
+      "sha256": "ca07ef44c011492c185d5c397c18ee967842a8d6cdc019f5792d9be6a7019b45"
+    },
+    {
+      "path": "/mnt/data/yxy/program/RAXO/experiments/night_exploration_20261101/batch_e_affine_robustness/scripts/train_affine.py",
+      "bytes": 565,
+      "sha256": "895aa0a2a4afdfca930a9ca96b88d02b260f687ad200407756502900b97825ad"
+    },
+    {
+      "path": "/mnt/data/yxy/program/RAXO/experiments/night_exploration_20261101/batch_e_affine_robustness/scripts/infer_affine.py",
+      "bytes": 570,
+      "sha256": "23aa413444fd1770dbf5faaf32605d3ebb2ee8a4dfecb81724ad9a0f62b59b2c"
+    },
+    {
+      "path": "/mnt/data/yxy/program/RAXO/experiments/night_exploration_20261101/batch_e_affine_robustness/scripts/run_models.py",
+      "bytes": 9194,
+      "sha256": "310ca8f66505f30644e29b94613cf7a41d4f25e09d297e431b7b371b9afa7172"
+    }
+  ],
+  "protocol_creation_source": {
+    "path": "/mnt/data/yxy/program/RAXO/experiments/night_exploration_20261101/batch_r_full_pipeline_repeats/roles/e_visual/scripts/freeze_role_protocol.py",
+    "bytes": 3608,
+    "sha256": "ca2b6108d6719806f1571ab9b82f1d8b7b52424cc36e296b87abd4bd5ba24f0d"
+  },
+  "groups": [
+    {
+      "id": "replica1",
+      "seeds": [
+        59,
+        71,
+        83
+      ]
+    },
+    {
+      "id": "replica2",
+      "seeds": [
+        97,
+        109,
+        127
+      ]
+    },
+    {
+      "id": "replica3",
+      "seeds": [
+        139,
+        151,
+        163
+      ]
+    },
+    {
+      "id": "replica4",
+      "seeds": [
+        179,
+        191,
+        211
+      ]
+    }
+  ],
+  "flat_seeds": [
+    59,
+    71,
+    83,
+    97,
+    109,
+    127,
+    139,
+    151,
+    163,
+    179,
+    191,
+    211
+  ],
+  "training": {
+    "variants": [
+      "visual_clean"
+    ],
+    "seeds": [
+      59,
+      71,
+      83,
+      97,
+      109,
+      127,
+      139,
+      151,
+      163,
+      179,
+      191,
+      211
+    ],
+    "architecture": [
+      15,
+      32,
+      16,
+      1
+    ],
+    "lr": 0.001,
+    "weight_decay": 0.0001,
+    "batch_size": 1024,
+    "max_epochs": 100,
+    "early_stop_patience": 15,
+    "early_stop_min_delta": 1e-06,
+    "optimizer": "AdamW",
+    "loss": "Unweighted mean BCE over concatenated full/second views, one optimizer update per base batch; no target mask beyond unique-valid padding removal",
+    "sampling": "Independent CPU TorchGenerator(seed), each epoch concatenate15 fresh randperm(2013) and truncate29370; all4 variants same-seed identical draw stream;29370base draws29updates",
+    "views": "Two views per basebatch in every variant: clean repeats natural view; affine natural view plus one affine perturbed view. All variants consume the same four Uniform[0,1) random values per base draw even clean; clean does not apply the sampled transform.",
+    "affine_rng": "Separate CPU TorchGenerator(seed+100000); torch.rand([actual_base_batch_size,4],dtype=float32), columns aV_u,bV_u,aM_u,bM_u in that order; same-seed all4 variants identical affine RNG stream",
+    "affine": {
+      "aV": [
+        0.5,
+        1.5
+      ],
+      "aM": [
+        0.5,
+        1.5
+      ],
+      "bV": [
+        -0.15,
+        0.15
+      ],
+      "bM": [
+        -0.15,
+        0.15
+      ],
+      "visual_scale_shift_columns": [
+        1,
+        4
+      ],
+      "visual_scale_only_columns": [
+        2,
+        5,
+        7
+      ],
+      "material_scale_shift_columns": [
+        9
+      ],
+      "material_scale_only_columns": [
+        11
+      ],
+      "rank_and_agreement_columns_unchanged": [
+        6,
+        10,
+        14
+      ],
+      "raw_available_zero": "If raw13==0 set raw9..14 exact0, never introduce a material bias; M affine only applied to raw available1 rows",
+      "order": "Copy raw rows, canonicalize missing M, apply affine to raw scores, fixed unit divide coordinates2/5/7/11 by2, zero fixed/variant/constant coordinates. No clipping, recomputed ranks, entropy, canonical scores, native filtering or third candidate.",
+      "scope": "quality-input calibration stress only; not a recomputed feature bank and not a physical material measurement"
+    },
+    "normalization": {
+      "kind": "fixed_natural_units",
+      "divide_by_two": [
+        2,
+        5,
+        7,
+        11
+      ],
+      "always_zero": [
+        0,
+        3,
+        8,
+        12
+      ],
+      "visual_material_zero": true,
+      "full_additionally_zero": [
+        13
+      ],
+      "constant_guard": "Derive any remaining exact constant coordinate from unique valid natural training inputs AFTER unit/fixed/variant masks only; globally zero in train natural/augmented, validation, and inference. No val/test mean/std fit."
+    },
+    "validation": "One natural view only,452valid candidate BCE. Same original153/38 image reservation, no augmented validation or tune/test early stopping.",
+    "draws_per_epoch": 29370,
+    "optimizer_updates_per_epoch": 29,
+    "view_count": 2,
+    "training_source": {
+      "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_c_shared_union/training/union_train_val.npz",
+      "bytes": 97541,
+      "sha256": "9e5d752bf34c7b0e997f058ab9438200f4847220209e3aae7c51aca151dae259"
+    },
+    "new_trainings": 12
+  },
+  "feature_schema": {
+    "names": [
+      "detector_confidence",
+      "visual_global_top1",
+      "visual_global_margin",
+      "visual_global_entropy",
+      "candidate_visual_max",
+      "candidate_visual_minus_global_top1",
+      "candidate_global_visual_rank_capped4_normalized",
+      "candidate_visual_canonical_gap",
+      "log1p_positive_prototype_count",
+      "candidate_material_score",
+      "candidate_material_rank_normalized",
+      "material_global_margin",
+      "log1p_material_support_count",
+      "material_support_available",
+      "candidate_material_top1_agreement"
+    ],
+    "shape": "float32[Nunion,2,15]",
+    "definitions": "Original15 raw class-conditional definitions from candidate protocol except column6. Prefix globalV features reuse/verify original wholequery. All candidateV maxima/canonical gaps computed from original V for the exact class, never branch-F score or reversed subtraction.",
+    "rank": "Rank among ALL C positive-class Vmax, ties original first winning prototype index; min(rank,4)/4, not normalized byC or nativebranch slot. Thus originaltop5 training classes retain exact previous rank feature; outside-top5 test candidates saturate1.",
+    "same_class": "Sameclass branch pair shares the same feature and quality slot; qV=qF is structural exact identity.",
+    "support": "Exact source material-bank category_name join/count,0preserved; CID0 valid, invalidpadding=-1 controlled onlybyvalidmask."
+  },
+  "sources": {
+    "C_protocol": {
+      "path": "/mnt/data/yxy/program/RAXO/experiments/night_exploration_20261101/batch_c_shared_union/config/protocol.json",
+      "bytes": 14465,
+      "sha256": "285b2fd5fcdbc974c762332cf33b3962a6876f75bd8e8a6c0e53e8235d394cd7"
+    },
+    "C_training_npz": {
+      "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_c_shared_union/training/union_train_val.npz",
+      "bytes": 97541,
+      "sha256": "9e5d752bf34c7b0e997f058ab9438200f4847220209e3aae7c51aca151dae259"
+    },
+    "C_teacher_audit": {
+      "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_c_shared_union/training/teacher_audit.npz",
+      "bytes": 24149,
+      "sha256": "505c684ca621c3666d9c3be79ca44aa646c9a2d919be315b3e34404ef31e6bd5"
+    },
+    "C_data_model_review": {
+      "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_c_shared_union/verification/final_data_model_review.json",
+      "bytes": 174612,
+      "sha256": "9420d6078872d179cfaa40b72f73eba636dd687f0fc724ba9b145b3230df7864"
+    },
+    "C_endpoint_review": {
+      "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_c_shared_union/verification/final_endpoint_selection_review.json",
+      "bytes": 183703,
+      "sha256": "7ba36a6f525a79507bd95830145f8cd1a66abc7d6aa308b3c4b864cfa8f98b50"
+    },
+    "calfit_split": {
+      "path": "/mnt/data/yxy-codex/home/outputs/RAXO/appearance_reliability_pilot_20261031/training/cal_fit_image_split.json",
+      "bytes": 2254,
+      "sha256": "88ca429e2501b536e1a1eb841f024bf206a5e018ee805b5280867aa747453f3c"
+    },
+    "original_six_combination": {
+      "path": "/mnt/data/yxy-codex/home/outputs/RAXO/appearance_six_dataset_transfer_20261031/results/six_dataset_locked_combination.json",
+      "bytes": 35325,
+      "sha256": "45d1b57b6daf9fb7faf811e685c020467c9ba34f18261dfb3451951634ed19f3"
+    }
+  },
+  "cases": {
+    "DET": {
+      "feature_manifest": {
+        "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_c_shared_union/features/DET/feature_manifest.json",
+        "bytes": 76176,
+        "sha256": "9c5b0a79742638567ec5c03a5e33caedd9070056e88e65ab0225619b1f35beda"
+      },
+      "candidate_row_key_sha256": "7ff49f0652908dcff396a5f26485d5fb8843d242f459693d93aceb3cca4e4f18"
+    },
+    "CLCXray_test": {
+      "feature_manifest": {
+        "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_c_shared_union/features/CLCXray_test/feature_manifest.json",
+        "bytes": 49344,
+        "sha256": "046fa6e5618760abef75f3004c11d8fcd46f4d4d059f93aeabaa1d4101780343"
+      },
+      "candidate_row_key_sha256": "deaceb8ec82e92a96d44e0684ddb4309f1b805c2b4740a5022ac9b9f1cdd951a"
+    },
+    "PIXray": {
+      "feature_manifest": {
+        "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_c_shared_union/features/PIXray/feature_manifest.json",
+        "bytes": 167784,
+        "sha256": "99fbba15e49d4edab4cb86a0d5f636024733215b2ad1089c378e74236b70c32e"
+      },
+      "candidate_row_key_sha256": "21ee533e7cf6bdbdadc7e7e4563a089a088bd1b7cf5b167ad36cd2925dc87304"
+    },
+    "PIDray": {
+      "feature_manifest": {
+        "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_c_shared_union/features/PIDray/feature_manifest.json",
+        "bytes": 617938,
+        "sha256": "ed96e6812ba3611448a9422e3367d0f5160b1cb27419611b38e66efbc237d4bb"
+      },
+      "candidate_row_key_sha256": "9a17e2001773191cdaa678c4f3fc20421c21ab35dad5309d4d846c06ac9cb827"
+    },
+    "DvXray": {
+      "feature_manifest": {
+        "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_c_shared_union/features/DvXray/feature_manifest.json",
+        "bytes": 312779,
+        "sha256": "0689ac8d203cd0d0db217fb83abd07812993365bee5413fb1f05306ffbaa7f1d"
+      },
+      "candidate_row_key_sha256": "b2db95f75ce88045ca865fac2fac6c4d8995bc46cede406ef121d38d2c9dc7cf"
+    },
+    "Hi": {
+      "feature_manifest": {
+        "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_c_shared_union/features/Hi/feature_manifest.json",
+        "bytes": 308555,
+        "sha256": "cd93c26b17590b8fc875c626dcc1dbf8251adf8fa1857d7f3d34a8bccd6f83bc"
+      },
+      "candidate_row_key_sha256": "6087de99f562ad3d3a6bff31e7581b038cba1409098a3f9ddbb9ab614336b23e"
+    }
+  },
+  "inference_cases": [
+    "DET",
+    "CLCXray_test",
+    "PIXray",
+    "PIDray",
+    "DvXray",
+    "Hi"
+  ],
+  "test_cases": [
+    "DET",
+    "CLCXray_test",
+    "PIXray",
+    "PIDray",
+    "DvXray",
+    "Hi"
+  ],
+  "inference": {
+    "variant": "visual_clean",
+    "actual_runs": 72,
+    "three_seed_group_means": 24,
+    "source_CT_inference": false,
+    "precision": "Exact original E GPUFloat32 model(b).sigmoid() then CPU NumPyFloat32; no CPU sigmoid substitution; original8192 rawrow/16384 valid-candidate internal split.",
+    "group_mean": "Each prescribed triple only: F64 sum/3 then oneF32, never average12"
+  },
+  "resources": {
+    "GPU_index": 0,
+    "GPU_UUID": "GPU-7d53f26e-0c06-c368-43bf-de34b45f6a52",
+    "CPU_environment_threads": 8,
+    "OMP_NUM_THREADS": 8,
+    "MKL_NUM_THREADS": 8,
+    "OPENBLAS_NUM_THREADS": 8,
+    "NUMEXPR_NUM_THREADS": 8,
+    "min_available_RAM_GiB": 64,
+    "check_GPU_idle_before_every_job": true,
+    "registered_PID_argv_identity_checked": true,
+    "GPU3_do_not_touch": true
+  },
+  "budgets": {
+    "new_training": 12,
+    "new_actual_GPU_inference": 72,
+    "new_group_three_seed_means": 24,
+    "new_AP": 0,
+    "new_GT_labels": 0,
+    "new_features": 0
+  },
+  "role_output_contract": "roles/{role}/ensemble_index.json: statusCOMPLETE,parent_protocol ref,role,groups{replicaN:{seeds:[3],cases{dataset:{scores:ref,receipt:ref,model_refs:[3]}}}}; seedreceipts bindcheckpoint/newroleP/parentR P/featuremanifest/rowkey; allsavedquality [N,2] F32pad0",
+  "limits": [
+    "All15 alreadysealed pointroots andpaper/oldresults read-only.",
+    "OriginalD/P controls remainfixed andoriginalD priority unchanged. P selection wasafter50 earlierfits, beforethese futureR validationfits.",
+    "Prior N/O tests exposed; disclosed replicationdiagnostic, notnewblindtest.",
+    "CLC/PID/Hi supervision remains; no newindependent images orphysicalidentity certification.",
+    "No outcome-based stopping/seedreplacement/parameterchange orbestgroup. ChildroleP/code freeze bindthisparent before numerical work.",
+    "Role-only probabilities and training. No AP, source calibration, bestgroup or seed substitution."
+  ],
+  "code_root": "/mnt/data/yxy/program/RAXO/experiments/night_exploration_20261101/batch_r_full_pipeline_repeats/roles/e_visual",
+  "output_root": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_r_full_pipeline_repeats/roles/e_visual"
+}

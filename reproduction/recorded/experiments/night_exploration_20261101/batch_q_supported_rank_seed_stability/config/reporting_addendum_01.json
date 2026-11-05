@@ -1,0 +1,36 @@
+{
+  "kind": "POST_RUN_REPORTING_INTERFACE_ADAPTER_ONLY_NO_SCIENTIFIC_CHANGE",
+  "created_utc": "2026-10-31T18:56:13.864391+00:00",
+  "protocol": {
+    "path": "/mnt/data/yxy/program/RAXO/experiments/night_exploration_20261101/batch_q_supported_rank_seed_stability/config/protocol.json",
+    "bytes": 42763,
+    "sha256": "0433953caa21af2fff35b8b95e8ca5f3d8db8a95414c5bb7e2cd68867e9065d0"
+  },
+  "original_frozen_sources": {
+    "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_q_supported_rank_seed_stability/automation/source_code_freeze.json",
+    "bytes": 3592,
+    "sha256": "ae8f0c08ec9dc9b66ba27aa378f44c828aea13c123ce13ba9a7e36c8f4b42e3f"
+  },
+  "original_reporting_source": {
+    "path": "/mnt/data/yxy/program/RAXO/experiments/night_exploration_20261101/batch_q_supported_rank_seed_stability/scripts/summarize.py",
+    "bytes": 7293,
+    "sha256": "42aaf2fc92878d9d59ecc2a02a618e6bc7ffc41dad36a807e68cf7f738ce3b07"
+  },
+  "new_reporting_source_frozen_before_execution": {
+    "path": "/mnt/data/yxy/program/RAXO/experiments/night_exploration_20261101/batch_q_supported_rank_seed_stability/scripts/summarize_reference_adapter.py",
+    "bytes": 7751,
+    "sha256": "fffde2e4882da01011e6589775d573d1f82e4b72fcef7f8a8a306681bdd7957c"
+  },
+  "failure": "N run_index metrics/export_receipt are paths with separate metrics_sha256/export_sha256, not ref dicts. Original reporter raisedTypeError before writing results.",
+  "resolution": "Normalize N references by hashing path, then assert independently stored SHA. All Q evaluation/scoring/routing/model choices and Nensemble points unchanged.",
+  "all18_native_AP_already_complete": true,
+  "AP_rerun": false,
+  "science_parameters_changed": false,
+  "original_P_or_six_sources_modified": false,
+  "original_18_predictions_traces_metrics_modified": false,
+  "reporting_archive": {
+    "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_q_supported_rank_seed_stability/reporting_attempts/summary_N_reference_schema_01/archive_manifest.json",
+    "bytes": 29475,
+    "sha256": "e1e24600b9df948dbf98555f09430928c3b76313636e90c82deae1082738e1b4"
+  }
+}

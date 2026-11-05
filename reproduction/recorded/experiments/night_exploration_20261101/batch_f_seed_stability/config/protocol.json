@@ -1,0 +1,251 @@
+{
+  "study_id": "night_batch_f_seed_stability_20261101",
+  "status": "FROZEN_BEFORE_ANY_SEED_SPECIFIC_AP",
+  "created_utc": "2026-10-31T17:08:06.957211+00:00",
+  "question": "Do quality improvements survive individual training seeds instead of relying on the nonlinear three-model ensemble?",
+  "sources": {
+    "C_protocol": {
+      "path": "/mnt/data/yxy/program/RAXO/experiments/night_exploration_20261101/batch_c_shared_union/config/protocol.json",
+      "bytes": 14465,
+      "sha256": "285b2fd5fcdbc974c762332cf33b3962a6876f75bd8e8a6c0e53e8235d394cd7"
+    },
+    "C_training_npz": {
+      "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_c_shared_union/training/union_train_val.npz",
+      "bytes": 97541,
+      "sha256": "9e5d752bf34c7b0e997f058ab9438200f4847220209e3aae7c51aca151dae259"
+    },
+    "C_teacher_audit": {
+      "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_c_shared_union/training/teacher_audit.npz",
+      "bytes": 24149,
+      "sha256": "505c684ca621c3666d9c3be79ca44aa646c9a2d919be315b3e34404ef31e6bd5"
+    },
+    "C_data_model_review": {
+      "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_c_shared_union/verification/final_data_model_review.json",
+      "bytes": 174612,
+      "sha256": "9420d6078872d179cfaa40b72f73eba636dd687f0fc724ba9b145b3230df7864"
+    },
+    "C_endpoint_review": {
+      "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_c_shared_union/verification/final_endpoint_selection_review.json",
+      "bytes": 183703,
+      "sha256": "7ba36a6f525a79507bd95830145f8cd1a66abc7d6aa308b3c4b864cfa8f98b50"
+    },
+    "calfit_split": {
+      "path": "/mnt/data/yxy-codex/home/outputs/RAXO/appearance_reliability_pilot_20261031/training/cal_fit_image_split.json",
+      "bytes": 2254,
+      "sha256": "88ca429e2501b536e1a1eb841f024bf206a5e018ee805b5280867aa747453f3c"
+    },
+    "original_six_combination": {
+      "path": "/mnt/data/yxy-codex/home/outputs/RAXO/appearance_six_dataset_transfer_20261031/results/six_dataset_locked_combination.json",
+      "bytes": 35325,
+      "sha256": "45d1b57b6daf9fb7faf811e685c020467c9ba34f18261dfb3451951634ed19f3"
+    },
+    "E_protocol": {
+      "path": "/mnt/data/yxy/program/RAXO/experiments/night_exploration_20261101/batch_e_affine_robustness/config/protocol.json",
+      "bytes": 13906,
+      "sha256": "e5be43a129dea7e5993f89d4135364e0793a5c4f80a3ff9d3d07cd7c98e48cfb"
+    },
+    "E_model_code_freeze": {
+      "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_e_affine_robustness/automation/model_code_freeze.json",
+      "bytes": 1569,
+      "sha256": "33b149c876c3de3078ad38bb6388718b3d6450f77c8f5d1fd84cbeceb4f2b1a5"
+    }
+  },
+  "cases": {
+    "CLC_tune": {
+      "feature_manifest": {
+        "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_c_shared_union/features/CLC_tune/feature_manifest.json",
+        "bytes": 27396,
+        "sha256": "587a7a48b87536ea58b700c4b2c2aa5abfc2aa1003297e1d95981d3f1355b8ca"
+      },
+      "candidate_row_key_sha256": "b7bd29158e187c97493581f19c79d19e4815269628e5ce6d41d43923d0d0a6d0"
+    },
+    "DET": {
+      "feature_manifest": {
+        "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_c_shared_union/features/DET/feature_manifest.json",
+        "bytes": 76176,
+        "sha256": "9c5b0a79742638567ec5c03a5e33caedd9070056e88e65ab0225619b1f35beda"
+      },
+      "candidate_row_key_sha256": "7ff49f0652908dcff396a5f26485d5fb8843d242f459693d93aceb3cca4e4f18"
+    },
+    "CLCXray_test": {
+      "feature_manifest": {
+        "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_c_shared_union/features/CLCXray_test/feature_manifest.json",
+        "bytes": 49344,
+        "sha256": "046fa6e5618760abef75f3004c11d8fcd46f4d4d059f93aeabaa1d4101780343"
+      },
+      "candidate_row_key_sha256": "deaceb8ec82e92a96d44e0684ddb4309f1b805c2b4740a5022ac9b9f1cdd951a"
+    },
+    "PIXray": {
+      "feature_manifest": {
+        "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_c_shared_union/features/PIXray/feature_manifest.json",
+        "bytes": 167784,
+        "sha256": "99fbba15e49d4edab4cb86a0d5f636024733215b2ad1089c378e74236b70c32e"
+      },
+      "candidate_row_key_sha256": "21ee533e7cf6bdbdadc7e7e4563a089a088bd1b7cf5b167ad36cd2925dc87304"
+    },
+    "PIDray": {
+      "feature_manifest": {
+        "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_c_shared_union/features/PIDray/feature_manifest.json",
+        "bytes": 617938,
+        "sha256": "ed96e6812ba3611448a9422e3367d0f5160b1cb27419611b38e66efbc237d4bb"
+      },
+      "candidate_row_key_sha256": "9a17e2001773191cdaa678c4f3fc20421c21ab35dad5309d4d846c06ac9cb827"
+    },
+    "DvXray": {
+      "feature_manifest": {
+        "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_c_shared_union/features/DvXray/feature_manifest.json",
+        "bytes": 312779,
+        "sha256": "0689ac8d203cd0d0db217fb83abd07812993365bee5413fb1f05306ffbaa7f1d"
+      },
+      "candidate_row_key_sha256": "b2db95f75ce88045ca865fac2fac6c4d8995bc46cede406ef121d38d2c9dc7cf"
+    },
+    "Hi": {
+      "feature_manifest": {
+        "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_c_shared_union/features/Hi/feature_manifest.json",
+        "bytes": 308555,
+        "sha256": "cd93c26b17590b8fc875c626dcc1dbf8251adf8fa1857d7f3d34a8bccd6f83bc"
+      },
+      "candidate_row_key_sha256": "6087de99f562ad3d3a6bff31e7581b038cba1409098a3f9ddbb9ab614336b23e"
+    }
+  },
+  "inference_cases": [
+    "DET",
+    "CLCXray_test",
+    "PIXray",
+    "PIDray",
+    "DvXray",
+    "Hi"
+  ],
+  "test_cases": [
+    "DET",
+    "CLCXray_test",
+    "PIXray",
+    "PIDray",
+    "DvXray",
+    "Hi"
+  ],
+  "feature_schema": {
+    "names": [
+      "detector_confidence",
+      "visual_global_top1",
+      "visual_global_margin",
+      "visual_global_entropy",
+      "candidate_visual_max",
+      "candidate_visual_minus_global_top1",
+      "candidate_global_visual_rank_capped4_normalized",
+      "candidate_visual_canonical_gap",
+      "log1p_positive_prototype_count",
+      "candidate_material_score",
+      "candidate_material_rank_normalized",
+      "material_global_margin",
+      "log1p_material_support_count",
+      "material_support_available",
+      "candidate_material_top1_agreement"
+    ],
+    "shape": "float32[Nunion,2,15]",
+    "definitions": "Original15 raw class-conditional definitions from candidate protocol except column6. Prefix globalV features reuse/verify original wholequery. All candidateV maxima/canonical gaps computed from original V for the exact class, never branch-F score or reversed subtraction.",
+    "rank": "Rank among ALL C positive-class Vmax, ties original first winning prototype index; min(rank,4)/4, not normalized byC or nativebranch slot. Thus originaltop5 training classes retain exact previous rank feature; outside-top5 test candidates saturate1.",
+    "same_class": "Sameclass branch pair shares the same feature and quality slot; qV=qF is structural exact identity.",
+    "support": "Exact source material-bank category_name join/count,0preserved; CID0 valid, invalidpadding=-1 controlled onlybyvalidmask."
+  },
+  "teacher": {
+    "source": "Exact frozen C per-class IoU utility targets; no new GT reads",
+    "unique_train": 2013,
+    "unique_val": 452,
+    "positive_train": 497,
+    "positive_val": 115,
+    "image_reservation_train": 153,
+    "image_reservation_val": 38,
+    "effective_train_images": 152,
+    "effective_val_images": 38,
+    "padding_excluded": true
+  },
+  "training": {
+    "new_trainings": 0,
+    "seeds": [
+      17,
+      29,
+      43
+    ],
+    "variants": [
+      "visual_affine",
+      "full_affine"
+    ],
+    "source": "Existing E genuine GPU predictions; no fresh inference or model fit"
+  },
+  "inference": {
+    "new_real_GPU_inferences": 0,
+    "source_pattern": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_e_affine_robustness/inference/{case}/{variant}/seed{seed}/inference.json",
+    "required_source_protocol_sha256": "e5be43a129dea7e5993f89d4135364e0793a5c4f80a3ff9d3d07cd7c98e48cfb"
+  },
+  "routing": {
+    "tau_candidates": [
+      0.0,
+      0.025,
+      0.05,
+      0.1,
+      1.01
+    ],
+    "route": "matched_priority",
+    "formula": "Always prefer retained V; admit F-only iff qF>inherited tau, no overlap class change. Pure V/F controls remain in source E, F evaluates single-seed V-priority only.",
+    "unchanged_native_states": "Only previously retained native V/F candidates, original bbox/rawscore/globalrow/negative/UNC decisions immutable"
+  },
+  "selection": {
+    "rule": "Inherit exactly the E four-variant clean CLC_tune mean-AP selected single tau, without any seed-specific selection. Bind its finished selection receipt before the first F test evaluation.",
+    "source_path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_e_affine_robustness/parameters/selected_parameters.json",
+    "no_seed_selection": true,
+    "no_test_based_reselection": true
+  },
+  "scoring": {
+    "alpha": 0.5,
+    "sigma": 1.0,
+    "formula": "raw_score**.5 * clip(q,1e-6,1)**.5 then class/image Gaussian SoftNMS sigma1, globalrow tie break; every selected row survives output order"
+  },
+  "final_routes": [
+    "matched_priority"
+  ],
+  "final_logical_AP": 36,
+  "report_AR100": true,
+  "primary_variant": "full_affine",
+  "primary_route": "matched_priority",
+  "resources": {
+    "GPU3_do_not_touch": true,
+    "OMP_NUM_THREADS": 8,
+    "global_native_slots": 4,
+    "native_lock_directory": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/resources/native_slots",
+    "native_lock_names": [
+      "slot0.lock",
+      "slot1.lock",
+      "slot2.lock",
+      "slot3.lock"
+    ],
+    "CUDA_VISIBLE_DEVICES": ""
+  },
+  "publication_edits": false,
+  "limits": [
+    "Existing datasets repeatedly viewed; exploratory validation, no independent blind holdout.",
+    "Three seeds are a small descriptive sample, not population inference.",
+    "All six datasets same inherited tau, all seeds reported including negatives; no seed cherry-picking.",
+    "F-native candidates carry material context even for the visual quality variant.",
+    "No model optimization, new GPU inference or publication changes."
+  ],
+  "reporting": {
+    "logical_test_AP": 36,
+    "metrics": [
+      "AP",
+      "AP50",
+      "AP75",
+      "AR100"
+    ],
+    "statistics": "Per seed values and n=3 descriptive mean/std(ddof1)/min/max; paired material-minus-visual for identical seed; compare actual E three-seed ensemble AP separately, never average seed AP as ensemble AP. No CI or statistical significance for n=3.",
+    "baseline": "Old uniform comboF and pureV route plus E actual same-tau ensemble refs",
+    "role": "Secondary exploratory diagnostic, cannot replace E preregistered primary or the previously locked D candidate"
+  },
+  "code_root": "/mnt/data/yxy/program/RAXO/experiments/night_exploration_20261101/batch_f_seed_stability",
+  "output_root": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_f_seed_stability",
+  "protocol_cleanup_before_any_F_numerics": {
+    "created_utc": "2026-10-31T17:08:51.276206+00:00",
+    "reason": "Correct inherited E top-level72 count to actual registered36 and remove unused GPU training resource labels; no model/GT/AP run occurred.",
+    "initial_protocol_sha256": "7bd91d2dd1103878375bec0ad389cc4a4b82f6093da58cd1100efdc6f1527924"
+  }
+}

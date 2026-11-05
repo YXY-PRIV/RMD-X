@@ -1,0 +1,27 @@
+{
+  "case": "Hi",
+  "trial": 1,
+  "method": "pair",
+  "proposals": 378833,
+  "retained": 378833,
+  "images": 9069,
+  "catalogue_classes": 7,
+  "stages_ns": {
+    "full_catalogue_feature_columns_and_context": 18343934323,
+    "three_T_availability_models_GPU_and_CPU_sigmoid": 1185916041,
+    "three_E_visual_clean_models_GPU": 443060194,
+    "three_conditional_full_catalogue_models_GPU_projection_CPU": 2404625666,
+    "ensemble_geometric_mix_fixed_router_sqrt_score_Gaussian_serialization": 27075616602,
+    "total": 49466810432
+  },
+  "memory": {
+    "peak_process_RSS_bytes": 2146013184,
+    "cuda_allocated_bytes": 33651200,
+    "cuda_reserved_bytes": 60817408,
+    "peak_cuda_allocated_bytes": 37300224,
+    "peak_cuda_reserved_bytes": 60817408
+  },
+  "prediction_content_sha256": "4f2c0b8178fab459761e02639deb2bc5d595edffd80859f66d1339425f9851fc",
+  "input_load_seconds_excluded": 0.35253571602515876,
+  "model_load_seconds_excluded": 1.568929499015212
+}

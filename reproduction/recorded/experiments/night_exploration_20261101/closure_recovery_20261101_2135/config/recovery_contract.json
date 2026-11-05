@@ -1,0 +1,100 @@
+{
+  "status": "EXPLICIT_V3_POSTCOMPUTE_CLOSURE_RECOVERY_CONTRACT_NOT_EXECUTION",
+  "created_utc": "2026-11-01T12:34:20.789725+00:00",
+  "resume_integrity_audit": {
+    "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/recovery_20261101_0954/peer_audit/resume_integrity_audit.json",
+    "bytes": 535071,
+    "sha256": "1c016ba7b787fd792505d63c50fe10c8c77c4f9f0e43facab68b902a89187618"
+  },
+  "pre_resume_immutable_snapshot": {
+    "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/recovery_20261101_0954/final_closure_v2/protocol/pre_resume_immutable_snapshot.json",
+    "bytes": 960492,
+    "sha256": "7dfb92e7e76a368945e99611417baf02a48d7dae09c905e355077a884f92f0e4"
+  },
+  "original_failed_closure_status": {
+    "path": "/mnt/data/yxy/program/RAXO/experiments/night_exploration_20261101/recovery_20261101_0954/final_closure_v2/provenance/original_failed_closure_status.json",
+    "bytes": 329,
+    "sha256": "05fd2f5c07cfa3f7392e222c6000b15dbc0eb8978180415068d0967eb1b6379f"
+  },
+  "original_failed_closure_journal": {
+    "path": "/mnt/data/yxy/program/RAXO/experiments/night_exploration_20261101/recovery_20261101_0954/final_closure_v2/provenance/original_failed_closure_journal.json",
+    "bytes": 1966,
+    "sha256": "cc62a642a61d9facf649608b996ce6020b5668d07adc8b1a50ff34c579be2f92"
+  },
+  "original_D_baseline_runtime_copy": {
+    "path": "/mnt/data/yxy/program/RAXO/experiments/night_exploration_20261101/recovery_20261101_0954/final_closure_v2/provenance/original_D_baseline_status.json",
+    "bytes": 749,
+    "sha256": "4becd1e58334249019de87d4c43bbdad1c66fd9ae39734b42928b71dfa38609f"
+  },
+  "accepted_unique_formal_rows_before": 8705,
+  "remaining_accepted_unique_formal_rows": 27295,
+  "target_accepted_unique_formal_rows": 36000,
+  "completed_method_B2000_before": 4,
+  "passed_native_matching_before": 48,
+  "remaining_fresh_native_matching": 24,
+  "interruption": {
+    "last_recorded_active_utc": "2026-10-31T20:19:17.685144+00:00",
+    "first_observed_failed_closure_utc": "2026-10-31T20:19:46.300345+00:00",
+    "rediscovered_utc": "2026-11-01T01:54:44+00:00",
+    "actual_process_exit_time_known": false,
+    "about5h35_no_update_before_rediscovery": true
+  },
+  "timing_scope": {
+    "interrupted_case": "D_baseline/DvXray",
+    "last_observed_partial_elapsed_seconds": 643.7904315290507,
+    "last_observed_partial_elapsed_is_lower_bound_to_actual_old_process_runtime": true,
+    "original_driver_formal_seconds_on_resumed_case_is_new_segment_only": true,
+    "do_not_claim_uninterrupted_or_exact_total_runtime": true
+  },
+  "replay_count_scope": {
+    "accepted_unique_rows_are_not_total_invocation_count": true,
+    "uncommitted_interrupted_worker_calls_may_be_recomputed": true,
+    "uncommitted_interrupted_actual_call_count_unknown": true,
+    "no_exact_total_actual_replay_call_count_claim": true
+  },
+  "source_policy": "All scientific computations already finished. Scientific drivers/protocols/gates/models/AP and all stored results stay byte unchanged. Only the interrupted read-only P peer plus root audit/sealing/report/pointers complete in this new closure scope; no new scientific engine is allowed.",
+  "prior_failure_preserved": true,
+  "recovery_execution_receipt_REQUIRED_IN_READY": true,
+  "metadata_closure_recovery": {
+    "second_failed_closure_status": {
+      "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/recovery_20261101_0954/final_closure_v2/automation/status.json",
+      "bytes": 300,
+      "sha256": "6c16003b05d6322c03da6d5860f5f7c37e0ff539c9eea9d04ca766d0d582d4fe"
+    },
+    "second_failed_closure_journal": {
+      "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/recovery_20261101_0954/final_closure_v2/automation/step_journal.json",
+      "bytes": 2328,
+      "sha256": "b739a25ec559e628015c2e1509a246cc56e6b4137c7d9724029fd26827f2d4b6"
+    },
+    "recovery_service_terminal_status": {
+      "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/recovery_20261101_0954/automation/status.json",
+      "bytes": 466,
+      "sha256": "c70d2e57b743dc87a26b4ce7f726cc5ce0a150f6d2342378274f6e865c26e117"
+    },
+    "scientific_rows_all_finished_utc": "2026-11-01T06:06:58.005864+00:00",
+    "P_final_paired_status_utc": "2026-11-01T06:07:03.947173+00:00",
+    "failed_closure_utc": "2026-11-01T06:07:01.794948+00:00",
+    "failed_service_utc": "2026-11-01T06:07:18.912999+00:00",
+    "cause": "V2 rejected the precise P intermediate COMPLETE_N_POSTHOC_SIX_B2000 before COMPLETE_PAIRED_SIX_B2000; P formal arrays and paired outputs completed before service terminated",
+    "36000_accepted_unique_rows_already_present": true,
+    "remaining_work": "Resume only interrupted read-only P peer, then root D/P reviews and first-time sealing/report/pointer closure",
+    "new_training_GPU_native_matching_AP_bootstrap_allowed": false,
+    "old_failed_attempts_preserved": true,
+    "no_old_closure_step_completed_beyond_wait_quiescence": true,
+    "P_peer_resume_started": {
+      "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/closure_recovery_20261101_2135/automation/P_peer_resume_started.json",
+      "bytes": 599,
+      "sha256": "58578aef26fc43f45283f28ca490fb1eac17f7328da39e9cb5db1eba3ed64f59"
+    },
+    "P_peer_resume_exited": {
+      "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/closure_recovery_20261101_2135/automation/P_peer_resume_exited.json",
+      "bytes": 72,
+      "sha256": "f2f100f51c85d893af62cc064a4cb13c4046fbd43e146bf2629155d62b88cdfd"
+    },
+    "P_peer_final": {
+      "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_p_supported_rank_bootstrap/verification/peer_final_paired_source_chain_review.json",
+      "bytes": 41340,
+      "sha256": "58f61e4c3b63f4bb3683a79ea97dd94eca782af7445fc51b5ad9177137881f51"
+    }
+  }
+}

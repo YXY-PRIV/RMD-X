@@ -1,0 +1,7832 @@
+[
+  {
+    "monotonic_ns": 1906897354674628,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1963565056,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1848213504,
+        "HWM_bytes": 1879482368
+      }
+    ],
+    "total_RSS_bytes": 3811778560,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 3294625792
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 7300186112
+  },
+  {
+    "monotonic_ns": 1906897682290736,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1963565056,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1848213504,
+        "HWM_bytes": 1879482368
+      }
+    ],
+    "total_RSS_bytes": 3811778560,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 3294625792
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 7300186112
+  },
+  {
+    "monotonic_ns": 1906898010859701,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1963565056,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1848213504,
+        "HWM_bytes": 1879482368
+      }
+    ],
+    "total_RSS_bytes": 3811778560,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 3294625792
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 7300186112
+  },
+  {
+    "monotonic_ns": 1906898364669149,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1963565056,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1848213504,
+        "HWM_bytes": 1879482368
+      }
+    ],
+    "total_RSS_bytes": 3811778560,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 3294625792
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 7300186112
+  },
+  {
+    "monotonic_ns": 1906898694774154,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1963565056,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1848213504,
+        "HWM_bytes": 1879482368
+      }
+    ],
+    "total_RSS_bytes": 3811778560,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 3294625792
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 7300186112
+  },
+  {
+    "monotonic_ns": 1906899023581034,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1963565056,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1848213504,
+        "HWM_bytes": 1879482368
+      }
+    ],
+    "total_RSS_bytes": 3811778560,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 3294625792
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 7300186112
+  },
+  {
+    "monotonic_ns": 1906899342474134,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1963565056,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1848213504,
+        "HWM_bytes": 1879482368
+      }
+    ],
+    "total_RSS_bytes": 3811778560,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 3294625792
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 7300186112
+  },
+  {
+    "monotonic_ns": 1906899664934647,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1963565056,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1848213504,
+        "HWM_bytes": 1879482368
+      }
+    ],
+    "total_RSS_bytes": 3811778560,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 3294625792
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 7300186112
+  },
+  {
+    "monotonic_ns": 1906899982407908,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1963630592,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1848213504,
+        "HWM_bytes": 1879482368
+      }
+    ],
+    "total_RSS_bytes": 3811844096,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 3294625792
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 7300186112
+  },
+  {
+    "monotonic_ns": 1906900300444138,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1963630592,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1848213504,
+        "HWM_bytes": 1901907968
+      }
+    ],
+    "total_RSS_bytes": 3811844096,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 3294625792
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 7300186112
+  },
+  {
+    "monotonic_ns": 1906900619842654,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1963630592,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1848213504,
+        "HWM_bytes": 1901907968
+      }
+    ],
+    "total_RSS_bytes": 3811844096,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 3294625792
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 7300186112
+  },
+  {
+    "monotonic_ns": 1906900942105024,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1963630592,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1848213504,
+        "HWM_bytes": 1901907968
+      }
+    ],
+    "total_RSS_bytes": 3811844096,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 3294625792
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 7300186112
+  },
+  {
+    "monotonic_ns": 1906901259998533,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1963630592,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1848213504,
+        "HWM_bytes": 1901907968
+      }
+    ],
+    "total_RSS_bytes": 3811844096,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 3294625792
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 7300186112
+  },
+  {
+    "monotonic_ns": 1906901583077762,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1963630592,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1848213504,
+        "HWM_bytes": 1901907968
+      }
+    ],
+    "total_RSS_bytes": 3811844096,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 3294625792
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 7300186112
+  },
+  {
+    "monotonic_ns": 1906901921626077,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1963630592,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1848213504,
+        "HWM_bytes": 1901907968
+      }
+    ],
+    "total_RSS_bytes": 3811844096,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 3294625792
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 7300186112
+  },
+  {
+    "monotonic_ns": 1906902238856085,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1963630592,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1848213504,
+        "HWM_bytes": 1901907968
+      }
+    ],
+    "total_RSS_bytes": 3811844096,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 3294625792
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 7300186112
+  },
+  {
+    "monotonic_ns": 1906902556342819,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1963630592,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1848213504,
+        "HWM_bytes": 1901907968
+      }
+    ],
+    "total_RSS_bytes": 3811844096,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 3294625792
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 7300186112
+  },
+  {
+    "monotonic_ns": 1906902883594750,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1963630592,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1848213504,
+        "HWM_bytes": 1901907968
+      }
+    ],
+    "total_RSS_bytes": 3811844096,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 3294625792
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 7300186112
+  },
+  {
+    "monotonic_ns": 1906903209245046,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1963765760,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1848213504,
+        "HWM_bytes": 1901907968
+      }
+    ],
+    "total_RSS_bytes": 3811979264,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 3655335936
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 7660896256
+  },
+  {
+    "monotonic_ns": 1906903538730082,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1963765760,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1849393152,
+        "HWM_bytes": 1901907968
+      }
+    ],
+    "total_RSS_bytes": 3813158912,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 3655335936
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 7660896256
+  },
+  {
+    "monotonic_ns": 1906903903712903,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1963765760,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1849393152,
+        "HWM_bytes": 1901907968
+      }
+    ],
+    "total_RSS_bytes": 3813158912,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 3655335936
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 7660896256
+  },
+  {
+    "monotonic_ns": 1906904228657471,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1963765760,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1849393152,
+        "HWM_bytes": 1901907968
+      }
+    ],
+    "total_RSS_bytes": 3813158912,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 3655335936
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 7660896256
+  },
+  {
+    "monotonic_ns": 1906904548114283,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1963765760,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1849393152,
+        "HWM_bytes": 1901907968
+      }
+    ],
+    "total_RSS_bytes": 3813158912,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 3655335936
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 7660896256
+  },
+  {
+    "monotonic_ns": 1906904874347351,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1963765760,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1849393152,
+        "HWM_bytes": 1901907968
+      }
+    ],
+    "total_RSS_bytes": 3813158912,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 3655335936
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 7660896256
+  },
+  {
+    "monotonic_ns": 1906905222042216,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1963765760,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1896198144,
+        "HWM_bytes": 1901907968
+      }
+    ],
+    "total_RSS_bytes": 3859963904,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 3655335936
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 7660896256
+  },
+  {
+    "monotonic_ns": 1906905573440332,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1963765760,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1896198144,
+        "HWM_bytes": 1901907968
+      }
+    ],
+    "total_RSS_bytes": 3859963904,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 3655335936
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 7660896256
+  },
+  {
+    "monotonic_ns": 1906905922582582,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1963765760,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1896198144,
+        "HWM_bytes": 1901907968
+      }
+    ],
+    "total_RSS_bytes": 3859963904,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 3655335936
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 7660896256
+  },
+  {
+    "monotonic_ns": 1906906270712969,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1963765760,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1896198144,
+        "HWM_bytes": 1901907968
+      }
+    ],
+    "total_RSS_bytes": 3859963904,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 3655335936
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 7660896256
+  },
+  {
+    "monotonic_ns": 1906906617427002,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1963765760,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1896198144,
+        "HWM_bytes": 1901907968
+      }
+    ],
+    "total_RSS_bytes": 3859963904,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 3655335936
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 7660896256
+  },
+  {
+    "monotonic_ns": 1906906971993776,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1963765760,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1896198144,
+        "HWM_bytes": 1901907968
+      }
+    ],
+    "total_RSS_bytes": 3859963904,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 3655335936
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 7660896256
+  },
+  {
+    "monotonic_ns": 1906907325856121,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1963765760,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1896198144,
+        "HWM_bytes": 1901907968
+      }
+    ],
+    "total_RSS_bytes": 3859963904,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 3655335936
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 7660896256
+  },
+  {
+    "monotonic_ns": 1906907674131411,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1963765760,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1896198144,
+        "HWM_bytes": 1901907968
+      }
+    ],
+    "total_RSS_bytes": 3859963904,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 3655335936
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 7660896256
+  },
+  {
+    "monotonic_ns": 1906908024207810,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1963765760,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1896198144,
+        "HWM_bytes": 1901907968
+      }
+    ],
+    "total_RSS_bytes": 3859963904,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 3655335936
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 7660896256
+  },
+  {
+    "monotonic_ns": 1906908365682290,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1963765760,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1849393152,
+        "HWM_bytes": 1901907968
+      }
+    ],
+    "total_RSS_bytes": 3813158912,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 3655335936
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 7660896256
+  },
+  {
+    "monotonic_ns": 1906908686853873,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1963765760,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1849393152,
+        "HWM_bytes": 1901907968
+      }
+    ],
+    "total_RSS_bytes": 3813158912,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 3655335936
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 7660896256
+  },
+  {
+    "monotonic_ns": 1906909057681617,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1963765760,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1849393152,
+        "HWM_bytes": 1901907968
+      }
+    ],
+    "total_RSS_bytes": 3813158912,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 3655335936
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 7660896256
+  },
+  {
+    "monotonic_ns": 1906909379049199,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1963765760,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1849393152,
+        "HWM_bytes": 1901907968
+      }
+    ],
+    "total_RSS_bytes": 3813158912,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 3655335936
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 7660896256
+  },
+  {
+    "monotonic_ns": 1906909701697903,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1963765760,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1849393152,
+        "HWM_bytes": 1901907968
+      }
+    ],
+    "total_RSS_bytes": 3813158912,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 3655335936
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 7660896256
+  },
+  {
+    "monotonic_ns": 1906910030929175,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1963765760,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1849393152,
+        "HWM_bytes": 1901907968
+      }
+    ],
+    "total_RSS_bytes": 3813158912,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 3655335936
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 7660896256
+  },
+  {
+    "monotonic_ns": 1906910353302768,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1963765760,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1849393152,
+        "HWM_bytes": 1901907968
+      }
+    ],
+    "total_RSS_bytes": 3813158912,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 3655335936
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 7660896256
+  },
+  {
+    "monotonic_ns": 1906910688198012,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1963765760,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1849393152,
+        "HWM_bytes": 1901907968
+      }
+    ],
+    "total_RSS_bytes": 3813158912,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 3655335936
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 7660896256
+  },
+  {
+    "monotonic_ns": 1906911048031580,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1963765760,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1849393152,
+        "HWM_bytes": 1901907968
+      }
+    ],
+    "total_RSS_bytes": 3813158912,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 3655335936
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 7660896256
+  },
+  {
+    "monotonic_ns": 1906911381398219,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1963765760,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1849393152,
+        "HWM_bytes": 1901907968
+      }
+    ],
+    "total_RSS_bytes": 3813158912,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 3655335936
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 7660896256
+  },
+  {
+    "monotonic_ns": 1906911709134704,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1963765760,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1849393152,
+        "HWM_bytes": 1901907968
+      }
+    ],
+    "total_RSS_bytes": 3813158912,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 3655335936
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 7660896256
+  },
+  {
+    "monotonic_ns": 1906912025266419,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1963765760,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1849393152,
+        "HWM_bytes": 1901907968
+      }
+    ],
+    "total_RSS_bytes": 3813158912,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 3655335936
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 7660896256
+  },
+  {
+    "monotonic_ns": 1906912341490334,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1963769856,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1849393152,
+        "HWM_bytes": 1901907968
+      }
+    ],
+    "total_RSS_bytes": 3813163008,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 3655335936
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 7660896256
+  },
+  {
+    "monotonic_ns": 1906912662597355,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1964490752,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1849393152,
+        "HWM_bytes": 1901907968
+      }
+    ],
+    "total_RSS_bytes": 3813883904,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 3655335936
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 7660896256
+  },
+  {
+    "monotonic_ns": 1906912984449445,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1964490752,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1849393152,
+        "HWM_bytes": 1901907968
+      }
+    ],
+    "total_RSS_bytes": 3813883904,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 3655335936
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 7660896256
+  },
+  {
+    "monotonic_ns": 1906913311573253,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1964490752,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1849393152,
+        "HWM_bytes": 1901907968
+      }
+    ],
+    "total_RSS_bytes": 3813883904,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 3655335936
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 7660896256
+  },
+  {
+    "monotonic_ns": 1906913636581539,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1964490752,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1849393152,
+        "HWM_bytes": 1901907968
+      }
+    ],
+    "total_RSS_bytes": 3813883904,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 3655335936
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 7660896256
+  },
+  {
+    "monotonic_ns": 1906913953221195,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1964490752,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1849393152,
+        "HWM_bytes": 1901907968
+      }
+    ],
+    "total_RSS_bytes": 3813883904,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 3655335936
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 7660896256
+  },
+  {
+    "monotonic_ns": 1906914326945892,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1964490752,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1849393152,
+        "HWM_bytes": 1901907968
+      }
+    ],
+    "total_RSS_bytes": 3813883904,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 3655335936
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 7660896256
+  },
+  {
+    "monotonic_ns": 1906914652359518,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1964490752,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1849393152,
+        "HWM_bytes": 1901907968
+      }
+    ],
+    "total_RSS_bytes": 3813883904,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 3655335936
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 7660896256
+  },
+  {
+    "monotonic_ns": 1906914970754383,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1964494848,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1849393152,
+        "HWM_bytes": 1901907968
+      }
+    ],
+    "total_RSS_bytes": 3813888000,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 3655335936
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 7660896256
+  },
+  {
+    "monotonic_ns": 1906915290575864,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1964539904,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1849393152,
+        "HWM_bytes": 1901907968
+      }
+    ],
+    "total_RSS_bytes": 3813933056,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 3655335936
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 7660896256
+  },
+  {
+    "monotonic_ns": 1906915608447965,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1964539904,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1849393152,
+        "HWM_bytes": 1901907968
+      }
+    ],
+    "total_RSS_bytes": 3813933056,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 3655335936
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 7660896256
+  },
+  {
+    "monotonic_ns": 1906915931019776,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1964539904,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1849397248,
+        "HWM_bytes": 1901907968
+      }
+    ],
+    "total_RSS_bytes": 3813937152,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 3655335936
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 7660896256
+  },
+  {
+    "monotonic_ns": 1906916272607696,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1964539904,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1849397248,
+        "HWM_bytes": 1901907968
+      }
+    ],
+    "total_RSS_bytes": 3813937152,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 3655335936
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 7660896256
+  },
+  {
+    "monotonic_ns": 1906916601537796,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1964539904,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1849397248,
+        "HWM_bytes": 1901907968
+      }
+    ],
+    "total_RSS_bytes": 3813937152,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 3655335936
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 7660896256
+  },
+  {
+    "monotonic_ns": 1906916936751186,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1964539904,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1849397248,
+        "HWM_bytes": 1901907968
+      }
+    ],
+    "total_RSS_bytes": 3813937152,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 3655335936
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 7660896256
+  },
+  {
+    "monotonic_ns": 1906917284635138,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1964548096,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1849397248,
+        "HWM_bytes": 1901907968
+      }
+    ],
+    "total_RSS_bytes": 3813945344,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 3655335936
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 7660896256
+  },
+  {
+    "monotonic_ns": 1906917639535905,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1964548096,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1849397248,
+        "HWM_bytes": 1901907968
+      }
+    ],
+    "total_RSS_bytes": 3813945344,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 3655335936
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 7660896256
+  },
+  {
+    "monotonic_ns": 1906917989516120,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1964548096,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1849397248,
+        "HWM_bytes": 1901907968
+      }
+    ],
+    "total_RSS_bytes": 3813945344,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 3655335936
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 7660896256
+  },
+  {
+    "monotonic_ns": 1906918339024510,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1964548096,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1896620032,
+        "HWM_bytes": 1901907968
+      }
+    ],
+    "total_RSS_bytes": 3861168128,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 3655335936
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 7660896256
+  },
+  {
+    "monotonic_ns": 1906918691260118,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1964548096,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1896620032,
+        "HWM_bytes": 1901907968
+      }
+    ],
+    "total_RSS_bytes": 3861168128,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 3655335936
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 7660896256
+  },
+  {
+    "monotonic_ns": 1906919041899652,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1964548096,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1896620032,
+        "HWM_bytes": 1901907968
+      }
+    ],
+    "total_RSS_bytes": 3861168128,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 3655335936
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 7660896256
+  },
+  {
+    "monotonic_ns": 1906919388900981,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1964548096,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1896620032,
+        "HWM_bytes": 1901907968
+      }
+    ],
+    "total_RSS_bytes": 3861168128,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 3655335936
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 7660896256
+  },
+  {
+    "monotonic_ns": 1906919739465091,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1964548096,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1896620032,
+        "HWM_bytes": 1901907968
+      }
+    ],
+    "total_RSS_bytes": 3861168128,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 3655335936
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 7660896256
+  },
+  {
+    "monotonic_ns": 1906920089630180,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1964548096,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1896620032,
+        "HWM_bytes": 1901907968
+      }
+    ],
+    "total_RSS_bytes": 3861168128,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 3655335936
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 7660896256
+  },
+  {
+    "monotonic_ns": 1906920419905961,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1964572672,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1896620032,
+        "HWM_bytes": 1901907968
+      }
+    ],
+    "total_RSS_bytes": 3861192704,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 3655335936
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 7660896256
+  },
+  {
+    "monotonic_ns": 1906920746138576,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1964572672,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1896620032,
+        "HWM_bytes": 1901907968
+      }
+    ],
+    "total_RSS_bytes": 3861192704,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 3655335936
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 7660896256
+  },
+  {
+    "monotonic_ns": 1906921067246995,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1964572672,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1896620032,
+        "HWM_bytes": 1901907968
+      }
+    ],
+    "total_RSS_bytes": 3861192704,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 3655335936
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 7660896256
+  },
+  {
+    "monotonic_ns": 1906921394399640,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1964572672,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1849397248,
+        "HWM_bytes": 1956171776
+      }
+    ],
+    "total_RSS_bytes": 3813969920,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 3655335936
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 7660896256
+  },
+  {
+    "monotonic_ns": 1906921726681454,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1964572672,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1849397248,
+        "HWM_bytes": 1956171776
+      }
+    ],
+    "total_RSS_bytes": 3813969920,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 3655335936
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 7660896256
+  },
+  {
+    "monotonic_ns": 1906922071366539,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1964572672,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1849397248,
+        "HWM_bytes": 1956171776
+      }
+    ],
+    "total_RSS_bytes": 3813969920,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 3655335936
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 7660896256
+  },
+  {
+    "monotonic_ns": 1906922408753289,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1964572672,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1849397248,
+        "HWM_bytes": 1956171776
+      }
+    ],
+    "total_RSS_bytes": 3813969920,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 3655335936
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 7660896256
+  },
+  {
+    "monotonic_ns": 1906922764908848,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1964572672,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1849397248,
+        "HWM_bytes": 1956171776
+      }
+    ],
+    "total_RSS_bytes": 3813969920,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 3655335936
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 7660896256
+  },
+  {
+    "monotonic_ns": 1906923100345435,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1964572672,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1849397248,
+        "HWM_bytes": 1956171776
+      }
+    ],
+    "total_RSS_bytes": 3813969920,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 3655335936
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 7660896256
+  },
+  {
+    "monotonic_ns": 1906923432617353,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1964572672,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1849397248,
+        "HWM_bytes": 1956171776
+      }
+    ],
+    "total_RSS_bytes": 3813969920,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 3655335936
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 7660896256
+  },
+  {
+    "monotonic_ns": 1906923750816642,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1964572672,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1849397248,
+        "HWM_bytes": 1956171776
+      }
+    ],
+    "total_RSS_bytes": 3813969920,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 3655335936
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 7660896256
+  },
+  {
+    "monotonic_ns": 1906924068964580,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1964572672,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1849397248,
+        "HWM_bytes": 1956171776
+      }
+    ],
+    "total_RSS_bytes": 3813969920,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 3655335936
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 7660896256
+  },
+  {
+    "monotonic_ns": 1906924389683610,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1964597248,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1849397248,
+        "HWM_bytes": 1956171776
+      }
+    ],
+    "total_RSS_bytes": 3813994496,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 3655335936
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 7660896256
+  },
+  {
+    "monotonic_ns": 1906924706842664,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1964597248,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1849397248,
+        "HWM_bytes": 1956171776
+      }
+    ],
+    "total_RSS_bytes": 3813994496,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 3655335936
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 7660896256
+  },
+  {
+    "monotonic_ns": 1906925027288795,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1964597248,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1849401344,
+        "HWM_bytes": 1956171776
+      }
+    ],
+    "total_RSS_bytes": 3813998592,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 3655335936
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 7660896256
+  },
+  {
+    "monotonic_ns": 1906925363299924,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1964597248,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1849401344,
+        "HWM_bytes": 1956171776
+      }
+    ],
+    "total_RSS_bytes": 3813998592,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 3655335936
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 7660896256
+  },
+  {
+    "monotonic_ns": 1906925689324737,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1964597248,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1849401344,
+        "HWM_bytes": 1956171776
+      }
+    ],
+    "total_RSS_bytes": 3813998592,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 3655335936
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 7660896256
+  },
+  {
+    "monotonic_ns": 1906926048290771,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1964597248,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1849401344,
+        "HWM_bytes": 1956171776
+      }
+    ],
+    "total_RSS_bytes": 3813998592,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 3655335936
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 7660896256
+  },
+  {
+    "monotonic_ns": 1906926366707301,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1964597248,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1849401344,
+        "HWM_bytes": 1956171776
+      }
+    ],
+    "total_RSS_bytes": 3813998592,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 3655335936
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 7660896256
+  },
+  {
+    "monotonic_ns": 1906926686093552,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1964597248,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1849401344,
+        "HWM_bytes": 1956171776
+      }
+    ],
+    "total_RSS_bytes": 3813998592,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 3655335936
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 7660896256
+  },
+  {
+    "monotonic_ns": 1906927001734130,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1964609536,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1849401344,
+        "HWM_bytes": 1956171776
+      }
+    ],
+    "total_RSS_bytes": 3814010880,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 3655335936
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 7660896256
+  },
+  {
+    "monotonic_ns": 1906927321306046,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1964609536,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1849401344,
+        "HWM_bytes": 1956171776
+      }
+    ],
+    "total_RSS_bytes": 3814010880,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 3655335936
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 7660896256
+  },
+  {
+    "monotonic_ns": 1906927649644609,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1964617728,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1849401344,
+        "HWM_bytes": 1956171776
+      }
+    ],
+    "total_RSS_bytes": 3814019072,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 3655335936
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 7660896256
+  },
+  {
+    "monotonic_ns": 1906927972496205,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1964617728,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1849401344,
+        "HWM_bytes": 1956171776
+      }
+    ],
+    "total_RSS_bytes": 3814019072,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 3655335936
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 7660896256
+  },
+  {
+    "monotonic_ns": 1906928335560428,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1964617728,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1849401344,
+        "HWM_bytes": 1956171776
+      }
+    ],
+    "total_RSS_bytes": 3814019072,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 3655335936
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 7660896256
+  },
+  {
+    "monotonic_ns": 1906928680692424,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1964617728,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1849401344,
+        "HWM_bytes": 1956171776
+      }
+    ],
+    "total_RSS_bytes": 3814019072,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 3655335936
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 7660896256
+  },
+  {
+    "monotonic_ns": 1906929049186735,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1964617728,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1849401344,
+        "HWM_bytes": 1956171776
+      }
+    ],
+    "total_RSS_bytes": 3814019072,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 3655335936
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 7660896256
+  },
+  {
+    "monotonic_ns": 1906929403793512,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1964617728,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1849401344,
+        "HWM_bytes": 1956171776
+      }
+    ],
+    "total_RSS_bytes": 3814019072,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 3655335936
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 7660896256
+  },
+  {
+    "monotonic_ns": 1906929752724904,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1964617728,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1849401344,
+        "HWM_bytes": 1956171776
+      }
+    ],
+    "total_RSS_bytes": 3814019072,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 3655335936
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 7660896256
+  },
+  {
+    "monotonic_ns": 1906930101994368,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1964617728,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1849401344,
+        "HWM_bytes": 1956171776
+      }
+    ],
+    "total_RSS_bytes": 3814019072,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 3655335936
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 7660896256
+  },
+  {
+    "monotonic_ns": 1906930453292047,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1964687360,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1849401344,
+        "HWM_bytes": 1956171776
+      }
+    ],
+    "total_RSS_bytes": 3814088704,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 3655335936
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 7660896256
+  },
+  {
+    "monotonic_ns": 1906930804550416,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1964691456,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1849405440,
+        "HWM_bytes": 1956171776
+      }
+    ],
+    "total_RSS_bytes": 3814096896,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 3655335936
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 7660896256
+  },
+  {
+    "monotonic_ns": 1906931159730402,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1964691456,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1849405440,
+        "HWM_bytes": 1956171776
+      }
+    ],
+    "total_RSS_bytes": 3814096896,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 3655335936
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 7660896256
+  },
+  {
+    "monotonic_ns": 1906931511250145,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1964691456,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1849405440,
+        "HWM_bytes": 1956171776
+      }
+    ],
+    "total_RSS_bytes": 3814096896,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 3655335936
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 7660896256
+  },
+  {
+    "monotonic_ns": 1906931859236769,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1964691456,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1849405440,
+        "HWM_bytes": 1956171776
+      }
+    ],
+    "total_RSS_bytes": 3814096896,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 3655335936
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 7660896256
+  },
+  {
+    "monotonic_ns": 1906932206968405,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1964691456,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1849405440,
+        "HWM_bytes": 1956171776
+      }
+    ],
+    "total_RSS_bytes": 3814096896,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 3655335936
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 7660896256
+  },
+  {
+    "monotonic_ns": 1906932528797750,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1964691456,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1849405440,
+        "HWM_bytes": 1956171776
+      }
+    ],
+    "total_RSS_bytes": 3814096896,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 3655335936
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 7660896256
+  },
+  {
+    "monotonic_ns": 1906932846736881,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1964720128,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1849405440,
+        "HWM_bytes": 1956171776
+      }
+    ],
+    "total_RSS_bytes": 3814125568,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 3655335936
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 7660896256
+  },
+  {
+    "monotonic_ns": 1906933170666971,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1964720128,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1849405440,
+        "HWM_bytes": 1956171776
+      }
+    ],
+    "total_RSS_bytes": 3814125568,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 3655335936
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 7660896256
+  },
+  {
+    "monotonic_ns": 1906933494279421,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1964785664,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1849405440,
+        "HWM_bytes": 1956171776
+      }
+    ],
+    "total_RSS_bytes": 3814191104,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 3655335936
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 7660896256
+  },
+  {
+    "monotonic_ns": 1906933821551189,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1964785664,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1889259520,
+        "HWM_bytes": 1956171776
+      }
+    ],
+    "total_RSS_bytes": 3854045184,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 3655335936
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 7660896256
+  },
+  {
+    "monotonic_ns": 1906934174811454,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1964785664,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1889259520,
+        "HWM_bytes": 1956171776
+      }
+    ],
+    "total_RSS_bytes": 3854045184,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 3655335936
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 7660896256
+  },
+  {
+    "monotonic_ns": 1906934507745530,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1964785664,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1889259520,
+        "HWM_bytes": 1956171776
+      }
+    ],
+    "total_RSS_bytes": 3854045184,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 3655335936
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 7660896256
+  },
+  {
+    "monotonic_ns": 1906934837456282,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1964785664,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1889259520,
+        "HWM_bytes": 1956171776
+      }
+    ],
+    "total_RSS_bytes": 3854045184,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 3655335936
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 7660896256
+  },
+  {
+    "monotonic_ns": 1906935168567590,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1964785664,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1889259520,
+        "HWM_bytes": 1956171776
+      }
+    ],
+    "total_RSS_bytes": 3854045184,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 3655335936
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 7660896256
+  },
+  {
+    "monotonic_ns": 1906935499462682,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1964785664,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1889259520,
+        "HWM_bytes": 1956171776
+      }
+    ],
+    "total_RSS_bytes": 3854045184,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 3655335936
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 7660896256
+  },
+  {
+    "monotonic_ns": 1906935818104890,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1964806144,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1889259520,
+        "HWM_bytes": 1956171776
+      }
+    ],
+    "total_RSS_bytes": 3854065664,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 3655335936
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 7660896256
+  },
+  {
+    "monotonic_ns": 1906936135515039,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1964806144,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1942487040,
+        "HWM_bytes": 1956171776
+      }
+    ],
+    "total_RSS_bytes": 3907293184,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 3655335936
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 7660896256
+  },
+  {
+    "monotonic_ns": 1906936452318573,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1964806144,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1905250304,
+        "HWM_bytes": 1960636416
+      }
+    ],
+    "total_RSS_bytes": 3870056448,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 3655335936
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 7660896256
+  },
+  {
+    "monotonic_ns": 1906936770135159,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1964806144,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1905250304,
+        "HWM_bytes": 1960636416
+      }
+    ],
+    "total_RSS_bytes": 3870056448,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 3655335936
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 7660896256
+  },
+  {
+    "monotonic_ns": 1906937140122585,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1964806144,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1905250304,
+        "HWM_bytes": 1960636416
+      }
+    ],
+    "total_RSS_bytes": 3870056448,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 3655335936
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 7660896256
+  },
+  {
+    "monotonic_ns": 1906937456612772,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1964806144,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1905250304,
+        "HWM_bytes": 1960636416
+      }
+    ],
+    "total_RSS_bytes": 3870056448,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 3655335936
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 7660896256
+  },
+  {
+    "monotonic_ns": 1906937832013000,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1964806144,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1905250304,
+        "HWM_bytes": 1960636416
+      }
+    ],
+    "total_RSS_bytes": 3870056448,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 3655335936
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 7660896256
+  },
+  {
+    "monotonic_ns": 1906938151147081,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1964806144,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1905250304,
+        "HWM_bytes": 1960636416
+      }
+    ],
+    "total_RSS_bytes": 3870056448,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 3655335936
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 7660896256
+  },
+  {
+    "monotonic_ns": 1906938467078356,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1964806144,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1905250304,
+        "HWM_bytes": 1960636416
+      }
+    ],
+    "total_RSS_bytes": 3870056448,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 3655335936
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 7660896256
+  },
+  {
+    "monotonic_ns": 1906938784632214,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1964806144,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1905250304,
+        "HWM_bytes": 1960636416
+      }
+    ],
+    "total_RSS_bytes": 3870056448,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 3655335936
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 7660896256
+  },
+  {
+    "monotonic_ns": 1906939114772208,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1964806144,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1905250304,
+        "HWM_bytes": 1960636416
+      }
+    ],
+    "total_RSS_bytes": 3870056448,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 3655335936
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 7660896256
+  },
+  {
+    "monotonic_ns": 1906939432540077,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1964806144,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1905250304,
+        "HWM_bytes": 1960636416
+      }
+    ],
+    "total_RSS_bytes": 3870056448,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 3655335936
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 7660896256
+  },
+  {
+    "monotonic_ns": 1906939749443243,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1964806144,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1905250304,
+        "HWM_bytes": 1960636416
+      }
+    ],
+    "total_RSS_bytes": 3870056448,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 4049600512
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 8055160832
+  },
+  {
+    "monotonic_ns": 1906940064375781,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1964830720,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1905250304,
+        "HWM_bytes": 1960636416
+      }
+    ],
+    "total_RSS_bytes": 3870081024,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 4049600512
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 8055160832
+  },
+  {
+    "monotonic_ns": 1906940383551964,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1964830720,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1905250304,
+        "HWM_bytes": 1960636416
+      }
+    ],
+    "total_RSS_bytes": 3870081024,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 4049600512
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 8055160832
+  },
+  {
+    "monotonic_ns": 1906940703247751,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1964830720,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1905250304,
+        "HWM_bytes": 1960636416
+      }
+    ],
+    "total_RSS_bytes": 3870081024,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 4049600512
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 8055160832
+  },
+  {
+    "monotonic_ns": 1906941051260512,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1964830720,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1905414144,
+        "HWM_bytes": 1960636416
+      }
+    ],
+    "total_RSS_bytes": 3870244864,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 4049600512
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 8055160832
+  },
+  {
+    "monotonic_ns": 1906941403359790,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1964830720,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1905414144,
+        "HWM_bytes": 1960636416
+      }
+    ],
+    "total_RSS_bytes": 3870244864,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 4049600512
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 8055160832
+  },
+  {
+    "monotonic_ns": 1906941792446226,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1964830720,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1905414144,
+        "HWM_bytes": 1960636416
+      }
+    ],
+    "total_RSS_bytes": 3870244864,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 4049600512
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 8055160832
+  },
+  {
+    "monotonic_ns": 1906942152270464,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1964830720,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1905414144,
+        "HWM_bytes": 1960636416
+      }
+    ],
+    "total_RSS_bytes": 3870244864,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 4049600512
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 8055160832
+  },
+  {
+    "monotonic_ns": 1906942502185838,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1964830720,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1905414144,
+        "HWM_bytes": 1960636416
+      }
+    ],
+    "total_RSS_bytes": 3870244864,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 4049600512
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 8055160832
+  },
+  {
+    "monotonic_ns": 1906942860590487,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1964847104,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1905414144,
+        "HWM_bytes": 1960636416
+      }
+    ],
+    "total_RSS_bytes": 3870261248,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 4049600512
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 8055160832
+  },
+  {
+    "monotonic_ns": 1906943213298627,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1964847104,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1905414144,
+        "HWM_bytes": 1960636416
+      }
+    ],
+    "total_RSS_bytes": 3870261248,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 4049600512
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 8055160832
+  },
+  {
+    "monotonic_ns": 1906943572797934,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1964847104,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1849409536,
+        "HWM_bytes": 1960636416
+      }
+    ],
+    "total_RSS_bytes": 3814256640,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 4049600512
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 8055160832
+  },
+  {
+    "monotonic_ns": 1906943972909721,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1964847104,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1849409536,
+        "HWM_bytes": 1960636416
+      }
+    ],
+    "total_RSS_bytes": 3814256640,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 4049600512
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 8055160832
+  },
+  {
+    "monotonic_ns": 1906944359950973,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1964847104,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1849409536,
+        "HWM_bytes": 1960636416
+      }
+    ],
+    "total_RSS_bytes": 3814256640,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 4049600512
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 8055160832
+  },
+  {
+    "monotonic_ns": 1906944684315756,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1964859392,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1849409536,
+        "HWM_bytes": 1960636416
+      }
+    ],
+    "total_RSS_bytes": 3814268928,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 4049600512
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 8055160832
+  },
+  {
+    "monotonic_ns": 1906945010379616,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1964859392,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1849409536,
+        "HWM_bytes": 1960636416
+      }
+    ],
+    "total_RSS_bytes": 3814268928,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 4049600512
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 8055160832
+  },
+  {
+    "monotonic_ns": 1906945350207583,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1964859392,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1849409536,
+        "HWM_bytes": 1960636416
+      }
+    ],
+    "total_RSS_bytes": 3814268928,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 4049600512
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 8055160832
+  },
+  {
+    "monotonic_ns": 1906945682846883,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1964859392,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1902075904,
+        "HWM_bytes": 1960636416
+      }
+    ],
+    "total_RSS_bytes": 3866935296,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 4049600512
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 8055160832
+  },
+  {
+    "monotonic_ns": 1906946016833585,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1964859392,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1902075904,
+        "HWM_bytes": 1960636416
+      }
+    ],
+    "total_RSS_bytes": 3866935296,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 4049600512
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 8055160832
+  },
+  {
+    "monotonic_ns": 1906946360417730,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1964859392,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1902075904,
+        "HWM_bytes": 1960636416
+      }
+    ],
+    "total_RSS_bytes": 3866935296,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 4049600512
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 8055160832
+  },
+  {
+    "monotonic_ns": 1906946688636028,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1964859392,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1902075904,
+        "HWM_bytes": 1960636416
+      }
+    ],
+    "total_RSS_bytes": 3866935296,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 4049600512
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 8055160832
+  },
+  {
+    "monotonic_ns": 1906947018187680,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1964859392,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1902075904,
+        "HWM_bytes": 1960636416
+      }
+    ],
+    "total_RSS_bytes": 3866935296,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 4049600512
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 8055160832
+  },
+  {
+    "monotonic_ns": 1906947347760792,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1964859392,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1902075904,
+        "HWM_bytes": 1960636416
+      }
+    ],
+    "total_RSS_bytes": 3866935296,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 4049600512
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 8055160832
+  },
+  {
+    "monotonic_ns": 1906947672518512,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1964859392,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1902075904,
+        "HWM_bytes": 1960636416
+      }
+    ],
+    "total_RSS_bytes": 3866935296,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 4049600512
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 8055160832
+  },
+  {
+    "monotonic_ns": 1906947994171137,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1964859392,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1902075904,
+        "HWM_bytes": 1960636416
+      }
+    ],
+    "total_RSS_bytes": 3866935296,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 4049600512
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 8055160832
+  },
+  {
+    "monotonic_ns": 1906948313069986,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1964859392,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1902075904,
+        "HWM_bytes": 1960636416
+      }
+    ],
+    "total_RSS_bytes": 3866935296,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 4049600512
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 8055160832
+  },
+  {
+    "monotonic_ns": 1906948631482757,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1964859392,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1849409536,
+        "HWM_bytes": 1960636416
+      }
+    ],
+    "total_RSS_bytes": 3814268928,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 4049600512
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 8055160832
+  },
+  {
+    "monotonic_ns": 1906949006929616,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1964859392,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1849409536,
+        "HWM_bytes": 1960636416
+      }
+    ],
+    "total_RSS_bytes": 3814268928,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 4049600512
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 8055160832
+  },
+  {
+    "monotonic_ns": 1906949344938185,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1964859392,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1849409536,
+        "HWM_bytes": 1960636416
+      }
+    ],
+    "total_RSS_bytes": 3814268928,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 4049600512
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 8055160832
+  },
+  {
+    "monotonic_ns": 1906949719163226,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1964859392,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1849409536,
+        "HWM_bytes": 1960636416
+      }
+    ],
+    "total_RSS_bytes": 3814268928,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 4049600512
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 8055160832
+  },
+  {
+    "monotonic_ns": 1906950036239095,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1964859392,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1849409536,
+        "HWM_bytes": 1960636416
+      }
+    ],
+    "total_RSS_bytes": 3814268928,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 4049600512
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 8055160832
+  },
+  {
+    "monotonic_ns": 1906950351967314,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1964888064,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1849409536,
+        "HWM_bytes": 1960636416
+      }
+    ],
+    "total_RSS_bytes": 3814297600,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 4049600512
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 8055160832
+  },
+  {
+    "monotonic_ns": 1906950672339307,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1964888064,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1849409536,
+        "HWM_bytes": 1960636416
+      }
+    ],
+    "total_RSS_bytes": 3814297600,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 4049600512
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 8055160832
+  },
+  {
+    "monotonic_ns": 1906950995836546,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1964888064,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1849409536,
+        "HWM_bytes": 1960636416
+      }
+    ],
+    "total_RSS_bytes": 3814297600,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 4049600512
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 8055160832
+  },
+  {
+    "monotonic_ns": 1906951314248135,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1964888064,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1952309248,
+        "HWM_bytes": 1960636416
+      }
+    ],
+    "total_RSS_bytes": 3917197312,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 4049600512
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 8055160832
+  },
+  {
+    "monotonic_ns": 1906951632609670,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1964888064,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1907290112,
+        "HWM_bytes": 2001809408
+      }
+    ],
+    "total_RSS_bytes": 3872178176,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 4049600512
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 8055160832
+  },
+  {
+    "monotonic_ns": 1906951954283211,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1964888064,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1907290112,
+        "HWM_bytes": 2001809408
+      }
+    ],
+    "total_RSS_bytes": 3872178176,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 4049600512
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 8055160832
+  },
+  {
+    "monotonic_ns": 1906952274326356,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1964888064,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1907290112,
+        "HWM_bytes": 2001809408
+      }
+    ],
+    "total_RSS_bytes": 3872178176,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 4049600512
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 8055160832
+  },
+  {
+    "monotonic_ns": 1906952599378768,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1964888064,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1907290112,
+        "HWM_bytes": 2001809408
+      }
+    ],
+    "total_RSS_bytes": 3872178176,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 4049600512
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 8055160832
+  },
+  {
+    "monotonic_ns": 1906952976110092,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1964888064,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1907290112,
+        "HWM_bytes": 2001809408
+      }
+    ],
+    "total_RSS_bytes": 3872178176,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 4049600512
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 8055160832
+  },
+  {
+    "monotonic_ns": 1906953329174688,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1964888064,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1907290112,
+        "HWM_bytes": 2001809408
+      }
+    ],
+    "total_RSS_bytes": 3872178176,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 4049600512
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 8055160832
+  },
+  {
+    "monotonic_ns": 1906953678475652,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1964888064,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1907290112,
+        "HWM_bytes": 2001809408
+      }
+    ],
+    "total_RSS_bytes": 3872178176,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 4049600512
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 8055160832
+  },
+  {
+    "monotonic_ns": 1906954025047628,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1964888064,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1907290112,
+        "HWM_bytes": 2001809408
+      }
+    ],
+    "total_RSS_bytes": 3872178176,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 4049600512
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 8055160832
+  },
+  {
+    "monotonic_ns": 1906954373581476,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1964888064,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1907290112,
+        "HWM_bytes": 2001809408
+      }
+    ],
+    "total_RSS_bytes": 3872178176,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 4049600512
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 8055160832
+  },
+  {
+    "monotonic_ns": 1906954722835427,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1964888064,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1907290112,
+        "HWM_bytes": 2001809408
+      }
+    ],
+    "total_RSS_bytes": 3872178176,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 4049600512
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 8055160832
+  },
+  {
+    "monotonic_ns": 1906955069497550,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1964888064,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1907290112,
+        "HWM_bytes": 2001809408
+      }
+    ],
+    "total_RSS_bytes": 3872178176,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 4049600512
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 8055160832
+  },
+  {
+    "monotonic_ns": 1906955416886173,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1964888064,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1907290112,
+        "HWM_bytes": 2001809408
+      }
+    ],
+    "total_RSS_bytes": 3872178176,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 4049600512
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 8055160832
+  },
+  {
+    "monotonic_ns": 1906955777020606,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1964900352,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1907290112,
+        "HWM_bytes": 2001809408
+      }
+    ],
+    "total_RSS_bytes": 3872190464,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 4049600512
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 8055160832
+  },
+  {
+    "monotonic_ns": 1906956135241724,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1964900352,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1907290112,
+        "HWM_bytes": 2001809408
+      }
+    ],
+    "total_RSS_bytes": 3872190464,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 4049600512
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 8055160832
+  },
+  {
+    "monotonic_ns": 1906956464417418,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1964900352,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1907290112,
+        "HWM_bytes": 2001809408
+      }
+    ],
+    "total_RSS_bytes": 3872190464,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 4049600512
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 8055160832
+  },
+  {
+    "monotonic_ns": 1906956788767296,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1964900352,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1849413632,
+        "HWM_bytes": 2001809408
+      }
+    ],
+    "total_RSS_bytes": 3814313984,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 4049600512
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 8055160832
+  },
+  {
+    "monotonic_ns": 1906957120376170,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1964900352,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1849413632,
+        "HWM_bytes": 2001809408
+      }
+    ],
+    "total_RSS_bytes": 3814313984,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 4049600512
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 8055160832
+  },
+  {
+    "monotonic_ns": 1906957443948716,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1964900352,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1849413632,
+        "HWM_bytes": 2001809408
+      }
+    ],
+    "total_RSS_bytes": 3814313984,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 4049600512
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 8055160832
+  },
+  {
+    "monotonic_ns": 1906957774498023,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1964900352,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1849413632,
+        "HWM_bytes": 2001809408
+      }
+    ],
+    "total_RSS_bytes": 3814313984,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 4049600512
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 8055160832
+  },
+  {
+    "monotonic_ns": 1906958096920136,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1964924928,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1849413632,
+        "HWM_bytes": 2001809408
+      }
+    ],
+    "total_RSS_bytes": 3814338560,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 4049600512
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 8055160832
+  },
+  {
+    "monotonic_ns": 1906958423655479,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1964924928,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1849413632,
+        "HWM_bytes": 2001809408
+      }
+    ],
+    "total_RSS_bytes": 3814338560,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 4049600512
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 8055160832
+  },
+  {
+    "monotonic_ns": 1906958745377309,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1964924928,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1849413632,
+        "HWM_bytes": 2001809408
+      }
+    ],
+    "total_RSS_bytes": 3814338560,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 4049600512
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 8055160832
+  },
+  {
+    "monotonic_ns": 1906959065527111,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1964924928,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1906683904,
+        "HWM_bytes": 2001809408
+      }
+    ],
+    "total_RSS_bytes": 3871608832,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 4049600512
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 8055160832
+  },
+  {
+    "monotonic_ns": 1906959385152764,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1964924928,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1906683904,
+        "HWM_bytes": 2001809408
+      }
+    ],
+    "total_RSS_bytes": 3871608832,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 4049600512
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 8055160832
+  },
+  {
+    "monotonic_ns": 1906959717044637,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1964924928,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1906683904,
+        "HWM_bytes": 2001809408
+      }
+    ],
+    "total_RSS_bytes": 3871608832,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 4049600512
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 8055160832
+  },
+  {
+    "monotonic_ns": 1906960033486058,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1964924928,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1906683904,
+        "HWM_bytes": 2001809408
+      }
+    ],
+    "total_RSS_bytes": 3871608832,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 4049600512
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 8055160832
+  },
+  {
+    "monotonic_ns": 1906960352263016,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1964924928,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1906683904,
+        "HWM_bytes": 2001809408
+      }
+    ],
+    "total_RSS_bytes": 3871608832,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 4049600512
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 8055160832
+  },
+  {
+    "monotonic_ns": 1906960674065549,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1964924928,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1906683904,
+        "HWM_bytes": 2001809408
+      }
+    ],
+    "total_RSS_bytes": 3871608832,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 4049600512
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 8055160832
+  },
+  {
+    "monotonic_ns": 1906960989809922,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1964924928,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1906683904,
+        "HWM_bytes": 2001809408
+      }
+    ],
+    "total_RSS_bytes": 3871608832,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 4049600512
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 8055160832
+  },
+  {
+    "monotonic_ns": 1906961308479237,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1964924928,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1906683904,
+        "HWM_bytes": 2001809408
+      }
+    ],
+    "total_RSS_bytes": 3871608832,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 4049600512
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 8055160832
+  },
+  {
+    "monotonic_ns": 1906961623075825,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1964924928,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1906683904,
+        "HWM_bytes": 2001809408
+      }
+    ],
+    "total_RSS_bytes": 3871608832,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 4049600512
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 8055160832
+  },
+  {
+    "monotonic_ns": 1906961940623544,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1964924928,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1888489472,
+        "HWM_bytes": 2001809408
+      }
+    ],
+    "total_RSS_bytes": 3853414400,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 4049600512
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 8055160832
+  },
+  {
+    "monotonic_ns": 1906962260810185,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1964924928,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1849413632,
+        "HWM_bytes": 2001809408
+      }
+    ],
+    "total_RSS_bytes": 3814338560,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 4049600512
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 8055160832
+  },
+  {
+    "monotonic_ns": 1906962580732182,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1964924928,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1849413632,
+        "HWM_bytes": 2001809408
+      }
+    ],
+    "total_RSS_bytes": 3814338560,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 4049600512
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 8055160832
+  },
+  {
+    "monotonic_ns": 1906962900479152,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1964924928,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1849413632,
+        "HWM_bytes": 2001809408
+      }
+    ],
+    "total_RSS_bytes": 3814338560,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 4049600512
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 8055160832
+  },
+  {
+    "monotonic_ns": 1906963217287789,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1964924928,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1849413632,
+        "HWM_bytes": 2001809408
+      }
+    ],
+    "total_RSS_bytes": 3814338560,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 4049600512
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 8055160832
+  },
+  {
+    "monotonic_ns": 1906963533531730,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1964924928,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1849413632,
+        "HWM_bytes": 2001809408
+      }
+    ],
+    "total_RSS_bytes": 3814338560,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 4049600512
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 8055160832
+  },
+  {
+    "monotonic_ns": 1906963848255591,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1964924928,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1849413632,
+        "HWM_bytes": 2001809408
+      }
+    ],
+    "total_RSS_bytes": 3814338560,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 4049600512
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 8055160832
+  },
+  {
+    "monotonic_ns": 1906964164364530,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1964924928,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1849413632,
+        "HWM_bytes": 2001809408
+      }
+    ],
+    "total_RSS_bytes": 3814338560,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 4049600512
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 8055160832
+  },
+  {
+    "monotonic_ns": 1906964487436682,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1964949504,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1849413632,
+        "HWM_bytes": 2001809408
+      }
+    ],
+    "total_RSS_bytes": 3814363136,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 4049600512
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 8055160832
+  },
+  {
+    "monotonic_ns": 1906964834414534,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1964961792,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1849413632,
+        "HWM_bytes": 2001809408
+      }
+    ],
+    "total_RSS_bytes": 3814375424,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 4049600512
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 8055160832
+  },
+  {
+    "monotonic_ns": 1906965189719899,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1964965888,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1888149504,
+        "HWM_bytes": 2001809408
+      }
+    ],
+    "total_RSS_bytes": 3853115392,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 4049600512
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 8055160832
+  },
+  {
+    "monotonic_ns": 1906965539950958,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1964965888,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1888149504,
+        "HWM_bytes": 2001809408
+      }
+    ],
+    "total_RSS_bytes": 3853115392,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 4049600512
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 8055160832
+  },
+  {
+    "monotonic_ns": 1906965892074309,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1964965888,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1888149504,
+        "HWM_bytes": 2001809408
+      }
+    ],
+    "total_RSS_bytes": 3853115392,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 4049600512
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 8055160832
+  },
+  {
+    "monotonic_ns": 1906966241985909,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1964965888,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1888149504,
+        "HWM_bytes": 2001809408
+      }
+    ],
+    "total_RSS_bytes": 3853115392,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 4049600512
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 8055160832
+  },
+  {
+    "monotonic_ns": 1906966610020142,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1964965888,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1888149504,
+        "HWM_bytes": 2001809408
+      }
+    ],
+    "total_RSS_bytes": 3853115392,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 4049600512
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 8055160832
+  },
+  {
+    "monotonic_ns": 1906966961115722,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1964965888,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1888149504,
+        "HWM_bytes": 2001809408
+      }
+    ],
+    "total_RSS_bytes": 3853115392,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 4049600512
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 8055160832
+  },
+  {
+    "monotonic_ns": 1906967313252588,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1964965888,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1888149504,
+        "HWM_bytes": 2001809408
+      }
+    ],
+    "total_RSS_bytes": 3853115392,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 4049600512
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 8055160832
+  },
+  {
+    "monotonic_ns": 1906967664389497,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1964965888,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1888149504,
+        "HWM_bytes": 2001809408
+      }
+    ],
+    "total_RSS_bytes": 3853115392,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 4049600512
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 8055160832
+  },
+  {
+    "monotonic_ns": 1906968023084191,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1964965888,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1888149504,
+        "HWM_bytes": 2001809408
+      }
+    ],
+    "total_RSS_bytes": 3853115392,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 4049600512
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 8055160832
+  },
+  {
+    "monotonic_ns": 1906968367670240,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1964965888,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1888149504,
+        "HWM_bytes": 2001809408
+      }
+    ],
+    "total_RSS_bytes": 3853115392,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 4049600512
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 8055160832
+  },
+  {
+    "monotonic_ns": 1906968689742169,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1964965888,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1888149504,
+        "HWM_bytes": 2001809408
+      }
+    ],
+    "total_RSS_bytes": 3853115392,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 4469030912
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 8474591232
+  },
+  {
+    "monotonic_ns": 1906969016832977,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1964998656,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1888149504,
+        "HWM_bytes": 2001809408
+      }
+    ],
+    "total_RSS_bytes": 3853148160,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 4469030912
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 8474591232
+  },
+  {
+    "monotonic_ns": 1906969347842607,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1964998656,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1888149504,
+        "HWM_bytes": 2001809408
+      }
+    ],
+    "total_RSS_bytes": 3853148160,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 4469030912
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 8474591232
+  },
+  {
+    "monotonic_ns": 1906969677694685,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1965002752,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1888149504,
+        "HWM_bytes": 2001809408
+      }
+    ],
+    "total_RSS_bytes": 3853152256,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 4469030912
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 8474591232
+  },
+  {
+    "monotonic_ns": 1906970006789650,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1965002752,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1893773312,
+        "HWM_bytes": 2001809408
+      }
+    ],
+    "total_RSS_bytes": 3858776064,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 4469030912
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 8474591232
+  },
+  {
+    "monotonic_ns": 1906970371536735,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1965002752,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1893773312,
+        "HWM_bytes": 2001809408
+      }
+    ],
+    "total_RSS_bytes": 3858776064,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 4469030912
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 8474591232
+  },
+  {
+    "monotonic_ns": 1906970699560630,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1965002752,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1893773312,
+        "HWM_bytes": 2001809408
+      }
+    ],
+    "total_RSS_bytes": 3858776064,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 4469030912
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 8474591232
+  },
+  {
+    "monotonic_ns": 1906971030903859,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1965002752,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1893773312,
+        "HWM_bytes": 2001809408
+      }
+    ],
+    "total_RSS_bytes": 3858776064,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 4469030912
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 8474591232
+  },
+  {
+    "monotonic_ns": 1906971356201713,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1965002752,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1893773312,
+        "HWM_bytes": 2001809408
+      }
+    ],
+    "total_RSS_bytes": 3858776064,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 4469030912
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 8474591232
+  },
+  {
+    "monotonic_ns": 1906971676417129,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1965002752,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1893773312,
+        "HWM_bytes": 2001809408
+      }
+    ],
+    "total_RSS_bytes": 3858776064,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 4469030912
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 8474591232
+  },
+  {
+    "monotonic_ns": 1906972009841874,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1965002752,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1893773312,
+        "HWM_bytes": 2001809408
+      }
+    ],
+    "total_RSS_bytes": 3858776064,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 4469030912
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 8474591232
+  },
+  {
+    "monotonic_ns": 1906972331160110,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1965002752,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1893773312,
+        "HWM_bytes": 2001809408
+      }
+    ],
+    "total_RSS_bytes": 3858776064,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 4469030912
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 8474591232
+  },
+  {
+    "monotonic_ns": 1906972659359403,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1965002752,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1893773312,
+        "HWM_bytes": 2001809408
+      }
+    ],
+    "total_RSS_bytes": 3858776064,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 4469030912
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 8474591232
+  },
+  {
+    "monotonic_ns": 1906972977914188,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1965002752,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1893773312,
+        "HWM_bytes": 2001809408
+      }
+    ],
+    "total_RSS_bytes": 3858776064,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 4469030912
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 8474591232
+  },
+  {
+    "monotonic_ns": 1906973294712253,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1965006848,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1893773312,
+        "HWM_bytes": 2001809408
+      }
+    ],
+    "total_RSS_bytes": 3858780160,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 4469030912
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 8474591232
+  },
+  {
+    "monotonic_ns": 1906973611746528,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1965056000,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1893773312,
+        "HWM_bytes": 2001809408
+      }
+    ],
+    "total_RSS_bytes": 3858829312,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 4469030912
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 8474591232
+  },
+  {
+    "monotonic_ns": 1906973929249313,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1965056000,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1893773312,
+        "HWM_bytes": 2001809408
+      }
+    ],
+    "total_RSS_bytes": 3858829312,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 4469030912
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 8474591232
+  },
+  {
+    "monotonic_ns": 1906974246864181,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1965060096,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1893773312,
+        "HWM_bytes": 2001809408
+      }
+    ],
+    "total_RSS_bytes": 3858833408,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 4469030912
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 8474591232
+  },
+  {
+    "monotonic_ns": 1906974563481688,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1965060096,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1849417728,
+        "HWM_bytes": 2001809408
+      }
+    ],
+    "total_RSS_bytes": 3814477824,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 4469030912
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 8474591232
+  },
+  {
+    "monotonic_ns": 1906974945990487,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1965060096,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1849417728,
+        "HWM_bytes": 2001809408
+      }
+    ],
+    "total_RSS_bytes": 3814477824,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 4469030912
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 8474591232
+  },
+  {
+    "monotonic_ns": 1906975261903077,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1965060096,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1849417728,
+        "HWM_bytes": 2001809408
+      }
+    ],
+    "total_RSS_bytes": 3814477824,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 4469030912
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 8474591232
+  },
+  {
+    "monotonic_ns": 1906975577224195,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1965060096,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1849417728,
+        "HWM_bytes": 2001809408
+      }
+    ],
+    "total_RSS_bytes": 3814477824,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 4469030912
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 8474591232
+  },
+  {
+    "monotonic_ns": 1906975892655386,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1965068288,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1849417728,
+        "HWM_bytes": 2001809408
+      }
+    ],
+    "total_RSS_bytes": 3814486016,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 4469030912
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 8474591232
+  },
+  {
+    "monotonic_ns": 1906976211281323,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1965068288,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1849417728,
+        "HWM_bytes": 2001809408
+      }
+    ],
+    "total_RSS_bytes": 3814486016,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 4469030912
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 8474591232
+  },
+  {
+    "monotonic_ns": 1906976531691197,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1965068288,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1849417728,
+        "HWM_bytes": 2001809408
+      }
+    ],
+    "total_RSS_bytes": 3814486016,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 4469030912
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 8474591232
+  },
+  {
+    "monotonic_ns": 1906976886590236,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1965072384,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1849417728,
+        "HWM_bytes": 2001809408
+      }
+    ],
+    "total_RSS_bytes": 3814490112,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 4469030912
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 8474591232
+  },
+  {
+    "monotonic_ns": 1906977238859881,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1965072384,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1849417728,
+        "HWM_bytes": 2001809408
+      }
+    ],
+    "total_RSS_bytes": 3814490112,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 4469030912
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 8474591232
+  },
+  {
+    "monotonic_ns": 1906977662129169,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1965072384,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1849417728,
+        "HWM_bytes": 2001809408
+      }
+    ],
+    "total_RSS_bytes": 3814490112,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 4469030912
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 8474591232
+  },
+  {
+    "monotonic_ns": 1906978031556390,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1965072384,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1849417728,
+        "HWM_bytes": 2001809408
+      }
+    ],
+    "total_RSS_bytes": 3814490112,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 4469030912
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 8474591232
+  },
+  {
+    "monotonic_ns": 1906978381244088,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1965072384,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1849417728,
+        "HWM_bytes": 2001809408
+      }
+    ],
+    "total_RSS_bytes": 3814490112,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 4469030912
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 8474591232
+  },
+  {
+    "monotonic_ns": 1906978762051763,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1965072384,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1849417728,
+        "HWM_bytes": 2001809408
+      }
+    ],
+    "total_RSS_bytes": 3814490112,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 4469030912
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 8474591232
+  },
+  {
+    "monotonic_ns": 1906979110510272,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1965072384,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1849417728,
+        "HWM_bytes": 2001809408
+      }
+    ],
+    "total_RSS_bytes": 3814490112,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 4469030912
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 8474591232
+  },
+  {
+    "monotonic_ns": 1906979461186730,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1965072384,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1849417728,
+        "HWM_bytes": 2001809408
+      }
+    ],
+    "total_RSS_bytes": 3814490112,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 4469030912
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 8474591232
+  },
+  {
+    "monotonic_ns": 1906979809260092,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1965072384,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1849417728,
+        "HWM_bytes": 2001809408
+      }
+    ],
+    "total_RSS_bytes": 3814490112,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 4469030912
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 8474591232
+  },
+  {
+    "monotonic_ns": 1906980156575897,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1965072384,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1849417728,
+        "HWM_bytes": 2001809408
+      }
+    ],
+    "total_RSS_bytes": 3814490112,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 4469030912
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 8474591232
+  },
+  {
+    "monotonic_ns": 1906980485607887,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1965072384,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1849417728,
+        "HWM_bytes": 2001809408
+      }
+    ],
+    "total_RSS_bytes": 3814490112,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 4469030912
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 8474591232
+  },
+  {
+    "monotonic_ns": 1906980814869746,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1965072384,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1849417728,
+        "HWM_bytes": 2001809408
+      }
+    ],
+    "total_RSS_bytes": 3814490112,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 4469030912
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 8474591232
+  },
+  {
+    "monotonic_ns": 1906981164400237,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1965072384,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1849417728,
+        "HWM_bytes": 2001809408
+      }
+    ],
+    "total_RSS_bytes": 3814490112,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 4469030912
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 8474591232
+  },
+  {
+    "monotonic_ns": 1906981495169404,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1965072384,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1849417728,
+        "HWM_bytes": 2001809408
+      }
+    ],
+    "total_RSS_bytes": 3814490112,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 4469030912
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 8474591232
+  },
+  {
+    "monotonic_ns": 1906981852173081,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1965072384,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1849417728,
+        "HWM_bytes": 2001809408
+      }
+    ],
+    "total_RSS_bytes": 3814490112,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 4469030912
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 8474591232
+  },
+  {
+    "monotonic_ns": 1906982177346249,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1965072384,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1849417728,
+        "HWM_bytes": 2001809408
+      }
+    ],
+    "total_RSS_bytes": 3814490112,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 4469030912
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 8474591232
+  },
+  {
+    "monotonic_ns": 1906982512206153,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1965072384,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1849417728,
+        "HWM_bytes": 2001809408
+      }
+    ],
+    "total_RSS_bytes": 3814490112,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 4469030912
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 8474591232
+  },
+  {
+    "monotonic_ns": 1906982837467122,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1965072384,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1849417728,
+        "HWM_bytes": 2001809408
+      }
+    ],
+    "total_RSS_bytes": 3814490112,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 4469030912
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 8474591232
+  },
+  {
+    "monotonic_ns": 1906983170203782,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1965072384,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1849417728,
+        "HWM_bytes": 2001809408
+      }
+    ],
+    "total_RSS_bytes": 3814490112,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 4469030912
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 8474591232
+  },
+  {
+    "monotonic_ns": 1906983498623360,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1965072384,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1849417728,
+        "HWM_bytes": 2001809408
+      }
+    ],
+    "total_RSS_bytes": 3814490112,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 4469030912
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 8474591232
+  },
+  {
+    "monotonic_ns": 1906983817578853,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1965072384,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1849417728,
+        "HWM_bytes": 2001809408
+      }
+    ],
+    "total_RSS_bytes": 3814490112,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 4469030912
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 8474591232
+  },
+  {
+    "monotonic_ns": 1906984143696956,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1965072384,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1849417728,
+        "HWM_bytes": 2001809408
+      }
+    ],
+    "total_RSS_bytes": 3814490112,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 4469030912
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 8474591232
+  },
+  {
+    "monotonic_ns": 1906984469540821,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1965072384,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1849417728,
+        "HWM_bytes": 2001809408
+      }
+    ],
+    "total_RSS_bytes": 3814490112,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 4469030912
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 8474591232
+  },
+  {
+    "monotonic_ns": 1906984789370929,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1965072384,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1849417728,
+        "HWM_bytes": 2001809408
+      }
+    ],
+    "total_RSS_bytes": 3814490112,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 4469030912
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 8474591232
+  },
+  {
+    "monotonic_ns": 1906985108370822,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1965101056,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1849417728,
+        "HWM_bytes": 2001809408
+      }
+    ],
+    "total_RSS_bytes": 3814518784,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 4469030912
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 8474591232
+  },
+  {
+    "monotonic_ns": 1906985430258241,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1965101056,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1849417728,
+        "HWM_bytes": 2001809408
+      }
+    ],
+    "total_RSS_bytes": 3814518784,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 4469030912
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 8474591232
+  },
+  {
+    "monotonic_ns": 1906985761900363,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1965101056,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1849417728,
+        "HWM_bytes": 2001809408
+      }
+    ],
+    "total_RSS_bytes": 3814518784,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 4469030912
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 8474591232
+  },
+  {
+    "monotonic_ns": 1906986081077725,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1965101056,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1849417728,
+        "HWM_bytes": 2001809408
+      }
+    ],
+    "total_RSS_bytes": 3814518784,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 4469030912
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 8474591232
+  },
+  {
+    "monotonic_ns": 1906986405888745,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1965101056,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1849417728,
+        "HWM_bytes": 2001809408
+      }
+    ],
+    "total_RSS_bytes": 3814518784,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 4469030912
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 8474591232
+  },
+  {
+    "monotonic_ns": 1906986722423601,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1965101056,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1849417728,
+        "HWM_bytes": 2001809408
+      }
+    ],
+    "total_RSS_bytes": 3814518784,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 4469030912
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 8474591232
+  },
+  {
+    "monotonic_ns": 1906987041211878,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1965101056,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1849417728,
+        "HWM_bytes": 2001809408
+      }
+    ],
+    "total_RSS_bytes": 3814518784,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 4469030912
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 8474591232
+  },
+  {
+    "monotonic_ns": 1906987364583686,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1965101056,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1849417728,
+        "HWM_bytes": 2001809408
+      }
+    ],
+    "total_RSS_bytes": 3814518784,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 4469030912
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 8474591232
+  },
+  {
+    "monotonic_ns": 1906987705101705,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1965101056,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1849421824,
+        "HWM_bytes": 2001809408
+      }
+    ],
+    "total_RSS_bytes": 3814522880,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 4469030912
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 8474591232
+  },
+  {
+    "monotonic_ns": 1906988025805539,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1965101056,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1849421824,
+        "HWM_bytes": 2001809408
+      }
+    ],
+    "total_RSS_bytes": 3814522880,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 4469030912
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 8474591232
+  },
+  {
+    "monotonic_ns": 1906988387263997,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1965101056,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1849421824,
+        "HWM_bytes": 2001809408
+      }
+    ],
+    "total_RSS_bytes": 3814522880,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 4469030912
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 8474591232
+  },
+  {
+    "monotonic_ns": 1906988708470927,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1965101056,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1849421824,
+        "HWM_bytes": 2001809408
+      }
+    ],
+    "total_RSS_bytes": 3814522880,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 4469030912
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 8474591232
+  },
+  {
+    "monotonic_ns": 1906989055893117,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1965101056,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1849421824,
+        "HWM_bytes": 2001809408
+      }
+    ],
+    "total_RSS_bytes": 3814522880,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 4469030912
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 8474591232
+  },
+  {
+    "monotonic_ns": 1906989403948893,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1965117440,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1849421824,
+        "HWM_bytes": 2001809408
+      }
+    ],
+    "total_RSS_bytes": 3814539264,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 4469030912
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 8474591232
+  },
+  {
+    "monotonic_ns": 1906989754650966,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1965117440,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1849421824,
+        "HWM_bytes": 2001809408
+      }
+    ],
+    "total_RSS_bytes": 3814539264,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 4469030912
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 8474591232
+  },
+  {
+    "monotonic_ns": 1906990107565172,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1965137920,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1849421824,
+        "HWM_bytes": 2001809408
+      }
+    ],
+    "total_RSS_bytes": 3814559744,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 4469030912
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 8474591232
+  },
+  {
+    "monotonic_ns": 1906990460776354,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1965137920,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1849421824,
+        "HWM_bytes": 2001809408
+      }
+    ],
+    "total_RSS_bytes": 3814559744,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 4469030912
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 8474591232
+  },
+  {
+    "monotonic_ns": 1906990853660100,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1965137920,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1849421824,
+        "HWM_bytes": 2001809408
+      }
+    ],
+    "total_RSS_bytes": 3814559744,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 4469030912
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 8474591232
+  },
+  {
+    "monotonic_ns": 1906991205348799,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1965137920,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1849421824,
+        "HWM_bytes": 2001809408
+      }
+    ],
+    "total_RSS_bytes": 3814559744,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 4469030912
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 8474591232
+  },
+  {
+    "monotonic_ns": 1906991593489971,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1965137920,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1849421824,
+        "HWM_bytes": 2001809408
+      }
+    ],
+    "total_RSS_bytes": 3814559744,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 4469030912
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 8474591232
+  },
+  {
+    "monotonic_ns": 1906991944053024,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1965137920,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1849421824,
+        "HWM_bytes": 2001809408
+      }
+    ],
+    "total_RSS_bytes": 3814559744,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 4469030912
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 8474591232
+  },
+  {
+    "monotonic_ns": 1906992289054101,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1965137920,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1849421824,
+        "HWM_bytes": 2001809408
+      }
+    ],
+    "total_RSS_bytes": 3814559744,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 4469030912
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 8474591232
+  },
+  {
+    "monotonic_ns": 1906992610713750,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1965137920,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1849421824,
+        "HWM_bytes": 2001809408
+      }
+    ],
+    "total_RSS_bytes": 3814559744,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 4469030912
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 8474591232
+  },
+  {
+    "monotonic_ns": 1906992930700993,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1965137920,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1849421824,
+        "HWM_bytes": 2001809408
+      }
+    ],
+    "total_RSS_bytes": 3814559744,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 4469030912
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 8474591232
+  },
+  {
+    "monotonic_ns": 1906993250993437,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1965137920,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1849421824,
+        "HWM_bytes": 2001809408
+      }
+    ],
+    "total_RSS_bytes": 3814559744,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 4469030912
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 8474591232
+  },
+  {
+    "monotonic_ns": 1906993592448876,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1965203456,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1849421824,
+        "HWM_bytes": 2001809408
+      }
+    ],
+    "total_RSS_bytes": 3814625280,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 4469030912
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 8474591232
+  },
+  {
+    "monotonic_ns": 1906993913935140,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1965268992,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1849421824,
+        "HWM_bytes": 2001809408
+      }
+    ],
+    "total_RSS_bytes": 3814690816,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 4469030912
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 8474591232
+  },
+  {
+    "monotonic_ns": 1906994251044738,
+    "processes": [
+      {
+        "PID": 2117955,
+        "RSS_bytes": 1967157248,
+        "HWM_bytes": 1991495680
+      },
+      {
+        "PID": 2120409,
+        "RSS_bytes": 1849421824,
+        "HWM_bytes": 2001809408
+      }
+    ],
+    "total_RSS_bytes": 3816579072,
+    "GPU_processes": [
+      {
+        "PID": 2117955,
+        "used_GPU_bytes": 4469030912
+      },
+      {
+        "PID": 2120409,
+        "used_GPU_bytes": 4005560320
+      }
+    ],
+    "total_processgroup_GPU_bytes": 8474591232
+  }
+]

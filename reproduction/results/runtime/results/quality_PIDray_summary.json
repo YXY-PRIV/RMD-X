@@ -1,0 +1,44 @@
+{
+  "case": "PIDray",
+  "boundary": "Resident native proposal/candidate arrays to final detections; actual all-model forwards and full-catalogue feature construction; excludes rawimageproposal/encoder and disk/model loads",
+  "summary": {
+    "strong": {
+      "cohort_seconds": [
+        31.598603934,
+        31.699933359,
+        31.081751991
+      ],
+      "mean_seconds": 31.460096428,
+      "median_seconds": 31.598603934,
+      "p90_seconds": 31.679667474,
+      "sample_SD_seconds": 0.3315498421796372,
+      "mean_ms_per_image": 1.7267740506065097,
+      "peak_process_RSS_bytes": 2146013184,
+      "peak_cuda_allocated_bytes": 37205504,
+      "peak_cuda_reserved_bytes": 60817408
+    },
+    "pair": {
+      "cohort_seconds": [
+        58.657770844,
+        59.123285437,
+        58.959582339
+      ],
+      "mean_seconds": 58.913546206666666,
+      "median_seconds": 58.959582339,
+      "p90_seconds": 59.0905448174,
+      "sample_SD_seconds": 0.2361471007320406,
+      "mean_ms_per_image": 3.233632263388038,
+      "peak_process_RSS_bytes": 2146013184,
+      "peak_cuda_allocated_bytes": 37205504,
+      "peak_cuda_reserved_bytes": 60817408
+    }
+  },
+  "trials": 3,
+  "input_data_loaded_before_warmup": true,
+  "proposals": 456561,
+  "images": 18219,
+  "catalogue_classes": 12,
+  "all_actual_model_forwards": true,
+  "full_raw_image_pipeline": false,
+  "GT_AP_run": false
+}

@@ -1,0 +1,337 @@
+{
+  "status": "COMPLETE_24_LOGICAL_12_NEW_NATIVE_12_STRICT_REUSE",
+  "created_utc": "2026-11-02T04:16:00.765846+00:00",
+  "protocol": {
+    "path": "/mnt/data/yxy/program/RAXO/experiments/new_module_evidence_20261102/ablation/protocol.json",
+    "bytes": 4020,
+    "sha256": "87d127113f97677bb0917a9be72ef6d7a7138c30888a1b3eeffc62a869884c6c"
+  },
+  "code_freeze": {
+    "path": "/mnt/data/yxy-codex/home/outputs/RAXO/new_module_evidence_20261102/ablation/automation/code_freeze.json",
+    "bytes": 2999,
+    "sha256": "9d997390ca7c4d361856ff73fcb3021125510e059733043a81c1003cdbeb09c6"
+  },
+  "cases": [
+    {
+      "dataset": "DET",
+      "AP_fraction": {
+        "00_full": 0.5148556659902264,
+        "10_gate": 0.5060835473585438,
+        "01_projection_identity_extension": 0.5137019320736738,
+        "11_both": 0.5092182455155324
+      },
+      "formal_anchor_AP_fraction": 0.5089474898132333,
+      "effects_pp": {
+        "gate_without_projection": {
+          "AP": -0.877211863168259,
+          "AP50": -0.6086004003974965,
+          "AP75": -0.8424476505074607
+        },
+        "gate_with_projection": {
+          "AP": -0.4483686558141353,
+          "AP50": -0.2501410407007687,
+          "AP75": -0.40307388841352987
+        },
+        "projection_without_gate_identity_extended": {
+          "AP": -0.11537339165526017,
+          "AP50": -0.1372552220669898,
+          "AP75": -0.10601971379251562
+        },
+        "projection_with_gate": {
+          "AP": 0.31346981569886356,
+          "AP50": 0.221204137629738,
+          "AP75": 0.33335404830141524
+        }
+      },
+      "interaction_pp": {
+        "AP": 0.42884320735412373,
+        "AP50": 0.3584593596967278,
+        "AP75": 0.43937376209393086
+      },
+      "each_cell_minus_formal_anchor_pp": {
+        "00_full": 0.5908176176993019,
+        "10_gate": -0.2863942454689572,
+        "01_projection_identity_extension": 0.4754442260440417,
+        "11_both": 0.027075570229906365
+      },
+      "posthoc_no_selection": true
+    },
+    {
+      "dataset": "CLCXray_test",
+      "AP_fraction": {
+        "00_full": 0.26584126152195015,
+        "10_gate": 0.267136137093898,
+        "01_projection_identity_extension": 0.2653347699982484,
+        "11_both": 0.2672587438708459
+      },
+      "formal_anchor_AP_fraction": 0.26697432075078276,
+      "effects_pp": {
+        "gate_without_projection": {
+          "AP": 0.1294875571947851,
+          "AP50": 0.11515378117689656,
+          "AP75": 0.22996138223249085
+        },
+        "gate_with_projection": {
+          "AP": 0.19239738725975175,
+          "AP50": 0.18217554708609973,
+          "AP75": 0.3196547560223417
+        },
+        "projection_without_gate_identity_extended": {
+          "AP": -0.050649152370174644,
+          "AP50": -0.04700225206441533,
+          "AP75": -0.05841507323168238
+        },
+        "projection_with_gate": {
+          "AP": 0.012260677694792,
+          "AP50": 0.02001951384478784,
+          "AP75": 0.03127830055816849
+        }
+      },
+      "interaction_pp": {
+        "AP": 0.06290983006496664,
+        "AP50": 0.06702176590920317,
+        "AP75": 0.08969337378985087
+      },
+      "each_cell_minus_formal_anchor_pp": {
+        "00_full": -0.11330592288326113,
+        "10_gate": 0.016181634311523974,
+        "01_projection_identity_extension": -0.16395507525343578,
+        "11_both": 0.028442312006315973
+      },
+      "posthoc_no_selection": true
+    },
+    {
+      "dataset": "PIXray",
+      "AP_fraction": {
+        "00_full": 0.4463722507761134,
+        "10_gate": 0.4482137681186465,
+        "01_projection_identity_extension": 0.44651594052914506,
+        "11_both": 0.448321960002225
+      },
+      "formal_anchor_AP_fraction": 0.4481781310282129,
+      "effects_pp": {
+        "gate_without_projection": {
+          "AP": 0.18415173425330722,
+          "AP50": 0.24900544458664742,
+          "AP75": 0.1884865617714282
+        },
+        "gate_with_projection": {
+          "AP": 0.18060194730799561,
+          "AP50": 0.24582743206358337,
+          "AP75": 0.1810929542803874
+        },
+        "projection_without_gate_identity_extended": {
+          "AP": 0.014368975303163944,
+          "AP50": 0.013841234534051061,
+          "AP75": 0.01622637262763127
+        },
+        "projection_with_gate": {
+          "AP": 0.010819188357852338,
+          "AP50": 0.010663222010987017,
+          "AP75": 0.008832765136590481
+        }
+      },
+      "interaction_pp": {
+        "AP": -0.003549786945311606,
+        "AP50": -0.0031780125230640444,
+        "AP75": -0.007393607491040788
+      },
+      "each_cell_minus_formal_anchor_pp": {
+        "00_full": -0.180588025209949,
+        "10_gate": 0.003563709043358232,
+        "01_projection_identity_extension": -0.16621904990678504,
+        "11_both": 0.01438289740121057
+      },
+      "posthoc_no_selection": true
+    },
+    {
+      "dataset": "PIDray",
+      "AP_fraction": {
+        "00_full": 0.23338622686501456,
+        "10_gate": 0.23531756287156827,
+        "01_projection_identity_extension": 0.23338929136470335,
+        "11_both": 0.2353207309599169
+      },
+      "formal_anchor_AP_fraction": 0.2353047454137788,
+      "effects_pp": {
+        "gate_without_projection": {
+          "AP": 0.19313360065537077,
+          "AP50": 0.26328836685075574,
+          "AP75": 0.2214667474806753
+        },
+        "gate_with_projection": {
+          "AP": 0.1931439595213552,
+          "AP50": 0.2636688641353524,
+          "AP75": 0.22106803630310146
+        },
+        "projection_without_gate_identity_extended": {
+          "AP": 0.00030644996887874143,
+          "AP50": -0.0005955729141304822,
+          "AP75": 0.0013130475774225658
+        },
+        "projection_with_gate": {
+          "AP": 0.00031680883486318034,
+          "AP50": -0.00021507562953382298,
+          "AP75": 0.0009143363998487253
+        }
+      },
+      "interaction_pp": {
+        "AP": 1.0358865984438914e-05,
+        "AP50": 0.0003804972845966592,
+        "AP75": -0.00039871117757384056
+      },
+      "each_cell_minus_formal_anchor_pp": {
+        "00_full": -0.19185185487642364,
+        "10_gate": 0.0012817457789471298,
+        "01_projection_identity_extension": -0.1915454049075449,
+        "11_both": 0.0015985546138103102
+      },
+      "posthoc_no_selection": true
+    },
+    {
+      "dataset": "DvXray",
+      "AP_fraction": {
+        "00_full": 0.2817765816210152,
+        "10_gate": 0.28343274561377135,
+        "01_projection_identity_extension": 0.2817396625529631,
+        "11_both": 0.28344052147466403
+      },
+      "formal_anchor_AP_fraction": 0.28341469904441524,
+      "effects_pp": {
+        "gate_without_projection": {
+          "AP": 0.16561639927561433,
+          "AP50": 0.19717169062677398,
+          "AP75": 0.1708660564289588
+        },
+        "gate_with_projection": {
+          "AP": 0.17008589217009096,
+          "AP50": 0.1996932905347859,
+          "AP75": 0.17860376349871365
+        },
+        "projection_without_gate_identity_extended": {
+          "AP": -0.003691906805208811,
+          "AP50": -0.0030357288605398214,
+          "AP75": -0.0030463513979506196
+        },
+        "projection_with_gate": {
+          "AP": 0.0007775860892678121,
+          "AP50": -0.0005141289525278925,
+          "AP75": 0.0046913556718042315
+        }
+      },
+      "interaction_pp": {
+        "AP": 0.004469492894476623,
+        "AP50": 0.002521599908011929,
+        "AP75": 0.007737707069754851
+      },
+      "each_cell_minus_formal_anchor_pp": {
+        "00_full": -0.16381174234000317,
+        "10_gate": 0.0018046569356111597,
+        "01_projection_identity_extension": -0.16750364914521199,
+        "11_both": 0.002582243024878972
+      },
+      "posthoc_no_selection": true
+    },
+    {
+      "dataset": "Hi",
+      "AP_fraction": {
+        "00_full": 0.20807100852120713,
+        "10_gate": 0.20704639334670571,
+        "01_projection_identity_extension": 0.20842159595390802,
+        "11_both": 0.2072820886234658
+      },
+      "formal_anchor_AP_fraction": 0.20529776110460138,
+      "effects_pp": {
+        "gate_without_projection": {
+          "AP": -0.10246151745014198,
+          "AP50": -0.05335883542009756,
+          "AP75": -0.16844349463735198
+        },
+        "gate_with_projection": {
+          "AP": -0.11395073304422132,
+          "AP50": -0.06656371862576727,
+          "AP75": -0.18478391003563244
+        },
+        "projection_without_gate_identity_extended": {
+          "AP": 0.035058743270088844,
+          "AP50": 0.04875900245004394,
+          "AP75": 0.04973467322929581
+        },
+        "projection_with_gate": {
+          "AP": 0.023569527676009505,
+          "AP50": 0.03555411924437424,
+          "AP75": 0.03339425783101535
+        }
+      },
+      "interaction_pp": {
+        "AP": -0.011489215594079338,
+        "AP50": -0.013204883205669704,
+        "AP75": -0.01634041539828046
+      },
+      "each_cell_minus_formal_anchor_pp": {
+        "00_full": 0.27732474166057564,
+        "10_gate": 0.17486322421043365,
+        "01_projection_identity_extension": 0.3123834849306645,
+        "11_both": 0.19843275188644316
+      },
+      "posthoc_no_selection": true
+    }
+  ],
+  "effect_definitions": {
+    "gate_without_projection": [
+      "10_gate",
+      "00_full"
+    ],
+    "gate_with_projection": [
+      "11_both",
+      "01_projection_identity_extension"
+    ],
+    "projection_without_gate_identity_extended": [
+      "01_projection_identity_extension",
+      "00_full"
+    ],
+    "projection_with_gate": [
+      "11_both",
+      "10_gate"
+    ]
+  },
+  "interaction_definition": "AP11-AP10-AP01+AP00 (pp), descriptive, not a significance test or causal estimate",
+  "mean_simple_effect_pp": {
+    "gate_without_projection": -0.0512140148732206,
+    "gate_with_projection": 0.028984966233472815,
+    "projection_without_gate_identity_extended": -0.019996713714752017,
+    "projection_with_gate": 0.0602022673919414
+  },
+  "mean_interaction_pp": 0.08019898110669342,
+  "positive_negative_tie_counts": {
+    "gate_without_projection": {
+      "positive": 4,
+      "negative": 2,
+      "tie": 0
+    },
+    "gate_with_projection": {
+      "positive": 4,
+      "negative": 2,
+      "tie": 0
+    },
+    "projection_without_gate_identity_extended": {
+      "positive": 3,
+      "negative": 3,
+      "tie": 0
+    },
+    "projection_with_gate": {
+      "positive": 6,
+      "negative": 0,
+      "tie": 0
+    }
+  },
+  "logical_native_AP": 24,
+  "actual_new_native_AP": 12,
+  "strict_exact_reuse_AP": 12,
+  "new_training": 0,
+  "new_GPU_inference": 0,
+  "new_model_forward": 0,
+  "selected_method_changed": false,
+  "all_signs_retained": true,
+  "scope": "Fixed-weight posthoc diagnostic after test exposure, not confirmation or an untouched-test evaluation. Zero-sum logit correction is not probability-mean invariance; Gaussian can indirectly change inactive final scores."
+}

@@ -1,0 +1,11 @@
+{
+  "format": 1,
+  "mode": "inspect_only",
+  "roots": {
+    "project_root": "${RMDX_PROJECT_ROOT}",
+    "artifact_root": "${RMDX_ARTIFACT_ROOT}",
+    "dataset_root": "${RMDX_DATASET_ROOT}",
+    "detector_weights_root": "${RMDX_WEIGHTS_ROOT}"
+  },
+  "scope": "Examples of user-mounted resource roots; no resource is downloaded or rewritten. These mappings do not bypass or replace recorded input SHA/protocol gates."
+}

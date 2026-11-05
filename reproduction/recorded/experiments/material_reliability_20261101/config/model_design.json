@@ -1,0 +1,21 @@
+{
+  "status": "MODEL_DESIGN_PREPARED_NOT_EXECUTED",
+  "variants": ["availability_control", "material", "ordinal_material"],
+  "seeds": [17, 29, 43],
+  "formula": "z = where(a>0, stopgrad(zKgeometry) + a*sigmoid(g(u))*2*tanh(r(u)), stopgrad(zKgeometry)); q=sigmoid(z)",
+  "availability": "a=raw supported N feature X12 before residual active/constant masks; query-invalid implies a=0",
+  "availability_control": "8..11 zero; original8 geometry and X12 structural support flag retained, identical gate/mask/parameters/forward as material",
+  "material": "All13 existing supported-rank N features; no new image/label/descriptor/bank/normalization fit",
+  "ordinal_material": "Pre-registered secondary same-capacity variant:8/10/11zero, rank9 and support12 retained with original8 geometry; addresses absolute material-scale transport without target fitting",
+  "frozen_anchor": "Per-seed K geometry checkpoint; original13->32->16->1, only0..7 active with its original constant coordinates; 993 frozen parameters",
+  "residual": {"architecture": [13, 16, 1], "activation": "ReLU then 2*tanh", "last_layer_initialization": "all weight/bias exactly0", "parameters": 241},
+  "gate": {"architecture": [13, 8, 1], "activation": "ReLU then sigmoid", "last_bias_initialization": -2.0, "parameters": 121, "interpretation": "learned gate weight, not a calibrated correctness probability"},
+  "capacity": {"total_per_auxiliary_model": 1355, "frozen_per_auxiliary_model": 993, "trainable_per_auxiliary_model": 362, "all_variants_identical": true, "deployment_note": "Three composite anchor+gate+residual auxiliary networks plus existing Ebase3; six files is not a claim of identical capacity to old single-branch K/N"},
+  "training": {"input": "Original N multisource_train_val.npz, immutable references", "source_balance": "9790 multinomial tuple draws per source, 29370 total; per-source weights1/(image proposalcount*classcount), shared generator and permutation seed", "batch": 1024, "paired_views": "Two identical clean views, same mean objective, one step", "updates_per_epoch": 29, "optimizer": "AdamW trainable branch parameters only", "learning_rate": 0.001, "weight_decay": 0.0001, "max_epochs": 100, "patience": 15, "min_delta": 0.000001, "loss": "mean BCEWithLogits(logit, softIoU, pos_weight=C-1) + .01*mean(correction_logits^2)", "early_stop": "Same source/image/tuple-balanced validation weightedBCE without residual penalty", "initial_anchor_candidate": "Epoch-1 with exactzero correction is saved before training and retained if no >1e-6 improvement", "normalization": "Variant-specific exactconstant columns fitted only on unique training tuples, no fitted means/std"},
+  "numerics": "Deterministic GPUF32 anchor/gate/residual and logits, TF32 disabled, CPUF32 sigmoid; caller combines all3 seed results in F64 then castsF32",
+  "outputs": ["quality", "anchor_logits", "gate_weights", "bounded_residual", "correction_logits", "availability", "full_logits"],
+  "required_protocol_fields": ["status FROZEN*", "model_design={path,bytes,sha256} of this file", "feature_schema.names=original13 N names", "training.variants/seeds/learning_rate/weight_decay/max_epochs/patience/min_delta", "training.source_input.path/actual_ref_from", "sources.N_training ref", "sources.N_training_receipt ref", "sources.N_protocol ref", "sources.K_geometry_checkpoints seed-string->ref", "resources.GPU_UUID and GPU_index0or1", "cases[CASE].N_feature_manifest ref to immutable N feature manifest"],
+  "cli_train": "python -B scripts/train_models.py train --protocol P --protocol-sha256 SHA --variant availability_control|material|ordinal_material --seed 17|29|43 --output-dir OUT/models/VARIANT/seedSEED --device cuda:0",
+  "cli_infer": "python -B scripts/train_models.py infer --protocol P --protocol-sha256 SHA --case CASE --checkpoint OUT/models/VARIANT/seedSEED/model.pt --output-dir OUT/inference/CASE/VARIANT/seedSEED --device cuda:0",
+  "no_scientific_execution_at_preparation": true
+}

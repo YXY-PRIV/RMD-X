@@ -1,0 +1,75 @@
+{
+  "status": "DRAFT_SOURCE_ONLY_CONDITIONAL_CLASS_SUPERVISION_NOT_AUTHORIZED_TO_EXECUTE",
+  "schema_version": "conditional_grouped_allclass_v1",
+  "grouping_key": [
+    "source_index",
+    "image_index",
+    "global_cache_index"
+  ],
+  "group_order": "lexicographic",
+  "class_order": "source canonical class_index; original categoryID0 valid, only padding=-1",
+  "source_class_counts": {
+    "CLC": 12,
+    "PID": 12,
+    "Hi": 7
+  },
+  "max_padded_classes": 12,
+  "full_proposals": {
+    "train": 17070,
+    "val": 4018
+  },
+  "eligible_proposals": {
+    "train": 2191,
+    "val": 493
+  },
+  "positive_zero_supported_pairs": {
+    "train": 16776,
+    "val": 3741
+  },
+  "teacher": "Existing per-class maximum same-class GT IoU, IoU>=.5 retained else0; no new GT and no onehot matching; multiple positives retained",
+  "support": "Original actual support and query-valid mask, never positive-label-derived",
+  "eligible": "query_valid and supported_count>=2 and at least one supported y>0 and one supported y==0",
+  "loss": "sum_{p:y_p>0,a_p=1} y_p * sum_{n:y_n=0,a_n=1} softplus(-(delta_p-delta_n)) / (sum_positive y_p * number_supported_zero)",
+  "no_positive_or_no_zero": "Skip conditional loss, never replace by uniform labels; all remain in full regularizer population",
+  "weighting": {
+    "conditional": "equal source -> equal eligible source images -> equal eligible proposals",
+    "regularizer": "equal source -> equal all source images -> equal all proposals"
+  },
+  "gate_context": {
+    "names": [
+      "confidence_percentile",
+      "clip_log_aspect_over4",
+      "width_over_image_width",
+      "height_over_image_height",
+      "centerx_over_width",
+      "centery_over_height",
+      "max_other_proposal_IoU",
+      "sqrt_relative_box_area",
+      "supported_B_top1",
+      "supported_B_top_minus_second_over2",
+      "supported_B_softmax_entropy_over_logT",
+      "log_supported_count_over_log307",
+      "query_has_supported_reference"
+    ],
+    "precision": "CPU Float64 from original unpermuted canonical supported B values, finally cast Float32",
+    "temperature": 1.0,
+    "entropy": "-sum(p*log(p))/log(T), p=exp(B-maxB)/sum(exp(B-maxB)) over supported classes only",
+    "gap": "(top1-top2)/2",
+    "supported_count": "log(max(T,1))/log(307)",
+    "availability": "query_valid and T>0",
+    "empty": "top1=gap=entropy=logcount=availability=0",
+    "single": "gap=entropy=0",
+    "visual_entropy": false,
+    "shared_unpermuted_context_for_both_roles": true
+  },
+  "permutation": {
+    "target": "Whole M8..11 row vectors within the same proposal truly supported canonical class set; G/availability/padding/class labels unchanged",
+    "train": "seed+epoch+canonical source/image/proposal key",
+    "validation_test": "seed+fold_or_case+canonical proposal key; fixed no epoch",
+    "algorithm": "Uniform permutation without replacement, including possible fixed points; independent label-free RNG stream, never keyed by y/GT/loss/test AP",
+    "same_draws_initialization_steps_as_material": true,
+    "not_equal_effective_capacity_or_causal_counterfactual": true
+  },
+  "actual_new_images_GT_decoders_encoders_banks": 0,
+  "publication_edits": false
+}

@@ -1,0 +1,99 @@
+{
+  "status": "BANK_ALIGNMENT_MODEL_DESIGN_PREPARED_NOT_EXECUTED",
+  "variants": [
+    "material"
+  ],
+  "seeds": [
+    17,
+    29,
+    43
+  ],
+  "formula": "z = where(a>0, stopgrad(zKgeometry) + a*sigmoid(g(u))*2*tanh(r(u)), stopgrad(zKgeometry)); q=sigmoid(z)",
+  "availability": "a=raw supported N feature X12 before residual active/constant masks; query-invalid implies a=0",
+  "material": "All13 bank-aligned source features, original13 oldN target features, same frozen geometry+362parameter bounded gated correction",
+  "frozen_anchor": "Per-seed K geometry checkpoint; original13->32->16->1, only0..7 active with its original constant coordinates; 993 frozen parameters",
+  "residual": {
+    "architecture": [
+      13,
+      16,
+      1
+    ],
+    "activation": "ReLU then 2*tanh",
+    "last_layer_initialization": "all weight/bias exactly0",
+    "parameters": 241
+  },
+  "gate": {
+    "architecture": [
+      13,
+      8,
+      1
+    ],
+    "activation": "ReLU then sigmoid",
+    "last_bias_initialization": -2.0,
+    "parameters": 121,
+    "interpretation": "learned gate weight, not a calibrated correctness probability"
+  },
+  "capacity": {
+    "total_per_auxiliary_model": 1355,
+    "frozen_per_auxiliary_model": 993,
+    "trainable_per_auxiliary_model": 362,
+    "all_variants_identical": true,
+    "deployment_note": "Three composite anchor+gate+residual auxiliary networks plus existing Ebase3; six files is not a claim of identical capacity to old single-branch K/N"
+  },
+  "training": {
+    "input": "New study-protocol-bound bank-aligned multisource NPZ receipt; oldN teacher/keys/G/availability exact, sourceCLC8..11 only changed",
+    "source_balance": "9790 multinomial tuple draws per source, 29370 total; per-source weights1/(image proposalcount*classcount), shared generator and permutation seed",
+    "batch": 1024,
+    "paired_views": "Two identical clean views, same mean objective, one step",
+    "updates_per_epoch": 29,
+    "optimizer": "AdamW trainable branch parameters only",
+    "learning_rate": 0.001,
+    "weight_decay": 0.0001,
+    "max_epochs": 100,
+    "patience": 15,
+    "min_delta": 1e-06,
+    "loss": "mean BCEWithLogits(logit, softIoU, pos_weight=C-1) + .01*mean(correction_logits^2)",
+    "early_stop": "Same source/image/tuple-balanced validation weightedBCE without residual penalty",
+    "initial_anchor_candidate": "Epoch-1 with exactzero correction is saved before training and retained if no >1e-6 improvement",
+    "normalization": "Variant-specific exactconstant columns fitted only on unique training tuples, no fitted means/std"
+  },
+  "numerics": "Deterministic GPUF32 anchor/gate/residual and logits, TF32 disabled, CPUF32 sigmoid; caller combines all3 seed results in F64 then castsF32",
+  "outputs": [
+    "quality",
+    "anchor_logits",
+    "gate_weights",
+    "bounded_residual",
+    "correction_logits",
+    "availability",
+    "full_logits"
+  ],
+  "required_protocol_fields": [
+    "status FROZEN*",
+    "variants=availability_control/material/legacy_material",
+    "model_design ref",
+    "training variants material/seeds17,29,43 and original frozen hyperparameters",
+    "training.source_input.path/actual_ref_from to dynamic new NPZ/receipt",
+    "sources.N_training original ref/N_protocol/K_geometry_checkpoints",
+    "sources.T_protocol/T_checkpoints",
+    "cases.feature_manifest_path plus N_feature_manifest oldref/T_inference native roles originalrefs",
+    "resources.GPU_UUID/GPU_index0or1",
+    "data_review statusPASS protocolsha plus control_effective_input_bridge protocol exactref"
+  ],
+  "cli_train": "python -B scripts/train_models.py train --protocol P --protocol-sha256 SHA --variant material --seed SEED --output-dir OUT/models/material/seedSEED --device cuda:0",
+  "cli_infer": "python -B scripts/train_models.py infer --protocol P --protocol-sha256 SHA --role material|legacy_material --case CASE --checkpoint CP --output-dir OUT/inference/CASE/ROLE/seedSEED --device cuda:0",
+  "no_scientific_execution_at_preparation": true,
+  "inference_roles": [
+    "availability_control",
+    "material",
+    "legacy_material"
+  ],
+  "source_bank_alignment": "Only sourceCLC train/val and CLC_tune material8..11 use exact current CLC_test frozen bank; original geometry0..7/availability12/teacher/keys/PIDHi/sixTest unchanged",
+  "new_training": 3,
+  "new_GPU_inferences": 24,
+  "strict_old_inference_references": 39,
+  "logical_inference_records": 63,
+  "control_reference": "Original T availability_control checkpoint/21raw inference refs reused only under independent exact effective-input/teacher/sampler/validation bridge; no new control training/forward claimed",
+  "legacy_diagnostic": "Original T material checkpoint is unmodified and retains native_model_protocol T; only newCT input needs3actualGPU forwards; six test18inferences are old raw references; excluded from parameter-selection objective",
+  "controller_final_status": "COMPLETE_ALIGNED_MODELS_AND_INFERENCE_REFERENCES",
+  "inference_index_final_status": "COMPLETE_24_NEW_CUDA_AND_39_REFERENCE_INFERENCES"
+}

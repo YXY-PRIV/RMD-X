@@ -1,102 +1,11 @@
-# Data and Resource Contract
+# Current data and algorithm contracts
 
-This document describes the resource layout expected by the released scripts.
-The datasets, model weights, and precomputed detections are **not** included in
-this GitHub package.
+The current recorded sources, resource identities, compact fitted states and evidence are indexed in [reproduction/README.md](../reproduction/README.md). Exact native evaluation depends on the full finite cohort, category order, proposal identities and original annotation-ID normalization, not just a similar-looking configuration.
 
-## Recommended Container Mounts
+The 22-D descriptor is derived from rendered RGB/HSV/intensity, edges and crop geometry. Join class compatibility to the original prototype columns by exact category name. Prototype keys, material-column indices and COCO category IDs are separate identities; negatives participate in native selection and receive zero new appearance correction. The canonical reference column is fixed before proposal scoring.
 
-```text
-/path/to/RMD_X_GitHub_upload                  -> /workspace/RAXO
-/path/to/models/ICCV25_experimentation       -> /models/ICCV25_experimentation
-/path/to/datasets/xray-datasets              -> /datasets/xray-datasets
-```
+The native V/F union retains native-surviving branches only; same-category branches share one candidate slot. The anchor fixes a branch/category/box. Only a valid query with more than one supported class and two retained, different, genuinely supported V/F classes is eligible for the signed zero-sum logit-pair correction. Inactive/zero-strength entries copy deployed anchor quality exactly. Quality scores are not asserted to be calibrated probabilities, and logit zero sum does not preserve the mean of sigmoid scores.
 
-## Core Paths
+No provider images, full annotations, large feature/prediction caches or upstream checkpoints are added by this publication update. Obtain required assets from their providers and use the recorded content hashes to distinguish historical families. Physical object identity, acquisition-batch isolation and the missing original construction of five old support categories are not reconstructed by a filename or category match.
 
-```text
-/models/ICCV25_experimentation/
-├── known_prototypes_sam2.pt
-└── initial_detections/
-    └── groundingDINO/
-        ├── coco_results.bbox_DET-COMPASS.json
-        ├── coco_results.bbox_DET-COMPASS_with_masks.json
-        ├── coco_results.bbox_DET-COMPASS_with_masks_nms_0.8_our_method_known_final.json
-        └── coco_results.bbox_DET-COMPASS_with_masks_nms_0.8_our_method_known_final_uncertanty.json
-
-/datasets/xray-datasets/
-└── DET-COMPASS/
-    ├── annotations/
-    │   └── full_test.json
-    └── test/
-```
-
-## Main RMD-X Resources
-
-The fixed colour-only material bank used by the main result is expected at:
-
-```text
-/workspace/RAXO/outputs_rmdx/material/material_colour_bank_support_full_bbox_only.json
-```
-
-The full DET-COMPASS RMD-X cache is expected at:
-
-```text
-/workspace/RAXO/outputs_rmdx/cache/det_compass_groundingDINO_100_0_full/
-```
-
-Cache contents:
-
-```text
-visual_similarity.pt
-material_class_similarity.pt
-proposal_meta.jsonl
-prototype_meta.json
-category_meta.json
-cache_summary.json
-```
-
-## Multi-detector Resources
-
-For multi-detector experiments, the same DET-COMPASS annotation and image root
-are used, with detector-specific with-mask files:
-
-```text
-/models/ICCV25_experimentation/initial_detections/groundingDINO/coco_results.bbox_DET-COMPASS_with_masks.json
-/models/ICCV25_experimentation/initial_detections/VLDet/coco_results.bbox_DET-COMPASS_with_masks.json
-/models/ICCV25_experimentation/initial_detections/CoDet/coco_results.bbox_DET-COMPASS_with_masks.json
-```
-
-The paper excludes Detic on DET-COMPASS because official Detic proposals were
-not available.
-
-## Multi-dataset Resources
-
-For multi-dataset experiments, the expected pattern is:
-
-```text
-/datasets/xray-datasets/<dataset>/annotations/full_test.json
-/datasets/xray-datasets/<dataset>/test/
-/models/ICCV25_experimentation/initial_detections/groundingDINO/coco_results.bbox_<dataset>_with_masks.json
-```
-
-Datasets used in the paper include:
-
-```text
-DET-COMPASS
-PIXray
-pidray
-CLCXray
-HiXray
-DvXray
-```
-
-## Leakage Policy
-
-The main material bank should be built from non-test support/prototype data. Do
-not use `full_test.json` ground-truth boxes to construct the main material bank.
-
-## More Details
-
-See `DATASETS_AND_RESOURCES.md` for a more explicit checklist of dataset names,
-proposal file names, with-mask resources, material banks, and cache outputs.
+[Historical resource contract](legacy/DATA_AND_RESOURCE_CONTRACT_20260709.md) is preserved for the legacy scripts only.

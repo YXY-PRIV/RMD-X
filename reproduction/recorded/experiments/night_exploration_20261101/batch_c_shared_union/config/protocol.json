@@ -1,0 +1,303 @@
+{
+  "study_id": "night_batch_c_shared_union_20261101",
+  "status": "FROZEN_BEFORE_NEW_UNION_FEATURES_LABEL_LOOKUP_TRAINING_OR_AP",
+  "created_utc": "2026-10-31T16:35:27.930903+00:00",
+  "question": "Can one class-conditional quality function shared across native V/F retained candidates retain useful F-only detections without negative label transfer?",
+  "sources": {
+    "candidate_completion": {
+      "path": "/mnt/data/yxy-codex/home/outputs/RAXO/appearance_candidate_refinement_20261031/completion.json",
+      "bytes": 4934,
+      "sha256": "7d2113047dbe9dc5861be7bd2ddfff8750012003e5d26dfc3468a3a5422c5c1f"
+    },
+    "candidate_protocol": {
+      "path": "/mnt/data/yxy-codex/home/outputs/RAXO/appearance_candidate_refinement_20261031/protocol/protocol.json",
+      "bytes": 13807,
+      "sha256": "b47eedfd0f52c8d33c39b915a0be61029c93f2b18d804dcddb9e41fb1793b534"
+    },
+    "candidate_teacher_audit": {
+      "path": "/mnt/data/yxy-codex/home/outputs/RAXO/appearance_candidate_refinement_20261031/training/calfit_candidate_teacher_audit.npz",
+      "bytes": 97196,
+      "sha256": "ce9ff7fb9fddd215317ef946857d4f440d48cc9ac3253ae87aef9a47d3f5ec80"
+    },
+    "candidate_training_npz": {
+      "path": "/mnt/data/yxy-codex/home/outputs/RAXO/appearance_candidate_refinement_20261031/training/candidate_train_val.npz",
+      "bytes": 905618,
+      "sha256": "479efb3825a05415295806a0e6d6a83227baf0ed0fa4fb2b4cc0c415cf66b6a1"
+    },
+    "calfit_split": {
+      "path": "/mnt/data/yxy-codex/home/outputs/RAXO/appearance_reliability_pilot_20261031/training/cal_fit_image_split.json",
+      "bytes": 2254,
+      "sha256": "88ca429e2501b536e1a1eb841f024bf206a5e018ee805b5280867aa747453f3c"
+    },
+    "calfit_csv": {
+      "path": "/mnt/data/yxy-codex/home/outputs/RAXO/appearance_reliability_pilot_20261031/training/cal_fit_target_rows.csv",
+      "bytes": 407877,
+      "sha256": "99e2ab3e1e330ef41bbb24380735097ccac0aa2bfbffc9e0b539b0dbef4ac603"
+    },
+    "calfit_assets": {
+      "path": "/mnt/data/yxy-codex/home/outputs/RAXO/appearance_reliability_pilot_20261031/endpoint_assets/CLC/cal_fit_manifest.json",
+      "bytes": 3341,
+      "sha256": "dcd1569a2843656b84271f1a096e70a8523d3afe49695d16dc5d273687979a65"
+    },
+    "metric_source_index": {
+      "path": "/mnt/data/yxy-codex/home/outputs/RAXO/appearance_metric_quality_20261031/source_baseline_index.json",
+      "bytes": 1135834,
+      "sha256": "29f65acc8aaf0cef1005981a8025c9af2fd07d8dd3ace837650432847c68329c"
+    },
+    "six_source_index": {
+      "path": "/mnt/data/yxy-codex/home/outputs/RAXO/appearance_six_dataset_transfer_20261031/source_baseline_index.json",
+      "bytes": 1108294,
+      "sha256": "d9a46632d9d85d676d6cef2ecee9b9a1c860662f63d74de37f7870af838fedd2"
+    },
+    "original_six_combination": {
+      "path": "/mnt/data/yxy-codex/home/outputs/RAXO/appearance_six_dataset_transfer_20261031/results/six_dataset_locked_combination.json",
+      "bytes": 35325,
+      "sha256": "45d1b57b6daf9fb7faf811e685c020467c9ba34f18261dfb3451951634ed19f3"
+    },
+    "dropout_completion": {
+      "path": "/mnt/data/yxy-codex/home/outputs/RAXO/appearance_material_dropout_20261031/completion.json",
+      "bytes": 3696,
+      "sha256": "10f7b8a93eb92f9bb8f208273b9eaf0af9d7f09ef8f7dad37b96cd4156aa7de7"
+    }
+  },
+  "cases": {
+    "CLC_tune": {
+      "asset_manifest": {
+        "path": "/mnt/data/yxy-codex/home/outputs/RAXO/appearance_reliability_pilot_20261031/endpoint_assets/CLC/tune_manifest.json",
+        "bytes": 3326,
+        "sha256": "63bc6c87f38f5c02ee073cd9188f1419ecdd27f9eb16e6332678c20112d4904b"
+      },
+      "source_family": "exact sealed nativeV/F input family; no historical artifact substitution"
+    },
+    "DET": {
+      "asset_manifest": {
+        "path": "/mnt/data/yxy-codex/home/outputs/RAXO/appearance_reliability_pilot_20261031/endpoint_assets/DET/eval_manifest.json",
+        "bytes": 2792,
+        "sha256": "91aadef5e206fa9d82d1c0a723ce00a3f27f47fc49b351f2442c2f3ffd837f19"
+      },
+      "source_family": "exact sealed nativeV/F input family; no historical artifact substitution"
+    },
+    "CLCXray_test": {
+      "asset_manifest": {
+        "path": "/mnt/data/yxy-codex/home/outputs/RAXO/appearance_six_dataset_transfer_20261031/manifests/CLCXray_test_all.json",
+        "bytes": 3612,
+        "sha256": "9588956eb4927ea32ac74070ebb0ca0fb4b080ca43dd2dcd59d5c681c95def96"
+      },
+      "source_family": "exact sealed nativeV/F input family; no historical artifact substitution"
+    },
+    "PIXray": {
+      "asset_manifest": {
+        "path": "/mnt/data/yxy-codex/home/outputs/RAXO/appearance_six_dataset_transfer_20261031/manifests/PIXray_all.json",
+        "bytes": 3344,
+        "sha256": "04d27b71c2089eff646303347e2ecf95e656aedcee204a43989b5886f2bb5fc0"
+      },
+      "source_family": "exact sealed nativeV/F input family; no historical artifact substitution"
+    },
+    "PIDray": {
+      "asset_manifest": {
+        "path": "/mnt/data/yxy-codex/home/outputs/RAXO/appearance_six_dataset_transfer_20261031/manifests/PIDray_all.json",
+        "bytes": 3345,
+        "sha256": "c3215890ea299567b4bf0d43af9d125ae60c16967f0b8c1c58762f2e0514c581"
+      },
+      "source_family": "exact sealed nativeV/F input family; no historical artifact substitution"
+    },
+    "DvXray": {
+      "asset_manifest": {
+        "path": "/mnt/data/yxy-codex/home/outputs/RAXO/appearance_six_dataset_transfer_20261031/manifests/DvXray_cache_native_all.json",
+        "bytes": 3648,
+        "sha256": "94bb230bcf9b63da0442a04c5a6a77be148a2ea330977868e542bd3e2130b2d3"
+      },
+      "source_family": "exact sealed nativeV/F input family; no historical artifact substitution"
+    },
+    "Hi": {
+      "asset_manifest": {
+        "path": "/mnt/data/yxy-codex/home/outputs/RAXO/appearance_reliability_pilot_20261031/endpoint_assets/Hi/eval_manifest.json",
+        "bytes": 2859,
+        "sha256": "15ee3a6db3f0741562fc14dd19573e9270162e9ac10faa09e5bf398a9269fc51"
+      },
+      "source_family": "exact sealed nativeV/F input family; no historical artifact substitution"
+    }
+  },
+  "inference_cases": [
+    "CLC_tune",
+    "DET",
+    "CLCXray_test",
+    "PIXray",
+    "PIDray",
+    "DvXray",
+    "Hi"
+  ],
+  "test_cases": [
+    "DET",
+    "CLCXray_test",
+    "PIXray",
+    "PIDray",
+    "DvXray",
+    "Hi"
+  ],
+  "representation": {
+    "join": "Union of published native V/F kept states joined ONLY by identical original global_cache_index within exact same cache family; never bbox dedup. Global union order ascending original row.",
+    "candidates": "Up to2 unique positive retained native categories per unionrow; V slot0 if present, elseFslot0, F differentclass slot1; sameclass V/F point to ONE sharedslot; absentbranch=-1. candidate_valid masks padding, padding never trained/fit and published qpad exactly0.",
+    "native_filters": "Both candidates are exact original retained branch categories/prototypes after branch-specific negative rejection and strict UNC>.15; no third class, no recomputed UNC or new bank.",
+    "source_counts": {
+      "CLC_tune_union": 2285,
+      "DET_union": 58819,
+      "CLCXray_test_union": 11211,
+      "PIXray_union": 88775,
+      "PIDray_union": 456561,
+      "DvXray_union": 193665,
+      "Hi_union": 378833
+    },
+    "DET_note": "Use current-source nativeF57985 from metricSource, not historical58005 artifact family. DvV124302 fixed cache boundary scope."
+  },
+  "feature_schema": {
+    "names": [
+      "detector_confidence",
+      "visual_global_top1",
+      "visual_global_margin",
+      "visual_global_entropy",
+      "candidate_visual_max",
+      "candidate_visual_minus_global_top1",
+      "candidate_global_visual_rank_capped4_normalized",
+      "candidate_visual_canonical_gap",
+      "log1p_positive_prototype_count",
+      "candidate_material_score",
+      "candidate_material_rank_normalized",
+      "material_global_margin",
+      "log1p_material_support_count",
+      "material_support_available",
+      "candidate_material_top1_agreement"
+    ],
+    "shape": "float32[Nunion,2,15]",
+    "definitions": "Original15 raw class-conditional definitions from candidate protocol except column6. Prefix globalV features reuse/verify original wholequery. All candidateV maxima/canonical gaps computed from original V for the exact class, never branch-F score or reversed subtraction.",
+    "rank": "Rank among ALL C positive-class Vmax, ties original first winning prototype index; min(rank,4)/4, not normalized byC or nativebranch slot. Thus originaltop5 training classes retain exact previous rank feature; outside-top5 test candidates saturate1.",
+    "same_class": "Sameclass branch pair shares the same feature and quality slot; qV=qF is structural exact identity.",
+    "support": "Exact source material-bank category_name join/count,0preserved; CID0 valid, invalidpadding=-1 controlled onlybyvalidmask."
+  },
+  "teacher": {
+    "rule": "For calfit unionvalid (globalrow,category) lookup original teacher audit max_sameclass_IoU/target/annotationID exactly. Allcalfit nativeV/F classes were in sealedvisualtop5; missing lookupFAIL, no fakeclassagnostic labels.",
+    "new_GT_annotation_reads": 0,
+    "train_unique_candidates": 2013,
+    "val_unique_candidates": 452,
+    "train_positive": 497,
+    "val_positive": 115,
+    "train_union_rows": 1921,
+    "val_union_rows": 436,
+    "effective_train_images": 152,
+    "effective_val_images": 38,
+    "reserved_image_split": "Original153train/38val wholeimage reservation unchanged,1train image has no eligibleunion candidates."
+  },
+  "training": {
+    "variants": [
+      "full",
+      "visual",
+      "missing"
+    ],
+    "seeds": [
+      17,
+      29,
+      43
+    ],
+    "architecture": [
+      15,
+      32,
+      16,
+      1
+    ],
+    "lr": 0.001,
+    "weight_decay": 0.0001,
+    "batch_size": 1024,
+    "max_epochs": 100,
+    "early_stop_patience": 15,
+    "early_stop_min_delta": 1e-06,
+    "optimizer": "AdamW",
+    "loss": "Unweighted BCE over unique valid class candidates; draw-balanced pairedviews loss, no branch-head retention masks or positiveweights.",
+    "sampling": "Everyepoch29370base draws: concatenatefresh seededrandperm2013 and truncate29370. Allvariants same seed samebase draws,29optimizerupdates. Validuniquecandidates only; masks/paddingexcluded.",
+    "views": "All variants2views perbasebatch, one optimizerupdate. full repeatsfull twice; visual bothviews materialinactive; missing uses full/Mzero equally. Equal forwardbatchbudget and updatecount, no new independent data.",
+    "normalization": "Natural fixed score unit division scales. No targetdomain/training zscore scaling. Compute raw training (and missing paired ifvariantmissing) constant coordinates for globally-zero guard; ignore padding. All variants inactive0(confidence),8(referencecount),12(numericsupportcount). full additionally13(alwayspresent constant). visual additionallyall9..14. missing13trainedfrom1/0. Any other trainingconstant globallyzero.",
+    "unit_scales": [
+      1,
+      1,
+      2,
+      1,
+      1,
+      2,
+      1,
+      2,
+      1,
+      1,
+      1,
+      2,
+      1,
+      1,
+      1
+    ],
+    "missing_policy": "For actual support_available13==0 setraw9..14zero before unittransform. Missing artificialview also raw9..14zero. No sourcearray edits.",
+    "validation": "Original38-image valid unique452candidate cohort, full variants duplicatedfull view, missing equalfull/missing BCE; no statsfit or tuning.",
+    "new_trainings": 9
+  },
+  "inference": {
+    "output": "qualityfloat32[Nunion,2], pad0; branch_to_candidate maps nativeV/F toquality without duplicateheads.",
+    "ensemble": "EqualF64 mean3seeds thenF32; exactsameclass alias preserved.",
+    "new_real_GPU_inferences": 63,
+    "new_ensemble_arrays": 21
+  },
+  "routing": {
+    "tau_candidates": [
+      0.0,
+      0.025,
+      0.05,
+      0.1,
+      1.01
+    ],
+    "effective_quality": "v=qV ifnativeVkept else0; f=qF ifnativeFkept else0.",
+    "rule": "ChooseF iff Fkept AND f-v>tau strict; else chooseV iffVkept; else reject. F-only admitted iffqF>tau; atsameclass qV=qF exact and nonnegative tau yieldsV.",
+    "matched_priority": "EXACT same retained unionmembership asrouter atsame tau; everyVkept row choosesV, admit F-only iffqF>tau. Thus overlapbranchchoice isolated fromextra-F budget.",
+    "source_order": "Original globalrow order; bbox/rawdetector score original, atmost1output peroriginalproposal."
+  },
+  "selection": {
+    "case": "CLC_tune",
+    "images": 191,
+    "criterion": "For each tau actual native routerAP for3variants; maximize arithmeticmean, exactties larger tau (less F use). ONEglobaltau for all3variants/6test; lockbefore any newtestAP.",
+    "logical_candidates": 15
+  },
+  "scoring": {
+    "alpha": 0.5,
+    "sigma": 1.0,
+    "rule": "F64 raw^.5*clip(selectedq,1e-6,1)^.5, currentmaxclassaware Gaussian1/tieoriginalglobalrow, no postprocesscandidatepruning; originalorder retained."
+  },
+  "final_routes": [
+    "visual",
+    "fixed_additive",
+    "router",
+    "matched_priority"
+  ],
+  "final_logical_AP": 72,
+  "report_AR100": true,
+  "primary_variant": "missing",
+  "primary_route": "router",
+  "resources": {
+    "GPU_training": "GPU-1397025e-282b-4fa6-4abf-af166feb9117",
+    "GPU3_do_not_touch": true,
+    "max_GPU_processes": 1,
+    "OMP_NUM_THREADS": 8,
+    "max_feature_builders": 2,
+    "global_native_slots": 4,
+    "native_lock_directory": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/resources/native_slots",
+    "native_lock_names": [
+      "slot0.lock",
+      "slot1.lock",
+      "slot2.lock",
+      "slot3.lock"
+    ]
+  },
+  "publication_edits": false,
+  "limits": [
+    "Exploratory reused cohorts with previous testoutcomes known during design, no newblindholdout/significanceclaim.",
+    "F-only admitted count is not recall; report nativeAR100/AP and matched-priority control.",
+    "Visual-feature control still sees F-native categories already produced by material; only explicitquality-feature material bundle contrast, not wholepipeline physicalmaterialcausality.",
+    "Source material appearance/descriptors are not chemical identities; old physical-provenance/Hi backbone limits remain.",
+    "Small source supervision: overlapdifferentclasses13train/1val uniquelycorrect; sharedq497/115positivecandidate labels provide broaderquality learning but do not create new independentobjects.",
+    "Unit scales refer to cosine-like numerical score ranges, not material physicalmeasurement."
+  ]
+}

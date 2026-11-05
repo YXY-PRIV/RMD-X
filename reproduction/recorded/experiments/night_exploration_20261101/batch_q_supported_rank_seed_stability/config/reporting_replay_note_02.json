@@ -1,0 +1,24 @@
+{
+  "kind": "REPORTING_REPLAY_GUARD_TRANSPARENT_POST_RUN_NOTE",
+  "created_utc": "2026-10-31T18:56:59.790995+00:00",
+  "first_reporting_addendum": {
+    "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_q_supported_rank_seed_stability/protocol/reporting_addendum_01.json",
+    "bytes": 2161,
+    "sha256": "bb560d5ad3a49b60ba6bb6cae59646b7b9f825609c197ca7f4e9d77da1bb7734"
+  },
+  "recovery_driver": {
+    "path": "/mnt/data/yxy/program/RAXO/experiments/night_exploration_20261101/batch_q_supported_rank_seed_stability/scripts/recover_reporting.py",
+    "bytes": 3873,
+    "sha256": "be9554bb5dc044a9e49962c8fd2572eda633afd6a2f7eae0059e08f28b5cb59d"
+  },
+  "README": {
+    "path": "/mnt/data/yxy/program/RAXO/experiments/night_exploration_20261101/batch_q_supported_rank_seed_stability/README.md",
+    "bytes": 3493,
+    "sha256": "96e0a8f0c5dbc9eeeba314309612ab2f621889f270b2198b6e70bddd600e6c97"
+  },
+  "allow_recovery_only": "18 jobs exit0, run_index COMPLETE, actualnativeAP flags, all frozen hashes match, known summary TypeError only",
+  "old_controller_failed_state_preserved": true,
+  "separate_recovery_complete_state": "automation/reporting_recovery.json",
+  "AP_rerun": false,
+  "original_six_sources_or_P_changed": false
+}

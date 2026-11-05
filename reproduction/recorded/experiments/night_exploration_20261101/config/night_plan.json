@@ -1,0 +1,108 @@
+{
+  "status": "ACTIVE_EXECUTION_PLAN_NOT_AN_EXPERIMENT_PROTOCOL",
+  "created_utc": "2026-10-31T16:18:28.955867+00:00",
+  "user_request": "Continue overnight; try several directions and use time effectively.",
+  "source_latest_completion": {
+    "path": "/mnt/data/yxy-codex/home/outputs/RAXO/appearance_material_dropout_20261031/completion.json",
+    "sha256": "10f7b8a93eb92f9bb8f208273b9eaf0af9d7f09ef8f7dad37b96cd4156aa7de7"
+  },
+  "phases": [
+    {
+      "id": "A",
+      "purpose": "Calibration-selected mixture of existing IoU/coverage/candidate quality on exactly aligned nativeV rows; no new training."
+    },
+    {
+      "id": "B",
+      "purpose": "Population-aligned candidate training and robust feature normalization; exact configs will be frozen before training."
+    },
+    {
+      "id": "C",
+      "purpose": "One shared class-conditional quality function over nativeV/F union, with fixed-route and matched-budget controls."
+    },
+    {
+      "id": "D",
+      "purpose": "Paired image bootstrap for one globally calibration-selected fixed candidate if compute and scientific gates permit; no test-best endpoint choice."
+    },
+    {
+      "id": "E",
+      "purpose": "Four matched quality-model controls for visual/material score affine calibration augmentation, entropy disabled in all four; independent post-ABC exploration not replacing the locked D candidate."
+    },
+    {
+      "id": "F",
+      "purpose": "All3 individual training seeds of two E affine variants,36nativeAP at exactly the E source-selected tau; no best-seed choice, no new training/GPU."
+    },
+    {
+      "id": "G",
+      "purpose": "Constant q=1 same-budget candidate control; no training/GPU."
+    },
+    {
+      "id": "H",
+      "purpose": "Bounded legacy pixel-to-material compatibility diagnostics and officialtrain eligibility; gate failed, no H1 training."
+    },
+    {
+      "id": "I",
+      "purpose": "Relative material rank/agreement quality inputs with source-selected global variant; all routes retained."
+    },
+    {
+      "id": "J",
+      "purpose": "Fresh RGB material extraction throughput probe; failed first image-path attempt retained, second passed."
+    },
+    {
+      "id": "K",
+      "purpose": "Two added officialtrain sources plus fully fresh auxiliary material inputs; same-data geometry/material controls and global source-selected mixture."
+    },
+    {
+      "id": "L",
+      "purpose": "Frozen missing-material availability fallback to existing visual head; zero new models/GPU."
+    },
+    {
+      "id": "M",
+      "purpose": "Signed logit material-minus-geometry residual added to existing visual quality; source-selected global lambda, nine active models when nonzero, no new training/GPU."
+    },
+    {
+      "id": "N",
+      "purpose": "Three new matched material heads using only genuinely supported class pool for rank/top-margin, fixed inheritedK coefficient, all24test routes; postK exploratory, no extra labels/images."
+    },
+    {
+      "id": "O",
+      "purpose": "Source-selected global balance of absolute quality and signed relative material correction, K/N families; all24 fixed tests, zero new training/GPU."
+    },
+    {
+      "id": "P",
+      "purpose": "Posthoc N-specific six pairedB2000 CIs on identical original draws/strongbaseline. Native gates may overlapD; formal replays strictly waitboth originalD controllers+pairedsummary COMPLETE; noC CI reuse."
+    },
+    {
+      "id": "Q",
+      "purpose": "All3 N head seeds atfixedEbase ensemble,18nativeAP, no bestseed or extra training/GPU; descriptive n3, not ensembleAP average."
+    },
+    {
+      "id": "R",
+      "purpose": "Fourfixed additional fulltrainable-quality pipeline replications atsame6modelbudget. RetrainbothEbase+Nmaterial onfixeddata withprespecified12newseedsperrole; descriptive n5 actualgroupAP, no method/hyperparameter/bestgroup search or Pcandidate switch.24newtrain144GPU48means24nativeAP."
+    }
+  ],
+  "timing": {
+    "start_CST": "2026-11-01 00:14",
+    "first_complete_comparison_estimate_CST": "2026-11-01 01:30\u201302:00",
+    "overnight_summary_target_CST": "2026-11-01 08:00\u201310:00 for addedN-specific posthocP CI; originalD retained06:00\u201308:00",
+    "finish_earlier_if_registered_work_complete": true
+  },
+  "resources": {
+    "GPU_UUID": "GPU-1397025e-282b-4fa6-4abf-af166feb9117",
+    "GPU3_do_not_touch": true,
+    "global_max_native_evaluations": 4,
+    "CPU_threads_per_process": 8,
+    "max_feature_builders": 2,
+    "global_native_lock_directory": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/resources/native_slots",
+    "phase_specific_GPU_override": "B used registered GPUs0/2; C/E/I GPU1; K actual frozen model and 768-image detector GPU2 after idle verification, CPU modelenv8 recorded by96ad addendum. GPU3 untouched."
+  },
+  "rules": [
+    "Every scientific batch has its own frozen content-hashed protocol before new numerical work.",
+    "Train/calfit validation labels only; tune191 chooses a single global candidate, all six test cohorts reported.",
+    "All negative results retained. No per-test best mixture of variants or seeds.",
+    "No change to manuscript, figures, supplementary, historical results or sealed packages.",
+    "Real GPU/actual AP/reused AP counted separately; no queue receipt treated as completion.",
+    "Inspect outcomes for next hypotheses, report exploratory test reuse; no new independent-holdout or statistical-significance claim without evidence."
+  ],
+  "updated_utc": "2026-10-31T17:13:29.769018+00:00",
+  "navigation": "scripts/update_progress_all.py"
+}

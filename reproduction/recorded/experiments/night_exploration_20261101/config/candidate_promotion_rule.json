@@ -1,0 +1,50 @@
+{
+  "status": "FROZEN_RULE_BEFORE_READING_BATCH_B_C_TEST_VALUES",
+  "created_utc": "2026-10-31T16:57:12.704401+00:00",
+  "purpose": "Select one globally shared new candidate for paired bootstrap against the previously fixed six-dataset comboF baseline",
+  "candidate_order": [
+    "A_selected",
+    "B_visual_score_control",
+    "B_full_missing_score_control",
+    "C_visual_router",
+    "C_full_router",
+    "C_missing_router"
+  ],
+  "criterion": "Maximum clean CLC_tune native AP; no test values enter ranking",
+  "ties": [
+    "fewer active models",
+    "fewer calibration output rows",
+    "candidate_order"
+  ],
+  "active_models": {
+    "A_selected": 6,
+    "B_visual_score_control": 3,
+    "B_full_missing_score_control": 3,
+    "C_visual_router": 3,
+    "C_full_router": 3,
+    "C_missing_router": 3
+  },
+  "within_batch_parameters": "Use only A global selected weights, B source-stress selected r4, and C shared selected tau. No diagnostic beta roles or per-dataset choices enter pool.",
+  "baseline": "Previous uniform comboF (etaF=.75, alpha=.5, Gaussian sigma=1) on each fixed full test cohort",
+  "test_exposure": "Exploratory: previous and A test results known; B/C controllers already finished but root has not inspected their numerical test results. This rule is not prospective blinded preregistration.",
+  "candidate_bootstrap": "All six tests use the same selected candidate. Paired B2000 immutable old image draws; report B1000 sensitivity and all signs, with no threshold/sign-based reselection.",
+  "baseline_calibration_AP_reference": 0.43567657519551806,
+  "protocols": {
+    "A": {
+      "path": "/mnt/data/yxy/program/RAXO/experiments/night_exploration_20261101/batch_a_quality_mixture/config/protocol.json",
+      "bytes": 858128,
+      "sha256": "1d905cea6ee8217a28330aeeef83dedced832fbab2058c26d27c4fddfcc18fe9"
+    },
+    "B": {
+      "path": "/mnt/data/yxy/program/RAXO/experiments/night_exploration_20261101/batch_b_robust_quality/config/protocol.json",
+      "bytes": 19315,
+      "sha256": "a27a2cc680f96844388b762745147db12ee97a95bc0332913377f7ee1b6bf651"
+    },
+    "C": {
+      "path": "/mnt/data/yxy/program/RAXO/experiments/night_exploration_20261101/batch_c_shared_union/config/protocol.json",
+      "bytes": 14465,
+      "sha256": "285b2fd5fcdbc974c762332cf33b3962a6876f75bd8e8a6c0e53e8235d394cd7"
+    }
+  },
+  "paper_modified": false
+}

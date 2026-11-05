@@ -1,0 +1,84 @@
+{
+  "status": "FROZEN_BEFORE_NEW_ABLATION_EXPORT_OR_AP",
+  "study_id": "new_module_evidence_20261102_factorial_ablation",
+  "created_utc": "2026-11-02T04:09:34.386213+00:00",
+  "latest_protocol": {
+    "path": "/mnt/data/yxy/program/RAXO/experiments/pair_conflict_material_projection_20261101/config/protocol.json",
+    "bytes": 100908,
+    "sha256": "117a12b17f60f3784c1f9559b4fc41bdc9f82f476461698392957934c643e02f"
+  },
+  "test_cases": [
+    "DET",
+    "CLCXray_test",
+    "PIXray",
+    "PIDray",
+    "DvXray",
+    "Hi"
+  ],
+  "seeds": [
+    17,
+    29,
+    43
+  ],
+  "variant": "material",
+  "alpha": 1.0,
+  "route": "anchor_locked",
+  "cells": [
+    "00_full",
+    "10_gate",
+    "01_projection_identity_extension",
+    "11_both"
+  ],
+  "definitions": {
+    "delta": "Immutable source full-supported-class centered F32 correction gathered into unique original native candidate slots; never retrained.",
+    "A": "Existing P5 mask: both original branches retained, unequal classes/canonical slots, valid query T>1, actual support for both classes.",
+    "pair": "Gather explicit branch V/F corrections; D=F32((F64(delta_F)-F64(delta_V))/2), then scatter [-D,+D].",
+    "cell00": "delta",
+    "cell10": "A*delta",
+    "cell01": "A*pair(delta)+(1-A)*delta; identity extension outside the admissible pair domain, not an all-proposal projection",
+    "cell11": "A*pair(delta)",
+    "no_defined_pair": "Same-class, single-branch, invalid-query and unsupported-pair cases retain delta in cell01 and zero it in gated cells. No absent candidate is created.",
+    "operator_identity": "The gate and identity-extended projection commute. Outside A cell01==cell00 and cell11==cell10; on A cell01==cell11, cell10==cell00, at correction level.",
+    "statistics": "All 4 simple effects and descriptive AP interaction11-10-01+00, every sign retained. No parameter selection on these outcomes."
+  },
+  "pipeline": {
+    "sigmoid": "Dense CPU torch F32 sigmoid of saved formal T per-seed logits plus correction; correction0 copies original formal T per-seed quality bitwise.",
+    "seed_mean": "F64 mean3 thenF32",
+    "mix": "Independent E3 visual-clean three-seed mean and corrected head geometric mix .5/.5 with clip1e-6..1, F64 thenF32",
+    "router": "Original formal Tavail selected branch fixed for every cell",
+    "score": "raw^.5 * quality^.5; original same-class Gaussian sigma1",
+    "nativeF_lambda_m": 0.05,
+    "nativeF_UNC": 0.15,
+    "GT": "Original positive unique annotation IDs, same full params/images/categories; no new matching in exporters."
+  },
+  "reference_indices": {
+    "prior_full": {
+      "path": "/mnt/data/yxy-codex/home/outputs/RAXO/material_conditional_ranking_fix1_20261101/run_index.json",
+      "bytes": 56407,
+      "sha256": "cdcc078b583447f4c7ce24d4befe9c2b8ed4dfb454da36f6912ff95cdbe7e924"
+    },
+    "latest_pair": {
+      "path": "/mnt/data/yxy-codex/home/outputs/RAXO/pair_conflict_material_projection_20261101/run_index.json",
+      "bytes": 75575,
+      "sha256": "89aeb21c83b45d6c0a011ddd7ab98dc29dbcf49fd9da8e1dd9cf48be8ac8e94f"
+    }
+  },
+  "reuse": "00 and11 must exactly reproduce same-alpha/same-route prior full and published pair prediction bytes, entire q and key score traces; then only exact prediction/GT/params/native library native metrics can be reused.",
+  "budget": {
+    "logical_AP": 24,
+    "expected_new_native_AP": 12,
+    "expected_strict_reuses": 12,
+    "new_training": 0,
+    "new_GPU": 0,
+    "new_model_forward": 0
+  },
+  "resources": {
+    "max_native_workers": 2,
+    "global_native_slots": 4,
+    "shared_slot_directory": "/mnt/data/yxy-codex/home/outputs/RAXO/new_module_evidence_20261102/resources/native_slots",
+    "torch_CPU_threads": 8,
+    "reserve_RAM_GiB": 64,
+    "no_foreign_process_termination": true
+  },
+  "scope": "Fixed-weight posthoc diagnostic after test exposure, not confirmation or an untouched-test evaluation. Zero-sum logit correction is not probability-mean invariance; Gaussian can indirectly change inactive final scores."
+}

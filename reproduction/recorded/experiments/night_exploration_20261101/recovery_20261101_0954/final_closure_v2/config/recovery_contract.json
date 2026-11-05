@@ -1,0 +1,58 @@
+{
+  "status": "EXPLICIT_METADATA_ONLY_RECOVERY_CONTRACT_NOT_EXECUTION",
+  "created_utc": "2026-11-01T02:01:02.328599+00:00",
+  "resume_integrity_audit": {
+    "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/recovery_20261101_0954/peer_audit/resume_integrity_audit.json",
+    "bytes": 535071,
+    "sha256": "1c016ba7b787fd792505d63c50fe10c8c77c4f9f0e43facab68b902a89187618"
+  },
+  "pre_resume_immutable_snapshot": {
+    "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/recovery_20261101_0954/final_closure_v2/protocol/pre_resume_immutable_snapshot.json",
+    "bytes": 960492,
+    "sha256": "7dfb92e7e76a368945e99611417baf02a48d7dae09c905e355077a884f92f0e4"
+  },
+  "original_failed_closure_status": {
+    "path": "/mnt/data/yxy/program/RAXO/experiments/night_exploration_20261101/recovery_20261101_0954/final_closure_v2/provenance/original_failed_closure_status.json",
+    "bytes": 329,
+    "sha256": "05fd2f5c07cfa3f7392e222c6000b15dbc0eb8978180415068d0967eb1b6379f"
+  },
+  "original_failed_closure_journal": {
+    "path": "/mnt/data/yxy/program/RAXO/experiments/night_exploration_20261101/recovery_20261101_0954/final_closure_v2/provenance/original_failed_closure_journal.json",
+    "bytes": 1966,
+    "sha256": "cc62a642a61d9facf649608b996ce6020b5668d07adc8b1a50ff34c579be2f92"
+  },
+  "original_D_baseline_runtime_copy": {
+    "path": "/mnt/data/yxy/program/RAXO/experiments/night_exploration_20261101/recovery_20261101_0954/final_closure_v2/provenance/original_D_baseline_status.json",
+    "bytes": 749,
+    "sha256": "4becd1e58334249019de87d4c43bbdad1c66fd9ae39734b42928b71dfa38609f"
+  },
+  "accepted_unique_formal_rows_before": 8705,
+  "remaining_accepted_unique_formal_rows": 27295,
+  "target_accepted_unique_formal_rows": 36000,
+  "completed_method_B2000_before": 4,
+  "passed_native_matching_before": 48,
+  "remaining_fresh_native_matching": 24,
+  "interruption": {
+    "last_recorded_active_utc": "2026-10-31T20:19:17.685144+00:00",
+    "first_observed_failed_closure_utc": "2026-10-31T20:19:46.300345+00:00",
+    "rediscovered_utc": "2026-11-01T01:54:44+00:00",
+    "actual_process_exit_time_known": false,
+    "about5h35_no_update_before_rediscovery": true
+  },
+  "timing_scope": {
+    "interrupted_case": "D_baseline/DvXray",
+    "last_observed_partial_elapsed_seconds": 643.7904315290507,
+    "last_observed_partial_elapsed_is_lower_bound_to_actual_old_process_runtime": true,
+    "original_driver_formal_seconds_on_resumed_case_is_new_segment_only": true,
+    "do_not_claim_uninterrupted_or_exact_total_runtime": true
+  },
+  "replay_count_scope": {
+    "accepted_unique_rows_are_not_total_invocation_count": true,
+    "uncommitted_interrupted_worker_calls_may_be_recomputed": true,
+    "uncommitted_interrupted_actual_call_count_unknown": true,
+    "no_exact_total_actual_replay_call_count_claim": true
+  },
+  "source_policy": "Original scientific drivers/protocols/gates/models/AP remain byte unchanged. Only missing durable shards and never-started gates will execute. Runtime status/run_index/log may update; every registered immutable file must retain its SHA.",
+  "prior_failure_preserved": true,
+  "recovery_execution_receipt_REQUIRED_IN_READY": true
+}

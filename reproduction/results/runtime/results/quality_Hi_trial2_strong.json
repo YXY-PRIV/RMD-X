@@ -1,0 +1,25 @@
+{
+  "case": "Hi",
+  "trial": 2,
+  "method": "strong",
+  "proposals": 378833,
+  "retained": 378833,
+  "images": 9069,
+  "catalogue_classes": 7,
+  "stages_ns": {
+    "three_T_availability_models_GPU_and_CPU_sigmoid": 1180031358,
+    "three_E_visual_clean_models_GPU": 446952876,
+    "ensemble_geometric_mix_fixed_router_sqrt_score_Gaussian_serialization": 26589926812,
+    "total": 28226339798
+  },
+  "memory": {
+    "peak_process_RSS_bytes": 2146013184,
+    "cuda_allocated_bytes": 33651200,
+    "cuda_reserved_bytes": 60817408,
+    "peak_cuda_allocated_bytes": 37300224,
+    "peak_cuda_reserved_bytes": 60817408
+  },
+  "prediction_content_sha256": "503c12299a60035185d5d22320eae0c90424454f9330bbf5cc752715ef0050f0",
+  "input_load_seconds_excluded": 0.35253571602515876,
+  "model_load_seconds_excluded": 1.568929499015212
+}

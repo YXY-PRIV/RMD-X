@@ -1,0 +1,51 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Source-bound native cached-refinement replay configuration",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "family", "mode_default", "arithmetic_profile", "shape", "negative_columns", "lambda_material", "unc", "full_J", "replace_score_with_fused", "dtype", "formats", "inputs", "native_helper_root", "native_contract"],
+  "properties": {
+    "schema_version": {"const": 1},
+    "family": {"enum": ["historical_J3128", "common1406_J3120", "CLC_holdout_J733", "synthetic_metadata_only"]},
+    "mode_default": {"const": "inspect"},
+    "arithmetic_profile": {"enum": ["historical_P02_raw", "P11_native_centered", "CLC_native_centered", "synthetic_metadata_only"]},
+    "shape": {
+      "type": "object", "additionalProperties": false,
+      "required": ["N_all", "N_selected", "C", "J"],
+      "properties": {"N_all": {"type": "integer", "minimum": 1}, "N_selected": {"type": "integer", "minimum": 1}, "C": {"type": "integer", "minimum": 1}, "J": {"type": "integer", "minimum": 1}}
+    },
+    "negative_columns": {"type": "integer", "minimum": 0},
+    "lambda_material": {"type": "number", "enum": [0.05, 0.03]},
+    "unc": {"const": {"field": "dist_cosine_inter", "operator": ">", "threshold": 0.15}},
+    "full_J": {"const": true},
+    "replace_score_with_fused": {"const": false},
+    "dtype": {"const": "float32"},
+    "formats": {"type": "object", "additionalProperties": false, "required": ["visual", "material_class"], "properties": {"visual": {"enum": ["npy", "pt"]}, "material_class": {"enum": ["npy", "pt"]}}},
+    "inputs": {
+      "type": "object", "additionalProperties": false,
+      "required": ["visual", "material_class", "proposals", "categories", "prototypes"],
+      "properties": {"visual": {"$ref": "#/$defs/path"}, "material_class": {"$ref": "#/$defs/path"}, "proposals": {"$ref": "#/$defs/path"}, "categories": {"$ref": "#/$defs/path"}, "prototypes": {"$ref": "#/$defs/path"}}
+    },
+    "native_helper_root": {"$ref": "#/$defs/path"},
+    "native_contract": {"$ref": "#/$defs/path"},
+    "historical_producer_source": {"$ref": "#/$defs/path"},
+    "role_selection": {
+      "type": "object", "additionalProperties": false,
+      "required": ["roles", "role", "expected_images"],
+      "properties": {"roles": {"$ref": "#/$defs/path"}, "role": {"type": "string"}, "expected_images": {"type": "integer", "minimum": 1}}
+    },
+    "expected_endpoints": {
+      "type": "object", "additionalProperties": false, "required": ["visual", "additive"],
+      "properties": {"visual": {"$ref": "#/$defs/signature"}, "additive": {"$ref": "#/$defs/signature"}}
+    }
+  },
+  "allOf": [
+    {"if": {"properties": {"arithmetic_profile": {"const": "historical_P02_raw"}}}, "then": {"required": ["historical_producer_source", "expected_endpoints"]}},
+    {"if": {"properties": {"arithmetic_profile": {"const": "CLC_native_centered"}}}, "then": {"required": ["role_selection", "expected_endpoints"]}},
+    {"if": {"properties": {"arithmetic_profile": {"const": "P11_native_centered"}}}, "then": {"required": ["expected_endpoints"]}}
+  ],
+  "$defs": {
+    "path": {"type": "object", "additionalProperties": false, "required": ["root", "path"], "properties": {"root": {"enum": ["bundle", "data", "artifact"]}, "path": {"type": "string", "minLength": 1, "description": "Relative path; the wrapper rejects absolute paths and '..' components."}}},
+    "signature": {"type": "object", "additionalProperties": false, "required": ["count", "sha256"], "properties": {"count": {"type": "integer", "minimum": 0}, "sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"}}}
+  }
+}

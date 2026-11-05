@@ -1,0 +1,19 @@
+{
+  "kind": "DESIGN_TIMELINE_CLARIFICATION_NOT_SCIENCE_CHANGE",
+  "created_utc": "2026-10-31T18:29:46.776315+00:00",
+  "protocol": {
+    "path": "/mnt/data/yxy/program/RAXO/experiments/night_exploration_20261101/batch_m_material_residual/config/protocol.json",
+    "bytes": 32726,
+    "sha256": "7ce39e6f64036c30f7cd61e6ef1f07f3c16bb68db43628c80c48ea02d442cb7c"
+  },
+  "formal_protocol_created_utc": "2026-10-31T18:28:57.987335+00:00",
+  "chronology": [
+    "Conductor issued the M formula/fixedlambda grid/global source selection instruction before conductor read K testAP, per conductor statement.",
+    "Conductor subsequently generated and read Ksummary around2026-10-31T18:27Z, per conductor statement; this precedes formal Mprotocol file publication.",
+    "Mactor did not read K testAP values before Mprotocol freeze, and has not used Ktest results to change formula/grid/source-only rule."
+  ],
+  "clarification": "Do not claim conductor remained blind to Ktest until formal Mprotocol publication. OriginalP phrase atMdesign refers to methodinstruction time, not later formalfile time. Prior exploration/test exposure remains explicit; this is an exploratory followup, not blind preregistration.",
+  "source": "Parent /root direct clarification; approximate Kread time not independently reconstructed.",
+  "science_parameters_changed": false,
+  "original_protocol_modified": false
+}

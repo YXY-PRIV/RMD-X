@@ -1,0 +1,38 @@
+{
+  "status": "COMPLETE_FOUR_EXPORTS",
+  "case": "DvXray",
+  "protocol": {
+    "path": "/mnt/data/yxy/program/RAXO/experiments/new_module_evidence_20261102/ablation/protocol.json",
+    "bytes": 4020,
+    "sha256": "87d127113f97677bb0917a9be72ef6d7a7138c30888a1b3eeffc62a869884c6c"
+  },
+  "exports": [
+    {
+      "path": "/mnt/data/yxy-codex/home/outputs/RAXO/new_module_evidence_20261102/ablation/endpoints/DvXray/00_full/export.json",
+      "bytes": 127040,
+      "sha256": "9b313497b5684ce01291afcf53943c4fc72ee4efce16cb7a889cecc64b03aea5"
+    },
+    {
+      "path": "/mnt/data/yxy-codex/home/outputs/RAXO/new_module_evidence_20261102/ablation/endpoints/DvXray/10_gate/export.json",
+      "bytes": 124984,
+      "sha256": "a47366a58b8203147e3bd0cce286c354b5f9926ede2d919b941ae7a333df7ba6"
+    },
+    {
+      "path": "/mnt/data/yxy-codex/home/outputs/RAXO/new_module_evidence_20261102/ablation/endpoints/DvXray/01_projection_identity_extension/export.json",
+      "bytes": 125023,
+      "sha256": "3abd3614d87d186f736398f3e50a68d001e5f897772df9451a083c4345628a1a"
+    },
+    {
+      "path": "/mnt/data/yxy-codex/home/outputs/RAXO/new_module_evidence_20261102/ablation/endpoints/DvXray/11_both/export.json",
+      "bytes": 127020,
+      "sha256": "f2f237d506754c0eafd134828e8316725701e91dbd61bb5ba747de628c8af543"
+    }
+  ],
+  "mask_partition": {
+    "same_class_both": 82714,
+    "single_branch": 106060,
+    "different_both_invalid_query_or_Tle1": 0,
+    "different_both_Tgt1_unsupported_pair": 2853,
+    "active_supported_conflict": 2038
+  }
+}

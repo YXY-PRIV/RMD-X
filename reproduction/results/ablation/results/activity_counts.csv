@@ -1,0 +1,7 @@
+dataset,same_class_both,single_branch,different_both_invalid_query_or_Tle1,different_both_Tgt1_unsupported_pair,active_supported_conflict
+DET,36544,9927,0,0,12348
+CLCXray_test,5737,4925,0,0,549
+PIXray,56290,30385,0,506,1594
+PIDray,228829,214323,0,7365,6044
+DvXray,82714,106060,0,2853,2038
+Hi,218839,108103,0,0,51891

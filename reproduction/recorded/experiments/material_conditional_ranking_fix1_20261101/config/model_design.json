@@ -1,0 +1,107 @@
+{
+  "schema_version": "conditional_supported_class_ranker_v1",
+  "status": "DESIGN_FOR_PROTOCOL_FREEZE_NO_COMPUTE_AUTHORIZATION",
+  "roles": [
+    "material",
+    "permuted_material"
+  ],
+  "seeds": [
+    17,
+    29,
+    43
+  ],
+  "hypothesis": "Source per-class BCE mixes proposal objectness with class preference. Conditional supported-positive versus supported-zero ranking learns material class directions while a frozen complete availability-quality network supplies the strong proposal-quality anchor.",
+  "architecture": {
+    "strong_anchor": "Read-only original T availability_control complete GatedResidual composite: geometry993 plus old branch362; every1355 weight frozen",
+    "new_proposal_gate": [
+      13,
+      8,
+      1
+    ],
+    "new_class_residual": [
+      13,
+      16,
+      1
+    ],
+    "gate_parameters": 121,
+    "residual_parameters": 241,
+    "new_trainable_parameters": 362,
+    "frozen_anchor_parameters": 1355,
+    "total_parameters": 1717,
+    "gate_output": "sigmoid, final bias initialized-2",
+    "residual_output": "2*tanh, final weight and bias zero initialized",
+    "raw_delta": "support_ic * proposal_common_gate_i * bounded_class_residual_ic",
+    "centered_delta": "support_ic * (raw_delta_ic - supported_class_mean_i) / 2; exact0 for unsupported/queryinvalid/T<=1",
+    "training_center_precision": "Differentiable CUDA Float64 sum and mean of canonical Float32 raw_delta, Float64 difference/2, finally Float32",
+    "inference_center_precision": "CPU Float64 sum of full_raw[:,flatnonzero(actual_supported_mask)] in canonical class order, divide true supported T; difference/2 then Float32",
+    "common_mode_note": "Common supported anchor and mean cancel algebraically from pair differences. Centering does not add supervision or preserve mean sigmoid quality; source-CT alpha and reported strong controls assess deployment effects.",
+    "shared_bag_gate_context": "Use source/group_data.py gate_context(X,support,query_valid): G8, supported Btop1, (top1-top2)/2, softmax(B,temp1) entropy/logT, log(max(T,1))/log307, I(query_valid&T>0); canonical CPU F64 then Float32. Original unpermuted saved context is identical for both roles."
+  },
+  "training": {
+    "data": "Grouped already-aligned source train/val classes; source-only labels; all class catalogues kept, CID0 valid, padding-1. SourceCLC and CLC_tune auxiliary material bank from sealed third-round alignment; six target test manifests unchanged.",
+    "constant_guards": "Residual constants fitted from all original valid source-train class tuples before permutation. Context constants fitted from original source-train proposals. No empirical scaling. Apply raw whole-material permutation before guards; shared guards for both roles.",
+    "pair_loss": "For supported P={c:y_c>0},N={c:y_c=0}, sum_p y_p sum_n softplus(-(z_p-z_n))/(sum_p y_p*|N|). Only proposals with T>=2 and nonempty P,N. Multiple positives never negative to each other.",
+    "conditional_population": "Equal source, eligible image, eligible proposal; 979 draws with replacement per source, 2937 total/epoch",
+    "regularizer_population": "Independent equal source, all image, all proposal draws; includes background and unsupported-positive proposals; 979/source,2937/epoch",
+    "regularizer": "0.01 times mean over full-population drawn proposals of mean_supported(centered_delta^2); empty support contributes0",
+    "sampler": "CPU torch.Generator conditional seed=s; independent regularizer seed=s+1000003; weighted multinomial within source then2937 draw permutation; same generators/draws/initialization/12 paired updates across roles",
+    "optimizer": "AdamW lr0.001 weight_decay0.0001; batch256 per population,12 paired updates; max100epochs, patience15,min_delta1e-6",
+    "best_checkpoint": "Initial epoch-1 zero-new-branch candidate included. Early stopping and checkpoint selection use pure full source-val weighted conditional pairwise loss ONLY, no regularizer. Full source/image/eligible-proposal weighting; fixed label-free validation permutation. No CT/test selection."
+  },
+  "permutation_control": {
+    "target": "Only whole raw X8..11 four-tuples within actual supported canonical classes; G0..7, supportX12, catalogue labels, padding and original shared bag context unchanged",
+    "algorithm": "For each proposal SHA256 compactJSON ['conditional_material_permutation_v1',seed,phase,epoch_or_null,*proposal_key]; first16digestbytes little-endian seed for numpy PCG64; uniform permutation without replacement, fixed points allowed",
+    "training_key": "phase='train',epoch and(source_index,image_index,global_cache_index); repeated proposal in same epoch same permutation",
+    "validation_key": "phase='val',noepoch,(source_index,image_index,global_cache_index)",
+    "target_key": "phase='case:'+case,noepoch,(image_id,global_cache_index) from sealed C source_trace",
+    "train_diagnostic_key": "phase='train_diagnostic',noepoch,(source_index,image_index,global_cache_index); diagnostic only",
+    "labels_used": false,
+    "effective_capacity_claim": "Same architecture, parameter counts, sampler and optimization budget. The material permutation destroys class alignment and is not asserted to give identical effective expressive capacity or a causal counterfactual."
+  },
+  "inference": {
+    "new_trainings": 6,
+    "actual_full_C_GPU_inferences": 42,
+    "full_C": "Run new residual and full frozen strong anchor over every catalogue class; common gate once per proposal; true-supported full-class mean, never candidate-only mean",
+    "candidate_features": "Reconstruct all13 original auxiliary columns and gather canonical candidate class_order_index; require bitexact original candidate features and catalogue joins including CID0 before GPU",
+    "candidate_anchor": "Use original saved T availability_control full_logits exactly, not fresh fullC GPU anchor logits. Save fresh fullC anchor and gather maxdiff/bitdiff separately; maxabsdiff<=1e-6, no bitexact claim for differently batched GEMM.",
+    "deployment_quality": "Endpoint owns formal T availability deployed per-seed q reconstruction: dense CPU8 F32 sigmoid(oldanchor+oldcorrection), zero oldcorrection fallback original Kseedq. Verify three-seed F64mean->F32 and fixed E3 mix bitexact old Tcontrol formal trace. New alpha0 or newdelta0 explicitly copies this deployed Tseedq, never producer quality or Kgeometry alone.",
+    "source_model_trainable": 362,
+    "current_inference_trainable": 0,
+    "saved_arrays": [
+      "full_raw_correction.npy",
+      "full_centered_correction.npy",
+      "full_anchor_logits.npy",
+      "permutation_index.npy",
+      "components.npz"
+    ],
+    "components_keys": [
+      "anchor_logits",
+      "raw_candidate_correction",
+      "supported_mean",
+      "centered_correction",
+      "availability",
+      "valid",
+      "candidate_class_order_index",
+      "supported_count",
+      "gate_weights"
+    ],
+    "receipt_status": "COMPLETE_CONDITIONAL_FULL_C_GPU_INFERENCE"
+  },
+  "boundaries": {
+    "new_backbone_training": false,
+    "new_RGB_or_radiograph_encoding": false,
+    "new_ground_truth": false,
+    "test_labels_during_model_fit_or_inference": false,
+    "AP_in_model_actor": false,
+    "paper_or_old_root_writes": false,
+    "authorization": "Actual entry points require exact frozen protocol, independent source-data/model preflight reviews, new-root-only output and reserved GPU UUID. Draft is not an execution request."
+  },
+  "training_gradient_and_audit_fix1": {
+    "training_logits": "anchor + centered_delta; no data-dependent delta==0 branch in the train graph",
+    "reason": "The failed original fourth implementation selected the frozen-anchor branch at zero initialization and blocked every new ranking gradient. This is an implementation failure, not a scientific negative finding.",
+    "recipe_unchanged": true,
+    "deployment_zero_delta_fallback_unchanged": true,
+    "synthetic_required": "At actual zero initialization: full components->actual pairwise backward must give nonzero residual last-layer weight gradient; one actual AdamW(lr.001,wd.0001) step must improve synthetic positive-minus-zero weighted margin and decrease the same loss. Frozen anchor remains unchanged. Initial gate gradient may legitimately be zero.",
+    "first_actual_training_update_required": "Record finite nonzero residual last-layer weight gradient and changed last-layer weight from its exactzero initialization on the first actual conditional CUDA batch, plus exact frozen anchor state SHA. Initial squared correction regularizer is0, so weight decay alone is not accepted as evidence of learning."
+  }
+}

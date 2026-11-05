@@ -1,0 +1,58 @@
+{
+  "status": "EXAMPLE_V3_NOT_READY_DO_NOT_EXECUTE",
+  "plan": {
+    "path": "/mnt/data/yxy/program/RAXO/experiments/night_exploration_20261101/closure_recovery_20261101_2135/config/closure_plan.json",
+    "bytes": 10189,
+    "sha256": "78d54ed327e0f7afd0282e9aed8fc873be84cdc7a3cbeb9ce22988397ceee66c"
+  },
+  "source_manifest": {
+    "path": "/mnt/data/yxy/program/RAXO/experiments/night_exploration_20261101/closure_recovery_20261101_2135/config/source_manifest.json",
+    "bytes": "FILL_AFTER_FINAL_WORKER_IDENTITY_AND_ROOT_REVIEW",
+    "sha256": "FILL"
+  },
+  "scientific_jobs_allowed": false,
+  "global_manifest_strategy": "REFERENCES_20_SEALED_ROOTS_AND_FULL_SHA_AUDIT",
+  "worker_identity_sources": [
+    {
+      "path": "/mnt/data/yxy/program/RAXO/experiments/night_exploration_20261101/closure_recovery_20261101_2135/config/original_worker_identities.json",
+      "bytes": 3130,
+      "sha256": "bce3989152c25826eebf74e241cf4db9659fa429472695bcd090713fff78aff0"
+    }
+  ],
+  "additional_wait_conditions": [
+    {
+      "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_s_fixed_quality_cost/completion.json",
+      "prefix": "COMPLETE",
+      "fields_equal": {
+        "FILL_EXACT_ROOT_S_ACCEPTANCE_FIELD": true
+      }
+    }
+  ],
+  "pointer_expected_refs": [
+    {
+      "path": "/mnt/data/yxy/program/RAXO/experiments/LATEST_EXPERIMENT.json",
+      "bytes": 508,
+      "sha256": "56314422e7c5c8410abb8be4e392ab7ecacbe3191b25079f8be25ec8c8b317f3"
+    },
+    {
+      "path": "/mnt/data/yxy/program/RAXO/experiments/NIGHT_RUNNING.json",
+      "bytes": 324,
+      "sha256": "8653b05c43bdfc1be1724fcb37c2c88644ce70d7415df6f7c0259b9b52b18558"
+    }
+  ],
+  "recovery_execution_receipt": {
+    "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/recovery_20261101_0954/automation/launch_receipt.json",
+    "bytes": "FILL_AFTER_DURABLE_SERVICE_LAUNCH",
+    "sha256": "FILL"
+  },
+  "metadata_peer_restart_receipt": {
+    "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/closure_recovery_20261101_2135/automation/P_peer_resume_started.json",
+    "bytes": 599,
+    "sha256": "58578aef26fc43f45283f28ca490fb1eac17f7328da39e9cb5db1eba3ed64f59"
+  },
+  "metadata_peer_exit_receipt": {
+    "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/closure_recovery_20261101_2135/automation/P_peer_resume_exited.json",
+    "bytes": 72,
+    "sha256": "f2f100f51c85d893af62cc064a4cb13c4046fbd43e146bf2629155d62b88cdfd"
+  }
+}

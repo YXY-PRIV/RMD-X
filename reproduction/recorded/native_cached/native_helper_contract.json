@@ -1,0 +1,52 @@
+{
+  "contract_version": 2,
+  "purpose": "Portable native cached-refinement replay, not a benchmark or evaluator",
+  "native_modules": {
+    "rmdx": {"relative_path": "rmdx/__init__.py", "sha256": "5f546626b892671865e09ec2463af272e1c362186c2b83191de4ab7f011e2396"},
+    "rmdx.cache_fusion": {"relative_path": "rmdx/cache_fusion.py", "sha256": "e8f925a547e4ca3c52eef459cedece3a2cae3e859a3c30d1cd79db9259a021e4"},
+    "rmdx.preargmax_fusion": {"relative_path": "rmdx/preargmax_fusion.py", "sha256": "e2a24e0ac456704f077b9fa5cd66f8d539bc7898df16f49fa1a5b1d1182ab586"},
+    "rmdx.material": {"relative_path": "rmdx/material.py", "sha256": "fe7c34795b5bf31e847e7845f933b265ece77f4707b13405709aaf18ab385047"}
+  },
+  "profiles": {
+    "historical_P02_raw": {
+      "family": "historical_J3128", "shape": {"N_all": 68741, "N_selected": 68741, "C": 307, "J": 3128}, "negative_columns": 1411, "lambda_material": 0.05,
+      "arithmetic": "Exact accepted P02 separate float32 multiply/add: V + float(lambda_material) * native.material_class_to_prototype(B, prototype_meta). No centering.",
+      "raw_source_proof": {"sha256": "2f492d69c5a7542cba881c91b66c006c8cd7876bbc40634b95ba4bbf979e6f0b", "class": "Runner", "function": "compute", "qualified_function": "Runner.compute", "function_AST_python_minor": "3.10", "function_AST_sha256": "4bd56fb9c110d4169a6a9bf8dd5a91e02f659bce8b11f58e45e3095bc3926490"},
+      "expected_endpoints": {
+        "visual": {"count": 49849, "sha256": "a463157aab4f88258d75a316c83ac3e57a9e35159b55efcf8968759a7e56484e"},
+        "additive": {"count": 58005, "sha256": "058affcccb2ff8a2fdee6fc9f59e9c7259c6753acfce31e6f5b8a5b7ef09c43b"}
+      }
+    },
+    "P11_native_centered": {
+      "family": "common1406_J3120", "shape": {"N_all": 68741, "N_selected": 68741, "C": 307, "J": 3120}, "negative_columns": 1407, "lambda_material": 0.05,
+      "arithmetic": "Original cache_fusion.fuse_from_cache -> preargmax_fusion.fuse_similarity_material: M - M.mean(dim=1, keepdim=True), then V + float(lambda_material) * centered.",
+      "expected_endpoints": {
+        "visual": {"count": 49726, "sha256": "fd8935ad6795191370eea01ee7c62d3340c90e92942b4e8ec4125f487c62addc"},
+        "additive": {"count": 57985, "sha256": "2c60488c3f6982029cac127b71ac2b5003800f84413057874877bcdce370a2a4"}
+      }
+    },
+    "CLC_native_centered": {
+      "family": "CLC_holdout_J733", "shape": {"N_all": 36488, "N_selected": 22091, "C": 12, "J": 733}, "negative_columns": 361, "lambda_material": 0.03,
+      "arithmetic": "Original cache_fusion.fuse_from_cache centered helper on the frozen holdout rows; original IDs map to holdout-local COCO IDs only during four-field export.",
+      "expected_endpoints": {
+        "visual": {"count": 4267, "sha256": "5b51e57062cc1f70f4cb503af5235953a757a5ed9762321198828406f985b365"},
+        "additive": {"count": 5472, "sha256": "c2f4683f946cacae17cbb1d7ceb719b23764c166e1634b1a92d0f42acb48ab5b"}
+      }
+    },
+    "synthetic_metadata_only": {
+      "family": "synthetic_metadata_only", "shape": {"N_all": 3, "N_selected": 2, "C": 2, "J": 3}, "negative_columns": 1, "lambda_material": 0.05,
+      "compute_allowed": false,
+      "description": "Artificial metadata only. No tensor payload or endpoint prediction/signature exists. This profile cannot compute."
+    }
+  },
+  "provenance": {
+    "portable_consumer_revision": 2,
+    "historical_method_resolution": "Exact unique top-level ClassDef Runner, followed by its unique direct method compute; original source and method AST SHA values unchanged.",
+    "previous_consumer_source_sha256": "f92332e4a890e846090259d34b159c38139f4f0d1e1c5a78b262fac4bbc64adf",
+    "accepted_gate": "P26_end_revision_20261024/mechanism/verification/golden_gate.json",
+    "accepted_import_origins": "P26_end_revision_20261024/mechanism/protocols/actual_import_origins.json",
+    "raw_vs_centered_source_resolution": "P26_end_revision_20261024/mechanism/protocols/diagnostic_alignment_consumer_v3.json",
+    "raw_vs_centered_source_resolution_sha256": "08afc774ae6caad8718c6e96c21040ca483e058f9534602834ca55695c3f4957",
+    "historical_negative_diagnostics": "Native exporter rejects negative winners before canonical diagnostics. Undefined native negative diagnostics are not claimed bitwise equal to historical finite sentinels. The wrapper does not fabricate them."
+  }
+}

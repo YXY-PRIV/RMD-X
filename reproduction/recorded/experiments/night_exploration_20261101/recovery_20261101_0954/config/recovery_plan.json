@@ -1,0 +1,205 @@
+{
+  "status": "ROOT_APPROVED_EXPLICIT_RECOVERY",
+  "created_utc": "2026-11-01T02:03:59.316241+00:00",
+  "python": "/mnt/data/yxy/envs/gdino_cu118_clean/bin/python",
+  "service_unit": "raxo-night-stat-recovery-20261101-0954.service",
+  "allow_generate_v2_ready_after_observing_new_worker_identity": true,
+  "source_refs": [
+    {
+      "path": "/mnt/data/yxy/program/RAXO/experiments/night_exploration_20261101/batch_d_bootstrap/scripts/run_baseline_bootstrap.py",
+      "bytes": 19090,
+      "sha256": "7b832c200c53903c298ff4b355573102dbe4e0768674c6b4496abddeb8124f2b"
+    },
+    {
+      "path": "/mnt/data/yxy/program/RAXO/experiments/night_exploration_20261101/batch_d_candidate_bootstrap/scripts/run_candidate_bootstrap.py",
+      "bytes": 19687,
+      "sha256": "f041334bc08eeaa7c0b4cf325ac93dba8798069be56548c8635d3e0999430c66"
+    },
+    {
+      "path": "/mnt/data/yxy/program/RAXO/experiments/night_exploration_20261101/batch_p_supported_rank_bootstrap/scripts/run_supported_bootstrap.py",
+      "bytes": 21830,
+      "sha256": "7241400a43bb007b5832c810ab86e84e212b8bf907e8e42aaa1a0c0336b25da9"
+    },
+    {
+      "path": "/mnt/data/yxy/program/RAXO/experiments/night_exploration_20261101/recovery_20261101_0954/final_closure_v2/README.md",
+      "bytes": 4791,
+      "sha256": "03a1d473f959adcc623e8d85e33717adb02ebfa18e6555f0a61c96c402f8a198"
+    },
+    {
+      "path": "/mnt/data/yxy/program/RAXO/experiments/night_exploration_20261101/recovery_20261101_0954/final_closure_v2/config/closure_plan.json",
+      "bytes": 10154,
+      "sha256": "63616c68ad36fbcbf453ab2e11dcfd88f14b8777b9303aced3eca0b11dbff1be"
+    },
+    {
+      "path": "/mnt/data/yxy/program/RAXO/experiments/night_exploration_20261101/recovery_20261101_0954/final_closure_v2/config/recovery_contract.json",
+      "bytes": 3223,
+      "sha256": "9befd8540d12a4c3699e483b9218521e230cb68e37c144bc69667b66dcead001"
+    },
+    {
+      "path": "/mnt/data/yxy/program/RAXO/experiments/night_exploration_20261101/recovery_20261101_0954/final_closure_v2/config/root_ready.example.json",
+      "bytes": 1951,
+      "sha256": "16f000e95ed859f85877718568f84ef3a810d2dff59ddf8dfc4b9372c98f2fdd"
+    },
+    {
+      "path": "/mnt/data/yxy/program/RAXO/experiments/night_exploration_20261101/recovery_20261101_0954/final_closure_v2/provenance/original_D_baseline_status.json",
+      "bytes": 749,
+      "sha256": "4becd1e58334249019de87d4c43bbdad1c66fd9ae39734b42928b71dfa38609f"
+    },
+    {
+      "path": "/mnt/data/yxy/program/RAXO/experiments/night_exploration_20261101/recovery_20261101_0954/final_closure_v2/provenance/original_closure_source_refs.json",
+      "bytes": 2273,
+      "sha256": "ed224b100984ee1779fc9aa1b2ce456806163dfcceb63727045e2d77f2e2e242"
+    },
+    {
+      "path": "/mnt/data/yxy/program/RAXO/experiments/night_exploration_20261101/recovery_20261101_0954/final_closure_v2/provenance/original_failed_closure_journal.json",
+      "bytes": 1966,
+      "sha256": "cc62a642a61d9facf649608b996ce6020b5668d07adc8b1a50ff34c579be2f92"
+    },
+    {
+      "path": "/mnt/data/yxy/program/RAXO/experiments/night_exploration_20261101/recovery_20261101_0954/final_closure_v2/provenance/original_failed_closure_status.json",
+      "bytes": 329,
+      "sha256": "05fd2f5c07cfa3f7392e222c6000b15dbc0eb8978180415068d0967eb1b6379f"
+    },
+    {
+      "path": "/mnt/data/yxy/program/RAXO/experiments/night_exploration_20261101/recovery_20261101_0954/final_closure_v2/provenance/original_original_worker_identities.json",
+      "bytes": 2026,
+      "sha256": "b18e75511c450ea3f9b7a5fa437b68e911406991e99d380e3e7e8601c1a2a91f"
+    },
+    {
+      "path": "/mnt/data/yxy/program/RAXO/experiments/night_exploration_20261101/recovery_20261101_0954/final_closure_v2/provenance/original_source_manifest.json",
+      "bytes": 11105,
+      "sha256": "62af862cc05a254772c9129ecef8039d7d46b54117e8a2380618e434be284bdf"
+    },
+    {
+      "path": "/mnt/data/yxy/program/RAXO/experiments/night_exploration_20261101/recovery_20261101_0954/final_closure_v2/scripts/check_pointer_transaction.py",
+      "bytes": 4860,
+      "sha256": "50c37dd3de4d2d84addcb7f3e67d8227bb5817ebe4ab5db98e70ea266ce30a06"
+    },
+    {
+      "path": "/mnt/data/yxy/program/RAXO/experiments/night_exploration_20261101/recovery_20261101_0954/final_closure_v2/scripts/make_source_manifest.py",
+      "bytes": 2582,
+      "sha256": "583fa344ee8065f3093b39f637af2c2f2feb14a1222e8b37e16d9902d68861f0"
+    },
+    {
+      "path": "/mnt/data/yxy/program/RAXO/experiments/night_exploration_20261101/recovery_20261101_0954/final_closure_v2/scripts/run_final_closure.py",
+      "bytes": 34008,
+      "sha256": "feb2f7e3294f49912e721ee9fc1634ac24c3d2285bb3427c0a621107ace34a8f"
+    },
+    {
+      "path": "/mnt/data/yxy/program/RAXO/experiments/night_exploration_20261101/recovery_20261101_0954/final_closure_v2/scripts/write_final_report.py",
+      "bytes": 24490,
+      "sha256": "a401782e8c987a91e14e33c31b0022fe6a88cc7008f4d0871c58f34f74ad61c1"
+    },
+    {
+      "path": "/mnt/data/yxy/program/RAXO/experiments/night_exploration_20261101/recovery_20261101_0954/scripts/cleanup_linger.py",
+      "bytes": 11388,
+      "sha256": "6a7dcb2088818a827294d11cf4afd782b6d716305fe92cb40e56a8d707b996c3"
+    },
+    {
+      "path": "/mnt/data/yxy/program/RAXO/experiments/night_exploration_20261101/recovery_20261101_0954/scripts/run_recovery.py",
+      "bytes": 12079,
+      "sha256": "78897836877d2bd2863131476b06e3fe07f07ca9d1638974800a2538ee973958"
+    },
+    {
+      "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_p_supported_rank_bootstrap/verification/review_paired_source_chain.py",
+      "bytes": 14277,
+      "sha256": "54dfcb7a34b2cdcceb67f0e4e37c78677445be8b7b6cee4477401f3108277cd0"
+    },
+    {
+      "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/verification/d_peer/review_d_statistics.py",
+      "bytes": 29290,
+      "sha256": "3b092a43d40e4a9d436a94328ce34d1cba1cf13b2dd12dbc099c40e3ca36b2ea"
+    }
+  ],
+  "workers": [
+    {
+      "role": "D_baseline_actor",
+      "source": {
+        "path": "/mnt/data/yxy/program/RAXO/experiments/night_exploration_20261101/batch_d_bootstrap/scripts/run_baseline_bootstrap.py",
+        "bytes": 19090,
+        "sha256": "7b832c200c53903c298ff4b355573102dbe4e0768674c6b4496abddeb8124f2b"
+      },
+      "arguments": [
+        "run"
+      ]
+    },
+    {
+      "role": "D_candidate_actor",
+      "source": {
+        "path": "/mnt/data/yxy/program/RAXO/experiments/night_exploration_20261101/batch_d_candidate_bootstrap/scripts/run_candidate_bootstrap.py",
+        "bytes": 19687,
+        "sha256": "f041334bc08eeaa7c0b4cf325ac93dba8798069be56548c8635d3e0999430c66"
+      },
+      "arguments": [
+        "run"
+      ]
+    },
+    {
+      "role": "P_actor",
+      "source": {
+        "path": "/mnt/data/yxy/program/RAXO/experiments/night_exploration_20261101/batch_p_supported_rank_bootstrap/scripts/run_supported_bootstrap.py",
+        "bytes": 21830,
+        "sha256": "7241400a43bb007b5832c810ab86e84e212b8bf907e8e42aaa1a0c0336b25da9"
+      },
+      "arguments": [
+        "run"
+      ]
+    },
+    {
+      "role": "D_peer",
+      "source": {
+        "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/verification/d_peer/review_d_statistics.py",
+        "bytes": 29290,
+        "sha256": "3b092a43d40e4a9d436a94328ce34d1cba1cf13b2dd12dbc099c40e3ca36b2ea"
+      },
+      "arguments": [
+        "--watch"
+      ]
+    },
+    {
+      "role": "P_peer",
+      "source": {
+        "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_p_supported_rank_bootstrap/verification/review_paired_source_chain.py",
+        "bytes": 14277,
+        "sha256": "54dfcb7a34b2cdcceb67f0e4e37c78677445be8b7b6cee4477401f3108277cd0"
+      },
+      "arguments": []
+    }
+  ],
+  "integrity_audit": {
+    "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/recovery_20261101_0954/peer_audit/resume_integrity_audit.json",
+    "bytes": 535071,
+    "sha256": "1c016ba7b787fd792505d63c50fe10c8c77c4f9f0e43facab68b902a89187618"
+  },
+  "before_archive": {
+    "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/recovery_20261101_0954/before_archive_manifest.json",
+    "bytes": 31886,
+    "sha256": "bb84fc4b69a472f5571b0e3ac89ae7b69386b0ff1372d484faece94682cada93"
+  },
+  "linger_receipt": {
+    "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/recovery_20261101_0954/automation/linger_receipt.json",
+    "bytes": 953,
+    "sha256": "12adfbf93f06659119f208ba9c025cc424cb7a6e32fef07011aa508cf154a9be"
+  },
+  "identity_placeholder": {
+    "path": "/mnt/data/yxy/program/RAXO/experiments/night_exploration_20261101/recovery_20261101_0954/final_closure_v2/config/original_worker_identities.json",
+    "bytes": 80,
+    "sha256": "cffc189fb4e1ff5ceb21f56cb8d7aa35cfdc68d4bd20c150e1db80900f4d47e5"
+  },
+  "independent_implementation_review": {
+    "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/recovery_20261101_0954/peer_audit/coordinator_cleanup_final_static_review.json",
+    "bytes": 3461,
+    "sha256": "738166cf9bf8e95bb58dd8124c9f9c99431b05cfbfdae69df295e603b9e62c0a"
+  },
+  "v2_preparation_review": {
+    "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/recovery_20261101_0954/final_closure_v2/verification/preparation_review.json",
+    "bytes": 3573,
+    "sha256": "9243ad8b714ad4c406e1b09c278a76661eccf6d73429dea65b5580ae3e9659b3"
+  },
+  "scientific_code_or_parameter_change": false,
+  "only_missing_durable_work": true,
+  "accepted_unique_rows_before": 8705,
+  "target_accepted_unique_formal_rows": 36000,
+  "actual_unsaved_interrupted_call_count_unknown": true,
+  "no_new_model_or_AP_training": true
+}

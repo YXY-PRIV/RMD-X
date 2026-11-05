@@ -1,0 +1,43 @@
+{
+  "status": "EXAMPLE_NOT_READY_DO_NOT_EXECUTE",
+  "plan": {
+    "path": "/mnt/data/yxy/program/RAXO/experiments/night_exploration_20261101/final_closure/config/closure_plan.json",
+    "bytes": 9176,
+    "sha256": "943737aef13640e32e486a356f7a948bef9191a3296fe591433831bac32cd77a"
+  },
+  "source_manifest": {
+    "path": "/mnt/data/yxy/program/RAXO/experiments/night_exploration_20261101/final_closure/config/source_manifest.json",
+    "bytes": "FILL_AFTER_FINAL_ROOT_S_SOURCE_FREEZE",
+    "sha256": "FILL"
+  },
+  "scientific_jobs_allowed": false,
+  "global_manifest_strategy": "REFERENCES_20_SEALED_ROOTS_AND_FULL_SHA_AUDIT",
+  "worker_identity_sources": [
+    {
+      "path": "/mnt/data/yxy/program/RAXO/experiments/night_exploration_20261101/final_closure/config/original_worker_identities.json",
+      "bytes": 2026,
+      "sha256": "b18e75511c450ea3f9b7a5fa437b68e911406991e99d380e3e7e8601c1a2a91f"
+    }
+  ],
+  "additional_wait_conditions": [
+    {
+      "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_s_fixed_quality_cost/completion.json",
+      "prefix": "COMPLETE",
+      "fields_equal": {
+        "FILL_EXACT_ROOT_S_ACCEPTANCE_FIELD": true
+      }
+    }
+  ],
+  "pointer_expected_refs": [
+    {
+      "path": "/mnt/data/yxy/program/RAXO/experiments/LATEST_EXPERIMENT.json",
+      "bytes": 508,
+      "sha256": "56314422e7c5c8410abb8be4e392ab7ecacbe3191b25079f8be25ec8c8b317f3"
+    },
+    {
+      "path": "/mnt/data/yxy/program/RAXO/experiments/NIGHT_RUNNING.json",
+      "bytes": 324,
+      "sha256": "8653b05c43bdfc1be1724fcb37c2c88644ce70d7415df6f7c0259b9b52b18558"
+    }
+  ]
+}

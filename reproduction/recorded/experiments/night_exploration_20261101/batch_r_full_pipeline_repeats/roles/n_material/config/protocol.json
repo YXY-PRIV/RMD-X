@@ -1,0 +1,338 @@
+{
+  "study_id": "night_R_n_material_twelve_prespecified_seed_repeats",
+  "status": "FROZEN_R_N_MATERIAL_ROLE_BEFORE_ANY_NEW_TRAINING_OR_INFERENCE",
+  "created_utc": "2026-10-31T19:26:49.215001+00:00",
+  "role": "n_material",
+  "parent_protocol": {
+    "path": "/mnt/data/yxy/program/RAXO/experiments/night_exploration_20261101/batch_r_full_pipeline_repeats/config/protocol.json",
+    "bytes": 22437,
+    "sha256": "925127ad7f9f49aca829c57048df11fe968d6c9a00c965fe70ec028b57700610"
+  },
+  "inference_clarification": {
+    "path": "/mnt/data/yxy/program/RAXO/experiments/night_exploration_20261101/batch_r_full_pipeline_repeats/config/inference_clarification_01.json",
+    "bytes": 2447,
+    "sha256": "0e88abdcc6741e5625a54a437165e9d4c601bb79b0eb0a1b4f478f737191ffd1"
+  },
+  "preflight_metadata_archive": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_r_full_pipeline_repeats/roles/n_material/preflight_attempts/before_role_specific_inference_clarification_01",
+  "source_N_protocol": {
+    "path": "/mnt/data/yxy/program/RAXO/experiments/night_exploration_20261101/batch_n_supported_material_quality/config/protocol.json",
+    "bytes": 1750004,
+    "sha256": "94470fb3917d5fc51e98f0a051f2dd3a392cbb8f8c51962befabe05f3c6408dd"
+  },
+  "source_N_training_npz": {
+    "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_n_supported_material_quality/training/multisource_train_val.npz",
+    "bytes": 3107341,
+    "sha256": "e56135f4c4913de11cb4892ac084cd1ee15a4634d129385a50bcec6b5775e2f9"
+  },
+  "source_N_data_receipt": {
+    "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_n_supported_material_quality/training/data_receipt.json",
+    "bytes": 8236,
+    "sha256": "0554a82ce4c4abb4cdba04651923c5e55a3204dfb18b68582d9feb08db7ddf81"
+  },
+  "source_N_model_source_freeze": {
+    "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_n_supported_material_quality/automation/model_code_freeze.json",
+    "bytes": 1628,
+    "sha256": "c922b24c8dff8d213b4df6141f3079c7afa7f39907d189b2f5a9e71acb4b2a0f"
+  },
+  "source_N_model_sources": [
+    {
+      "path": "/mnt/data/yxy/program/RAXO/experiments/night_exploration_20261101/batch_n_supported_material_quality/src/quality_model.py",
+      "bytes": 13365,
+      "sha256": "14fb85e5b70398d215d033482c9a9c8603dc0c95aabbb87bd9fb531e66b21da0"
+    },
+    {
+      "path": "/mnt/data/yxy/program/RAXO/experiments/night_exploration_20261101/batch_n_supported_material_quality/scripts/train_quality.py",
+      "bytes": 566,
+      "sha256": "6f71de9d2863f6ec80c972fefb226c0c9953601830c4907d1167c9ad92cf22cc"
+    },
+    {
+      "path": "/mnt/data/yxy/program/RAXO/experiments/night_exploration_20261101/batch_n_supported_material_quality/scripts/infer_quality.py",
+      "bytes": 571,
+      "sha256": "f710d9aeb4748fdc57edb720f1cc76dd26a4ec03949304ab91504e40b5b154c3"
+    },
+    {
+      "path": "/mnt/data/yxy/program/RAXO/experiments/night_exploration_20261101/batch_n_supported_material_quality/scripts/run_models.py",
+      "bytes": 9660,
+      "sha256": "4aa48505d1e65aaef7d54ba0ca6582a1e8bee78367b12a68b69b8b5a0d5ec98e"
+    }
+  ],
+  "source_N_completion": {
+    "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_n_supported_material_quality/completion.json",
+    "bytes": 2739,
+    "sha256": "07f923a8a49039716654d768a193e25d86f25eae7e82aa0ab673ee9f11809afd"
+  },
+  "groups": [
+    {
+      "id": "replica1",
+      "seeds": [
+        59,
+        71,
+        83
+      ]
+    },
+    {
+      "id": "replica2",
+      "seeds": [
+        97,
+        109,
+        127
+      ]
+    },
+    {
+      "id": "replica3",
+      "seeds": [
+        139,
+        151,
+        163
+      ]
+    },
+    {
+      "id": "replica4",
+      "seeds": [
+        179,
+        191,
+        211
+      ]
+    }
+  ],
+  "seeds": [
+    59,
+    71,
+    83,
+    97,
+    109,
+    127,
+    139,
+    151,
+    163,
+    179,
+    191,
+    211
+  ],
+  "training": {
+    "variants": [
+      "material"
+    ],
+    "seeds": [
+      59,
+      71,
+      83,
+      97,
+      109,
+      127,
+      139,
+      151,
+      163,
+      179,
+      191,
+      211
+    ],
+    "architecture": [
+      13,
+      32,
+      16,
+      1
+    ],
+    "activation": "ReLU",
+    "optimizer": "AdamW",
+    "learning_rate": 0.001,
+    "weight_decay": 0.0001,
+    "batch_size": 1024,
+    "max_epochs": 100,
+    "patience": 15,
+    "min_delta": 1e-06,
+    "source_names": [
+      "CLC",
+      "PID",
+      "Hi"
+    ],
+    "source_input": {
+      "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_n_supported_material_quality/training/multisource_train_val.npz",
+      "actual_ref_from": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_n_supported_material_quality/training/data_receipt.json"
+    },
+    "base_draws_per_epoch": 29370,
+    "draws_per_source": 9790,
+    "draws": "Torch CPUgenerator(seed); source tuple weights1/(image_proposal_count*C), multinomialreplacement9790each source; concatenate then sharedgenerator randperm29370. Same seed variants replay same draws.",
+    "paired_views": "Two identical clean views perbasebatch; mean theirBCE, oneupdate.29stepsperepoch, noaffine/dropout augmentation.",
+    "positive_weight": "Per tuple C-1, only y*log(sigmoid) term; same extra labels/weights anddraws bothvariants.",
+    "early_stop": "Val naturalweightedBCE: meanpersource of meanperimage of meanpertuple. Same weights C-1. Report same-balanced unweightedBCE/MSE separately.",
+    "constant_guard": "Per variant onlyunique train transformed13 features; exactconstantcoordinates zero in all splits/inference. No empirical scaling or test fitting.",
+    "checkpoint": "Same N best validation checkpoint rule on actual GPU2 CUDA only; no seed replacement or best-group selection.",
+    "new_trainings": 12
+  },
+  "feature_schema": {
+    "names": [
+      "confidence_percentile",
+      "clip_log_aspect_over4",
+      "width_over_image_width",
+      "height_over_image_height",
+      "centerx_over_width",
+      "centery_over_height",
+      "max_other_proposal_IoU",
+      "sqrt_relative_box_area",
+      "fresh_B_class",
+      "supported_B_rank_over_T_minus1",
+      "supported_B_top_minus_second_over2",
+      "B_class_minus_supported_top_over2",
+      "has_actual_material_support"
+    ],
+    "dimensions": 13,
+    "dtype": "float32",
+    "active_coordinates": {
+      "material": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "normalization": "Unchanged K natural units. No empirical means/std, no new bank/rawB/RGB statistics.",
+    "only_changed_coordinates": [
+      9,
+      10,
+      11
+    ],
+    "unchanged_coordinates": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      12
+    ],
+    "formula": "Within each proposal, use only actual bank support>0 AND query_valid classes. T=true-supported count. Descending F64(K F32 B) rank; exact ties source catalogue class_index. rank/(max(T-1,1)); (supported_top-supported_second)/2 forT>=2 else0; (Bc-supported_top)/2. Cast once F32. T<2 rank0/margin0; unsupported/query-invalid all existing8..12 remain0.",
+    "training_recovery": "Prove key(source_index,image_index,global_cache_index) groups contain every unique actual source target CID exactly once and class_count matches. Never infer flatten order. Recover genuine supported B from unchanged K X8 where unchanged X12==1, ordered by source_class_order catalogue, not numericCID.",
+    "query_recovery": "Use immutable K full freshB and actual support counts/query_valid, then gather only the exact original C candidate CID slots. RawB, queryRGB22, bank, geometry, classes, masks, rowkeys and teacher unchanged.",
+    "constant_guard": "Compute independently for each new model using only N unique training13D after active mask, then zero those constants in train/val/inference. No val/test fit."
+  },
+  "cases": {
+    "DET": {
+      "source_N_feature_manifest": {
+        "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_n_supported_material_quality/features/DET/feature_manifest.json",
+        "bytes": 39186,
+        "sha256": "b65a49f910d3859f9323c0db88544fafb0dcd86e7e035a12e0bebda75cd68a90"
+      },
+      "feature_manifest": {
+        "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_c_shared_union/features/DET/feature_manifest.json",
+        "bytes": 76176,
+        "sha256": "9c5b0a79742638567ec5c03a5e33caedd9070056e88e65ab0225619b1f35beda"
+      },
+      "candidate_row_key_sha256": "7ff49f0652908dcff396a5f26485d5fb8843d242f459693d93aceb3cca4e4f18"
+    },
+    "CLCXray_test": {
+      "source_N_feature_manifest": {
+        "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_n_supported_material_quality/features/CLCXray_test/feature_manifest.json",
+        "bytes": 7948,
+        "sha256": "73a7a5158794f1f0ef2b46b9355b7d2793eea4c18680dd025009b7f9aa3b1e91"
+      },
+      "feature_manifest": {
+        "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_c_shared_union/features/CLCXray_test/feature_manifest.json",
+        "bytes": 49344,
+        "sha256": "046fa6e5618760abef75f3004c11d8fcd46f4d4d059f93aeabaa1d4101780343"
+      },
+      "candidate_row_key_sha256": "deaceb8ec82e92a96d44e0684ddb4309f1b805c2b4740a5022ac9b9f1cdd951a"
+    },
+    "PIXray": {
+      "source_N_feature_manifest": {
+        "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_n_supported_material_quality/features/PIXray/feature_manifest.json",
+        "bytes": 8162,
+        "sha256": "67e29427f5633a5ea8f6db96d746cb7fd0ab4d223f9778720b8b2644526261fa"
+      },
+      "feature_manifest": {
+        "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_c_shared_union/features/PIXray/feature_manifest.json",
+        "bytes": 167784,
+        "sha256": "99fbba15e49d4edab4cb86a0d5f636024733215b2ad1089c378e74236b70c32e"
+      },
+      "candidate_row_key_sha256": "21ee533e7cf6bdbdadc7e7e4563a089a088bd1b7cf5b167ad36cd2925dc87304"
+    },
+    "PIDray": {
+      "source_N_feature_manifest": {
+        "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_n_supported_material_quality/features/PIDray/feature_manifest.json",
+        "bytes": 7848,
+        "sha256": "9dc5ec9dfe102c3cdaf68934235486ed03090369c2e6e0bc56e87e8d1beac8ab"
+      },
+      "feature_manifest": {
+        "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_c_shared_union/features/PIDray/feature_manifest.json",
+        "bytes": 617938,
+        "sha256": "ed96e6812ba3611448a9422e3367d0f5160b1cb27419611b38e66efbc237d4bb"
+      },
+      "candidate_row_key_sha256": "9a17e2001773191cdaa678c4f3fc20421c21ab35dad5309d4d846c06ac9cb827"
+    },
+    "DvXray": {
+      "source_N_feature_manifest": {
+        "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_n_supported_material_quality/features/DvXray/feature_manifest.json",
+        "bytes": 8169,
+        "sha256": "3b0449d79204a4f886e1b80ddaeac1a2c9e0e1efe781cb67d697e64ece28b236"
+      },
+      "feature_manifest": {
+        "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_c_shared_union/features/DvXray/feature_manifest.json",
+        "bytes": 312779,
+        "sha256": "0689ac8d203cd0d0db217fb83abd07812993365bee5413fb1f05306ffbaa7f1d"
+      },
+      "candidate_row_key_sha256": "b2db95f75ce88045ca865fac2fac6c4d8995bc46cede406ef121d38d2c9dc7cf"
+    },
+    "Hi": {
+      "source_N_feature_manifest": {
+        "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_n_supported_material_quality/features/Hi/feature_manifest.json",
+        "bytes": 7303,
+        "sha256": "fca29b10a1fc3320abd41d0f9e737233d20520ddeaf37cbe95337f760356aedf"
+      },
+      "feature_manifest": {
+        "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_c_shared_union/features/Hi/feature_manifest.json",
+        "bytes": 308555,
+        "sha256": "cd93c26b17590b8fc875c626dcc1dbf8251adf8fa1857d7f3d34a8bccd6f83bc"
+      },
+      "candidate_row_key_sha256": "6087de99f562ad3d3a6bff31e7581b038cba1409098a3f9ddbb9ab614336b23e"
+    }
+  },
+  "inference_cases": [
+    "DET",
+    "CLCXray_test",
+    "PIXray",
+    "PIDray",
+    "DvXray",
+    "Hi"
+  ],
+  "test_cases": [
+    "DET",
+    "CLCXray_test",
+    "PIXray",
+    "PIDray",
+    "DvXray",
+    "Hi"
+  ],
+  "resources": {
+    "GPU_index": 2,
+    "GPU_UUID": "GPU-cfd4e982-ea9c-6090-3f22-88ea28c7360d",
+    "CPU_environment_threads": 8,
+    "GPU_one_child_at_a_time": true,
+    "check_GPU2_empty_before_each_child": true,
+    "GPU3_do_not_touch": true,
+    "minimum_available_RAM_GiB": 64
+  },
+  "inherited_scientific_settings": "Exactly original N material data, teacher, classC-1 soft-IoU weighted BCE, architecture, natural unit inputs and unique-train constant guard, sourceequal9790x3 sampling, two identical views,29 optimizer updates/epoch,100 max epochs, same early stopping/validation. Only namespace/GPU and the12 prescribed seeds differ.",
+  "quality_rule": "Independent arithmetic F64 mean of each prescribed own3 seeds then F32. Four separate groups; never mean12, never select bestgroup.",
+  "new_compute": {
+    "trainings": 12,
+    "actual_GPU_inferences": 72,
+    "three_seed_group_means": 24,
+    "new_GT_images_features": 0,
+    "new_AP": 0
+  },
+  "original_N_or_P_candidate_changed": false,
+  "code_root": "/mnt/data/yxy/program/RAXO/experiments/night_exploration_20261101/batch_r_full_pipeline_repeats/roles/n_material",
+  "output_root": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_r_full_pipeline_repeats/roles/n_material"
+}

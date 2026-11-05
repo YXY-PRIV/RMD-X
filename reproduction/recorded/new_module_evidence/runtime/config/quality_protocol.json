@@ -1,0 +1,63 @@
+{
+  "status": "FROZEN_BEFORE_QUALITY_FORWARD_OR_TIMING",
+  "created_UTC": "2026-11-02T04:11:33.727164+00:00",
+  "source_protocol": {
+    "path": "/mnt/data/yxy/program/RAXO/experiments/pair_conflict_material_projection_20261101/config/protocol.json",
+    "bytes": 100908,
+    "sha256": "117a12b17f60f3784c1f9559b4fc41bdc9f82f476461698392957934c643e02f"
+  },
+  "boundary": "Resident native proposal/candidate arrays to final detections; actual all-model forwards and full-catalogue feature construction; excludes rawimageproposal/encoder and disk/model loads",
+  "methods": [
+    "strong",
+    "pair"
+  ],
+  "cases": [
+    "DET",
+    "CLCXray_test",
+    "PIXray",
+    "PIDray",
+    "DvXray",
+    "Hi"
+  ],
+  "all_proposals_all_images": true,
+  "trials": 3,
+  "warmup_method_order": [
+    "strong",
+    "pair"
+  ],
+  "trial_method_orders": [
+    [
+      "strong",
+      "pair"
+    ],
+    [
+      "pair",
+      "strong"
+    ],
+    [
+      "strong",
+      "pair"
+    ]
+  ],
+  "GPU": 0,
+  "CPU_affinity": [
+    72,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79
+  ],
+  "CPU_threads": 8,
+  "parameter_count_current": 8322,
+  "pre_timing_goldens": "Exact all saved components and final q/q0/r0/post scores; forbid timing on mismatch",
+  "raw_end_to_end_planned_separately": true,
+  "old_inputs_readonly": true,
+  "no_AP_or_GT_read": true,
+  "selected_by_speed": false,
+  "stage_timing": "CUDA sync before and after each model/stage; wall perf_counter_ns includesCPU/GPU transfer and synchronization; total includes host serialization",
+  "memory": "torchCUDA allocated/reserved/max plus getrusageprocessRSShighwater; nozero cost claim",
+  "one_time_initialization": "Measured model-load and inputload outside steadytimer, reported separately"
+}

@@ -1,0 +1,25 @@
+{
+  "case": "DvXray",
+  "trial": 0,
+  "method": "strong",
+  "proposals": 193665,
+  "retained": 193665,
+  "images": 9153,
+  "catalogue_classes": 15,
+  "stages_ns": {
+    "three_T_availability_models_GPU_and_CPU_sigmoid": 565322195,
+    "three_E_visual_clean_models_GPU": 228451660,
+    "ensemble_geometric_mix_fixed_router_sqrt_score_Gaussian_serialization": 11452005634,
+    "total": 12250743008
+  },
+  "memory": {
+    "peak_process_RSS_bytes": 2146013184,
+    "cuda_allocated_bytes": 33651200,
+    "cuda_reserved_bytes": 60817408,
+    "peak_cuda_allocated_bytes": 37190656,
+    "peak_cuda_reserved_bytes": 60817408
+  },
+  "prediction_content_sha256": "98c3e7954f5e0643e33509c23c7dc61f431f268203e176d3a8e00b7f78653441",
+  "input_load_seconds_excluded": 0.19955989089794457,
+  "model_load_seconds_excluded": 1.568929499015212
+}

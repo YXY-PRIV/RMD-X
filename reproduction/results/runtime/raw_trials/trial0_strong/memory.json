@@ -1,0 +1,14 @@
+{
+  "main": {
+    "allocated": 1077938176,
+    "reserved": 3925868544,
+    "max_allocated": 1843857408,
+    "max_reserved": 3925868544
+  },
+  "SAM": {
+    "allocated": 1074828800,
+    "reserved": 3519021056,
+    "max_allocated": 2153526272,
+    "max_reserved": 3519021056
+  }
+}

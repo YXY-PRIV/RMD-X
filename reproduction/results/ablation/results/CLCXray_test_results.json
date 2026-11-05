@@ -1,0 +1,143 @@
+{
+  "status": "COMPLETE_FOUR_ABLATION_CELLS",
+  "protocol": {
+    "path": "/mnt/data/yxy/program/RAXO/experiments/new_module_evidence_20261102/ablation/protocol.json",
+    "bytes": 4020,
+    "sha256": "87d127113f97677bb0917a9be72ef6d7a7138c30888a1b3eeffc62a869884c6c"
+  },
+  "case": "CLCXray_test",
+  "results": [
+    {
+      "dataset": "CLCXray_test",
+      "cell": "00_full",
+      "AP": 0.26584126152195015,
+      "AP50": 0.35528859433537874,
+      "AP75": 0.29300622386133846,
+      "stats": [
+        0.26584126152195015,
+        0.35528859433537874,
+        0.29300622386133846,
+        0.100990099009901,
+        0.13187951669107015,
+        0.27479768470503674,
+        0.3419657129091217,
+        0.38795672348596544,
+        0.3895736935633875,
+        0.3,
+        0.25332429843087767,
+        0.3960506060388231
+      ],
+      "AP_computed_here": false,
+      "AP_reused": true,
+      "export": {
+        "path": "/mnt/data/yxy-codex/home/outputs/RAXO/new_module_evidence_20261102/ablation/endpoints/CLCXray_test/00_full/export.json",
+        "bytes": 28718,
+        "sha256": "256f9267a4f2064c7a443e140a07c6ba89704faf9c3fd289961a21e380c247bb"
+      },
+      "metrics": {
+        "path": "/mnt/data/yxy-codex/home/outputs/RAXO/new_module_evidence_20261102/ablation/endpoints/CLCXray_test/00_full/metrics.json",
+        "bytes": 31618,
+        "sha256": "2b1bb3b2d40be0aa3639cd33fef9f46a8a1ab1163f6075f2e0006f6c82525956"
+      }
+    },
+    {
+      "dataset": "CLCXray_test",
+      "cell": "10_gate",
+      "AP": 0.267136137093898,
+      "AP50": 0.3564401321471477,
+      "AP75": 0.29530583768366336,
+      "stats": [
+        0.267136137093898,
+        0.3564401321471477,
+        0.29530583768366336,
+        0.07574257425742574,
+        0.1327564924601365,
+        0.2785632414543146,
+        0.3430840108363853,
+        0.38795672348596544,
+        0.3895736935633875,
+        0.3,
+        0.25332429843087767,
+        0.3960506060388231
+      ],
+      "AP_computed_here": true,
+      "AP_reused": false,
+      "export": {
+        "path": "/mnt/data/yxy-codex/home/outputs/RAXO/new_module_evidence_20261102/ablation/endpoints/CLCXray_test/10_gate/export.json",
+        "bytes": 26652,
+        "sha256": "3ccbf38cb90cd56d1f549443f922ecec882d248379dba7f58b19320ff51434f6"
+      },
+      "metrics": {
+        "path": "/mnt/data/yxy-codex/home/outputs/RAXO/new_module_evidence_20261102/ablation/endpoints/CLCXray_test/10_gate/metrics.json",
+        "bytes": 15126,
+        "sha256": "c2894ed3964c86e1f6490e3ecb63e350eaddb989a2a29e52caeef6f0713b9041"
+      }
+    },
+    {
+      "dataset": "CLCXray_test",
+      "cell": "01_projection_identity_extension",
+      "AP": 0.2653347699982484,
+      "AP50": 0.3548185718147346,
+      "AP75": 0.29242207312902163,
+      "stats": [
+        0.2653347699982484,
+        0.3548185718147346,
+        0.29242207312902163,
+        0.100990099009901,
+        0.13115830048517652,
+        0.27482382088833635,
+        0.3419657129091217,
+        0.38795672348596544,
+        0.3895736935633875,
+        0.3,
+        0.25332429843087767,
+        0.3960506060388231
+      ],
+      "AP_computed_here": true,
+      "AP_reused": false,
+      "export": {
+        "path": "/mnt/data/yxy-codex/home/outputs/RAXO/new_module_evidence_20261102/ablation/endpoints/CLCXray_test/01_projection_identity_extension/export.json",
+        "bytes": 26679,
+        "sha256": "098110ab735608bf25aa677bc005208af8b317434bc781f488db622558c8b7bc"
+      },
+      "metrics": {
+        "path": "/mnt/data/yxy-codex/home/outputs/RAXO/new_module_evidence_20261102/ablation/endpoints/CLCXray_test/01_projection_identity_extension/metrics.json",
+        "bytes": 15203,
+        "sha256": "6a114613e430aa3d27dec3b3ebd2aece7a910a814affd06ff4165b65e6e6a7d7"
+      }
+    },
+    {
+      "dataset": "CLCXray_test",
+      "cell": "11_both",
+      "AP": 0.2672587438708459,
+      "AP50": 0.3566403272855956,
+      "AP75": 0.29561862068924505,
+      "stats": [
+        0.2672587438708459,
+        0.3566403272855956,
+        0.29561862068924505,
+        0.07574257425742574,
+        0.1325416829387054,
+        0.27894939954938425,
+        0.3430840108363853,
+        0.38795672348596544,
+        0.3895736935633875,
+        0.3,
+        0.25332429843087767,
+        0.3960506060388231
+      ],
+      "AP_computed_here": false,
+      "AP_reused": true,
+      "export": {
+        "path": "/mnt/data/yxy-codex/home/outputs/RAXO/new_module_evidence_20261102/ablation/endpoints/CLCXray_test/11_both/export.json",
+        "bytes": 28705,
+        "sha256": "460f2d84fcad4b558e152f126637da4d4804a3c6d2597aaea5032d0ae72b6748"
+      },
+      "metrics": {
+        "path": "/mnt/data/yxy-codex/home/outputs/RAXO/new_module_evidence_20261102/ablation/endpoints/CLCXray_test/11_both/metrics.json",
+        "bytes": 31615,
+        "sha256": "18bfde7154ec29d42968b09635d742955e1f36f3e4532765ba0d60349d851dd3"
+      }
+    }
+  ]
+}

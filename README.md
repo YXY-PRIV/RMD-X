@@ -1,222 +1,61 @@
-# RMD-X: Material-guided Soft Decision Fusion for X-ray OvOD
+# RMD-X: Conflict-Aware Appearance Fusion for X-Ray Object Detection
 
-This repository contains the code release for **RMD-X**, a material-guided
-pre-argmax soft fusion module for RAXO-style open-vocabulary X-ray object
-detection.
+Code and recorded evidence for **Conflict-Aware Appearance Fusion for Open-Vocabulary X-Ray Object Detection**. This release adds the source-trained quality anchor, supported-conflict pair projection, uncertainty analysis, component ablations and full-image runtime protocols to the earlier native candidate-fusion code.
 
-RMD-X is designed as a lightweight refinement layer on top of a reproduced
-RAXO pipeline. It keeps detector proposals and bounding boxes unchanged, and
-only refines the category-score competition before the final class argmax.
+**Current entry points are in [`reproduction/`](reproduction/README.md).** The original `rmdx/`, `raxo/` and numbered `scripts_rmdx/` remain the legacy native-stage implementation and historical exploration; they are not the complete selected conflict-aware method. The previous README and guides are preserved under [`docs/legacy/`](docs/legacy/).
 
-![RMD-X teaser](assets/figures/figure0_teaser_mo_new.png)
+## Method
 
-## What Is Included
+RMD-X retains two complementary native candidate streams: visual-reference candidates **V** and visual-plus-appearance candidates **F**. A 22-dimensional descriptor of the rendered region captures colour/intensity, edges and box geometry; category-aligned support comparisons augment the visual prototype competition. The union retains only native-surviving branches.
 
-```text
-RMD-X/
-├── raxo/                    # RAXO runtime files required by the reproduced pipeline
-├── rmdx/                    # RMD-X modules and exploratory variants
-├── scripts_rmdx/            # Reproduction, cache, ablation, and audit scripts
-├── configs/                 # Example local path configuration
-├── docs/                    # Data/resource contracts and reproduction notes
-├── assets/figures/          # Lightweight paper figures for repository documentation
-├── outputs_rmdx/            # Empty placeholder; generated outputs are ignored
-├── run_method_database_branch_v2.sh
-├── run_method_web_branch_v2.sh
-├── requirements.txt
-└── README.md
-```
+A source-trained quality anchor fixes one branch, category and box per proposal. A learned class-conditioned residual then acts only on valid disagreements with genuine support for both retained categories. Its signed pair projection `(-D, +D)` has zero sum in **logit corrections**. It refines confidence and subsequent ranking, while the selected category and detector box stay fixed. Inactive entries preserve the original anchor quality before the inherited suppression step. `D` may have either sign.
 
-This release intentionally does **not** include datasets, large model weights,
-precomputed DINO/SAM proposal caches, experiment logs, or paper drafting files.
+Detector and image-encoder weights stay frozen; the downstream quality/residual heads are fitted on the recorded source data. This is not a training-free method or a measurement of physical material composition. Subtracting a common material-score mean across native prototype columns is algebraically redundant and is not claimed as an innovation.
 
-## Method Overview
+## Recorded results
 
-RMD-X adds a support-derived material compatibility term to the RAXO visual
-descriptor decision rule:
+AP is in percent. Visual candidates and candidate union use the same frozen shared scorer; the last column isolates the selected conflict-aware ranking increment over that union. The native appearance-only (**F-only**) condition is a different comparison and is not shown in this table.
 
-```text
-S_fuse(c | p) = S_visual(c | p) + lambda_material * centered(S_material(c | p))
-```
+| Dataset | Visual candidates | Candidate union | RMD-X selected | Ranking gain (pp) |
+|---|---:|---:|---:|---:|
+| DET-COMPASS | 50.5709 | 50.8947 | 50.9218 | +0.027076 |
+| CLCXray | 25.5455 | 26.6974 | 26.7259 | +0.028442 |
+| PIXray | 43.8386 | 44.8178 | 44.8322 | +0.014383 |
+| PIDray | 23.0141 | 23.5305 | 23.5321 | +0.001599 |
+| DvXray | 28.0273 | 28.3415 | 28.3441 | +0.002582 |
+| HiXray | 20.1233 | 20.5298 | 20.7282 | +0.198433 |
 
-The final paper method is the fixed colour-only RMD-X pre-argmax fusion:
+Candidate fusion increases mean AP by **0.6153 percentage points** over V-only under the shared scorer. The selected conflict-aware stage adds a further **0.045419 points** over the union. Its six-dataset mean has a conditional paired-image 95% interval of **[0.029460, 0.073577] points** for the fixed recorded datasets and predictions. Five individual ranking gains are below 0.03 points; the CLCXray and DvXray intervals include zero. These point estimates do not establish significance on every dataset or superiority over every alternative endpoint.
 
-```text
-mode = material_preargmax
-lambda_material = 0.05
-lambda_reliability = 0.0
-```
+[Full-precision result table](results/current_six_dataset_AP.csv) · [Evidence, intervals and ablations](reproduction/README.md)
 
-For DET-COMPASS + GroundingDINO, the locked result is:
+![Current recorded AP point estimates](assets/results/current_six_dataset_radar.png)
 
-```text
-RAXO baseline:  AP / AP50 / AP75 = 0.480 / 0.544 / 0.488
-RMD-X fixed:    AP / AP50 / AP75 = 0.501 / 0.561 / 0.515
-```
+The original half-annular chart geometry and styles are retained. Near-overlapping blue/green curves reflect the actual small differences; points have not been separated or the scale changed to amplify gains. This chart replaces the old teaser as the current numerical summary. The older X-ray illustrations in `assets/figures/` are retained only as historical assets, not current experimental evidence.
 
-The core implementation is in:
-
-- `rmdx/cache_builder.py`
-- `rmdx/cache_fusion.py`
-- `rmdx/material.py`
-- `rmdx/preargmax_fusion.py`
-- `scripts_rmdx/15_build_preargmax_cache_full.py`
-- `scripts_rmdx/16_run_cache_fusion_grid.py`
-- `scripts_rmdx/17_validate_cache_reproduction.py`
-
-## Main Figures
-
-Pipeline overview:
-
-![RMD-X pipeline](assets/figures/figure1_rmdx_pipeline_latest_trimmed.png)
-
-Pre-argmax material-aware fusion:
-
-![Pre-argmax material fusion](assets/figures/figure3_preargmax_fusion_trimmed.png)
-
-Qualitative examples:
-
-![Qualitative X-ray comparison](assets/figures/figure4_real_xray_qualitative_trimmed.png)
-
-Proposal consistency examples:
-
-![Yellow box proposal consistency](assets/figures/figure5_yellow_box_proposal_consistency_trimmed.png)
-
-## Required External Resources
-
-The following resources must be prepared locally before running the full
-pipeline. They are intentionally excluded from this GitHub repository.
-
-### Datasets
-
-The paper uses six X-ray security datasets:
-
-| Dataset | Expected annotation | Expected image directory | Main use |
-|---|---|---|---|
-| DET-COMPASS | `DET-COMPASS/annotations/full_test.json` | `DET-COMPASS/test/` | Main benchmark |
-| PIXray | `PIXray/annotations/full_test.json` | `PIXray/test/` | Multi-dataset evaluation |
-| PIDray / pidray | `pidray/annotations/full_test.json` | `pidray/test/` | Exploratory / multi-dataset evaluation |
-| CLCXray | `CLCXray/annotations/full_test.json` | `CLCXray/test/` | Dataset-specific material evidence |
-| HiXray | `HiXray/annotations/full_test.json` | `HiXray/test/` | Negative diagnostic evidence |
-| DvXray | `DvXray/annotations/full_test.json` | `DvXray/test/` | Multi-dataset evaluation |
-
-Expected root:
-
-```text
-/datasets/xray-datasets/
-├── DET-COMPASS/
-├── PIXray/
-├── pidray/
-├── CLCXray/
-├── HiXray/
-└── DvXray/
-```
-
-### Model and Proposal Resources
-
-Expected root:
-
-```text
-/models/ICCV25_experimentation/
-├── known_prototypes_sam2.pt
-└── initial_detections/
-    ├── groundingDINO/
-    ├── VLDet/
-    └── CoDet/
-```
-
-For the main DET-COMPASS + GroundingDINO experiment:
-
-```text
-/models/ICCV25_experimentation/known_prototypes_sam2.pt
-/models/ICCV25_experimentation/initial_detections/groundingDINO/coco_results.bbox_DET-COMPASS_with_masks.json
-/datasets/xray-datasets/DET-COMPASS/annotations/full_test.json
-/datasets/xray-datasets/DET-COMPASS/test/
-```
-
-The repository also contains scripts for multi-detector and multi-dataset
-audits. Detic is excluded from the DET-COMPASS main multi-detector table because
-official DET-COMPASS Detic proposals were not available in the authors'
-resource package.
-
-See `docs/DATA_AND_RESOURCE_CONTRACT.md` and
-`docs/DATASETS_AND_RESOURCES.md` for the full path contract.
-
-## Environment
-
-The original experiments were run in a Docker environment with CUDA-capable
-GPUs. The common mount layout is:
-
-```text
-/path/to/RMD-X                           -> /workspace/RAXO
-/path/to/models/ICCV25_experimentation   -> /models/ICCV25_experimentation
-/path/to/datasets/xray-datasets          -> /datasets/xray-datasets
-```
-
-Copy and edit the example configuration:
+## Inspect the release
 
 ```bash
-cp configs/paths.example.env configs/paths.env
+git clone https://github.com/YXY-PRIV/RMD-X.git
+cd RMD-X
+python3 reproduction/inspect_release.py
 ```
 
-Install Python dependencies in your chosen environment:
+Inspection does not train a model, run native AP evaluation, bootstrap or launch GPU workers. See [`reproduction/README.md`](reproduction/README.md) for the portable mathematical core, small checks, recorded source entry points and external resource configuration. The recorded scripts retain their original source bytes and protocol identities; a separately identified portable layer avoids the private filesystem layout. No fresh end-to-end scientific rerun is claimed for this publication update.
 
-```bash
-python3 -m pip install -r requirements.txt
-```
+## Source and evidence layout
 
-Some original RAXO stages require external runtime assets such as DINOv2, SAM2,
-and detector checkpoints. The cache-based RMD-X reproduction assumes the
-corresponding RAXO proposal / with-mask resources have already been prepared.
+- `reproduction/`: current algorithm sources, compact fitted states, recorded protocols and result/evidence summaries; see its index for precise paths and execution boundaries.
+- `results/current_six_dataset_AP.csv`: full-precision AP values used above and in the accompanying manuscript.
+- `assets/results/`: the numerical chart, without any provider radiograph pixels.
+- `rmdx/`, `raxo/`, `scripts_rmdx/`: preserved native-stage and legacy code.
+- `docs/`: current reproduction and resource boundaries; `docs/legacy/` preserves older instructions.
 
-## Typical DET-COMPASS Reproduction Flow
+## Reproduction boundaries
 
-```bash
-# 1. Validate code/data contracts.
-python3 scripts_rmdx/03_check_rmdx_contracts.py
+- Provider radiographs/annotations, large feature and prediction caches, and upstream detector/DINO/SAM checkpoints are external resources. Access, redistribution and third-party notices remain subject to their providers. They are not added in this update.
+- The quality heads use recorded source supervision, including CLCXray, PIDray and HiXray; these conditions are not presented as unseen-domain evaluation. Historical test exposure and the five incompletely reconstructable support-class origins remain limitations.
+- Confidence intervals condition on fixed recorded cohorts and predictions; they do not include training or support-sampling variation. Native negative transfer and unfavourable component ablations remain in the evidence rather than being discarded.
+- Cached downstream timings are distinct from the measured raw-image deployment workload. The raw-image pipeline's upstream identity is not authenticated to the historical cached-AP inputs, and the small measured timing difference is not claimed as a speedup or a certified joint speed/accuracy operating point.
 
-# 2. Build or validate the support-derived colour material bank.
-python3 scripts_rmdx/06_build_material_colour_bank.py
-
-# 3. Build the RMD-X pre-argmax cache.
-python3 scripts_rmdx/15_build_preargmax_cache_full.py
-
-# 4. Run the fixed material pre-argmax fusion grid.
-python3 scripts_rmdx/16_run_cache_fusion_grid.py
-
-# 5. Validate locked cache reproduction.
-python3 scripts_rmdx/17_validate_cache_reproduction.py
-python3 scripts_rmdx/19_run_cache_regression_test.py
-```
-
-Generated outputs are written under `outputs_rmdx/` and are ignored by Git by
-default.
-
-## Leakage and Reproducibility Policy
-
-- The main material bank should be constructed from non-test support/prototype
-  data.
-- Do not use `full_test.json` ground-truth boxes to construct the main material
-  bank.
-- Test images may be used only as inference-time inputs for detector proposals.
-- Large generated caches, checkpoints, datasets, and logs should remain outside
-  Git.
-
-## GitHub Upload Boundary
-
-Upload this folder as the repository root. Do **not** upload:
-
-- dataset archives or extracted datasets;
-- `/data`, `/datasets`, or `/models`;
-- DINOv2 / SAM2 / detector checkpoints;
-- `outputs_rmdx/cache*`;
-- `outputs_rmdx/logs`;
-- paper LaTeX drafting folders;
-- `__pycache__`;
-- `.pt`, `.pth`, `.pkl`, `.parquet`, `.zip`, `.tar`, `.7z`, `.rar` files unless
-  you intentionally release a tiny example.
-
-## Citation
-
-Please cite the accompanying paper if this code is useful for your research.
-
+This release provides code, compact author-fitted downstream states and recorded numerical evidence for the manuscript named above. Provider data and model access remain separate. Use a pinned commit when citing the software and its recorded results.

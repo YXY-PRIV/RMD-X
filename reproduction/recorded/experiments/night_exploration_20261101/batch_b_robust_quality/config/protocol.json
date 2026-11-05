@@ -1,0 +1,447 @@
+{
+  "study_id": "night_batch_b_robust_quality_20261101",
+  "status": "FROZEN_BEFORE_NEW_TRAINING_INFERENCE_OR_AP",
+  "created_utc": "2026-10-31T16:33:03.533539+00:00",
+  "question": "Can deployment-aligned training and robust feature scales avoid confidence/entropy shifts without test-specific tuning?",
+  "sources": {
+    "candidate_root": "/mnt/data/yxy-codex/home/outputs/RAXO/appearance_candidate_refinement_20261031",
+    "candidate_protocol": {
+      "path": "/mnt/data/yxy-codex/home/outputs/RAXO/appearance_candidate_refinement_20261031/protocol/protocol.json",
+      "bytes": 13807,
+      "sha256": "b47eedfd0f52c8d33c39b915a0be61029c93f2b18d804dcddb9e41fb1793b534"
+    },
+    "candidate_completion": {
+      "path": "/mnt/data/yxy-codex/home/outputs/RAXO/appearance_candidate_refinement_20261031/completion.json",
+      "bytes": 4934,
+      "sha256": "7d2113047dbe9dc5861be7bd2ddfff8750012003e5d26dfc3468a3a5422c5c1f"
+    },
+    "dropout_completion": {
+      "path": "/mnt/data/yxy-codex/home/outputs/RAXO/appearance_material_dropout_20261031/completion.json",
+      "bytes": 3696,
+      "sha256": "10f7b8a93eb92f9bb8f208273b9eaf0af9d7f09ef8f7dad37b96cd4156aa7de7"
+    },
+    "training_npz": {
+      "path": "/mnt/data/yxy-codex/home/outputs/RAXO/appearance_candidate_refinement_20261031/training/candidate_train_val.npz",
+      "bytes": 905618,
+      "sha256": "479efb3825a05415295806a0e6d6a83227baf0ed0fa4fb2b4cc0c415cf66b6a1"
+    },
+    "native_calfit_csv": {
+      "path": "/mnt/data/yxy-codex/home/outputs/RAXO/appearance_reliability_pilot_20261031/training/cal_fit_target_rows.csv",
+      "bytes": 407877,
+      "sha256": "99e2ab3e1e330ef41bbb24380735097ccac0aa2bfbffc9e0b539b0dbef4ac603"
+    },
+    "image_split": {
+      "path": "/mnt/data/yxy-codex/home/outputs/RAXO/appearance_reliability_pilot_20261031/training/cal_fit_image_split.json",
+      "bytes": 2254,
+      "sha256": "88ca429e2501b536e1a1eb841f024bf206a5e018ee805b5280867aa747453f3c"
+    },
+    "original_statistics": {
+      "path": "/mnt/data/yxy-codex/home/outputs/RAXO/appearance_candidate_refinement_20261031/models/full/seed17/feature_standardization.json",
+      "bytes": 862,
+      "sha256": "baeeabea5b0e373835f0dedbcdfd636f15af052e45e6ace01574f6f501ba6bb1"
+    },
+    "original_six_combination": {
+      "path": "/mnt/data/yxy-codex/home/outputs/RAXO/appearance_six_dataset_transfer_20261031/results/six_dataset_locked_combination.json",
+      "bytes": 35325,
+      "sha256": "45d1b57b6daf9fb7faf811e685c020467c9ba34f18261dfb3451951634ed19f3"
+    },
+    "previous_main_summary": {
+      "path": "/mnt/data/yxy-codex/home/outputs/RAXO/appearance_candidate_refinement_20261031/results/summary.json",
+      "bytes": 4447734,
+      "sha256": "f79a6b37cb1f3c0bbb964889717754f0b895708b5308ba7490c7a04c3be29ba4"
+    },
+    "previous_guard_summary": {
+      "path": "/mnt/data/yxy-codex/home/outputs/RAXO/appearance_candidate_refinement_20261031/guarded/results/summary.json",
+      "bytes": 6318700,
+      "sha256": "c130f394f95b1aa88b48fb44ef9e41c1ce971f65e1848a3ba9ecee6c58c11d93"
+    }
+  },
+  "cases": {
+    "CLC_tune": {
+      "features": {
+        "path": "/mnt/data/yxy-codex/home/outputs/RAXO/appearance_candidate_refinement_20261031/features/CLC_tune/candidate_features.npy",
+        "bytes": 408428,
+        "sha256": "7c7823acbdfa6cf9c7b1002a90486e146de008d08480da3d578275874efcabed"
+      },
+      "feature_manifest": {
+        "path": "/mnt/data/yxy-codex/home/outputs/RAXO/appearance_candidate_refinement_20261031/features/CLC_tune/feature_manifest.json",
+        "bytes": 16595,
+        "sha256": "aee7ce471f2c610fddfb2e79c37f1b6f87e13694a788bf7a27d535ce60daa0b6"
+      },
+      "status": {
+        "path": "/mnt/data/yxy-codex/home/outputs/RAXO/appearance_candidate_refinement_20261031/features/CLC_tune/status.json",
+        "bytes": 1035,
+        "sha256": "047ace071f0b18a73adfa91c284bdaa375ac6d8d96a363e77d083f09e657ef4d"
+      }
+    },
+    "DET": {
+      "features": {
+        "path": "/mnt/data/yxy-codex/home/outputs/RAXO/appearance_candidate_refinement_20261031/features/DET/candidate_features.npy",
+        "bytes": 14917928,
+        "sha256": "ebda46a33c04c5ec8a64d18accd4d00acf6bd01c0554bad111937376d5ac37be"
+      },
+      "feature_manifest": {
+        "path": "/mnt/data/yxy-codex/home/outputs/RAXO/appearance_candidate_refinement_20261031/features/DET/feature_manifest.json",
+        "bytes": 58264,
+        "sha256": "c20dcd17e9c819259561f33b6c6ef31f5a451e5118a342fbb4944477ebea1886"
+      },
+      "status": {
+        "path": "/mnt/data/yxy-codex/home/outputs/RAXO/appearance_candidate_refinement_20261031/features/DET/status.json",
+        "bytes": 1022,
+        "sha256": "deb19a146c25e5b195e393c804654b7c0156f0782b5243f10e64b3ea0a045fe6"
+      }
+    },
+    "CLCXray_test": {
+      "features": {
+        "path": "/mnt/data/yxy-codex/home/outputs/RAXO/appearance_candidate_refinement_20261031/features/CLCXray_test/candidate_features.npy",
+        "bytes": 2543528,
+        "sha256": "bbf118715564faaa635a2c2141fbc9b45f740ebc7c7615058f0b6d304b8e5404"
+      },
+      "feature_manifest": {
+        "path": "/mnt/data/yxy-codex/home/outputs/RAXO/appearance_candidate_refinement_20261031/features/CLCXray_test/feature_manifest.json",
+        "bytes": 25795,
+        "sha256": "d23d87dc6a41037c9bbf8e85a76e21e7a8568b33592be0330293e319eb72a5b2"
+      },
+      "status": {
+        "path": "/mnt/data/yxy-codex/home/outputs/RAXO/appearance_candidate_refinement_20261031/features/CLCXray_test/status.json",
+        "bytes": 1048,
+        "sha256": "342f6ac96981372f328c6e0ff956ce0c2cfe9d290f128d94bdfae41dd3cbea17"
+      }
+    },
+    "PIXray": {
+      "features": {
+        "path": "/mnt/data/yxy-codex/home/outputs/RAXO/appearance_candidate_refinement_20261031/features/PIXray/candidate_features.npy",
+        "bytes": 19676528,
+        "sha256": "245f12f2465d42f86ad03dad0c9cc922fa21a8b87df95f661f35863390f64ed7"
+      },
+      "feature_manifest": {
+        "path": "/mnt/data/yxy-codex/home/outputs/RAXO/appearance_candidate_refinement_20261031/features/PIXray/feature_manifest.json",
+        "bytes": 77792,
+        "sha256": "8d180aabe413b107c58553bbc49e23f5426018c587c34989d70d722a26a2bcca"
+      },
+      "status": {
+        "path": "/mnt/data/yxy-codex/home/outputs/RAXO/appearance_candidate_refinement_20261031/features/PIXray/status.json",
+        "bytes": 1031,
+        "sha256": "7f8b5a925b39a1e1f66c8ad2be29860681084366ef3690ad03f152d5e7d60788"
+      }
+    },
+    "PIDray": {
+      "features": {
+        "path": "/mnt/data/yxy-codex/home/outputs/RAXO/appearance_candidate_refinement_20261031/features/PIDray/candidate_features.npy",
+        "bytes": 85745828,
+        "sha256": "7695cb86157ef70ccfb31c726280867290f319751b7395d81b7fe06db9b4e0b2"
+      },
+      "feature_manifest": {
+        "path": "/mnt/data/yxy-codex/home/outputs/RAXO/appearance_candidate_refinement_20261031/features/PIDray/feature_manifest.json",
+        "bytes": 275528,
+        "sha256": "1be69821522aa504868eba872a9efc5d34b7e8e2915dfaf5227eab70b2ec8c1f"
+      },
+      "status": {
+        "path": "/mnt/data/yxy-codex/home/outputs/RAXO/appearance_candidate_refinement_20261031/features/PIDray/status.json",
+        "bytes": 1034,
+        "sha256": "c7f84708f1d2a2932b8c8202c066fd8841696288a09909dde95e6c911672b0e2"
+      }
+    },
+    "DvXray": {
+      "features": {
+        "path": "/mnt/data/yxy-codex/home/outputs/RAXO/appearance_candidate_refinement_20261031/features/DvXray/candidate_features.npy",
+        "bytes": 37290728,
+        "sha256": "51b36a6ad520b1d9ce05322d47224ae71a0fa472464e0c38cadcc08136aaadf6"
+      },
+      "feature_manifest": {
+        "path": "/mnt/data/yxy-codex/home/outputs/RAXO/appearance_candidate_refinement_20261031/features/DvXray/feature_manifest.json",
+        "bytes": 141104,
+        "sha256": "de6b781b2554f4604c895529caf6fbfab30d507875727c6eae22bcb2bc5c2444"
+      },
+      "status": {
+        "path": "/mnt/data/yxy-codex/home/outputs/RAXO/appearance_candidate_refinement_20261031/features/DvXray/status.json",
+        "bytes": 1034,
+        "sha256": "991df4ea9257bf47cdb5e6f422c2418a463719278310e97409204840fb339ab6"
+      }
+    },
+    "Hi": {
+      "features": {
+        "path": "/mnt/data/yxy-codex/home/outputs/RAXO/appearance_candidate_refinement_20261031/features/Hi/candidate_features.npy",
+        "bytes": 87868928,
+        "sha256": "ad2b7a3ce2407bff1f3ec5d8989a4b1fcc35d8f4f008165dd343b3760f901ece"
+      },
+      "feature_manifest": {
+        "path": "/mnt/data/yxy-codex/home/outputs/RAXO/appearance_candidate_refinement_20261031/features/Hi/feature_manifest.json",
+        "bytes": 138838,
+        "sha256": "b7a3c2b3dd5782879f1b23a4925c36677265d8645423d27ef5767cdf428473af"
+      },
+      "status": {
+        "path": "/mnt/data/yxy-codex/home/outputs/RAXO/appearance_candidate_refinement_20261031/features/Hi/status.json",
+        "bytes": 1022,
+        "sha256": "d636aa31f92a469710db60757f48ee2740301d58a25a59af2b6621876a6c66db"
+      }
+    }
+  },
+  "test_cases": [
+    "DET",
+    "CLCXray_test",
+    "PIXray",
+    "PIDray",
+    "DvXray",
+    "Hi"
+  ],
+  "inference_cases": [
+    "CLC_tune",
+    "DET",
+    "CLCXray_test",
+    "PIXray",
+    "PIDray",
+    "DvXray",
+    "Hi"
+  ],
+  "feature_source_protocol_sha256": "b47eedfd0f52c8d33c39b915a0be61029c93f2b18d804dcddb9e41fb1793b534",
+  "feature_schema": {
+    "names": [
+      "detector_confidence",
+      "visual_global_top1",
+      "visual_global_margin",
+      "visual_global_entropy",
+      "candidate_visual_max",
+      "candidate_visual_minus_global_top1",
+      "candidate_visual_rank_normalized",
+      "candidate_visual_canonical_gap",
+      "log1p_positive_prototype_count",
+      "candidate_material_score",
+      "candidate_material_rank_normalized",
+      "material_global_margin",
+      "log1p_material_support_count",
+      "material_support_available",
+      "candidate_material_top1_agreement"
+    ],
+    "dtype": "float32",
+    "shape": "[nativeV-kept rows,5,15]; calfit all7282rows",
+    "canonical_gap": "Float32 candidate canonical V minus torch float32 mean of the fixed canonical V of all other C-1 classes, not just top5 candidates.",
+    "visual_rank": "0-based candidate rank /4",
+    "material_rank": "0-based descending B rank with class_index ascending ties /(C-1)",
+    "material_margin": "float32 maximum B minus second-largest B across all C",
+    "support": "Actual exact bank sample_count/category_name join; zero remains zero; availability means count>0. Positive prototype count is visual reference metadata, separate from material support count.",
+    "negative": "Features only positive category candidates; original negative winner/UNC handling belongs to frozen nativeV proposal screen."
+  },
+  "recipes": [
+    {
+      "id": "r0",
+      "population": "all",
+      "normalization": "zclip3",
+      "confidence_q_input": true
+    },
+    {
+      "id": "r1",
+      "population": "kept",
+      "normalization": "zclip3",
+      "confidence_q_input": true
+    },
+    {
+      "id": "r2",
+      "population": "kept",
+      "normalization": "unit",
+      "confidence_q_input": true
+    },
+    {
+      "id": "r3",
+      "population": "kept",
+      "normalization": "zclip3",
+      "confidence_q_input": false
+    },
+    {
+      "id": "r4",
+      "population": "kept",
+      "normalization": "unit",
+      "confidence_q_input": false
+    }
+  ],
+  "variants": [
+    "visual",
+    "full_missing"
+  ],
+  "training": {
+    "seeds": [
+      17,
+      29,
+      43
+    ],
+    "screen_seeds": [
+      17
+    ],
+    "confirmation_seeds": [
+      29,
+      43
+    ],
+    "lr": 0.001,
+    "weight_decay": 0.0001,
+    "batch_size": 1024,
+    "max_epochs": 100,
+    "early_stop_patience": 15,
+    "early_stop_min_delta": 1e-06,
+    "optimizer": "AdamW",
+    "architecture": [
+      15,
+      32,
+      16,
+      1
+    ],
+    "loss": "Unweighted candidate BCE; equal full/Mzero views per base batch, single update. Visual views identical after material-column masking.",
+    "source_input": {
+      "path": "/mnt/data/yxy-codex/home/outputs/RAXO/appearance_candidate_refinement_20261031/training/candidate_train_val.npz",
+      "bytes": 905618,
+      "sha256": "479efb3825a05415295806a0e6d6a83227baf0ed0fa4fb2b4cc0c415cf66b6a1"
+    },
+    "image_split": {
+      "path": "/mnt/data/yxy-codex/home/outputs/RAXO/appearance_reliability_pilot_20261031/training/cal_fit_image_split.json",
+      "bytes": 2254,
+      "sha256": "88ca429e2501b536e1a1eb841f024bf206a5e018ee805b5280867aa747453f3c"
+    },
+    "inactive_features": [
+      8,
+      12
+    ],
+    "full_missing_active_features": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      9,
+      10,
+      11,
+      13,
+      14
+    ],
+    "visual_active_features": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "population": "all: original29370 train candidates (5874proposals/153images). kept: only nativeV-kept globalrows from frozenCSV,1140proposals/5700candidates/149effectiveimages, still original153-image reservation.",
+    "validation": "ALL recipes use same nativeV-kept validation264proposals/1320candidates/37effectiveimages, reserved original38-image fold; pairedviews equal BCE. No validation fitting.",
+    "normalization_fit": "Only unique active training candidates, not resampled draws, with equally weighted full/Mzero raw views. First9stats computed on unique base full rows in F64; last6 joint full-then-missing F64. Zero std→1 and globally zero constant coordinates; metadata8/12 always0. Unit uses fixed scales and does not fit mean/std for transformation.",
+    "sampling": "Every epoch uses29370base draws. all one seeded randperm29370. kept concatenates fresh seeded randperm5700 repeatedly and truncates29370; not target/class-weighted. All variants same seed share same base draws.29base batches/epoch; full+Mzero<=2048 forwards/oneoptimizer step per batch. Extra exposure/repetition is reported.",
+    "target": "Original same-class maxIoU F32 labels from sealedNPZ unchanged. No GT annotations read to create new labels.",
+    "new_fresh_training_count": 14
+  },
+  "normalization": {
+    "zclip3": "Compute own population augmented-train F64 mean/popstd, normalizeF32 then clip all standardized coordinates to[-3,3], then zero inactive/constant; no target-domain fit.",
+    "unit": "Fixed score scales, no train centering or standard-deviation division; divide raw coordinates by scale vector, then zero metadata8/12/inactive/constant. These are natural score units, not physical material measurements.",
+    "unit_scales": [
+      1,
+      1,
+      2,
+      1,
+      1,
+      2,
+      1,
+      2,
+      1,
+      1,
+      1,
+      2,
+      1,
+      1,
+      1
+    ],
+    "missing": "Before any scaling, if raw13==0 zero raw9..14; paired artificial missing also zero raw9..14.",
+    "confidence_off": "Additionally set normalized input coordinate0 exactly0; final original detector score stays unchanged."
+  },
+  "stress_profiles": [
+    {
+      "id": "natural",
+      "input_conf_factor": 1.0,
+      "entropy_shift": 0.0
+    },
+    {
+      "id": "low_conf",
+      "input_conf_factor": 0.1,
+      "entropy_shift": 0.0
+    },
+    {
+      "id": "low_entropy",
+      "input_conf_factor": 1.0,
+      "entropy_shift": -0.002446745574835162
+    },
+    {
+      "id": "joint",
+      "input_conf_factor": 0.1,
+      "entropy_shift": -0.002446745574835162
+    }
+  ],
+  "stress": {
+    "purpose": "Calfit/source cue-shift robustness selection; not new images or independent domains.",
+    "entropy_reference": {
+      "path": "/mnt/data/yxy-codex/home/outputs/RAXO/appearance_candidate_refinement_20261031/models/full/seed17/feature_standardization.json",
+      "bytes": 862,
+      "sha256": "baeeabea5b0e373835f0dedbcdfd636f15af052e45e6ace01574f6f501ba6bb1"
+    },
+    "entropy_sigma_train": 0.0002446745574835162,
+    "delta": 0.002446745574835162,
+    "rule": "Local copy only: raw0 *= input_conf_factor; raw3=clip(raw3+entropy_shift,0,1) before chosen normalization. All other raw/source data unchanged. Final raw detector score from native trace unchanged.",
+    "origin": "Motivated by prior GT-free cross-cohort feature inspection and known .1 vs .01 score thresholds. Earlier test AP/feature distributions known during design; exploratory."
+  },
+  "screening": {
+    "models": 10,
+    "inference": "Each seed17 model predicts four CLC_tune profiles only;40actualGPU jobs. All outputs retained.",
+    "AP": "For each of5recipes,2variants,4profiles evaluate fixed nativeV class/rank0, originalraw^.5*q0^.5F64, Gaussian1.40logicalAP. Select ONE recipe by arithmetic mean of its8 APs, ties higher natural pair mean, then smaller fixed recipe index. No test AP used. All losing configs retained.",
+    "selection_file": "parameters/selected_recipe.json",
+    "selection_status": "FROZEN_RECIPE_BEFORE_CONFIRMATION_AND_FINAL_TEST",
+    "selected_field": "selected_recipe_id"
+  },
+  "confirmation": {
+    "new_models": 4,
+    "rule": "Train seeds29/43 for both variants of the selected recipe, keep original17checkpoint. Reuse seed17natural and stress outputs exactly, run4new checkpoints×4tune profiles=16newGPU; finaltest6×2variants×3seeds=36newGPU. Total92actualGPU across screen/confirm/test.",
+    "means": "F64 equal mean all3seeds then F32.14natural arrays (tune+6test×2) plus6stress tune arrays. No seed/model-composition selection.",
+    "selection": "No reselection of recipe or numerical parameter after confirmation. Natural/stress confirmed APs descriptive; beta0 remains primary."
+  },
+  "scoring": {
+    "alpha": 0.5,
+    "sigma": 1.0,
+    "primary_beta": 0.0,
+    "diagnostic_beta": 0.05,
+    "rule": "F64 raw^.5*clip(qselected,1e-6,1)^.5, Gaussian1 no candidate pruning; same nativeV budget/boxes/order.",
+    "classification": "Primary score_control uses original nativeV candidate rank0. Diagnostic refine_rescore and label_only use original candidateVmax+.05*q inF64, tie smaller rank. New class does not re-run UNC; originalV UNC onlyproposal screen."
+  },
+  "final_roles": [
+    "score_control",
+    "refine_rescore",
+    "label_only"
+  ],
+  "final_logical_AP": 36,
+  "confirmed_tune_logical_AP": 8,
+  "resources": {
+    "allowed_gpu_uuids": [
+      "GPU-7d53f26e-0c06-c368-43bf-de34b45f6a52",
+      "GPU-cfd4e982-ea9c-6090-3f22-88ea28c7360d"
+    ],
+    "GPU1_reserved_for_batch_C": true,
+    "GPU3_do_not_touch": true,
+    "max_training_inference_processes": 2,
+    "skip_gpu_with_other_compute_process": true,
+    "OMP_NUM_THREADS": 8,
+    "global_native_slots": 4,
+    "native_lock_directory": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/resources/native_slots",
+    "native_lock_names": [
+      "slot0.lock",
+      "slot1.lock",
+      "slot2.lock",
+      "slot3.lock"
+    ]
+  },
+  "publication_edits": false,
+  "limits": [
+    "Exploratory reused cohorts; no new independent holdout/significance guarantee.",
+    "Training-population/sampling/normalization and validation policy form recipes; no isolated physical material-causality claim.",
+    "Stress transforms only model inputs and not final detector scores; synthetic cue stress is not true held-out-domain evidence.",
+    "Shared q model is supervised, not training-free.",
+    "Earlier unavailable material provenance/Hi checkpoint limits remain."
+  ]
+}

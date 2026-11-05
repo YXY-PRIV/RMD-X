@@ -1,0 +1,44 @@
+{
+  "case": "Hi",
+  "boundary": "Resident native proposal/candidate arrays to final detections; actual all-model forwards and full-catalogue feature construction; excludes rawimageproposal/encoder and disk/model loads",
+  "summary": {
+    "strong": {
+      "cohort_seconds": [
+        28.036497324,
+        28.679086458,
+        28.226339798
+      ],
+      "mean_seconds": 28.313974526666666,
+      "median_seconds": 28.226339798,
+      "p90_seconds": 28.588537126000002,
+      "sample_SD_seconds": 0.33013646123243945,
+      "mean_ms_per_image": 3.122061365824971,
+      "peak_process_RSS_bytes": 2146013184,
+      "peak_cuda_allocated_bytes": 37300224,
+      "peak_cuda_reserved_bytes": 60817408
+    },
+    "pair": {
+      "cohort_seconds": [
+        49.495042701,
+        49.466810432,
+        49.361829159
+      ],
+      "mean_seconds": 49.441227430666665,
+      "median_seconds": 49.466810432,
+      "p90_seconds": 49.489396247200006,
+      "sample_SD_seconds": 0.0701949386420591,
+      "mean_ms_per_image": 5.451673550630352,
+      "peak_process_RSS_bytes": 2146013184,
+      "peak_cuda_allocated_bytes": 37300224,
+      "peak_cuda_reserved_bytes": 60817408
+    }
+  },
+  "trials": 3,
+  "input_data_loaded_before_warmup": true,
+  "proposals": 378833,
+  "images": 9069,
+  "catalogue_classes": 7,
+  "all_actual_model_forwards": true,
+  "full_raw_image_pipeline": false,
+  "GT_AP_run": false
+}

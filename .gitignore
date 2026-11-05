@@ -34,3 +34,19 @@ outputs_rmdx/*
 # Local path configs
 configs/paths.env
 
+
+# Published compact author-fitted quality states; upstream weights remain ignored.
+!/reproduction/checkpoints/
+!/reproduction/checkpoints/**/
+!/reproduction/checkpoints/material_conditional_ranking_fix1_20261101/models/material/seed17/model.pt
+!/reproduction/checkpoints/material_conditional_ranking_fix1_20261101/models/material/seed29/model.pt
+!/reproduction/checkpoints/material_conditional_ranking_fix1_20261101/models/material/seed43/model.pt
+!/reproduction/checkpoints/material_conditional_ranking_fix1_20261101/models/permuted_material/seed17/model.pt
+!/reproduction/checkpoints/material_conditional_ranking_fix1_20261101/models/permuted_material/seed29/model.pt
+!/reproduction/checkpoints/material_conditional_ranking_fix1_20261101/models/permuted_material/seed43/model.pt
+!/reproduction/checkpoints/material_reliability_20261101/models/availability_control/seed17/model.pt
+!/reproduction/checkpoints/material_reliability_20261101/models/availability_control/seed29/model.pt
+!/reproduction/checkpoints/material_reliability_20261101/models/availability_control/seed43/model.pt
+!/reproduction/checkpoints/night_exploration_20261101/batch_e_affine_robustness/models/visual_clean/seed17/model.pt
+!/reproduction/checkpoints/night_exploration_20261101/batch_e_affine_robustness/models/visual_clean/seed29/model.pt
+!/reproduction/checkpoints/night_exploration_20261101/batch_e_affine_robustness/models/visual_clean/seed43/model.pt

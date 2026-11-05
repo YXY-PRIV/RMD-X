@@ -1,0 +1,25 @@
+{
+  "case": "CLCXray_test",
+  "trial": 2,
+  "method": "strong",
+  "proposals": 11211,
+  "retained": 11211,
+  "images": 952,
+  "catalogue_classes": 12,
+  "stages_ns": {
+    "three_T_availability_models_GPU_and_CPU_sigmoid": 37825565,
+    "three_E_visual_clean_models_GPU": 15637726,
+    "ensemble_geometric_mix_fixed_router_sqrt_score_Gaussian_serialization": 768813182,
+    "total": 822765331
+  },
+  "memory": {
+    "peak_process_RSS_bytes": 1576067072,
+    "cuda_allocated_bytes": 33651200,
+    "cuda_reserved_bytes": 58720256,
+    "peak_cuda_allocated_bytes": 37203456,
+    "peak_cuda_reserved_bytes": 58720256
+  },
+  "prediction_content_sha256": "3dc58d28f9aa6426f2b3fcdbe02ce436a2c4b54f51259e5b91b3eafcdac36291",
+  "input_load_seconds_excluded": 0.019099313067272305,
+  "model_load_seconds_excluded": 1.568929499015212
+}

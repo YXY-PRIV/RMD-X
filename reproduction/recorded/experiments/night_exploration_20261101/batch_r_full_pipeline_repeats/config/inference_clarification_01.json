@@ -1,0 +1,34 @@
+{
+  "status": "FROZEN_ROLE_SPECIFIC_INFERENCE_CLARIFICATION_BEFORE_ANY_R_NUMERICAL_WORK",
+  "created_utc": "2026-10-31T19:26:04.556953+00:00",
+  "parent_protocol": {
+    "path": "/mnt/data/yxy/program/RAXO/experiments/night_exploration_20261101/batch_r_full_pipeline_repeats/config/protocol.json",
+    "bytes": 22437,
+    "sha256": "925127ad7f9f49aca829c57048df11fe968d6c9a00c965fe70ec028b57700610"
+  },
+  "reason": "Parent common inference sentence says CPUFloat32 sigmoid for bothroles, but the controlling same-as-original requirement requires preserving original E GPU sigmoid and original N CPU sigmoid. Bothroles explicitly confirmed no training/inference has started. Parent remains unchanged.",
+  "roles": {
+    "e_visual": {
+      "original_model_source": {
+        "path": "/mnt/data/yxy/program/RAXO/experiments/night_exploration_20261101/batch_e_affine_robustness/src/affine_model.py",
+        "bytes": 13071,
+        "sha256": "ca07ef44c011492c185d5c397c18ee967842a8d6cdc019f5792d9be6a7019b45"
+      },
+      "inference": "Original pred: GPUFloat32 model(b).sigmoid(), then CPU numpyFloat32; preserve original batch splitting and transform/masks. No forced CPU sigmoid.",
+      "training_validation": "Preserve original GPUFloat32 BCE and original sampling/affineRNG consumption, no appliedaffine forvisual_clean."
+    },
+    "n_material": {
+      "original_model_source": {
+        "path": "/mnt/data/yxy/program/RAXO/experiments/night_exploration_20261101/batch_n_supported_material_quality/src/quality_model.py",
+        "bytes": 13365,
+        "sha256": "14fb85e5b70398d215d033482c9a9c8603dc0c95aabbb87bd9fb531e66b21da0"
+      },
+      "inference": "Original GPUFloat32 model logits, logits_cpu, then CPUFloat32 torch.sigmoid, outputFloat32; no CPU model fallback. Preserve original batch splitting.",
+      "training_validation": "Preserve original weightedsoftIoU BCE and sourcebalanced sample/validation CPUFloat32 BCE thenF64 aggregation."
+    }
+  },
+  "both": "Eachrole seedtriple probabilitymean remainsFloat64 then oneFloat32 cast; no changing source images/teacher/features/hypers/seedgroups/method.",
+  "child_requirement": "Both role childprotocols and numerical sourcefreezes must bindparent+thisclarification; any earlier metadata-only childversion archived before newrole P. Root original N/P/O candidates and publishedresults untouched.",
+  "scientific_runs_before_this_clarification": 0,
+  "parent_edited": false
+}

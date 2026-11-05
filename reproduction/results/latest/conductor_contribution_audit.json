@@ -1,0 +1,125 @@
+{
+  "status": "PASS_SAVED_METRIC_CONTRIBUTION_ARITHMETIC",
+  "checked_utc": "2026-11-01T15:43:05.599875+00:00",
+  "reviewer_source": {
+    "path": "/mnt/data/yxy/program/RAXO/experiments/pair_conflict_material_projection_20261101/scripts/summarize_contribution.py",
+    "bytes": 4494,
+    "sha256": "eb12f5ca24d9f95c55822592f87e642b0e0506392b553bb2547e8fceddbab3f0"
+  },
+  "summary": {
+    "path": "/mnt/data/yxy-codex/home/outputs/RAXO/pair_conflict_material_projection_20261101/results/summary.json",
+    "bytes": 111888,
+    "sha256": "3a6dcceb13e95b21e737bdb312580da4a3571d468e426fc3b934bc646dc57e56"
+  },
+  "final_review": {
+    "path": "/mnt/data/yxy-codex/home/outputs/RAXO/pair_conflict_material_projection_20261101/verification/final_results_review.json",
+    "bytes": 415297,
+    "sha256": "940597960c04765628d24fa1e45b256066da7ecbe1bffb9e341a0fb9ee7d46f8"
+  },
+  "report_before_conductor_append": {
+    "path": "/mnt/data/yxy/program/RAXO/experiments/pair_conflict_material_projection_20261101/执行报告.md",
+    "bytes": 3924,
+    "sha256": "f78477ddd83ade4b04b8d114751a9b058d78ddd9b9e4140e3224aae520a086ee"
+  },
+  "rows": [
+    {
+      "dataset": "DET",
+      "visual_only_AP": 0.5057086134366485,
+      "fused_only_AP": 0.5259956444896079,
+      "strong_union_AP": 0.5089474898132333,
+      "pair_material_AP": 0.5092182455155324,
+      "union_minus_visual_pp": 0.32388763765848205,
+      "union_minus_fused_pp": -1.704815467637455,
+      "fused_minus_visual_pp": 2.028703105295937,
+      "pair_minus_union_pp": 0.027075570229906365,
+      "pair_minus_visual_pp": 0.3509632078883884
+    },
+    {
+      "dataset": "CLCXray_test",
+      "visual_only_AP": 0.2554549002923798,
+      "fused_only_AP": 0.25463124970942375,
+      "strong_union_AP": 0.26697432075078276,
+      "pair_material_AP": 0.2672587438708459,
+      "union_minus_visual_pp": 1.151942045840293,
+      "union_minus_fused_pp": 1.234307104135901,
+      "fused_minus_visual_pp": -0.08236505829560814,
+      "pair_minus_union_pp": 0.028442312006315973,
+      "pair_minus_visual_pp": 1.180384357846609
+    },
+    {
+      "dataset": "PIXray",
+      "visual_only_AP": 0.43838626576497136,
+      "fused_only_AP": 0.4165458930172516,
+      "strong_union_AP": 0.4481781310282129,
+      "pair_material_AP": 0.448321960002225,
+      "union_minus_visual_pp": 0.979186526324155,
+      "union_minus_fused_pp": 3.163223801096132,
+      "fused_minus_visual_pp": -2.184037274771977,
+      "pair_minus_union_pp": 0.01438289740121057,
+      "pair_minus_visual_pp": 0.9935694237253656
+    },
+    {
+      "dataset": "PIDray",
+      "visual_only_AP": 0.23014082498812707,
+      "fused_only_AP": 0.23449260494423155,
+      "strong_union_AP": 0.2353047454137788,
+      "pair_material_AP": 0.2353207309599169,
+      "union_minus_visual_pp": 0.5163920425651725,
+      "union_minus_fused_pp": 0.08121404695472512,
+      "fused_minus_visual_pp": 0.43517799561044734,
+      "pair_minus_union_pp": 0.0015985546138103102,
+      "pair_minus_visual_pp": 0.5179905971789828
+    },
+    {
+      "dataset": "DvXray",
+      "visual_only_AP": 0.28027312236490143,
+      "fused_only_AP": 0.2653264899779901,
+      "strong_union_AP": 0.28341469904441524,
+      "pair_material_AP": 0.28344052147466403,
+      "union_minus_visual_pp": 0.31415766795138134,
+      "union_minus_fused_pp": 1.8088209066425165,
+      "fused_minus_visual_pp": -1.4946632386911352,
+      "pair_minus_union_pp": 0.002582243024878972,
+      "pair_minus_visual_pp": 0.3167399109762603
+    },
+    {
+      "dataset": "Hi",
+      "visual_only_AP": 0.20123342607757844,
+      "fused_only_AP": 0.196473267890772,
+      "strong_union_AP": 0.20529776110460138,
+      "pair_material_AP": 0.2072820886234658,
+      "union_minus_visual_pp": 0.40643350270229417,
+      "union_minus_fused_pp": 0.8824493213829387,
+      "fused_minus_visual_pp": -0.4760158186806446,
+      "pair_minus_union_pp": 0.19843275188644316,
+      "pair_minus_visual_pp": 0.6048662545887373
+    }
+  ],
+  "sign_counts": {
+    "union_minus_visual_pp": {
+      "improved": 6,
+      "declined": 0,
+      "unchanged": 0,
+      "macro_mean_pp": 0.6153332371736296
+    },
+    "fused_minus_visual_pp": {
+      "improved": 2,
+      "declined": 4,
+      "unchanged": 0,
+      "macro_mean_pp": -0.29553338158883014
+    },
+    "pair_minus_union_pp": {
+      "improved": 6,
+      "declined": 0,
+      "unchanged": 0,
+      "macro_mean_pp": 0.045419054860427556
+    }
+  },
+  "new_AP": 0,
+  "new_training": 0,
+  "new_GPU": 0,
+  "shared_availability_aware_scorer_not_material_free": true,
+  "diagnostic_did_not_reselect_primary_method": true,
+  "no_new_CI": true,
+  "conclusion": "候选互补与新增排序是两层贡献；材料融合分支单用并不普遍优于视觉。"
+}

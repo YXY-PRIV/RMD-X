@@ -1,0 +1,142 @@
+{
+  "study_id": "night_batch_g_constant_quality_20261101",
+  "status": "FROZEN_BEFORE_ANY_CONSTANT_CONTROL_AP",
+  "created_utc": "2026-10-31T17:21:01.797674+00:00",
+  "question": "Separate candidate augmentation, sqrt(raw)+Gaussian postprocessing, learned quality and explicit material quality inputs",
+  "sources": {
+    "C_protocol": {
+      "path": "/mnt/data/yxy/program/RAXO/experiments/night_exploration_20261101/batch_c_shared_union/config/protocol.json",
+      "bytes": 14465,
+      "sha256": "285b2fd5fcdbc974c762332cf33b3962a6876f75bd8e8a6c0e53e8235d394cd7"
+    },
+    "E_protocol": {
+      "path": "/mnt/data/yxy/program/RAXO/experiments/night_exploration_20261101/batch_e_affine_robustness/config/protocol.json",
+      "bytes": 13906,
+      "sha256": "e5be43a129dea7e5993f89d4135364e0793a5c4f80a3ff9d3d07cd7c98e48cfb"
+    },
+    "E_source_selection": {
+      "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_e_affine_robustness/parameters/selected_parameters.json",
+      "bytes": 51341,
+      "sha256": "dc3495e183a4d3eeb332dc6b7e3a472bdddebc18f45555eac7928f78891c031e"
+    }
+  },
+  "cases": {
+    "CLC_tune": {
+      "feature_manifest": {
+        "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_c_shared_union/features/CLC_tune/feature_manifest.json",
+        "bytes": 27396,
+        "sha256": "587a7a48b87536ea58b700c4b2c2aa5abfc2aa1003297e1d95981d3f1355b8ca"
+      },
+      "candidate_row_key_sha256": "b7bd29158e187c97493581f19c79d19e4815269628e5ce6d41d43923d0d0a6d0"
+    },
+    "DET": {
+      "feature_manifest": {
+        "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_c_shared_union/features/DET/feature_manifest.json",
+        "bytes": 76176,
+        "sha256": "9c5b0a79742638567ec5c03a5e33caedd9070056e88e65ab0225619b1f35beda"
+      },
+      "candidate_row_key_sha256": "7ff49f0652908dcff396a5f26485d5fb8843d242f459693d93aceb3cca4e4f18"
+    },
+    "CLCXray_test": {
+      "feature_manifest": {
+        "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_c_shared_union/features/CLCXray_test/feature_manifest.json",
+        "bytes": 49344,
+        "sha256": "046fa6e5618760abef75f3004c11d8fcd46f4d4d059f93aeabaa1d4101780343"
+      },
+      "candidate_row_key_sha256": "deaceb8ec82e92a96d44e0684ddb4309f1b805c2b4740a5022ac9b9f1cdd951a"
+    },
+    "PIXray": {
+      "feature_manifest": {
+        "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_c_shared_union/features/PIXray/feature_manifest.json",
+        "bytes": 167784,
+        "sha256": "99fbba15e49d4edab4cb86a0d5f636024733215b2ad1089c378e74236b70c32e"
+      },
+      "candidate_row_key_sha256": "21ee533e7cf6bdbdadc7e7e4563a089a088bd1b7cf5b167ad36cd2925dc87304"
+    },
+    "PIDray": {
+      "feature_manifest": {
+        "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_c_shared_union/features/PIDray/feature_manifest.json",
+        "bytes": 617938,
+        "sha256": "ed96e6812ba3611448a9422e3367d0f5160b1cb27419611b38e66efbc237d4bb"
+      },
+      "candidate_row_key_sha256": "9a17e2001773191cdaa678c4f3fc20421c21ab35dad5309d4d846c06ac9cb827"
+    },
+    "DvXray": {
+      "feature_manifest": {
+        "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_c_shared_union/features/DvXray/feature_manifest.json",
+        "bytes": 312779,
+        "sha256": "0689ac8d203cd0d0db217fb83abd07812993365bee5413fb1f05306ffbaa7f1d"
+      },
+      "candidate_row_key_sha256": "b2db95f75ce88045ca865fac2fac6c4d8995bc46cede406ef121d38d2c9dc7cf"
+    },
+    "Hi": {
+      "feature_manifest": {
+        "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_c_shared_union/features/Hi/feature_manifest.json",
+        "bytes": 308555,
+        "sha256": "cd93c26b17590b8fc875c626dcc1dbf8251adf8fa1857d7f3d34a8bccd6f83bc"
+      },
+      "candidate_row_key_sha256": "6087de99f562ad3d3a6bff31e7581b038cba1409098a3f9ddbb9ab614336b23e"
+    }
+  },
+  "test_cases": [
+    "DET",
+    "CLCXray_test",
+    "PIXray",
+    "PIDray",
+    "DvXray",
+    "Hi"
+  ],
+  "inference_cases": [
+    "DET",
+    "CLCXray_test",
+    "PIXray",
+    "PIDray",
+    "DvXray",
+    "Hi"
+  ],
+  "training": {
+    "new_trainings": 0,
+    "variants": [
+      "constant"
+    ]
+  },
+  "inference": {
+    "new_real_GPU_inferences": 0,
+    "rule": "Deterministic quality1 for every valid native-union class candidate, exact0 padding; no model prediction or new measurements"
+  },
+  "routing": {
+    "tau_candidates": [
+      0.0
+    ],
+    "rule": "V priority; all F-only retained becauseq1>0; pureV/pureF separate controls"
+  },
+  "scoring": {
+    "alpha": 0.5,
+    "sigma": 1.0,
+    "formula": "raw_score**.5 * clip(q,1e-6,1)**.5 then class/image Gaussian SoftNMS sigma1, globalrow tie break; every selected row survives output order"
+  },
+  "final_routes": [
+    "visual",
+    "fixed_additive",
+    "matched_priority"
+  ],
+  "final_logical_AP": 18,
+  "resources": {
+    "global_native_slots": 4,
+    "native_lock_directory": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/resources/native_slots",
+    "native_lock_names": [
+      "slot0.lock",
+      "slot1.lock",
+      "slot2.lock",
+      "slot3.lock"
+    ]
+  },
+  "publication_edits": false,
+  "limits": [
+    "Post-ABC diagnostic, no parameters chosen with G test AP",
+    "q1 control is deterministic, never called a trained or GPU output",
+    "E vs G matched route contrasts learned quality at verified equal membership; G matched-priority vs G pureV contrasts candidate expansion with Gaussian interactions",
+    "F-native categories already come from material; visual quality variant is not whole-pipeline material ablation",
+    "No new CI or blind holdout; all signs retained and D candidate never replaced"
+  ]
+}

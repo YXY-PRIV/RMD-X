@@ -1,0 +1,64 @@
+{
+  "status": "OBSERVED_ORIGINAL_LIVE_PROCESSES_NOT_EXIT_CONFIRMATION",
+  "identities": [
+    {
+      "role": "D_baseline_actor",
+      "PID": 2922956,
+      "starttime_ticks": 177745008,
+      "argv": [
+        "/mnt/data/yxy/envs/gdino_cu118_clean/bin/python",
+        "-B",
+        "experiments/night_exploration_20261101/batch_d_bootstrap/scripts/run_baseline_bootstrap.py",
+        "run"
+      ],
+      "observed_utc": "2026-10-31T19:57:23.059527+00:00"
+    },
+    {
+      "role": "D_candidate_actor",
+      "PID": 3053696,
+      "starttime_ticks": 177814435,
+      "argv": [
+        "/mnt/data/yxy/envs/gdino_cu118_clean/bin/python",
+        "-B",
+        "experiments/night_exploration_20261101/batch_d_candidate_bootstrap/scripts/run_candidate_bootstrap.py",
+        "run"
+      ],
+      "observed_utc": "2026-10-31T19:57:23.059676+00:00"
+    },
+    {
+      "role": "P_actor",
+      "PID": 81603,
+      "starttime_ticks": 178485658,
+      "argv": [
+        "/mnt/data/yxy/envs/gdino_cu118_clean/bin/python",
+        "-B",
+        "experiments/night_exploration_20261101/batch_p_supported_rank_bootstrap/scripts/run_supported_bootstrap.py",
+        "run"
+      ],
+      "observed_utc": "2026-10-31T19:57:23.059805+00:00"
+    },
+    {
+      "role": "D_peer",
+      "PID": 250115,
+      "starttime_ticks": 178578737,
+      "argv": [
+        "/mnt/data/yxy/envs/gdino_cu118_clean/bin/python",
+        "-B",
+        "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/verification/d_peer/review_d_statistics.py",
+        "--watch"
+      ],
+      "observed_utc": "2026-10-31T19:57:23.059937+00:00"
+    },
+    {
+      "role": "P_peer",
+      "PID": 307374,
+      "starttime_ticks": 178610871,
+      "argv": [
+        "/mnt/data/yxy/envs/gdino_cu118_clean/bin/python",
+        "-B",
+        "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_p_supported_rank_bootstrap/verification/review_paired_source_chain.py"
+      ],
+      "observed_utc": "2026-10-31T19:57:23.060071+00:00"
+    }
+  ]
+}

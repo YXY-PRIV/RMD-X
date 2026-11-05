@@ -1,0 +1,327 @@
+{
+  "study_id": "night_batch_e_affine_quality_input_robustness_20261101",
+  "status": "FROZEN_BEFORE_ANY_E_NUMERICAL_RUN",
+  "created_utc": "2026-10-31T17:02:42.114431+00:00",
+  "question": "Does explicitly affine-robust class utility ranking generalize better across existing Xray datasets than matched clean visual/full controls under fixed native branch membership?",
+  "sources": {
+    "C_protocol": {
+      "path": "/mnt/data/yxy/program/RAXO/experiments/night_exploration_20261101/batch_c_shared_union/config/protocol.json",
+      "bytes": 14465,
+      "sha256": "285b2fd5fcdbc974c762332cf33b3962a6876f75bd8e8a6c0e53e8235d394cd7"
+    },
+    "C_training_npz": {
+      "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_c_shared_union/training/union_train_val.npz",
+      "bytes": 97541,
+      "sha256": "9e5d752bf34c7b0e997f058ab9438200f4847220209e3aae7c51aca151dae259"
+    },
+    "C_teacher_audit": {
+      "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_c_shared_union/training/teacher_audit.npz",
+      "bytes": 24149,
+      "sha256": "505c684ca621c3666d9c3be79ca44aa646c9a2d919be315b3e34404ef31e6bd5"
+    },
+    "C_data_model_review": {
+      "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_c_shared_union/verification/final_data_model_review.json",
+      "bytes": 174612,
+      "sha256": "9420d6078872d179cfaa40b72f73eba636dd687f0fc724ba9b145b3230df7864"
+    },
+    "C_endpoint_review": {
+      "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_c_shared_union/verification/final_endpoint_selection_review.json",
+      "bytes": 183703,
+      "sha256": "7ba36a6f525a79507bd95830145f8cd1a66abc7d6aa308b3c4b864cfa8f98b50"
+    },
+    "calfit_split": {
+      "path": "/mnt/data/yxy-codex/home/outputs/RAXO/appearance_reliability_pilot_20261031/training/cal_fit_image_split.json",
+      "bytes": 2254,
+      "sha256": "88ca429e2501b536e1a1eb841f024bf206a5e018ee805b5280867aa747453f3c"
+    },
+    "original_six_combination": {
+      "path": "/mnt/data/yxy-codex/home/outputs/RAXO/appearance_six_dataset_transfer_20261031/results/six_dataset_locked_combination.json",
+      "bytes": 35325,
+      "sha256": "45d1b57b6daf9fb7faf811e685c020467c9ba34f18261dfb3451951634ed19f3"
+    }
+  },
+  "cases": {
+    "CLC_tune": {
+      "feature_manifest": {
+        "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_c_shared_union/features/CLC_tune/feature_manifest.json",
+        "bytes": 27396,
+        "sha256": "587a7a48b87536ea58b700c4b2c2aa5abfc2aa1003297e1d95981d3f1355b8ca"
+      },
+      "candidate_row_key_sha256": "b7bd29158e187c97493581f19c79d19e4815269628e5ce6d41d43923d0d0a6d0"
+    },
+    "DET": {
+      "feature_manifest": {
+        "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_c_shared_union/features/DET/feature_manifest.json",
+        "bytes": 76176,
+        "sha256": "9c5b0a79742638567ec5c03a5e33caedd9070056e88e65ab0225619b1f35beda"
+      },
+      "candidate_row_key_sha256": "7ff49f0652908dcff396a5f26485d5fb8843d242f459693d93aceb3cca4e4f18"
+    },
+    "CLCXray_test": {
+      "feature_manifest": {
+        "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_c_shared_union/features/CLCXray_test/feature_manifest.json",
+        "bytes": 49344,
+        "sha256": "046fa6e5618760abef75f3004c11d8fcd46f4d4d059f93aeabaa1d4101780343"
+      },
+      "candidate_row_key_sha256": "deaceb8ec82e92a96d44e0684ddb4309f1b805c2b4740a5022ac9b9f1cdd951a"
+    },
+    "PIXray": {
+      "feature_manifest": {
+        "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_c_shared_union/features/PIXray/feature_manifest.json",
+        "bytes": 167784,
+        "sha256": "99fbba15e49d4edab4cb86a0d5f636024733215b2ad1089c378e74236b70c32e"
+      },
+      "candidate_row_key_sha256": "21ee533e7cf6bdbdadc7e7e4563a089a088bd1b7cf5b167ad36cd2925dc87304"
+    },
+    "PIDray": {
+      "feature_manifest": {
+        "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_c_shared_union/features/PIDray/feature_manifest.json",
+        "bytes": 617938,
+        "sha256": "ed96e6812ba3611448a9422e3367d0f5160b1cb27419611b38e66efbc237d4bb"
+      },
+      "candidate_row_key_sha256": "9a17e2001773191cdaa678c4f3fc20421c21ab35dad5309d4d846c06ac9cb827"
+    },
+    "DvXray": {
+      "feature_manifest": {
+        "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_c_shared_union/features/DvXray/feature_manifest.json",
+        "bytes": 312779,
+        "sha256": "0689ac8d203cd0d0db217fb83abd07812993365bee5413fb1f05306ffbaa7f1d"
+      },
+      "candidate_row_key_sha256": "b2db95f75ce88045ca865fac2fac6c4d8995bc46cede406ef121d38d2c9dc7cf"
+    },
+    "Hi": {
+      "feature_manifest": {
+        "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_c_shared_union/features/Hi/feature_manifest.json",
+        "bytes": 308555,
+        "sha256": "cd93c26b17590b8fc875c626dcc1dbf8251adf8fa1857d7f3d34a8bccd6f83bc"
+      },
+      "candidate_row_key_sha256": "6087de99f562ad3d3a6bff31e7581b038cba1409098a3f9ddbb9ab614336b23e"
+    }
+  },
+  "inference_cases": [
+    "CLC_tune",
+    "DET",
+    "CLCXray_test",
+    "PIXray",
+    "PIDray",
+    "DvXray",
+    "Hi"
+  ],
+  "test_cases": [
+    "DET",
+    "CLCXray_test",
+    "PIXray",
+    "PIDray",
+    "DvXray",
+    "Hi"
+  ],
+  "feature_schema": {
+    "names": [
+      "detector_confidence",
+      "visual_global_top1",
+      "visual_global_margin",
+      "visual_global_entropy",
+      "candidate_visual_max",
+      "candidate_visual_minus_global_top1",
+      "candidate_global_visual_rank_capped4_normalized",
+      "candidate_visual_canonical_gap",
+      "log1p_positive_prototype_count",
+      "candidate_material_score",
+      "candidate_material_rank_normalized",
+      "material_global_margin",
+      "log1p_material_support_count",
+      "material_support_available",
+      "candidate_material_top1_agreement"
+    ],
+    "shape": "float32[Nunion,2,15]",
+    "definitions": "Original15 raw class-conditional definitions from candidate protocol except column6. Prefix globalV features reuse/verify original wholequery. All candidateV maxima/canonical gaps computed from original V for the exact class, never branch-F score or reversed subtraction.",
+    "rank": "Rank among ALL C positive-class Vmax, ties original first winning prototype index; min(rank,4)/4, not normalized byC or nativebranch slot. Thus originaltop5 training classes retain exact previous rank feature; outside-top5 test candidates saturate1.",
+    "same_class": "Sameclass branch pair shares the same feature and quality slot; qV=qF is structural exact identity.",
+    "support": "Exact source material-bank category_name join/count,0preserved; CID0 valid, invalidpadding=-1 controlled onlybyvalidmask."
+  },
+  "teacher": {
+    "source": "Exact frozen C per-class IoU utility targets; no new GT reads",
+    "unique_train": 2013,
+    "unique_val": 452,
+    "positive_train": 497,
+    "positive_val": 115,
+    "image_reservation_train": 153,
+    "image_reservation_val": 38,
+    "effective_train_images": 152,
+    "effective_val_images": 38,
+    "padding_excluded": true
+  },
+  "training": {
+    "variants": [
+      "visual_clean",
+      "visual_affine",
+      "full_clean",
+      "full_affine"
+    ],
+    "seeds": [
+      17,
+      29,
+      43
+    ],
+    "architecture": [
+      15,
+      32,
+      16,
+      1
+    ],
+    "lr": 0.001,
+    "weight_decay": 0.0001,
+    "batch_size": 1024,
+    "max_epochs": 100,
+    "early_stop_patience": 15,
+    "early_stop_min_delta": 1e-06,
+    "optimizer": "AdamW",
+    "loss": "Unweighted mean BCE over concatenated full/second views, one optimizer update per base batch; no target mask beyond unique-valid padding removal",
+    "sampling": "Independent CPU TorchGenerator(seed), each epoch concatenate15 fresh randperm(2013) and truncate29370; all4 variants same-seed identical draw stream;29370base draws29updates",
+    "views": "Two views per basebatch in every variant: clean repeats natural view; affine natural view plus one affine perturbed view. All variants consume the same four Uniform[0,1) random values per base draw even clean; clean does not apply the sampled transform.",
+    "affine_rng": "Separate CPU TorchGenerator(seed+100000); torch.rand([actual_base_batch_size,4],dtype=float32), columns aV_u,bV_u,aM_u,bM_u in that order; same-seed all4 variants identical affine RNG stream",
+    "affine": {
+      "aV": [
+        0.5,
+        1.5
+      ],
+      "aM": [
+        0.5,
+        1.5
+      ],
+      "bV": [
+        -0.15,
+        0.15
+      ],
+      "bM": [
+        -0.15,
+        0.15
+      ],
+      "visual_scale_shift_columns": [
+        1,
+        4
+      ],
+      "visual_scale_only_columns": [
+        2,
+        5,
+        7
+      ],
+      "material_scale_shift_columns": [
+        9
+      ],
+      "material_scale_only_columns": [
+        11
+      ],
+      "rank_and_agreement_columns_unchanged": [
+        6,
+        10,
+        14
+      ],
+      "raw_available_zero": "If raw13==0 set raw9..14 exact0, never introduce a material bias; M affine only applied to raw available1 rows",
+      "order": "Copy raw rows, canonicalize missing M, apply affine to raw scores, fixed unit divide coordinates2/5/7/11 by2, zero fixed/variant/constant coordinates. No clipping, recomputed ranks, entropy, canonical scores, native filtering or third candidate.",
+      "scope": "quality-input calibration stress only; not a recomputed feature bank and not a physical material measurement"
+    },
+    "normalization": {
+      "kind": "fixed_natural_units",
+      "divide_by_two": [
+        2,
+        5,
+        7,
+        11
+      ],
+      "always_zero": [
+        0,
+        3,
+        8,
+        12
+      ],
+      "visual_material_zero": true,
+      "full_additionally_zero": [
+        13
+      ],
+      "constant_guard": "Derive any remaining exact constant coordinate from unique valid natural training inputs AFTER unit/fixed/variant masks only; globally zero in train natural/augmented, validation, and inference. No val/test mean/std fit."
+    },
+    "validation": "One natural view only,452valid candidate BCE. Same original153/38 image reservation, no augmented validation or tune/test early stopping.",
+    "draws_per_epoch": 29370,
+    "optimizer_updates_per_epoch": 29,
+    "view_count": 2,
+    "training_source": {
+      "path": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/batch_c_shared_union/training/union_train_val.npz",
+      "bytes": 97541,
+      "sha256": "9e5d752bf34c7b0e997f058ab9438200f4847220209e3aae7c51aca151dae259"
+    },
+    "new_trainings": 12
+  },
+  "inference": {
+    "cases": 7,
+    "models_per_case": 12,
+    "actual_GPU_jobs": 84,
+    "all3_ensembles": 28,
+    "quality_shape": "[native-union rows,2] float32, invalid pads exact0",
+    "ensemble_rule": "F64 arithmetic mean over seeds17/29/43 then one F32 cast",
+    "natural_only": true,
+    "read_test_labels": false
+  },
+  "routing": {
+    "tau_candidates": [
+      0.0,
+      0.025,
+      0.05,
+      0.1,
+      1.01
+    ],
+    "route": "matched_priority",
+    "formula": "Always prefer native V whenever V kept. Only F-only proposals may be admitted, iff qF>tau strict, absent V quality0. No overlap class change. Pure V and pure F are separately retained controls.",
+    "unchanged_native_states": "Only previously retained native V/F candidates, original bbox/rawscore/globalrow/negative/UNC decisions immutable"
+  },
+  "selection": {
+    "source": "CLC_tune only",
+    "metric": "AP",
+    "rule": "ONE global tau maximizing arithmetic mean of matched_priority CLC_tune AP across all4 variants, tie larger tau; freeze before all72 E final AP",
+    "variant_selection": false,
+    "not_added_to_D_locked_candidate": true,
+    "logical_tune": 20
+  },
+  "scoring": {
+    "alpha": 0.5,
+    "sigma": 1.0,
+    "formula": "raw_score**.5 * clip(q,1e-6,1)**.5 then class/image Gaussian SoftNMS sigma1, globalrow tie break; every selected row survives output order"
+  },
+  "final_routes": [
+    "visual",
+    "fixed_additive",
+    "matched_priority"
+  ],
+  "final_logical_AP": 72,
+  "report_AR100": true,
+  "primary_variant": "full_affine",
+  "primary_route": "matched_priority",
+  "resources": {
+    "GPU_training": "GPU-1397025e-282b-4fa6-4abf-af166feb9117",
+    "GPU3_do_not_touch": true,
+    "max_GPU_processes": 1,
+    "OMP_NUM_THREADS": 8,
+    "max_feature_builders": 2,
+    "global_native_slots": 4,
+    "native_lock_directory": "/mnt/data/yxy-codex/home/outputs/RAXO/night_exploration_20261101/resources/native_slots",
+    "native_lock_names": [
+      "slot0.lock",
+      "slot1.lock",
+      "slot2.lock",
+      "slot3.lock"
+    ],
+    "GPU_UUID": "GPU-1397025e-282b-4fa6-4abf-af166feb9117",
+    "GPU_physical_index": 1,
+    "GPU_exclusive_worker": true,
+    "skip_if_other_compute_process": true
+  },
+  "publication_edits": false,
+  "limits": [
+    "Repeated existing datasets are exploratory, not a new blind test. Prior test outcomes are known; new E selection uses only reserved CLC tune.",
+    "All four variants and three routes reported on six datasets, including losses. No per-test recipe/threshold/variant selection.",
+    "F native candidates originate from material fusion even for visual quality controls; explicit full-versus-visual feature comparison is not an entire-pipeline material causal ablation.",
+    "Uniform affine shifts are artificial input stress; no image synthesis, feature cache edits, new annotations, new material sensors, native filtering or detector training.",
+    "Repeated draws and paired affine views do not add independent training images. Natural val BCE is the checkpoint criterion.",
+    "E is a separate preregistered exploratory stage; it does not replace the D candidate frozen earlier."
+  ]
+}

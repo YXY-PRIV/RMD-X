@@ -1,0 +1,3 @@
+# Default inspect_release.py uses the Python standard library only.
+# Exact-function portable/core.py and the small contract checks need NumPy.
+numpy>=1.24
